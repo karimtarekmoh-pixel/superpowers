@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "duration": 71,
+    "wordsPerSecond": 2.7,
+    "handle": "@yourhandle",
+    "notes": "All times are seconds. Scene start/end are absolute; everything inside params is relative to the scene start. Captions come from 'vo' word for word."
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "name": "Hook",
+      "start": 0,
+      "end": 5,
+      "layout": "hero",
+      "visual": "hook",
+      "vo": "Want to start a business with zero dollars? Here's the three-step plan, and Claude Code does the heavy lifting.",
+      "params": {
+        "headline": "Start a business with [$0]",
+        "coinsAt": 1.1,
+        "coinStagger": 0.16,
+        "stampAt": 3.0,
+        "stampText": "3 Steps"
+      }
+    },
+    {
+      "id": "S2",
+      "name": "Step 1 title",
+      "start": 5,
+      "end": 9,
+      "layout": "card",
+      "visual": "step1Title",
+      "vo": "Step one. Find something people already pay for.",
+      "params": { "badgeAt": 0.1, "phoneAt": 1.0, "magnifierAt": 2.0 }
+    },
+    {
+      "id": "S3",
+      "name": "Step 1 detail",
+      "start": 9,
+      "end": 22,
+      "layout": "card",
+      "visual": "step1Detail",
+      "vo": "Look for tools local businesses pay for every single month. Booking, invoicing, loyalty cards. If people pay monthly, the demand is real. And most people can't build software, so they never touch this. That's the gap.",
+      "params": { "appsAt": 0.3, "appStagger": 0.9, "calendarAt": 4.6, "stampAt": 8.4, "stampText": "No builders", "gapAt": 11.0 }
+    },
+    {
+      "id": "S4",
+      "name": "Step 2 title",
+      "start": 22,
+      "end": 27,
+      "layout": "card",
+      "visual": "step2Title",
+      "vo": "Step two. Build your own version.",
+      "params": { "wipeAt": 0, "badgeAt": 0.7, "terminalAt": 2.0, "typeText": "Welcome to Claude Code" }
+    },
+    {
+      "id": "S5",
+      "name": "Step 2 detail",
+      "start": 27,
+      "end": 45,
+      "layout": "card",
+      "visual": "step2Detail",
+      "vo": "Open Claude Code. Describe the problem the app solves and list the features. Tell it to build an original app, with your own code, your own design, your own name. Not a copy. Then say: customize it for one type of business, like barbershops. In an afternoon you can have a working app with booking and a dashboard.",
+      "params": {
+        "promptAt": 0.4,
+        "prompt": "Build an ORIGINAL booking app for barbershops. Own code. Own design. Own name.",
+        "highlight": ["ORIGINAL", "barbershops.", "Own"],
+        "checklistAt": 4.8,
+        "checklist": ["Booking", "Reminders", "Dashboard", "Self-check"],
+        "checkStagger": 0.8,
+        "scoreAt": 8.4,
+        "scoreFrom": 5.1,
+        "scoreTo": 8.7,
+        "phoneAt": 11.0,
+        "phoneStepEvery": 1.6,
+        "shieldAt": 16.0
+      }
+    },
+    {
+      "id": "S6",
+      "name": "Step 3 title",
+      "start": 45,
+      "end": 49,
+      "layout": "card",
+      "visual": "step3Title",
+      "vo": "Step three. Sell it locally. This is the part that makes money.",
+      "params": { "wipeAt": 0, "badgeAt": 0.7, "mapAt": 1.6, "pinAt": 2.2, "storeAt": 2.8 }
+    },
+    {
+      "id": "S7",
+      "name": "Step 3 detail",
+      "start": 49,
+      "end": 63,
+      "layout": "card",
+      "visual": "step3Detail",
+      "vo": "Walk in, or call a barbershop and say: I built a simpler booking tool. It costs less than what you pay now, and I handle the setup. One monthly fee. If they say yes, that's your first customer. Then repeat on the next street.",
+      "params": {
+        "callAt": 0.3,
+        "yesAt": 9.0,
+        "priceAt": 3.6,
+        "oldPrice": "$89/mo",
+        "newPrice": "$39/mo",
+        "pinsAt": 11.2,
+        "footer": "Example numbers. Results vary."
+      }
+    },
+    {
+      "id": "S8",
+      "name": "CTA",
+      "start": 63,
+      "end": 71,
+      "layout": "dark",
+      "visual": "cta",
+      "vo": "Want the exact prompt and my free guide? Comment COPY and I'll send it to your DMs.",
+      "params": { "boxAt": 0.4, "typeAt": 3.0, "keyword": "COPY", "pulseAt": 4.2, "handleAt": 1.2 }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"type":"module","private":true,"scripts":{"draft":"node render.mjs --quality draft","final":"node render.mjs --quality final"}}

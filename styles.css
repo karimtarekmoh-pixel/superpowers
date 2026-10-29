@@ -1,0 +1,142 @@
+/* ---------- Design tokens ---------- */
+:root {
+  --paper: #F3F1EC;
+  --ink: #111111;
+  --red: #E2342D;
+  --card-dark: #141416;
+  --card-line: #2A2A2E;
+  --soft: #E7E3DA;
+  --green: #2FB36B;
+  --card: #FBFAF7;
+
+  --radius: 2.8rem;               /* 28px at 1080 wide */
+  --shadow: 0 2rem 5rem rgba(0, 0, 0, .12);
+
+  --serif: "Instrument Serif", "Iowan Old Style", "Georgia", serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  /* Instagram safe zones (px at 1080x1920) */
+  --safe-top: 22rem;              /* 220px */
+  --safe-bottom: 38rem;           /* 380px */
+
+  /* Frame layout */
+  --card-top: 24rem;
+  --card-h: 86rem;                /* card: 240..1100 */
+  --caption-top: 112rem;          /* captions: 1120..1290 */
+  --caption-h: 17rem;
+  --mascot-top: 129rem;           /* mascot strip: 1290..1540 */
+  --mascot-h: 25rem;
+}
+
+/* 1rem = 1/108 of the viewport width, so the 1080 stage is always 108rem wide. */
+html { font-size: calc(100vw / 108); }
+body { margin: 0; background: #000; overflow: hidden; }
+* { box-sizing: border-box; }
+
+#stage {
+  position: relative;
+  width: 108rem;
+  height: 192rem;
+  background: var(--paper);
+  overflow: hidden;
+  font-family: var(--sans);
+  color: var(--ink);
+}
+
+/* Soft dot texture behind everything; moves slightly for parallax. */
+.bg-dots {
+  position: absolute;
+  inset: -6rem;
+  background-image: radial-gradient(circle, rgba(17, 17, 17, .07) .28rem, transparent .34rem);
+  background-size: 3.6rem 3.6rem;
+}
+
+.scene { position: absolute; inset: 0; visibility: hidden; }
+
+/* ---------- Cards ---------- */
+.card {
+  position: absolute;
+  left: 6rem;
+  width: 96rem;
+  top: var(--card-top);
+  height: var(--card-h);
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.card.hero { left: 4rem; width: 100rem; }
+.card.dark { background: var(--card-dark); color: #fff; }
+
+/* ---------- Type ---------- */
+.headline {
+  font-family: var(--serif);
+  font-weight: 400;
+  line-height: .92;
+  letter-spacing: -.01em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0;
+}
+.headline .w { display: inline-block; white-space: nowrap; }
+.headline em, .hl { font-style: italic; color: var(--red); text-transform: none; }
+
+.kicker {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 2.6rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, .55);
+}
+
+/* ---------- Stamp ---------- */
+.stamp {
+  position: absolute;
+  display: inline-block;
+  padding: 1.2rem 3rem 1.1rem;
+  border: .9rem solid var(--red);
+  border-radius: 1.2rem;
+  color: var(--red);
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 7rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  line-height: 1;
+  background: rgba(251, 250, 247, .9);
+  white-space: nowrap;
+  z-index: 50;
+}
+
+/* ---------- Coins ---------- */
+.coins { position: absolute; }
+.coin { position: absolute; }
+
+/* ---------- Layers ---------- */
+.caption-zone { position: absolute; left: 6rem; width: 96rem; top: var(--caption-top); height: var(--caption-h); }
+.mascot-strip { position: absolute; left: 0; width: 108rem; top: var(--mascot-top); height: var(--mascot-h); }
+.wipe-layer { position: absolute; inset: 0; pointer-events: none; }
+
+.draft-mark {
+  position: absolute;
+  top: 13rem;
+  right: 6rem;
+  padding: .8rem 2rem;
+  border: .4rem solid var(--red);
+  border-radius: 99rem;
+  color: var(--red);
+  font: 800 2.4rem/1 var(--sans);
+  letter-spacing: .14em;
+  background: rgba(243, 241, 236, .85);
+}
+
+/* Debug: ?guides=1 tints the unsafe zones. */
+.guides .g-top, .guides .g-bottom { position: absolute; left: 0; width: 100%; background: rgba(226, 52, 45, .18); }
+.guides .g-top { top: 0; height: var(--safe-top); }
+.guides .g-bottom { bottom: 0; height: var(--safe-bottom); }
+
+/* Placeholder card for scenes not built yet */
+.todo { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2rem; text-align: center; padding: 6rem; }
+.todo .headline { font-size: 11rem; }
