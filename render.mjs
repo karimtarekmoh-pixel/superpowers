@@ -130,7 +130,7 @@ if (stills) {
     const mix = existsSync(music)
       ? ["-i", music, "-filter_complex", "[2:a]volume=-22dB[m];[1:a][m]amix=inputs=2:duration=first:normalize=0[a]", "-map", "0:v", "-map", "[a]"]
       : ["-map", "0:v", "-map", "1:a"];
-    await run("ffmpeg", ["-y", "-loglevel", "error", ...inputs, ...mix, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", String(meta.duration), "-movflags", "+faststart", reel]);
+    await run("ffmpeg", ["-y", "-loglevel", "error", ...inputs, ...mix, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-t", String(meta.duration), "-movflags", "+faststart", reel]);
   } else {
     await run("ffmpeg", ["-y", "-loglevel", "error", "-i", silent, "-c", "copy", reel]);
   }
