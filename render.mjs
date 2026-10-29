@@ -6,7 +6,7 @@
 //   node render.mjs --still 3.2,4.5          PNG stills at those seconds (out/still-<t>.png)
 //   add --guides to tint the unsafe zones
 import { createServer } from "node:http";
-import { readFile, stat, mkdir } from "node:fs/promises";
+import { readFile, stat, mkdir, writeFile } from "node:fs/promises";
 import { existsSync, statSync } from "node:fs";
 import { spawn } from "node:child_process";
 import path from "node:path";
@@ -80,6 +80,22 @@ await mkdir(OUT, { recursive: true });
 
 const seek = (t) => page.evaluate((t) => window.__seek(t), t);
 
+// Captions as SRT (same groups that are burned in).
+const srtTime = (t) => {
+  const ms = Math.round(t * 1000);
+  const p = (n, l = 2) => String(n).padStart(l, "0");
+  return `${p(Math.floor(ms / 3600000))}:${p(Math.floor(ms / 60000) % 60)}:${p(Math.floor(ms / 1000) % 60)},${p(ms % 1000, 3)}`;
+};
+const caps = await page.evaluate(() => window.__captions);
+await writeFile(path.join(OUT, "captions.srt"), caps.map((c, i) => `${i + 1}\n${srtTime(c.start)} --> ${srtTime(c.end)}\n${c.text}\n`).join("\n"));
+
+// No voiceover yet: write the exact script to record, with pause marks between scenes.
+if (!hasVoice) {
+  const scenes = await page.evaluate(() => window.__scenes);
+  const lines = scenes.map((s) => `[${s.id} ${s.name} | ${s.start}s-${s.end}s | ${(s.end - s.start).toFixed(1)}s]\n${s.vo}`).join("\n\n[pause 0.4s]\n\n");
+  await writeFile(path.join(OUT, "voiceover-script.txt"), lines + "\n");
+}
+
 if (stills) {
   for (const t of String(stills).split(",").map(Number)) {
     await seek(t);
@@ -127,6 +143,8 @@ if (stills) {
   console.log(`\nDuration: ${meta.duration}s ${hasVoice ? "(with voiceover)" : "(silent draft)"}`);
   console.log(`${path.relative(ROOT, reel)}  ${mb(reel)}`);
   console.log(`${path.relative(ROOT, gif)}  ${mb(gif)}`);
+  console.log(`out/captions.srt  ${caps.length} captions`);
+  if (!hasVoice) console.log("out/voiceover-script.txt  (record this, save as audio/voiceover.mp3, re-render)");
 }
 
 await browser.close();

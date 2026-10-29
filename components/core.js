@@ -14,8 +14,9 @@ window.R = (() => {
     text
       .split(/\s+/)
       .map((w) => {
-        const m = w.match(/^\[(.+)\]$/);
-        return m ? `<span class="w"><em>${m[1]}</em></span>` : `<span class="w">${w}</span>`;
+        // [word] (optionally followed by punctuation) becomes the red italic highlight.
+        const m = w.match(/^\[(.+)\]([^\w\]]*)$/);
+        return m ? `<span class="w"><em>${m[1]}</em>${m[2]}</span>` : `<span class="w">${w}</span>`;
       })
       .join(" ");
 

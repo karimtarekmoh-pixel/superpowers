@@ -23,7 +23,19 @@
         "coinStagger": 0.16,
         "stampAt": 3.0,
         "stampText": "3 Steps"
-      }
+      },
+      "mascot": [
+        {
+          "at": 0.6,
+          "state": "point",
+          "dur": 1.8
+        },
+        {
+          "at": 3.0,
+          "state": "celebrate",
+          "dur": 1.4
+        }
+      ]
     },
     {
       "id": "S2",
@@ -33,7 +45,19 @@
       "layout": "card",
       "visual": "step1Title",
       "vo": "Step one. Find something people already pay for.",
-      "params": { "badgeAt": 0.1, "phoneAt": 1.0, "magnifierAt": 2.0 }
+      "params": {
+        "badgeAt": 0.1,
+        "phoneAt": 1.0,
+        "magnifierAt": 2.0,
+        "step": 1
+      },
+      "mascot": [
+        {
+          "at": 0.2,
+          "state": "point",
+          "dur": 2.0
+        }
+      ]
     },
     {
       "id": "S3",
@@ -43,7 +67,31 @@
       "layout": "card",
       "visual": "step1Detail",
       "vo": "Look for tools local businesses pay for every single month. Booking, invoicing, loyalty cards. If people pay monthly, the demand is real. And most people can't build software, so they never touch this. That's the gap.",
-      "params": { "appsAt": 0.3, "appStagger": 0.9, "calendarAt": 4.6, "stampAt": 8.4, "stampText": "No builders", "gapAt": 11.0 }
+      "params": {
+        "appsAt": 0.3,
+        "appStagger": 0.9,
+        "calendarAt": 4.6,
+        "stampAt": 8.4,
+        "stampText": "No builders",
+        "gapAt": 11.0
+      },
+      "mascot": [
+        {
+          "at": 0.8,
+          "state": "think",
+          "dur": 3.2
+        },
+        {
+          "at": 8.4,
+          "state": "point",
+          "dur": 1.6
+        },
+        {
+          "at": 11.4,
+          "state": "celebrate",
+          "dur": 1.2
+        }
+      ]
     },
     {
       "id": "S4",
@@ -53,7 +101,20 @@
       "layout": "card",
       "visual": "step2Title",
       "vo": "Step two. Build your own version.",
-      "params": { "wipeAt": 0, "badgeAt": 0.7, "terminalAt": 2.0, "typeText": "Welcome to Claude Code" }
+      "params": {
+        "badgeAt": 0.7,
+        "terminalAt": 2.0,
+        "typeText": "Welcome to Claude Code",
+        "step": 2,
+        "wipe": "diag"
+      },
+      "mascot": [
+        {
+          "at": 0.8,
+          "state": "point",
+          "dur": 1.8
+        }
+      ]
     },
     {
       "id": "S5",
@@ -66,9 +127,18 @@
       "params": {
         "promptAt": 0.4,
         "prompt": "Build an ORIGINAL booking app for barbershops. Own code. Own design. Own name.",
-        "highlight": ["ORIGINAL", "barbershops.", "Own"],
+        "highlight": [
+          "ORIGINAL",
+          "barbershops.",
+          "Own"
+        ],
         "checklistAt": 4.8,
-        "checklist": ["Booking", "Reminders", "Dashboard", "Self-check"],
+        "checklist": [
+          "Booking",
+          "Reminders",
+          "Dashboard",
+          "Self-check"
+        ],
         "checkStagger": 0.8,
         "scoreAt": 8.4,
         "scoreFrom": 5.1,
@@ -76,7 +146,24 @@
         "phoneAt": 11.0,
         "phoneStepEvery": 1.6,
         "shieldAt": 16.0
-      }
+      },
+      "mascot": [
+        {
+          "at": 0.5,
+          "state": "think",
+          "dur": 6.0
+        },
+        {
+          "at": 11.2,
+          "state": "point",
+          "dur": 2.0
+        },
+        {
+          "at": 16.0,
+          "state": "celebrate",
+          "dur": 1.4
+        }
+      ]
     },
     {
       "id": "S6",
@@ -86,7 +173,21 @@
       "layout": "card",
       "visual": "step3Title",
       "vo": "Step three. Sell it locally. This is the part that makes money.",
-      "params": { "wipeAt": 0, "badgeAt": 0.7, "mapAt": 1.6, "pinAt": 2.2, "storeAt": 2.8 }
+      "params": {
+        "badgeAt": 0.7,
+        "mapAt": 1.6,
+        "pinAt": 2.2,
+        "storeAt": 2.8,
+        "step": 3,
+        "wipe": "diag"
+      },
+      "mascot": [
+        {
+          "at": 0.8,
+          "state": "point",
+          "dur": 1.8
+        }
+      ]
     },
     {
       "id": "S7",
@@ -104,7 +205,19 @@
         "newPrice": "$39/mo",
         "pinsAt": 11.2,
         "footer": "Example numbers. Results vary."
-      }
+      },
+      "mascot": [
+        {
+          "at": 1.0,
+          "state": "think",
+          "dur": 2.6
+        },
+        {
+          "at": 9.0,
+          "state": "celebrate",
+          "dur": 1.8
+        }
+      ]
     },
     {
       "id": "S8",
@@ -114,7 +227,25 @@
       "layout": "dark",
       "visual": "cta",
       "vo": "Want the exact prompt and my free guide? Comment COPY and I'll send it to your DMs.",
-      "params": { "boxAt": 0.4, "typeAt": 3.0, "keyword": "COPY", "pulseAt": 4.2, "handleAt": 1.2 }
+      "params": {
+        "boxAt": 0.4,
+        "typeAt": 3.0,
+        "keyword": "COPY",
+        "pulseAt": 4.2,
+        "handleAt": 1.2
+      },
+      "mascot": [
+        {
+          "at": 0.6,
+          "state": "point",
+          "dur": 2.4
+        },
+        {
+          "at": 4.2,
+          "state": "celebrate",
+          "dur": 1.6
+        }
+      ]
     }
   ]
 }
