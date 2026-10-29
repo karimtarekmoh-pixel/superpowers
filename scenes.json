@@ -204,7 +204,9 @@
         "oldPrice": "$89/mo",
         "newPrice": "$39/mo",
         "pinsAt": 11.2,
-        "footer": "Example numbers. Results vary."
+        "footer": "Example numbers. Results vary.",
+        "setupAt": 5.6,
+        "feeAt": 7.0
       },
       "mascot": [
         {

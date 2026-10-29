@@ -19,6 +19,27 @@
     } catch {}
   }
 
+  // With a voiceover, scene boundaries come from the audio. Beat times inside a
+  // scene (params ending in At/Stagger/Every, mascot cues) scale with its new length.
+  if (align && align.scenes) {
+    const byId = Object.fromEntries(align.scenes.map((s) => [s.id, s]));
+    for (const sc of scenes) {
+      const a = byId[sc.id];
+      if (!a) continue;
+      const k = (a.end - a.start) / (sc.end - sc.start);
+      sc.designLength = sc.end - sc.start;
+      sc.start = a.start;
+      sc.end = a.end;
+      for (const [key, v] of Object.entries(sc.params || {})) if (typeof v === "number" && /(At|Stagger|Every)$/.test(key)) sc.params[key] = v * k;
+      for (const m of sc.mascot || []) {
+        m.at *= k;
+        m.dur = Math.max(1, m.dur * k);
+      }
+    }
+    meta.duration = align.duration;
+    console.log(`[timeline] retimed to voiceover: ${align.duration}s`);
+  }
+
   // Subtle parallax: the dot background drifts slowly for the whole video.
   master.fromTo("#bg", { x: 0, y: 0 }, { x: "-3rem", y: "-8rem", duration: meta.duration, ease: "none" }, 0);
 
@@ -49,7 +70,7 @@
   for (const sc of scenes) if (sc.params && sc.params.step) master.to(segs[sc.params.step - 1], { scaleX: 1, duration: 0.6, ease: "power3.out" }, sc.start + 0.4);
 
   // Captions
-  const caps = Captions(document.getElementById("captions"), scenes, { align, wps: meta.wordsPerSecond });
+  const caps = Captions(document.getElementById("captions"), scenes, { align: align && align.words, wps: meta.wordsPerSecond });
   master.add(caps.tl, 0);
   window.__captions = caps.groups;
 

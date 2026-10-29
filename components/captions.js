@@ -60,14 +60,14 @@ window.Captions = (host, scenes, { align = null, wps = 2.7 } = {}) => {
     const pill = R.el(host, "cap-group");
     const spans = g.map((w) => R.el(pill, "cap-word", w.text.toUpperCase(), "span"));
     gsap.set(pill, { xPercent: -50, yPercent: -50 });
-    gsap.set(spans, { autoAlpha: 0, scale: 0.8 });
+    gsap.set(spans, { scale: 0.8 });
     const start = g[0].start;
     const next = groups[gi + 1];
     const end = Math.min(next && next[0].scene === g[0].scene ? next[0].start : g[g.length - 1].end + 0.35, g[0].sceneEnd - 0.12);
     tl.set(pill, { visibility: "visible" }, start)
       .fromTo(pill, { scale: 0.92 }, { scale: 1, duration: 0.12, ease: "power2.out", immediateRender: false }, start)
       .set(pill, { visibility: "hidden" }, end);
-    tl.to(spans, { autoAlpha: 1, scale: 1, duration: 0.12, ease: "power2.out", stagger: 0.015 }, start);
+    tl.to(spans, { scale: 1, duration: 0.12, ease: "power2.out" }, start);
     g.forEach((w, i) => {
       const s = spans[i];
       const wEnd = i + 1 < g.length ? g[i + 1].start : end;

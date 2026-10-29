@@ -5,7 +5,7 @@ window.Visuals = (() => {
   const P = Props;
   // Card entrance (0.45s rise) and clean exit 0.4s before the scene ends.
   const cardIn = (tl, card, at = 0) => tl.from(card, { y: "8rem", autoAlpha: 0, scale: 0.96, duration: 0.45, ease: "power3.out" }, at);
-  const cardOut = (tl, card, len) => tl.to(card, { y: "-5rem", autoAlpha: 0, duration: 0.35, ease: "power2.in" }, len - 0.4);
+  const cardOut = (tl, card, len) => tl.to(card, { y: "-1.5rem", autoAlpha: 0, duration: 0.35, ease: "power2.in" }, len - 0.4);
   // Micro-motion: slow 1.00 -> 1.04 drift so nothing is ever fully static.
   const drift = (tl, target, len, amount = 0.04) => tl.fromTo(target, { scale: 1 }, { scale: 1 + amount, duration: len, ease: "none", immediateRender: false }, 0);
   // Exit a group of elements together (used when a scene switches phase).
@@ -259,7 +259,7 @@ window.Visuals = (() => {
     tl.from(tag, { x: "10rem", autoAlpha: 0, duration: 0.45, ease: "power3.out" }, p.priceAt)
       .to(strike, { scaleX: 1, duration: 0.3, ease: "power2.out" }, p.priceAt + 0.8)
       .from(newp, { y: "3rem", autoAlpha: 0, duration: 0.4, ease: "back.out(1.6)" }, p.priceAt + 1.2);
-    const chips = [["Setup handled", 5.6], ["One monthly fee", 7.0]].map(([label, at], i) => {
+    const chips = [["Setup handled", p.setupAt], ["One monthly fee", p.feeAt]].map(([label, at], i) => {
       const c = P.place(R.el(inner, "chip", `<span style="width:3.2rem;height:3.2rem;border-radius:50%;background:var(--green);display:grid;place-items:center">${P.glyph.check()}</span>${label}`), 44, 52 + i * 10);
       tl.from(c, { x: "6rem", autoAlpha: 0, duration: 0.4, ease: "power3.out" }, at);
       return c;

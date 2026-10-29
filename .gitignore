@@ -2,3 +2,5 @@ node_modules
 out/
 audio/*.wav
 .DS_Store
+models/
+audio/*.wav

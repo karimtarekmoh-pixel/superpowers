@@ -66,6 +66,9 @@ for (let t = 0; t <= meta.duration - 0.05; t += 0.5) {
       for (let a = el.parentElement; a && a.id !== "stage"; a = a.parentElement) {
         const cs = getComputedStyle(a);
         if (cs.overflow === "hidden" || cs.overflowX === "hidden") {
+          // Phone screens slide past each other by design: only check pages at rest.
+          const page = el.closest(".phone-page");
+          if (page && Math.abs(gsap.getProperty(page, "xPercent")) > 0.5) break;
           const ar = a.getBoundingClientRect();
           if (r.left < ar.left - 2 || r.right > ar.right + 2 || r.top < ar.top - 2 || r.bottom > ar.bottom + 2) out.push(`clipped ${name(el)}`);
           break;
@@ -108,6 +111,16 @@ const allText = await page.evaluate(() => document.getElementById("stage").inner
 const hits = DENY.filter((b) => new RegExp(`\\b${b}\\b`, "i").test(allText));
 check("no real company names/logos on screen", hits.length === 0, hits.length ? `found: ${hits.join(", ")}` : "only fictional names (BookIt, TabTally, StampCard, ShiftPad, QueueUp, Fade & Co.); 'Claude Code' is the product the script teaches");
 
+// ---- Audio sync: every caption must start on a spoken word from audio/alignment.json
+if (audio) {
+  const al = JSON.parse(await readFile(path.join(ROOT, "audio/alignment.json"), "utf8"));
+  const caps = await page.evaluate(() => window.__captions);
+  const starts = al.words.map((w) => w.start);
+  const off = caps.filter((c) => !starts.some((s) => Math.abs(s - c.start) < 0.02));
+  const late = caps.filter((c) => c.end < c.start + 0.2);
+  check("captions synced to the voiceover", off.length === 0 && late.length === 0, `${caps.length} captions; ${off.length} not on a word start, ${late.length} shorter than 0.2s`);
+}
+
 await browser.close();
 server.close();
 
@@ -116,6 +129,11 @@ if (video && existsSync(path.join(ROOT, video))) {
   const v = path.join(ROOT, video);
   const dur = Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", v]).toString());
   check("total length 65-75s", dur >= 65 && dur <= 75, `${dur.toFixed(2)}s (${video})`);
+  if (audio) {
+    const streams = execFileSync("ffprobe", ["-v", "error", "-show_entries", "stream=codec_type", "-of", "csv=p=0", v]).toString();
+    const voiceLen = Number(execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path.join(ROOT, "audio/voiceover.mp3")]).toString());
+    check("voiceover merged into the video", streams.includes("audio") && Math.abs(voiceLen - dur) < 0.2, `audio track ${streams.includes("audio") ? "present" : "MISSING"}; voice ${voiceLen.toFixed(2)}s vs video ${dur.toFixed(2)}s`);
+  }
   // freezedetect logs to stderr; -55dB still counts the slow 1.00->1.04 drift as motion.
   const log = execFileSync("sh", ["-c", `ffmpeg -hide_banner -i "${v}" -vf freezedetect=n=-55dB:d=2.5 -map 0:v -f null - 2>&1 | grep -E "freeze_(start|duration)" || true`]).toString().trim();
   check("no frame static for more than 2.5s", log === "", log || "freezedetect found nothing");
