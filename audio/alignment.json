@@ -1,1049 +1,1049 @@
 {
- "voice": "af_heart",
- "speed": 1.0,
- "duration": 70.98,
+ "voice": "am_michael",
+ "speed": 1.087,
+ "duration": 72.91,
  "scenes": [
   {
    "id": "S1",
    "start": 0.0,
-   "end": 6.34
+   "end": 6.45
   },
   {
    "id": "S2",
-   "start": 6.34,
-   "end": 9.83
+   "start": 6.45,
+   "end": 9.96
   },
   {
    "id": "S3",
-   "start": 9.83,
-   "end": 23.63
+   "start": 9.96,
+   "end": 23.99
   },
   {
    "id": "S4",
-   "start": 23.63,
-   "end": 27.88
+   "start": 23.99,
+   "end": 28.24
   },
   {
    "id": "S5",
-   "start": 27.88,
-   "end": 46.22
+   "start": 28.24,
+   "end": 47.59
   },
   {
    "id": "S6",
-   "start": 46.22,
-   "end": 50.54
+   "start": 47.59,
+   "end": 52.18
   },
   {
    "id": "S7",
-   "start": 50.54,
-   "end": 64.18
+   "start": 52.18,
+   "end": 66.08
   },
   {
    "id": "S8",
-   "start": 64.18,
-   "end": 70.98
+   "start": 66.08,
+   "end": 72.91
   }
  ],
  "words": [
   {
    "word": "Want",
    "start": 0.12,
-   "end": 0.378
+   "end": 0.383
   },
   {
    "word": "to",
-   "start": 0.391,
-   "end": 0.563
+   "start": 0.397,
+   "end": 0.573
   },
   {
    "word": "start",
-   "start": 0.572,
-   "end": 0.916
+   "start": 0.582,
+   "end": 0.933
   },
   {
    "word": "a",
-   "start": 0.934,
-   "end": 1.105
+   "start": 0.952,
+   "end": 1.127
   },
   {
    "word": "business",
-   "start": 1.114,
-   "end": 1.458
+   "start": 1.136,
+   "end": 1.488
   },
   {
    "word": "with",
-   "start": 1.476,
-   "end": 1.648
+   "start": 1.506,
+   "end": 1.682
   },
   {
    "word": "zero",
-   "start": 1.657,
-   "end": 2.0
+   "start": 1.691,
+   "end": 2.042
   },
   {
    "word": "dollars?",
-   "start": 2.018,
-   "end": 2.362
+   "start": 2.06,
+   "end": 2.412
   },
   {
    "word": "Here's",
-   "start": 2.6,
-   "end": 2.892
+   "start": 2.65,
+   "end": 2.928
   },
   {
    "word": "the",
-   "start": 2.907,
-   "end": 3.053
+   "start": 2.943,
+   "end": 3.082
   },
   {
    "word": "three-step",
-   "start": 3.06,
-   "end": 3.595
+   "start": 3.09,
+   "end": 3.6
   },
   {
    "word": "plan,",
-   "start": 3.623,
-   "end": 3.915
+   "start": 3.627,
+   "end": 3.905
   },
   {
    "word": "and",
-   "start": 4.23,
-   "end": 4.404
+   "start": 4.26,
+   "end": 4.442
   },
   {
    "word": "Claude",
-   "start": 4.414,
-   "end": 4.719
+   "start": 4.452,
+   "end": 4.771
   },
   {
    "word": "Code",
-   "start": 4.735,
-   "end": 4.996
+   "start": 4.787,
+   "end": 5.061
   },
   {
    "word": "does",
-   "start": 5.01,
-   "end": 5.228
+   "start": 5.075,
+   "end": 5.303
   },
   {
    "word": "the",
-   "start": 5.24,
-   "end": 5.371
+   "start": 5.315,
+   "end": 5.452
   },
   {
    "word": "heavy",
-   "start": 5.377,
-   "end": 5.639
+   "start": 5.459,
+   "end": 5.732
   },
   {
    "word": "lifting.",
-   "start": 5.653,
-   "end": 6.002
+   "start": 5.746,
+   "end": 6.111
   },
   {
    "word": "Step",
-   "start": 6.59,
-   "end": 6.953
+   "start": 6.7,
+   "end": 7.073
   },
   {
    "word": "one.",
-   "start": 6.972,
-   "end": 7.274
+   "start": 7.093,
+   "end": 7.404
   },
   {
    "word": "Find",
-   "start": 7.51,
-   "end": 7.827
+   "start": 7.64,
+   "end": 7.957
   },
   {
    "word": "something",
-   "start": 7.843,
-   "end": 8.205
+   "start": 7.973,
+   "end": 8.335
   },
   {
    "word": "people",
-   "start": 8.224,
-   "end": 8.586
+   "start": 8.354,
+   "end": 8.716
   },
   {
    "word": "already",
-   "start": 8.605,
-   "end": 9.012
+   "start": 8.735,
+   "end": 9.142
   },
   {
    "word": "pay",
-   "start": 9.034,
-   "end": 9.26
+   "start": 9.164,
+   "end": 9.39
   },
   {
    "word": "for.",
-   "start": 9.272,
-   "end": 9.498
+   "start": 9.402,
+   "end": 9.628
   },
   {
    "word": "Look",
-   "start": 10.08,
-   "end": 10.327
+   "start": 10.21,
+   "end": 10.458
   },
   {
    "word": "for",
-   "start": 10.34,
-   "end": 10.587
+   "start": 10.471,
+   "end": 10.719
   },
   {
    "word": "tools",
-   "start": 10.6,
-   "end": 10.946
+   "start": 10.732,
+   "end": 11.078
   },
   {
    "word": "local",
-   "start": 10.964,
-   "end": 11.359
+   "start": 11.097,
+   "end": 11.493
   },
   {
    "word": "businesses",
-   "start": 11.38,
-   "end": 11.874
+   "start": 11.514,
+   "end": 12.009
   },
   {
    "word": "pay",
-   "start": 11.9,
-   "end": 12.147
+   "start": 12.035,
+   "end": 12.283
   },
   {
    "word": "for",
-   "start": 12.16,
-   "end": 12.407
+   "start": 12.296,
+   "end": 12.544
   },
   {
    "word": "every",
-   "start": 12.42,
-   "end": 12.716
+   "start": 12.557,
+   "end": 12.854
   },
   {
    "word": "single",
-   "start": 12.732,
-   "end": 13.127
+   "start": 12.87,
+   "end": 13.266
   },
   {
    "word": "month.",
-   "start": 13.148,
-   "end": 13.444
+   "start": 13.287,
+   "end": 13.584
   },
   {
    "word": "Booking,",
-   "start": 13.68,
-   "end": 14.107
+   "start": 13.82,
+   "end": 14.143
   },
   {
    "word": "invoicing,",
-   "start": 14.25,
-   "end": 14.791
+   "start": 14.26,
+   "end": 14.877
   },
   {
    "word": "loyalty",
-   "start": 14.98,
-   "end": 15.493
+   "start": 14.91,
+   "end": 15.458
   },
   {
    "word": "cards.",
-   "start": 15.52,
-   "end": 15.976
+   "start": 15.487,
+   "end": 15.974
   },
   {
    "word": "If",
    "start": 16.22,
-   "end": 16.364
+   "end": 16.367
   },
   {
    "word": "people",
-   "start": 16.371,
-   "end": 16.754
+   "start": 16.375,
+   "end": 16.768
   },
   {
    "word": "pay",
-   "start": 16.775,
-   "end": 17.014
+   "start": 16.788,
+   "end": 17.034
   },
   {
    "word": "monthly,",
-   "start": 17.027,
-   "end": 17.41
+   "start": 17.047,
+   "end": 17.439
   },
   {
    "word": "the",
-   "start": 17.71,
-   "end": 17.865
+   "start": 17.75,
+   "end": 17.916
   },
   {
    "word": "demand",
-   "start": 17.873,
-   "end": 18.285
+   "start": 17.924,
+   "end": 18.366
   },
   {
    "word": "is",
-   "start": 18.307,
-   "end": 18.462
+   "start": 18.389,
+   "end": 18.555
   },
   {
    "word": "real.",
-   "start": 18.47,
-   "end": 18.831
+   "start": 18.563,
+   "end": 18.95
   },
   {
    "word": "And",
-   "start": 19.07,
-   "end": 19.243
+   "start": 19.19,
+   "end": 19.376
   },
   {
    "word": "most",
-   "start": 19.252,
-   "end": 19.555
+   "start": 19.386,
+   "end": 19.712
   },
   {
    "word": "people",
-   "start": 19.57,
-   "end": 19.916
+   "start": 19.729,
+   "end": 20.101
   },
   {
    "word": "can't",
-   "start": 19.934,
-   "end": 20.194
+   "start": 20.121,
+   "end": 20.4
   },
   {
    "word": "build",
-   "start": 20.207,
-   "end": 20.467
+   "start": 20.415,
+   "end": 20.694
   },
   {
    "word": "software,",
-   "start": 20.48,
-   "end": 20.869
+   "start": 20.709,
+   "end": 21.128
   },
   {
    "word": "so",
-   "start": 21.17,
-   "end": 21.382
+   "start": 21.44,
+   "end": 21.657
   },
   {
    "word": "they",
-   "start": 21.393,
-   "end": 21.563
+   "start": 21.669,
+   "end": 21.843
   },
   {
    "word": "never",
-   "start": 21.571,
-   "end": 21.826
+   "start": 21.852,
+   "end": 22.113
   },
   {
    "word": "touch",
-   "start": 21.839,
-   "end": 22.093
+   "start": 22.127,
+   "end": 22.387
   },
   {
    "word": "this.",
-   "start": 22.107,
-   "end": 22.319
+   "start": 22.401,
+   "end": 22.619
   },
   {
    "word": "That's",
-   "start": 22.55,
-   "end": 22.859
+   "start": 22.85,
+   "end": 23.184
   },
   {
    "word": "the",
-   "start": 22.876,
-   "end": 23.03
+   "start": 23.201,
+   "end": 23.368
   },
   {
    "word": "gap.",
-   "start": 23.039,
-   "end": 23.296
+   "start": 23.377,
+   "end": 23.655
   },
   {
    "word": "Step",
-   "start": 23.88,
-   "end": 24.258
+   "start": 24.24,
+   "end": 24.629
   },
   {
    "word": "two.",
-   "start": 24.278,
-   "end": 24.593
+   "start": 24.649,
+   "end": 24.973
   },
   {
    "word": "Build",
-   "start": 24.83,
-   "end": 25.095
+   "start": 25.21,
+   "end": 25.507
   },
   {
    "word": "your",
-   "start": 25.109,
-   "end": 25.286
+   "start": 25.523,
+   "end": 25.721
   },
   {
    "word": "own",
-   "start": 25.295,
-   "end": 25.516
+   "start": 25.732,
+   "end": 25.98
   },
   {
    "word": "version.",
-   "start": 25.528,
-   "end": 25.881
+   "start": 25.993,
+   "end": 26.389
   },
   {
    "word": "Open",
-   "start": 28.13,
-   "end": 28.496
+   "start": 28.49,
+   "end": 28.872
   },
   {
    "word": "Claude",
-   "start": 28.515,
-   "end": 28.881
+   "start": 28.892,
+   "end": 29.275
   },
   {
    "word": "Code.",
-   "start": 28.9,
-   "end": 29.213
+   "start": 29.295,
+   "end": 29.623
   },
   {
    "word": "Describe",
-   "start": 29.45,
-   "end": 29.936
+   "start": 29.86,
+   "end": 30.363
   },
   {
    "word": "the",
-   "start": 29.962,
-   "end": 30.107
+   "start": 30.39,
+   "end": 30.541
   },
   {
    "word": "problem",
-   "start": 30.115,
-   "end": 30.601
+   "start": 30.549,
+   "end": 31.052
   },
   {
    "word": "the",
-   "start": 30.627,
-   "end": 30.773
+   "start": 31.079,
+   "end": 31.23
   },
   {
    "word": "app",
-   "start": 30.78,
-   "end": 30.975
+   "start": 31.238,
+   "end": 31.439
   },
   {
    "word": "solves",
-   "start": 30.985,
-   "end": 31.374
+   "start": 31.45,
+   "end": 31.853
   },
   {
    "word": "and",
-   "start": 31.394,
-   "end": 31.589
+   "start": 31.874,
+   "end": 32.075
   },
   {
    "word": "list",
-   "start": 31.599,
-   "end": 31.891
+   "start": 32.086,
+   "end": 32.388
   },
   {
    "word": "the",
-   "start": 31.906,
-   "end": 32.052
+   "start": 32.404,
+   "end": 32.555
   },
   {
    "word": "features.",
-   "start": 32.059,
-   "end": 32.497
+   "start": 32.563,
+   "end": 33.016
   },
   {
    "word": "Tell",
-   "start": 32.74,
-   "end": 32.943
+   "start": 33.26,
+   "end": 33.453
   },
   {
    "word": "it",
-   "start": 32.954,
-   "end": 33.076
+   "start": 33.463,
+   "end": 33.578
   },
   {
    "word": "to",
-   "start": 33.082,
-   "end": 33.245
+   "start": 33.584,
+   "end": 33.739
   },
   {
    "word": "build",
-   "start": 33.253,
-   "end": 33.497
+   "start": 33.747,
+   "end": 33.978
   },
   {
    "word": "an",
-   "start": 33.51,
-   "end": 33.632
+   "start": 33.99,
+   "end": 34.106
   },
   {
    "word": "original",
-   "start": 33.638,
-   "end": 34.085
+   "start": 34.112,
+   "end": 34.535
   },
   {
    "word": "app,",
-   "start": 34.109,
-   "end": 34.271
+   "start": 34.558,
+   "end": 34.712
   },
   {
    "word": "with",
-   "start": 34.48,
-   "end": 34.64
+   "start": 34.92,
+   "end": 35.094
   },
   {
    "word": "your",
-   "start": 34.648,
-   "end": 34.808
+   "start": 35.103,
+   "end": 35.277
   },
   {
    "word": "own",
-   "start": 34.817,
-   "end": 35.017
+   "start": 35.286,
+   "end": 35.504
   },
   {
    "word": "code,",
-   "start": 35.027,
-   "end": 35.267
+   "start": 35.515,
+   "end": 35.776
   },
   {
    "word": "your",
-   "start": 35.58,
-   "end": 35.728
+   "start": 36.07,
+   "end": 36.26
   },
   {
    "word": "own",
-   "start": 35.735,
-   "end": 35.92
+   "start": 36.27,
+   "end": 36.506
   },
   {
    "word": "design,",
-   "start": 35.93,
-   "end": 36.225
+   "start": 36.519,
+   "end": 36.898
   },
   {
    "word": "your",
-   "start": 36.241,
-   "end": 36.425
+   "start": 36.918,
+   "end": 37.111
   },
   {
    "word": "own",
-   "start": 36.435,
-   "end": 36.666
+   "start": 37.121,
+   "end": 37.362
   },
   {
    "word": "name.",
-   "start": 36.678,
-   "end": 36.955
+   "start": 37.375,
+   "end": 37.665
   },
   {
    "word": "Not",
-   "start": 37.19,
-   "end": 37.462
+   "start": 37.9,
+   "end": 38.202
   },
   {
    "word": "a",
-   "start": 37.476,
-   "end": 37.657
+   "start": 38.218,
+   "end": 38.419
   },
   {
    "word": "copy.",
-   "start": 37.666,
-   "end": 37.983
+   "start": 38.429,
+   "end": 38.781
   },
   {
    "word": "Then",
-   "start": 38.22,
-   "end": 38.472
+   "start": 39.02,
+   "end": 39.295
   },
   {
    "word": "say:",
-   "start": 38.485,
-   "end": 38.737
+   "start": 39.31,
+   "end": 39.585
   },
   {
    "word": "customize",
-   "start": 39.06,
-   "end": 39.576
+   "start": 39.91,
+   "end": 40.447
   },
   {
    "word": "it",
-   "start": 39.603,
-   "end": 39.732
+   "start": 40.476,
+   "end": 40.61
   },
   {
    "word": "for",
-   "start": 39.739,
-   "end": 39.953
+   "start": 40.617,
+   "end": 40.841
   },
   {
    "word": "one",
-   "start": 39.965,
-   "end": 40.18
+   "start": 40.853,
+   "end": 41.077
   },
   {
    "word": "type",
-   "start": 40.191,
-   "end": 40.449
+   "start": 41.089,
+   "end": 41.357
   },
   {
    "word": "of",
-   "start": 40.462,
-   "end": 40.591
+   "start": 41.371,
+   "end": 41.506
   },
   {
    "word": "business,",
-   "start": 40.598,
-   "end": 40.942
+   "start": 41.513,
+   "end": 41.871
   },
   {
    "word": "like",
-   "start": 41.03,
-   "end": 41.298
+   "start": 42.03,
+   "end": 42.318
   },
   {
    "word": "barbershops.",
-   "start": 41.312,
-   "end": 41.937
+   "start": 42.333,
+   "end": 43.005
   },
   {
    "word": "In",
-   "start": 42.19,
-   "end": 42.373
+   "start": 43.26,
+   "end": 43.458
   },
   {
    "word": "an",
-   "start": 42.383,
-   "end": 42.52
+   "start": 43.468,
+   "end": 43.617
   },
   {
    "word": "afternoon",
-   "start": 42.527,
-   "end": 43.031
+   "start": 43.625,
+   "end": 44.169
   },
   {
    "word": "you",
-   "start": 43.057,
-   "end": 43.24
+   "start": 44.197,
+   "end": 44.395
   },
   {
    "word": "can",
-   "start": 43.25,
-   "end": 43.479
+   "start": 44.406,
+   "end": 44.653
   },
   {
    "word": "have",
-   "start": 43.491,
-   "end": 43.72
+   "start": 44.666,
+   "end": 44.913
   },
   {
    "word": "a",
-   "start": 43.732,
-   "end": 43.915
+   "start": 44.926,
+   "end": 45.124
   },
   {
    "word": "working",
-   "start": 43.925,
-   "end": 44.291
+   "start": 45.135,
+   "end": 45.531
   },
   {
    "word": "app",
-   "start": 44.31,
-   "end": 44.493
+   "start": 45.551,
+   "end": 45.749
   },
   {
    "word": "with",
-   "start": 44.503,
-   "end": 44.686
+   "start": 45.76,
+   "end": 45.958
   },
   {
    "word": "booking",
-   "start": 44.695,
-   "end": 45.016
+   "start": 45.968,
+   "end": 46.314
   },
   {
    "word": "and",
-   "start": 45.033,
-   "end": 45.216
+   "start": 46.333,
+   "end": 46.53
   },
   {
    "word": "a",
-   "start": 45.225,
-   "end": 45.409
+   "start": 46.541,
+   "end": 46.739
   },
   {
    "word": "dashboard.",
-   "start": 45.418,
-   "end": 45.876
+   "start": 46.749,
+   "end": 47.244
   },
   {
    "word": "Step",
-   "start": 46.47,
-   "end": 46.831
+   "start": 47.84,
+   "end": 48.22
   },
   {
    "word": "three.",
-   "start": 46.85,
-   "end": 47.211
+   "start": 48.24,
+   "end": 48.62
   },
   {
    "word": "Sell",
-   "start": 47.45,
-   "end": 47.699
+   "start": 48.86,
+   "end": 49.125
   },
   {
    "word": "it",
-   "start": 47.712,
-   "end": 47.861
+   "start": 49.139,
+   "end": 49.299
   },
   {
    "word": "locally.",
-   "start": 47.869,
-   "end": 48.316
+   "start": 49.307,
+   "end": 49.785
   },
   {
    "word": "This",
-   "start": 48.56,
-   "end": 48.779
+   "start": 50.03,
+   "end": 50.271
   },
   {
    "word": "is",
-   "start": 48.791,
-   "end": 48.922
+   "start": 50.284,
+   "end": 50.429
   },
   {
    "word": "the",
-   "start": 48.929,
-   "end": 49.06
+   "start": 50.437,
+   "end": 50.582
   },
   {
    "word": "part",
-   "start": 49.067,
-   "end": 49.374
+   "start": 50.589,
+   "end": 50.927
   },
   {
    "word": "that",
-   "start": 49.39,
-   "end": 49.609
+   "start": 50.945,
+   "end": 51.186
   },
   {
    "word": "makes",
-   "start": 49.621,
-   "end": 49.927
+   "start": 51.199,
+   "end": 51.537
   },
   {
    "word": "money.",
-   "start": 49.943,
-   "end": 50.206
+   "start": 51.555,
+   "end": 51.845
   },
   {
    "word": "Walk",
-   "start": 50.79,
-   "end": 51.075
+   "start": 52.43,
+   "end": 52.561
   },
   {
    "word": "in,",
-   "start": 51.09,
-   "end": 51.28
+   "start": 52.568,
+   "end": 52.655
   },
   {
    "word": "or",
-   "start": 51.29,
-   "end": 51.451
+   "start": 52.73,
+   "end": 52.918
   },
   {
    "word": "call",
-   "start": 51.46,
-   "end": 51.702
+   "start": 52.928,
+   "end": 53.21
   },
   {
    "word": "a",
-   "start": 51.715,
-   "end": 51.876
+   "start": 53.224,
+   "end": 53.412
   },
   {
    "word": "barbershop",
-   "start": 51.885,
-   "end": 52.41
+   "start": 53.422,
+   "end": 54.033
   },
   {
    "word": "and",
-   "start": 52.437,
-   "end": 52.599
+   "start": 54.065,
+   "end": 54.253
   },
   {
    "word": "say:",
-   "start": 52.607,
-   "end": 52.809
+   "start": 54.263,
+   "end": 54.498
   },
   {
    "word": "I",
-   "start": 53.27,
-   "end": 53.44
+   "start": 55.01,
+   "end": 55.173
   },
   {
    "word": "built",
-   "start": 53.449,
-   "end": 53.705
+   "start": 55.181,
+   "end": 55.426
   },
   {
    "word": "a",
-   "start": 53.719,
-   "end": 53.889
+   "start": 55.439,
+   "end": 55.601
   },
   {
    "word": "simpler",
-   "start": 53.898,
-   "end": 54.239
+   "start": 55.61,
+   "end": 55.936
   },
   {
    "word": "booking",
-   "start": 54.257,
-   "end": 54.555
+   "start": 55.953,
+   "end": 56.238
   },
   {
    "word": "tool.",
-   "start": 54.571,
-   "end": 54.827
+   "start": 56.253,
+   "end": 56.497
   },
   {
    "word": "It",
-   "start": 55.06,
-   "end": 55.192
+   "start": 56.73,
+   "end": 56.862
   },
   {
    "word": "costs",
-   "start": 55.199,
-   "end": 55.507
+   "start": 56.869,
+   "end": 57.177
   },
   {
    "word": "less",
-   "start": 55.523,
-   "end": 55.743
+   "start": 57.193,
+   "end": 57.413
   },
   {
    "word": "than",
-   "start": 55.755,
-   "end": 55.931
+   "start": 57.425,
+   "end": 57.601
   },
   {
    "word": "what",
-   "start": 55.94,
-   "end": 56.16
+   "start": 57.61,
+   "end": 57.83
   },
   {
    "word": "you",
-   "start": 56.172,
-   "end": 56.348
+   "start": 57.842,
+   "end": 58.018
   },
   {
    "word": "pay",
-   "start": 56.357,
-   "end": 56.577
+   "start": 58.027,
+   "end": 58.247
   },
   {
    "word": "now,",
-   "start": 56.588,
-   "end": 56.808
+   "start": 58.258,
+   "end": 58.478
   },
   {
    "word": "and",
-   "start": 57.16,
-   "end": 57.325
+   "start": 58.84,
+   "end": 59.012
   },
   {
    "word": "I",
-   "start": 57.334,
-   "end": 57.499
+   "start": 59.022,
+   "end": 59.194
   },
   {
    "word": "handle",
-   "start": 57.508,
-   "end": 57.838
+   "start": 59.203,
+   "end": 59.548
   },
   {
    "word": "the",
-   "start": 57.855,
-   "end": 57.979
+   "start": 59.566,
+   "end": 59.696
   },
   {
    "word": "setup.",
-   "start": 57.986,
-   "end": 58.275
+   "start": 59.702,
+   "end": 60.004
   },
   {
    "word": "One",
-   "start": 58.51,
-   "end": 58.779
+   "start": 60.24,
+   "end": 60.528
   },
   {
    "word": "monthly",
-   "start": 58.793,
-   "end": 59.224
+   "start": 60.543,
+   "end": 61.003
   },
   {
    "word": "fee.",
-   "start": 59.247,
-   "end": 59.516
+   "start": 61.027,
+   "end": 61.315
   },
   {
    "word": "If",
-   "start": 59.75,
-   "end": 59.903
+   "start": 61.55,
+   "end": 61.708
   },
   {
    "word": "they",
-   "start": 59.911,
-   "end": 60.114
+   "start": 61.716,
+   "end": 61.926
   },
   {
    "word": "say",
-   "start": 60.125,
-   "end": 60.379
+   "start": 61.937,
+   "end": 62.2
   },
   {
    "word": "yes,",
-   "start": 60.392,
-   "end": 60.647
+   "start": 62.214,
+   "end": 62.476
   },
   {
    "word": "that's",
-   "start": 60.84,
-   "end": 61.107
+   "start": 62.73,
+   "end": 63.006
   },
   {
    "word": "your",
-   "start": 61.121,
-   "end": 61.3
+   "start": 63.021,
+   "end": 63.205
   },
   {
    "word": "first",
-   "start": 61.309,
-   "end": 61.621
+   "start": 63.215,
+   "end": 63.537
   },
   {
    "word": "customer.",
-   "start": 61.638,
-   "end": 62.039
+   "start": 63.554,
+   "end": 63.968
   },
   {
    "word": "Then",
-   "start": 62.28,
-   "end": 62.494
+   "start": 64.21,
+   "end": 64.42
   },
   {
    "word": "repeat",
-   "start": 62.506,
-   "end": 62.849
+   "start": 64.431,
+   "end": 64.768
   },
   {
    "word": "on",
-   "start": 62.867,
-   "end": 63.038
+   "start": 64.786,
+   "end": 64.954
   },
   {
    "word": "the",
-   "start": 63.047,
-   "end": 63.176
+   "start": 64.963,
+   "end": 65.089
   },
   {
    "word": "next",
-   "start": 63.183,
-   "end": 63.483
+   "start": 65.096,
+   "end": 65.39
   },
   {
    "word": "street.",
-   "start": 63.499,
-   "end": 63.842
+   "start": 65.406,
+   "end": 65.742
   },
   {
    "word": "Want",
-   "start": 64.43,
-   "end": 64.679
+   "start": 66.33,
+   "end": 66.581
   },
   {
    "word": "the",
-   "start": 64.692,
-   "end": 64.816
+   "start": 66.594,
+   "end": 66.72
   },
   {
    "word": "exact",
-   "start": 64.822,
-   "end": 65.154
+   "start": 66.726,
+   "end": 67.061
   },
   {
    "word": "prompt",
-   "start": 65.171,
-   "end": 65.544
+   "start": 67.079,
+   "end": 67.455
   },
   {
    "word": "and",
-   "start": 65.564,
-   "end": 65.73
+   "start": 67.475,
+   "end": 67.642
   },
   {
    "word": "my",
-   "start": 65.738,
-   "end": 65.946
+   "start": 67.651,
+   "end": 67.86
   },
   {
    "word": "free",
-   "start": 65.957,
-   "end": 66.205
+   "start": 67.871,
+   "end": 68.123
   },
   {
    "word": "guide?",
-   "start": 66.218,
-   "end": 66.467
+   "start": 68.136,
+   "end": 68.387
   },
   {
    "word": "Comment",
-   "start": 66.7,
-   "end": 67.127
+   "start": 68.62,
+   "end": 69.089
   },
   {
    "word": "COPY",
-   "start": 67.15,
-   "end": 67.482
+   "start": 69.114,
+   "end": 69.479
   },
   {
    "word": "and",
-   "start": 67.5,
-   "end": 67.69
+   "start": 69.498,
+   "end": 69.707
   },
   {
    "word": "I'll",
-   "start": 67.7,
-   "end": 67.89
+   "start": 69.718,
+   "end": 69.927
   },
   {
    "word": "send",
-   "start": 67.9,
-   "end": 68.185
+   "start": 69.938,
+   "end": 70.25
   },
   {
    "word": "it",
-   "start": 68.2,
-   "end": 68.342
+   "start": 70.267,
+   "end": 70.423
   },
   {
    "word": "to",
-   "start": 68.35,
-   "end": 68.54
+   "start": 70.432,
+   "end": 70.64
   },
   {
    "word": "your",
-   "start": 68.55,
-   "end": 68.74
+   "start": 70.651,
+   "end": 70.86
   },
   {
    "word": "DMs.",
-   "start": 68.75,
-   "end": 69.13
+   "start": 70.871,
+   "end": 71.288
   }
  ]
 }
