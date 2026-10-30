@@ -3,10 +3,10 @@
     "fps": 30,
     "width": 1080,
     "height": 1920,
-    "duration": 71,
+    "duration": 63,
     "wordsPerSecond": 2.7,
     "handle": "@yourhandle",
-    "notes": "All times are seconds. Scene start/end are absolute; everything inside params is relative to the scene start. Captions come from 'vo' word for word."
+    "notes": "All times are seconds. Scene start/end are absolute; everything inside params is relative to the scene start. Captions come from 'vo' word for word. Set \"disabled\": true on a scene to drop it (S8 CTA is disabled)."
   },
   "scenes": [
     {
@@ -247,7 +247,8 @@
           "state": "celebrate",
           "dur": 1.6
         }
-      ]
+      ],
+      "disabled": true
     }
   ]
 }

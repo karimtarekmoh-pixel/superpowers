@@ -5,7 +5,8 @@ window.Visuals = (() => {
   const P = Props;
   // Card entrance (0.45s rise) and clean exit 0.4s before the scene ends.
   const cardIn = (tl, card, at = 0) => tl.from(card, { y: "8rem", autoAlpha: 0, scale: 0.96, duration: 0.45, ease: "power3.out" }, at);
-  const cardOut = (tl, card, len) => tl.to(card, { y: "-1.5rem", autoAlpha: 0, duration: 0.35, ease: "power2.in" }, len - 0.4);
+  let holdLast = false;
+  const cardOut = (tl, card, len) => holdLast ? tl : tl.to(card, { y: "-1.5rem", autoAlpha: 0, duration: 0.35, ease: "power2.in" }, len - 0.4);
   // Micro-motion: slow 1.00 -> 1.04 drift so nothing is ever fully static.
   const drift = (tl, target, len, amount = 0.04) => tl.fromTo(target, { scale: 1 }, { scale: 1 + amount, duration: len, ease: "none", immediateRender: false }, 0);
   // Exit a group of elements together (used when a scene switches phase).
@@ -331,5 +332,7 @@ window.Visuals = (() => {
     return tl;
   };
 
-  return { hook, step1Title, step1Detail, step2Title, step2Detail, step3Title, step3Detail, cta, placeholder };
+  const all = { hook, step1Title, step1Detail, step2Title, step2Detail, step3Title, step3Detail, cta, placeholder };
+  // Wrap builders so the last enabled scene skips its exit animation.
+  return Object.fromEntries(Object.entries(all).map(([k, fn]) => [k, (node, sc, len) => { holdLast = !!sc.isLast; const tl = fn(node, sc, len); holdLast = false; return tl; }]));
 })();

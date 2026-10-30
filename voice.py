@@ -178,7 +178,7 @@ def main():
     a = ap.parse_args()
     ensure_models()
     k = Kokoro(os.path.join(MODELS, "kokoro-v1.0.onnx"), os.path.join(MODELS, "voices-v1.0.bin"))
-    scenes = json.load(open(os.path.join(ROOT, "scenes.json")))["scenes"]
+    scenes = [s for s in json.load(open(os.path.join(ROOT, "scenes.json")))["scenes"] if not s.get("disabled")]
 
     # Natural speed unless the reel falls outside 65-75s; then nudge toward --target.
     voice = resolve_voice(k, a.voice)

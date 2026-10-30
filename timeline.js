@@ -3,7 +3,9 @@
 (async () => {
   const q = new URLSearchParams(location.search);
   const data = await (await fetch("scenes.json")).json();
-  const { meta, scenes } = data;
+  const { meta } = data;
+  const scenes = data.scenes.filter((s) => !s.disabled);
+  scenes[scenes.length - 1].isLast = true; // the final scene holds instead of exiting
   window.__meta = meta;
   const master = gsap.timeline({ paused: true });
   const hasAudio = q.has("audio");
