@@ -22,7 +22,7 @@ window.Coins = (container, start, { x, y, stacks = [5, 7, 4], stagger = 0.16, sp
     const c = R.el(wrap, "coin", coinSVG(top));
     const cx = (s - (stacks.length - 1) / 2) * spread;
     Object.assign(c.style, { width: "17rem", height: "7.8rem", left: `${cx - 8.5}rem`, top: `${-k * 1.9 - 7.8}rem`, zIndex: 10 + k });
-    gsap.set(c, { y: "-70rem", rotation: (rand() - 0.5) * 30, autoAlpha: 0 });
+    gsap.set(c, { y: "-42rem", rotation: (rand() - 0.5) * 30, autoAlpha: 0 });
     const t = start + i * stagger;
     tl.to(c, { autoAlpha: 1, duration: 0.05 }, t)
       .to(c, { y: 0, rotation: (rand() - 0.5) * 4, duration: 0.45, ease: "bounce.out" }, t);
