@@ -1,6 +1,7 @@
 """Generate the voiceover with Kokoro (open-source, Apache-2.0) and word timings.
 
     python voice.py [--voice af_heart] [--target 71]
+    python voice.py --voice bm_george:0.6,bm_lewis:0.4 --lang en-gb --fx ai --speed 0.95   # British "AI assistant" style
 
 Writes:
   audio/voiceover.mp3   the full voiceover, scenes placed back to back
@@ -38,6 +39,21 @@ TAIL = 0.32        # after a scene's last word, before the cut
 END_HOLD = 1.6     # CTA end card stays up after the last word
 MIN_FRACTION = 0.85  # a scene keeps at least this share of its designed length (scenes.json)
 MIN_SPEED, MAX_SPEED = 0.9, 1.25
+
+# Optional voice treatment. "ai": calm digital-assistant feel (subtle room echo,
+# faint chorus shimmer, a little presence) — not a copy of any real person.
+FX = {
+    "none": "",
+    "ai": "highpass=f=70,equalizer=f=250:t=q:w=1:g=-2,equalizer=f=3500:t=q:w=1.2:g=2.5,aecho=0.85:0.5:23|41:0.14|0.08,chorus=0.7:0.9:22:0.18:0.25:1.6,",
+}
+
+
+def resolve_voice(k, spec):
+    """'am_michael' or a blend like 'bm_george:0.6,bm_lewis:0.4'."""
+    if ":" not in spec:
+        return spec
+    parts = [p.split(":") for p in spec.split(",")]
+    return sum(float(w) * k.get_voice_style(n) for n, w in parts)
 
 
 def ensure_models():
@@ -86,11 +102,11 @@ def split_sentences(text):
     return [s for s in re.split(r"(?<=[.?!])\s+", text.strip()) if s]
 
 
-def time_words(k, sentence, x, sr, t0):
+def time_words(k, sentence, x, sr, t0, lang="en-us"):
     """Return [(word, start, end)] for one sentence clip starting at t0."""
     words = sentence.split()
     dur = len(x) / sr
-    weight = [max(1, len(k.tokenizer.phonemize(re.sub(r"[^\w'$]", " ", w), "en-us").replace(" ", ""))) + 1 for w in words]
+    weight = [max(1, len(k.tokenizer.phonemize(re.sub(r"[^\w'$]", " ", w), lang).replace(" ", ""))) + 1 for w in words]
     # Sub-phrases split at commas/colons. For each comma, estimate where it falls
     # (by phoneme share) and snap to the nearest detected pause, keeping order.
     breaks = [i for i, w in enumerate(words[:-1]) if re.search(r"[,:;]$", w)]
@@ -125,7 +141,7 @@ def time_words(k, sentence, x, sr, t0):
     return out
 
 
-def build(k, scenes, voice, speed):
+def build(k, scenes, voice, speed, lang="en-us"):
     sr = 24000
     clips, words, layout = [], [], []
     cursor = 0.0
@@ -134,9 +150,9 @@ def build(k, scenes, voice, speed):
         t = start + (FIRST_LEAD if si == 0 else LEAD)
         scene_audio = []
         for sent in split_sentences(sc["vo"]):
-            x, sr = k.create(sent, voice=voice, speed=speed, lang="en-us")
+            x, sr = k.create(sent, voice=voice, speed=speed, lang=lang)
             x = trim(np.asarray(x, dtype=np.float32), sr)
-            words += time_words(k, sent, x, sr, t)
+            words += time_words(k, sent, x, sr, t, lang)
             scene_audio.append((t, x))
             t += len(x) / sr + SENT_GAP
         end = t - SENT_GAP + (END_HOLD if si == len(scenes) - 1 else TAIL)
@@ -157,17 +173,20 @@ def main():
     ap.add_argument("--voice", default="af_heart")
     ap.add_argument("--target", type=float, default=71.0)
     ap.add_argument("--speed", type=float, default=None)
+    ap.add_argument("--lang", default="en-us", help="en-us or en-gb")
+    ap.add_argument("--fx", default="none", choices=list(FX))
     a = ap.parse_args()
     ensure_models()
     k = Kokoro(os.path.join(MODELS, "kokoro-v1.0.onnx"), os.path.join(MODELS, "voices-v1.0.bin"))
     scenes = json.load(open(os.path.join(ROOT, "scenes.json")))["scenes"]
 
     # Natural speed unless the reel falls outside 65-75s; then nudge toward --target.
+    voice = resolve_voice(k, a.voice)
     speed = a.speed or 1.0
     for attempt in range(4):
-        mix, sr, words, layout, total = build(k, scenes, a.voice, speed)
+        mix, sr, words, layout, total = build(k, scenes, voice, speed, a.lang)
         print(f"speed {speed:.3f} -> {total:.2f}s")
-        if a.speed or 65.5 <= total <= 74.5:
+        if 65.5 <= total <= 74.5:  # --speed is the starting pace; still kept inside 65-75s
             break
         fixed = 0.22 * 20 + 0.25 * 8 + 1.6  # pauses don't scale with speed
         speech = total - fixed
@@ -181,13 +200,15 @@ def main():
     wav = os.path.join(ROOT, "audio", "voiceover.wav")
     sf.write(wav, mix, sr)
     mp3 = os.path.join(ROOT, "audio", "voiceover.mp3")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-af", "loudnorm=I=-14:TP=-1.5:LRA=9", "-ar", "44100", "-b:a", "192k", mp3], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-af", FX[a.fx] + "loudnorm=I=-14:TP=-1.5:LRA=9", "-ar", "48000", "-ac", "2", "-b:a", "192k", mp3], check=True)
 
     tokens = [w for sc in scenes for w in sc["vo"].split()]
     assert [w[0] for w in words] == tokens, "word list does not match scenes.json"
     json.dump(
         {
             "voice": a.voice,
+            "lang": a.lang,
+            "fx": a.fx,
             "speed": round(speed, 3),
             "duration": round(total, 3),
             "scenes": layout,
