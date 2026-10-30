@@ -123,8 +123,8 @@ window.Visuals = (() => {
     Object.assign(gap.style, { border: ".5rem dashed var(--red)", borderRadius: "2.4rem", display: "grid", placeItems: "center", font: "italic 4.6rem/1 var(--serif)", color: "var(--red)" });
     const you = P.place(R.el(inner, "you", "YOU"), 38, 32, 20, 32);
     Object.assign(you.style, { background: "var(--red)", color: "#fff", borderRadius: "2.4rem", display: "grid", placeItems: "center", font: "800 5rem/1 var(--sans)", letterSpacing: ".06em" });
-    tl.from(blockL, { x: "-14rem", autoAlpha: 0, duration: 0.45, ease: "power3.out" }, p.gapAt)
-      .from(blockR, { x: "14rem", autoAlpha: 0, duration: 0.45, ease: "power3.out" }, p.gapAt)
+    tl.from(blockL, { x: "-5rem", autoAlpha: 0, duration: 0.45, ease: "power3.out" }, p.gapAt)
+      .from(blockR, { x: "5rem", autoAlpha: 0, duration: 0.45, ease: "power3.out" }, p.gapAt)
       .from(gap, { scale: 0.7, autoAlpha: 0, duration: 0.4, ease: "back.out(1.6)" }, p.gapAt + 0.3);
     gsap.set(you, { autoAlpha: 0, y: "-30rem" });
     tl.to(you, { autoAlpha: 1, duration: 0.05 }, p.gapAt + 1.0)
@@ -322,6 +322,38 @@ window.Visuals = (() => {
     return tl;
   };
 
+
+  // ---------------- S9 Subscribe ----------------
+  // Generic subscribe button (no platform logo): tapped by a cursor, flips to
+  // "Subscribed", a bell rings.
+  const subscribe = (node, sc, len) => {
+    const p = sc.params;
+    const tl = gsap.timeline();
+    const { card, inner } = makeCard(node);
+    cardIn(tl, card);
+    drift(tl, inner, len, 0.03);
+    headline(tl, inner, "Enjoy the [content]?", { x: 7, y: 11, w: 82, size: 11, at: 0.15 });
+    const btn = P.place(R.el(inner, "subbtn"), 12, 44, 58, 16);
+    Object.assign(btn.style, { borderRadius: "99rem", background: "var(--red)", boxShadow: "var(--shadow)", display: "grid", placeItems: "center", font: "800 6rem/1 var(--sans)", letterSpacing: ".04em", color: "#fff" });
+    btn.innerHTML = '<span class="a" style="grid-area:1/1">SUBSCRIBE</span><span class="b" style="grid-area:1/1;color:var(--ink);display:flex;align-items:center;gap:1.6rem">SUBSCRIBED <svg viewBox="0 0 24 24" width="5rem" height="5rem"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
+    const bell = P.place(R.el(inner, "bell", '<svg viewBox="0 0 48 48" width="100%" height="100%"><path d="M24 6c-7 0-12 5-12 12v9l-4 6h32l-4-6v-9c0-7-5-12-12-12z" fill="#111"/><circle cx="24" cy="38" r="4.5" fill="#111"/><path d="M8 14c1-4 3-7 6-9M40 14c-1-4-3-7-6-9" stroke="#E2342D" stroke-width="3" fill="none" stroke-linecap="round"/></svg>'), 74, 43, 15, 15);
+    const cursor = P.place(R.el(inner, "cur", '<svg viewBox="0 0 40 48" width="100%" height="100%"><path d="M6 4l26 22-12 2 7 14-6 3-7-14-8 8z" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round"/></svg>'), 48, 52, 9, 11);
+    const b = btn.querySelector(".b");
+    gsap.set(b, { autoAlpha: 0 });
+    tl.from(btn, { scale: 0.5, autoAlpha: 0, duration: 0.45, ease: "back.out(1.6)" }, p.btnAt)
+      .from(bell, { scale: 0, duration: 0.4, ease: "back.out(2)" }, p.btnAt + 0.2)
+      .from(cursor, { x: "30rem", y: "30rem", autoAlpha: 0, duration: 0.7, ease: "power3.out" }, p.clickAt - 0.8)
+      .to(cursor, { scale: 0.85, duration: 0.08, yoyo: true, repeat: 1 }, p.clickAt)
+      .to(btn, { scale: 0.94, duration: 0.08, yoyo: true, repeat: 1 }, p.clickAt)
+      .to(btn, { backgroundColor: "#E7E3DA", duration: 0.2 }, p.clickAt + 0.08)
+      .to(btn.querySelector(".a"), { autoAlpha: 0, duration: 0.1 }, p.clickAt + 0.08)
+      .to(b, { autoAlpha: 1, duration: 0.15 }, p.clickAt + 0.12)
+      .to(bell, { rotation: 16, transformOrigin: "50% 10%", duration: 0.09, yoyo: true, repeat: 7, ease: "sine.inOut" }, p.bellAt)
+      .to(cursor, { x: "14rem", y: "12rem", autoAlpha: 0, duration: 0.5, ease: "power2.in" }, p.clickAt + 0.5);
+    cardOut(tl, card, len);
+    return tl;
+  };
+
   // Placeholder for any scene without a builder.
   const placeholder = (node, sc, len) => {
     const tl = gsap.timeline();
@@ -332,7 +364,7 @@ window.Visuals = (() => {
     return tl;
   };
 
-  const all = { hook, step1Title, step1Detail, step2Title, step2Detail, step3Title, step3Detail, cta, placeholder };
+  const all = { hook, step1Title, step1Detail, step2Title, step2Detail, step3Title, step3Detail, cta, subscribe, placeholder };
   // Wrap builders so the last enabled scene skips its exit animation.
   return Object.fromEntries(Object.entries(all).map(([k, fn]) => [k, (node, sc, len) => { holdLast = !!sc.isLast; const tl = fn(node, sc, len); holdLast = false; return tl; }]));
 })();

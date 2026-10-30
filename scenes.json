@@ -3,7 +3,7 @@
     "fps": 30,
     "width": 1080,
     "height": 1920,
-    "duration": 63,
+    "duration": 66.6,
     "wordsPerSecond": 2.7,
     "handle": "@yourhandle",
     "notes": "All times are seconds. Scene start/end are absolute; everything inside params is relative to the scene start. Captions come from 'vo' word for word. Set \"disabled\": true on a scene to drop it (S8 CTA is disabled)."
@@ -249,6 +249,27 @@
         }
       ],
       "disabled": true
+    },
+    {
+      "id": "S9",
+      "name": "Subscribe",
+      "start": 63,
+      "end": 66.6,
+      "layout": "card",
+      "visual": "subscribe",
+      "vo": "If you enjoy my content, drop a sub.",
+      "params": {
+        "btnAt": 0.3,
+        "clickAt": 1.7,
+        "bellAt": 2.0
+      },
+      "mascot": [
+        {
+          "at": 1.7,
+          "state": "celebrate",
+          "dur": 1.6
+        }
+      ]
     }
   ]
 }
