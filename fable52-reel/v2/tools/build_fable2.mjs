@@ -30,8 +30,6 @@ const SHIELD = `<svg width="92" height="92" viewBox="0 0 24 24"><path d="M12 2 L
 const hline = (id, d, col, len = 1) => `<path id="${id}" d="${d}" pathLength="1" stroke="${col}" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" stroke-dashoffset="1"/>`;
 const drawAt = (id, t, d = 0.45) => js.push(`tl.to("#${id}",{strokeDashoffset:0,duration:${d},ease:"power2.out"},${f3(t)});`);
 
-html.push(`<div id="wm" style="position:absolute;left:90px;top:640px;width:900px;height:900px;opacity:.05">${logo("", 900)}</div>`);
-js.push(`tl.to("#wm",{rotation:360,duration:${DUR * 2},ease:"none"},0);`);
 html.push(`<div id="lab">FABLE 5.2 · FALLBACK</div>`);
 
 // ================= s1 HOOK: big Claude mark, "ASK THE WRONG QUESTION", then a different model appears
