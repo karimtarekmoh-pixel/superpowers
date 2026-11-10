@@ -1,0 +1,61 @@
+{
+ "handle": "@axiomallai",
+ "accentWords": [
+  "fable",
+  "wrong",
+  "different",
+  "cybersecurity",
+  "biology",
+  "first",
+  "fallback",
+  "model",
+  "save",
+  "follow",
+  "notice",
+  "switch"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "text": "Ask Claude Code's most capable model the wrong question, and your request can be handed to a different model.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s2",
+   "text": "Fable five point two runs with safety classifiers. They mostly watch for two things: cybersecurity, and biology.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s3",
+   "text": "When one flags your request, Claude Code doesn't stop. It re-runs the same request on another model. Biology goes to Opus five. Cybersecurity goes to Opus four point eight.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s4",
+   "text": "And it can trigger on your very first message. That request also carries your CLAUDE dot M D and your git status. A repo with security material can trip it before you type a word. After that, the session stays on the fallback.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s5",
+   "text": "So if Fable suddenly feels different, look for the notice in your transcript. Then type slash model to switch back.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s6",
+   "text": "Save this for your next session. Follow for more Claude Code workflows.",
+   "chunks": [
+    99
+   ]
+  }
+ ]
+}
