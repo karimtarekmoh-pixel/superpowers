@@ -1,0 +1,6 @@
+Switch back after a fallback: /model
+Check what you are running: /model
+Try the session without customizations: claude --safe-mode
+Ask before switching: /config -> "Switch models when a message is flagged" -> "Ask each time"
+
+Source: Claude Code docs, Model configuration, "Automatic model fallback" (code.claude.com/docs/en/model-config)
