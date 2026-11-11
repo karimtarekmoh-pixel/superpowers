@@ -337,7 +337,7 @@ def ambient_bed(n):
         note = np.sin(2 * np.pi * f * tt) * env + .25 * np.sin(2 * np.pi * f * 2.0 * tt) * env
         for dly, g in ((0, 1.0), (.9, .45), (1.8, .22)): place(sh, note * g, tn + dly)
         tn += r.uniform(10, 22)
-    d = drone * 10 ** ((-46 - lufs(drone)) / 20); p_ = pad * 10 ** ((-41 - lufs(pad)) / 20); s_ = sh * 10 ** ((-50 - lufs(sh + 1e-9)) / 20) if np.abs(sh).max() > 0 else sh
+    d = drone * 10 ** ((-43 - lufs(drone)) / 20); p_ = pad * 10 ** ((-38 - lufs(pad)) / 20); s_ = sh * 10 ** ((-47 - lufs(sh + 1e-9)) / 20) if np.abs(sh).max() > 0 else sh
     out = d + p_ + s_; out *= np.clip(t / 5.0, 0, 1); out[-int(2 * SR):] *= np.linspace(1, 0, int(2 * SR))
     return out
 if __name__ == "__main__":

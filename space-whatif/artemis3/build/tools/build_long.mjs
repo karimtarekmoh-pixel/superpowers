@@ -93,6 +93,8 @@ BG.push(`<div id="gal"></div><div id="sat"></div>`);
 js.push(`tl.to("#gal",{rotation:-12,duration:${DUR},ease:"none"},0);tl.to("#sat",{x:2100,y:120,duration:48,ease:"none"},29);tl.to("#sat",{opacity:.25,duration:1.1,yoyo:true,repeat:40,ease:"sine.inOut"},29);`);
 js.push(`tl.to("#neb",{x:330,y:-150,scale:1.12,duration:${DUR},ease:"none"},0);tl.to("#neb2",{x:-260,y:90,rotation:3,duration:${DUR},ease:"none"},0);tl.to("#neb",{opacity:.58,duration:14,ease:"sine.inOut",yoyo:true,repeat:${Math.ceil(DUR / 14)}},0);`);
 
+const MEDIA = []; let trk = 10;
+const sprite = (id, w, h, x, y, start, dur, mode, src) => { MEDIA.push({ id, kind: "sprite", src, w, h, start: +start.toFixed(3), dur: +dur.toFixed(3), mode }); return `<div class="spw" id="${id}" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px"><video id="${id}_v" class="clip" src="sprites/${id}.webm" muted playsinline data-start="${f3(start)}" data-duration="${f3(dur)}" data-track-index="${trk++}" style="width:${w}px;height:${h}px"></video></div>`; };
 const order = ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9"];
 // ---------- persistent: chapter label + progress bar
 html.push(`<div id="chl" class="chl"></div><div id="bar"><i id="barfill"></i>${order.map((_, i) => `<b style="left:${(i + 1) / order.length * 100}%"></b>`).join("")}</div>`);
@@ -100,14 +102,16 @@ S.sections.forEach((s, i) => { const t = sc(s.id).start; js.push(`tl.set("#chl",
 
 // ================= C1 HOOK
 scene("c1", 0, sc("c2").start, () => {
-  html.push(svgWrap(`${earthArc(960, 1650, 800, "1")}<circle id="c1orb" cx="960" cy="1650" r="900" fill="none" stroke="${C.cy}" stroke-width="3" stroke-dasharray="3 16" opacity="0"/>${line("c1dim", "M1280 917 V809", C.am, 4)}<text id="c1mi" x="1305" y="880" fill="${C.am}" font-family="JetBrains Mono" font-weight="800" font-size="44" opacity="0">273 mi</text>`));
-  html.push(`<image id="c1m" href="assets/moon.png" x="1480" y="90" width="230" height="230" opacity="0"/>`.replace("<image","<svg class=\"lay\" width=\"1920\" height=\"1080\"><image").replace("/>","/></svg>"));
   text("c1y", 96, 120, 900, `2027`, "huge am");
   text("c1a", 100, 330, 900, `<span class="ppl"><i></i><i></i><i></i><i></i></span><span class="mono grey">FOUR ASTRONAUTS</span>`, "row");
   html.push(`<div id="c1t" class="stamp big2" style="left:420px;top:300px;width:1080px"><div>ARTEMIS III</div></div>`);
   html.push(`<div id="c1n" class="stamp red2" style="left:380px;top:300px;width:1160px"><div>NOT THE LANDING</div></div>`);
-  text("c1h", 470, 620, 400, tag("HATCH OPEN", "cy"), "r");
-  text("c1v", 1060, 620, 500, tag("TEST VERSION", "am"), "r");
+  text("c1h", 520, 560, 400, tag("HATCH OPEN", "cy"), "r");
+  text("c1v", 1150, 560, 500, tag("TEST VERSION", "am"), "r");
+  text("c1mi2", 0, 860, 1920, tag("ABOUT 273 MILES ABOVE EARTH", "am"), "ctr");
+  html.push(sprite("s_hook", 340, 340, 790, 380, A("c1", "float") - 0.1, sc("c2").start - (A("c1", "float") - 0.1), "loop", "lander"));
+  js.push(`tl.fromTo("#s_hook",{opacity:0,y:16},{opacity:1,y:0,duration:.8,ease:"power2.out"},${f3(A("c1", "float") - 0.1)});`); sfx(A("c1", "float") - 0.05, "whoosh", 0.35, 0.9);
+  js.push(`tl.fromTo("#c1mi2",{opacity:0},{opacity:1,duration:.3},${f3(A("c1", "hundred") - 0.1)});`);
   show("#c1y", 0.3); sfx(A("c1", "four") - 0.05, "pop", 0.5);
   show("#c1a", A("c1", "four") - 0.1); js.push(`tl.fromTo("#c1a i",{scale:0},{scale:1,duration:.2,stagger:.12,ease:"power2.out"},${f3(A("c1", "four") - 0.05)});`);
   js.push(`tl.to("#c1orb",{opacity:.9,duration:.8},${f3(A("c1", "hatch") - 0.4)});`);
@@ -151,17 +155,16 @@ scene("c3", sc("c3").start, sc("c4").start, () => {
   [["#c3o", "#c3on", A("c3", "Those") + 0.9], ["#c3b", "#c3bn", 0], ["#c3s", "#c3sn", 0]].forEach(() => {});
   const tt = [A("c3", "Orion", 0), A("c3", "Blue", 0), A("c3", "SpaceX's", 0)];
   ["#c3o:#c3on", "#c3b:#c3bn", "#c3s:#c3sn"].forEach((p, i) => { const [g, n] = p.split(":"); js.push(`tl.fromTo("${g}",{opacity:0,y:20},{opacity:1,y:0,duration:.5,ease:"power2.out"},${f3(tt[i] - 0.1)});`); show(n, tt[i], 14); sfx(tt[i] - 0.1, "pluck", 0.7, [1, 1.26, 1.5][i]); });
+  { const tA = [A("c3", "Orion", 0) - 0.1, A("c3", "Blue", 0) - 0.1, A("c3", "SpaceX's", 0) - 0.1], end = sc("c4").start;
+    html.push(sprite("s_sls", 277, 480, 380 - 138, 420 - 240, tA[0], end - tA[0], "loop", "sls")); html.push(sprite("s_lan", 400, 400, 960 - 200, 430 - 200, tA[1], end - tA[1], "loop", "lander")); html.push(sprite("s_ship", 277, 480, 1540 - 138, 425 - 240, tA[2], end - tA[2], "loop", "ship"));
+    ["s_sls", "s_lan", "s_ship"].forEach((id, i) => { js.push(`tl.fromTo("#${id}",{opacity:0,y:24},{opacity:1,y:0,duration:.8,ease:"power2.out"},${f3(tA[i])});`); sfx(tA[i] + 0.05, "whoosh", 0.32, 0.9 + 0.1 * i); }); }
   html.push(`<div id="c3t" style="position:absolute;left:0;width:1920px;top:912px;text-align:center;opacity:0">${tag("TEST VERSIONS, NOT FINISHED LANDERS", "am")}</div>`);
   popv("#c3t", A("c3", "Test") - 0.05); sfx(A("c3", "Test") - 0.05, "pop", 0.7);
 });
 // ================= C4 THE SEQUENCE (orbit diagram + steps)
 scene("c4", sc("c4").start, sc("c5").start, () => {
   const cx = 470, cy = 540, R1 = 330, R2 = 400;
-  html.push(svgWrap(`${earthArc(cx, cy, 230, "4")}<circle id="c4r1" cx="${cx}" cy="${cy}" r="${R1}" fill="none" stroke="${C.cy}" stroke-width="3" stroke-dasharray="3 14" opacity="0"/><ellipse id="c4r0" cx="${cx - 70}" cy="${cy}" rx="${R2 - 10}" ry="${R1 - 60}" fill="none" stroke="${C.am}" stroke-width="3" stroke-dasharray="3 14" opacity="0"/><circle id="c4r2" cx="${cx}" cy="${cy}" r="${R2 + 40}" fill="none" stroke="${C.gr}" stroke-width="3" stroke-dasharray="3 14" opacity="0"/>
-  <g id="c4bm" opacity="0"><g transform="translate(${cx} ${cy - R1}) rotate(0)">${lander(.95)}</g></g>
-  <g id="c4or" opacity="0"><g transform="translate(${cx} ${cy - R1 - 0}) rotate(0)">${orion(.9)}</g></g>
-  <g id="c4st" opacity="0"><g transform="translate(${cx} ${cy - R2 - 40})">${ship(.95)}</g></g>
-  <text x="96" y="112" fill="#8FA0C0" font-family="JetBrains Mono" font-size="22">illustration, not to scale</text>`));
+  html.push(svgWrap(`<text x="96" y="112" fill="#8FA0C0" font-family="JetBrains Mono" font-size="22">illustration, not to scale</text>`));
   const steps = [
     ["1", "Blue Moon test article launches", "circular orbit ~273 miles up · can wait up to 30 days", "c4s1"],
     ["2", "Days later: Orion launches on SLS", "Kennedy · ~345-mile circle · 2 days of checkout", "c4s2"],
@@ -182,6 +185,18 @@ scene("c4", sc("c4").start, sc("c5").start, () => {
   js.push(`tl.to("#c4or",{rotation:360,svgOrigin:"${cx} ${cy}",duration:2.4,ease:"power1.inOut"},${f3(o("c4", "circle") + 0.1)});`);
   js.push(`tl.to("#c4r2",{opacity:.5,duration:.5},${f3(marks[4])});tl.fromTo("#c4st",{opacity:0,rotation:-40,svgOrigin:"${cx} ${cy}"},{opacity:1,rotation:0,svgOrigin:"${cx} ${cy}",duration:1.0,ease:"power2.out"},${f3(marks[4] + 0.1)});`);
   js.push(`tl.to("#c4or",{rotation:430,svgOrigin:"${cx} ${cy}",duration:1.6,ease:"power1.inOut"},${f3(marks[5] - 0.3)});tl.to("#c4st",{rotation:70,svgOrigin:"${cx} ${cy}",duration:1.6,ease:"power1.inOut"},${f3(marks[5] - 0.3)});`);
+  { const E = 540, X = 470, R_BM = 381, R_OR = 424, R_SS = 344, end = sc("c5").start;
+    const arm = (id, R, w, h, start, src) => { html.push(`<div class="arm" id="arm_${id}" style="left:${X - w / 2}px;top:${E - R - h / 2}px;width:${w}px;height:${h}px;transform-origin:${w / 2}px ${R + h / 2}px;opacity:0"><div class="spr" id="spr_${id}" style="width:${w}px;height:${h}px">${sprite(id, w, h, 0, 0, start, end - start, "loop", src)}</div></div>`); };
+    const rot = (id, a0, a1, t, d) => js.push(`tl.fromTo("#arm_${id}",{rotation:${a0}},{rotation:${a1},duration:${d},ease:"power2.inOut",immediateRender:false},${f3(t)});tl.fromTo("#spr_${id}",{rotation:${-a0}},{rotation:${-a1},duration:${d},ease:"power2.inOut",immediateRender:false},${f3(t)});`);
+    const fadeIn = (id, t) => js.push(`tl.fromTo("#arm_${id}",{opacity:0},{opacity:1,duration:.5},${f3(t)});`);
+    arm("o_bm", R_BM, 130, 130, marks[0], "lander"); arm("o_ora", R_OR, 130, 130, marks[1], "orion"); arm("o_orb", R_BM, 130, 130, o("c4", "circle"), "orion"); arm("o_ss", R_SS, 80, 138, marks[4], "ship");
+    js.push(`tl.set("#arm_o_bm",{rotation:-60},0);tl.set("#spr_o_bm",{rotation:60},0);tl.set("#arm_o_ora",{rotation:200},0);tl.set("#spr_o_ora",{rotation:-200},0);tl.set("#arm_o_orb",{rotation:300},0);tl.set("#spr_o_orb",{rotation:-300},0);tl.set("#arm_o_ss",{rotation:-40},0);tl.set("#spr_o_ss",{rotation:40},0);`);
+    fadeIn("o_bm", marks[0]); rot("o_bm", -60, 0, marks[0] + 0.1, 1.2);
+    fadeIn("o_ora", marks[1]); rot("o_ora", 200, 260, marks[1] + 0.1, 1.2);
+    js.push(`tl.to("#arm_o_ora",{opacity:0,duration:.5},${f3(o("c4", "circle"))});`); fadeIn("o_orb", o("c4", "circle")); rot("o_orb", 300, 350, o("c4", "circle") + 0.1, 2.6); sfx(o("c4", "circle") + 2.6, "sonar", 0.3);
+    rot("o_orb", 350, 330, marks[3], 1.2);
+    fadeIn("o_ss", marks[4]); rot("o_ss", -40, 20, marks[4] + 0.1, 1.2);
+    rot("o_orb", 330, 380, marks[5] - 0.3, 1.6); sfx(marks[5] + 1.3, "sonar", 0.3, 1.2); }
   html.push(`<div id="c4n" style="position:absolute;left:96px;top:915px;width:900px;opacity:0">${tag("FIRST COMMERCIAL LANDER EVALUATION WITH A CREW", "am")}</div><div id="c4t" style="position:absolute;left:96px;top:915px;width:900px;opacity:0">${tag("5 MORE DAYS: SUITS · SENSORS · NOISE · HEALTH-CHECK STUDY", "cy")}</div>`);
   popv("#c4n", o("c4", "first") - 0.1); sfx(o("c4", "first") - 0.1, "glass", 0.7); hide("#c4n", o("c4", "Step", 3) - 0.1);
   popv("#c4t", o("c4", "Suits") - 0.1); sfx(o("c4", "Suits") - 0.1, "chirp", 0.6);
@@ -190,6 +205,10 @@ scene("c4", sc("c4").start, sc("c5").start, () => {
 scene("c5", sc("c5").start, sc("c6").start, () => {
   text("c5t1", 200, 700, 560, `<div class="big3">SIDE PORT</div><div class="mono grey">beside Blue Moon's crew cabin</div>`, "ctr");
   text("c5t2", 1160, 700, 560, `<div class="big3">NOSE PORT</div><div class="mono grey">Orion's forward system meets Starship's nose</div>`, "ctr");
+  { const tL = A("c5", "Orion") - 0.1, tS = A("c5", "Later") - 0.1, end = sc("c6").start;
+    html.push(sprite("s_dockl", 482, 392, 480 - 241, 470 - 196, tL, end - tL, "hold", "dock_lander")); html.push(sprite("s_docks", 430, 430, 1440 - 215, 460 - 215, tS, end - tS, "hold", "dock_ship"));
+    js.push(`tl.fromTo("#s_dockl",{opacity:0},{opacity:1,duration:.6},${f3(tL)});tl.fromTo("#s_docks",{opacity:0},{opacity:1,duration:.6},${f3(tS)});`);
+    [tL, tS].forEach((t, i) => { sfx(t + 0.1, "whoosh", 0.35, 1 + 0.1 * i); sfx(t + 3.3, "click", 0.7); sfx(t + 3.36, "success3", 0.45, 1 + 0.12 * i); }); }
   html.push(`<div id="c5k" class="chips" style="left:96px;top:870px;width:1728px">${["CONTROLLABILITY", "COMMUNICATIONS", "SOFTWARE TOGETHER", "DOCKING & UNDOCKING FORCES"].map((x) => tag(x, "cy")).join("")}</div>`);
   text("c5h", 96, 150, 1300, `<div class="mid">Two landers. <span class="am">Two docking designs.</span> One mission.</div>`, "l");
   show("#c5h", sc("c5").start + 0.2);
@@ -273,6 +292,9 @@ js.push(`tl.to("#eimg1",{rotation:-2.5,svgOrigin:"960 1650",duration:${T.scene("
 js.push(`tl.set("#sc_c1",{opacity:1},0);tl.to("#sfar",{backgroundPosition:"-260px 90px",duration:${DUR},ease:"none"},0);tl.to("#snear",{backgroundPosition:"-720px 220px",duration:${DUR},ease:"none"},0);tl.to("#neb",{x:150,y:-70,duration:${DUR / 2},ease:"sine.inOut",yoyo:true,repeat:1},0);tl.to("#snear",{opacity:.72,duration:2.6,ease:"sine.inOut",yoyo:true,repeat:${Math.ceil(DUR / 2.6)}},0);`);
 
 js.push(`tl.to(".glow",{opacity:.35,duration:1.1,yoyo:true,repeat:${Math.ceil(DUR / 1.1)},ease:"sine.inOut"},0);`);
+const PLATES = order.map((id, i) => { const st = i === 0 ? 0 : sc(id).start, en = i + 1 < order.length ? sc(order[i + 1]).start : DUR; MEDIA.push({ id: "p" + (i + 1), kind: "plate", start: +st.toFixed(3), dur: +(en - st).toFixed(3) }); return `<video id="pl_${id}" class="clip plate" src="plates/p${i + 1}.mp4" muted playsinline data-start="${f3(st)}" data-duration="${f3(en - st)}" data-track-index="${i + 1}"></video>`; }).join("");
+fs.writeFileSync("audio/media.json", JSON.stringify(MEDIA, null, 1));
+for (let t = 6.5, k = 0; t < DUR - 6; t += 9.2, k++) sfx(t, k % 3 === 2 ? "tap" : "countdown", 0.12, [1, 1.25, 1.5, 0.84][k % 4]);
 const css = `
 @font-face{font-family:Inter;src:url(./fonts/Inter-400.woff2);font-weight:100 900}
 @font-face{font-family:"JetBrains Mono";src:url(./fonts/JetBrainsMono-400.woff2);font-weight:100 800}
@@ -296,13 +318,13 @@ const css = `
 .row{display:flex;align-items:center;gap:18px}.ppl i{display:inline-block;width:34px;height:34px;border-radius:50%;background:${C.cy};margin-right:10px}
 .stamp{position:absolute;opacity:0;text-align:center;font:900 120px/1 Inter;letter-spacing:-.03em;border:10px solid ${C.am};border-radius:24px;padding:34px 20px;background:rgba(5,7,13,.92);color:${C.am};box-shadow:0 0 70px rgba(255,181,71,.25)}.stamp.red2{border-color:${C.red};color:${C.red};font-size:112px;box-shadow:0 0 70px rgba(255,107,107,.25)}
 .step .stp,.stepc{display:flex;align-items:center}.stp{display:flex;align-items:center;gap:24px}.stp b{display:inline-flex;align-items:center;justify-content:center;flex:none;width:58px;height:58px;border-radius:50%;background:${C.cy};color:#001018;font:900 32px Inter}.st1{font:800 31px/1.2 Inter}.st2{font:500 21px/1.3 "JetBrains Mono",monospace;color:${C.grey};margin-top:6px}.sm2{font-size:28px!important}
-.gl4{position:absolute;opacity:.8;pointer-events:none}.dust{position:absolute;border-radius:50%;background:#cfe0ff;pointer-events:none;filter:blur(.4px)}.meteor{position:absolute;width:260px;height:2px;border-radius:2px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.95));transform-origin:100% 50%;rotate:24deg;opacity:0;pointer-events:none;box-shadow:0 0 8px rgba(160,200,255,.6)}#gal{position:absolute;left:1480px;top:130px;width:300px;height:110px;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,rgba(255,240,210,.55) 0,rgba(180,190,255,.28) 22%,rgba(110,130,255,.10) 50%,transparent 72%);transform:rotate(-26deg);filter:blur(1.2px);opacity:.55;pointer-events:none}#sat{position:absolute;left:-60px;top:90px;width:4px;height:4px;border-radius:50%;background:#fff;box-shadow:0 0 8px 2px rgba(255,255,255,.7);pointer-events:none}.card.hdr{padding:14px 30px}.sub{position:absolute;left:0;width:1920px;top:972px;text-align:center;opacity:0;z-index:40}.sub span{display:inline-block;background:rgba(5,7,13,.8);padding:4px 16px;border-radius:9px;font:600 26px/1.3 Inter;color:#EAF0FF}.rr{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font:700 34px Inter}
+.gl4{position:absolute;opacity:.8;pointer-events:none}.dust{position:absolute;border-radius:50%;background:#cfe0ff;pointer-events:none;filter:blur(.4px)}.meteor{position:absolute;width:260px;height:2px;border-radius:2px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.95));transform-origin:100% 50%;rotate:24deg;opacity:0;pointer-events:none;box-shadow:0 0 8px rgba(160,200,255,.6)}#gal{position:absolute;left:1480px;top:130px;width:300px;height:110px;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,rgba(255,240,210,.55) 0,rgba(180,190,255,.28) 22%,rgba(110,130,255,.10) 50%,transparent 72%);transform:rotate(-26deg);filter:blur(1.2px);opacity:.55;pointer-events:none}#sat{position:absolute;left:-60px;top:90px;width:4px;height:4px;border-radius:50%;background:#fff;box-shadow:0 0 8px 2px rgba(255,255,255,.7);pointer-events:none}.plate{position:absolute;left:0;top:0;width:1920px;height:1080px;object-fit:cover}#scrim{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(3,5,10,.12),rgba(3,5,10,.5));pointer-events:none}.spw{position:absolute;opacity:0}.arm .spw{opacity:1}.arm{position:absolute}.spr{position:relative}.card.hdr{padding:14px 30px}.sub{position:absolute;left:0;width:1920px;top:972px;text-align:center;opacity:0;z-index:40}.sub span{display:inline-block;background:rgba(5,7,13,.8);padding:4px 16px;border-radius:9px;font:600 26px/1.3 Inter;color:#EAF0FF}.rr{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font:700 34px Inter}
 `;
 const page = `<!doctype html>
 <html lang="en" data-resolution="landscape"><head><meta charset="UTF-8"/><meta name="viewport" content="width=1920, height=1080"/><script src="./gsap.min.js"></script><style>${css}</style></head>
 <body><div id="root" data-composition-id="main" data-start="0" data-duration="${DUR.toFixed(3)}" data-width="1920" data-height="1080">
 ${DEFS}
-<div id="neb"></div><div id="neb2"></div><div id="sfar"></div><div id="snear"></div>${BG.join("")}
+<div id="neb"></div><div id="neb2"></div><div id="sfar"></div><div id="snear"></div>${PLATES}<div id="scrim"></div>${BG.join("")}
 ${html.join("\n")}
 <div id="vig"></div></div>
 <script>
