@@ -13,10 +13,17 @@ for m in M:
         if len(frames) < 8: print("skip plate", m["id"], len(frames)); continue
         sq = os.path.join(tmp, m["id"]); shutil.rmtree(sq, ignore_errors=True); os.makedirs(sq)
         for i, f in enumerate(frames): shutil.copy(f, os.path.join(sq, f"{i:03d}.png"))
-        cyc = os.path.join(tmp, m["id"] + "_cycle.mp4")
-        run(["ffmpeg", "-y", "-v", "error", "-framerate", "8", "-i", os.path.join(sq, "%03d.png"), "-filter_complex",
-             "[0]scale=1920:1080:flags=lanczos,format=yuv420p,framerate=fps=30,split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1[v]", "-map", "[v]", "-c:v", "libx264", "-crf", "14", "-preset", "medium", cyc])
-        run(["ffmpeg", "-y", "-v", "error", "-stream_loop", "-1", "-i", cyc, "-t", f"{m['dur'] + 0.5:.3f}", "-c:v", "libx264", "-crf", "15", "-preset", "medium", "-pix_fmt", "yuv420p", "-an", f"hf/plates/{m['id']}.mp4"])
+        # alpha plate: planets/rings opaque (Blender silhouette mask), sky transparent so the page's moving space shows through
+        # and the glow stars and meteors sit behind the planets; a soft luma key keeps the atmosphere glow and bright stars
+        msrc = src + "_mask"; mq = sq + "_m"; shutil.rmtree(mq, ignore_errors=True); os.makedirs(mq)
+        for i, f in enumerate(frames): shutil.copy(os.path.join(msrc, os.path.basename(f)), os.path.join(mq, f"{i:03d}.png"))
+        cyc = os.path.join(tmp, m["id"] + "_cycle.webm")
+        run(["ffmpeg", "-y", "-v", "error", "-framerate", "8", "-i", os.path.join(sq, "%03d.png"), "-framerate", "8", "-i", os.path.join(mq, "%03d.png"), "-filter_complex",
+             "[0]scale=1920:1080:flags=lanczos,format=rgb24,split[c][l];[l]format=gray,lut=y='clip((val-38)*3,0,255)'[lk];"
+             "[1]scale=1920:1080:flags=bicubic,format=gray,gblur=sigma=1.1[mk];[mk][lk]blend=all_mode=lighten,framerate=fps=30[al];[c]framerate=fps=30[cf];"
+             "[cf][al]alphamerge,format=rgba,split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1[v]",
+             "-map", "[v]", "-c:v", "libvpx-vp9", "-pix_fmt", "yuva420p", "-b:v", "0", "-crf", "24", "-row-mt", "1", "-deadline", "good", "-cpu-used", "4", "-auto-alt-ref", "0", cyc])
+        run(["ffmpeg", "-y", "-v", "error", "-stream_loop", "-1", "-i", cyc, "-t", f"{m['dur'] + 0.5:.3f}", "-c", "copy", "-an", f"hf/plates/{m['id']}.webm"])
         print("plate", m["id"], len(frames), "frames")
     else:
         src = os.path.join(FR, m["src"]); n = len(glob.glob(os.path.join(src, "f_0*.png")))

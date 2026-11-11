@@ -310,7 +310,19 @@ else:
             ori.location = (0, 0, 27.65 * .55 + 4.25 * .5 + 15 * (1 - k)); ori.rotation_euler = (math.radians(180), 0, 0)
             ori.keyframe_insert("location", frame=f); ori.keyframe_insert("rotation_euler", frame=f); sh.rotation_euler = (0, 0, math.radians(-10 + 14 * t)); sh.keyframe_insert("rotation_euler", frame=f)
 
-out = os.path.join(HERE, "frames3", SHOT); os.makedirs(out, exist_ok=True)
+MASK = bool(os.environ.get("MASK"))
+if MASK:   # silhouette pass: planets, rings and arcs white, sky black, atmosphere glow left to the luma key
+    wm = bpy.data.materials.new("maskw"); wm.use_nodes = True; N, L = nodes(wm); N.remove(N["Principled BSDF"]); em = N.new("ShaderNodeEmission"); em.inputs["Strength"].default_value = 1.0
+    L.new(em.outputs["Emission"], N["Material Output"].inputs["Surface"])
+    for o in list(sc.objects):
+        if o.type == "LIGHT": o.hide_render = True
+        elif o.name.startswith("atmo"): o.hide_render = True
+        elif o.type in ("MESH", "CURVE"):
+            o.data.materials.clear(); o.data.materials.append(wm)
+    sc.world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0.0
+    sc.view_settings.view_transform = "Standard"; sc.cycles.samples = 4; sc.cycles.use_denoising = False; sc.cycles.max_bounces = 0
+    sc.render.image_settings.color_mode = "BW"
+out = os.path.join(HERE, "frames3", SHOT + ("_mask" if MASK else "")); os.makedirs(out, exist_ok=True)
 if F0 == F1:
     sc.frame_set(F0); sc.render.filepath = os.path.join(out, f"f_{F0:04d}.png"); bpy.ops.render.render(write_still=True)
 else:
