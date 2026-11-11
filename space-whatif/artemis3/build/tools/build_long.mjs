@@ -20,13 +20,71 @@ const card = (id, x, y, w, h, inner, cls = "") => html.push(`<div class="card ${
 const tag = (t, cls = "", id = "") => `<span class="tag ${cls}" ${id ? `id="${id}"` : ""}>${e(t)}</span>`;
 const text = (id, x, y, w, inner, cls = "") => html.push(`<div class="tx ${cls}" id="${id}" style="left:${x}px;top:${y}px;width:${w}px">${inner}</div>`);
 const line = (id, d, col = C.cy, w = 5) => `<path id="${id}" d="${d}" pathLength="1" stroke="${col}" stroke-width="${w}" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" stroke-dashoffset="1"/>`;
-// original vehicle icons (simple shapes, ~100 px tall at s=1)
-const orion = (s = 1) => `<g transform="scale(${s})"><path d="M-14 -44 L14 -44 L22 -14 L-22 -14 Z" fill="#DDE6F7"/><rect x="-22" y="-14" width="44" height="34" rx="3" fill="#9FB0CF"/><rect x="-74" y="-4" width="48" height="9" rx="2" fill="${C.cy}"/><rect x="26" y="-4" width="48" height="9" rx="2" fill="${C.cy}"/><rect x="-22" y="20" width="44" height="6" fill="#6B7C9E"/></g>`;
-const lander = (s = 1) => `<g transform="scale(${s})"><rect x="-30" y="-50" width="60" height="84" rx="12" fill="#C9D3E8"/><circle cx="0" cy="-22" r="10" fill="#0E1422"/><rect x="-30" y="6" width="60" height="6" fill="${C.am}"/><path d="M-30 34 L-48 58 M30 34 L48 58" stroke="#8FA0C0" stroke-width="6" stroke-linecap="round"/></g>`;
-const ship = (s = 1) => `<g transform="scale(${s})"><path d="M0 -70 C12 -60 16 -34 16 -12 L16 52 L-16 52 L-16 -12 C-16 -34 -12 -60 0 -70 Z" fill="#E7ECF6"/><path d="M-16 30 L-32 58 L-16 52 Z M16 30 L32 58 L16 52 Z" fill="#8FA0C0"/><rect x="-16" y="-2" width="32" height="4" fill="#26324A"/></g>`;
-const sls = (s = 1) => `<g transform="scale(${s})"><path d="M-10 -78 L10 -78 L14 -52 L-14 -52 Z" fill="#DDE6F7"/><rect x="-14" y="-52" width="28" height="110" fill="#E9A15A"/><rect x="-28" y="-30" width="12" height="88" rx="3" fill="#E7ECF6"/><rect x="16" y="-30" width="12" height="88" rx="3" fill="#E7ECF6"/></g>`;
+// ---- detailed original vehicle illustrations (shaded, panel lines, engines); ids reference gradients in the global defs
+const DEFS = `<svg width="0" height="0" style="position:absolute"><defs>
+<linearGradient id="gWhite" x1="0" x2="1"><stop offset="0" stop-color="#9AA8C0"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset=".75" stop-color="#D5DEEE"/><stop offset="1" stop-color="#8795AF"/></linearGradient>
+<linearGradient id="gOrange" x1="0" x2="1"><stop offset="0" stop-color="#9C4F18"/><stop offset=".35" stop-color="#F5A765"/><stop offset=".75" stop-color="#D9772F"/><stop offset="1" stop-color="#8A4413"/></linearGradient>
+<linearGradient id="gGold" x1="0" x2="1"><stop offset="0" stop-color="#7C5C22"/><stop offset=".4" stop-color="#F0CC72"/><stop offset=".8" stop-color="#B08A38"/><stop offset="1" stop-color="#6E5019"/></linearGradient>
+<linearGradient id="gSteel" x1="0" x2="1"><stop offset="0" stop-color="#5E6A7D"/><stop offset=".3" stop-color="#EEF3FB"/><stop offset=".6" stop-color="#B7C2D4"/><stop offset="1" stop-color="#5B6679"/></linearGradient>
+<linearGradient id="gPanel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2E78D8"/><stop offset="1" stop-color="#0B2A5B"/></linearGradient>
+<linearGradient id="gDark" x1="0" x2="1"><stop offset="0" stop-color="#2A3140"/><stop offset=".5" stop-color="#5A6578"/><stop offset="1" stop-color="#2A3140"/></linearGradient>
+<radialGradient id="gFlame" cx="50%" cy="0%" r="100%"><stop offset="0" stop-color="#FFF3C4"/><stop offset=".35" stop-color="#FFB547"/><stop offset="1" stop-color="rgba(255,120,40,0)"/></radialGradient>
+<pattern id="pHex" width="10" height="8" patternUnits="userSpaceOnUse"><path d="M0 4 L5 0 L10 4 L5 8 Z" fill="none" stroke="rgba(30,38,52,.55)" stroke-width=".8"/></pattern>
+<pattern id="pGrid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0 H0 V10" fill="none" stroke="rgba(190,225,255,.55)" stroke-width=".7"/></pattern>
+<filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter><filter id="blur3"><feGaussianBlur stdDeviation="3"/></filter>
+</defs></svg>`;
+const flame = (x, y, w, h) => `<ellipse class="glow" cx="${x}" cy="${y + h / 2}" rx="${w}" ry="${h}" fill="url(#gFlame)" opacity=".85"/>`;
+const orion = (s = 1) => `<g transform="scale(${s})">
+ ${[-1, 1].map((k) => `<g transform="scale(${k} 1)"><rect x="22" y="-2" width="14" height="5" fill="url(#gDark)"/>${[0, 1, 2].map((i) => `<g transform="translate(${36 + i * 30} 0)"><rect x="0" y="-9" width="28" height="22" fill="url(#gPanel)" stroke="#CFE6FF" stroke-width=".8"/><rect x="0" y="-9" width="28" height="22" fill="url(#pGrid)"/></g>`).join("")}</g>`).join("")}
+ <path d="M-9 -58 L9 -58 L13 -50 L26 -22 L-26 -22 L-13 -50 Z" fill="url(#gWhite)" stroke="#8795AF" stroke-width=".8"/>
+ <rect x="-5" y="-60" width="10" height="4" rx="1" fill="url(#gDark)"/>
+ <path d="M-8 -44 h4 v6 h-4 Z M4 -44 h4 v6 h-4 Z" fill="#1C2433"/>
+ <rect x="-26" y="-22" width="52" height="5" fill="#2E3542"/>
+ <rect x="-24" y="-17" width="48" height="40" rx="2" fill="url(#gGold)" stroke="#6E5019" stroke-width=".8"/>
+ ${[-8, 0, 8, 16].map((y) => `<line x1="-24" y1="${y}" x2="24" y2="${y}" stroke="rgba(90,60,10,.55)" stroke-width="1"/>`).join("")}
+ <path d="M-9 23 L9 23 L15 40 L-15 40 Z" fill="url(#gDark)"/>${flame(0, 40, 9, 18)}
+</g>`;
+const lander = (s = 1) => `<g transform="scale(${s})">
+ <path d="M-26 34 L-52 70 M26 34 L52 70 M-14 36 L-24 70 M14 36 L24 70" stroke="#9AA8C0" stroke-width="5" stroke-linecap="round"/>
+ ${[-52, 52, -24, 24].map((x) => `<ellipse cx="${x}" cy="71" rx="9" ry="3" fill="#6B7890"/>`).join("")}
+ <path d="M-14 40 L14 40 L19 52 L-19 52 Z" fill="url(#gDark)"/>${flame(0, 52, 11, 16)}
+ <rect x="-34" y="-20" width="68" height="62" rx="14" fill="url(#gWhite)" stroke="#8795AF" stroke-width=".9"/>
+ <line x1="-34" y1="6" x2="34" y2="6" stroke="rgba(60,80,120,.5)"/><line x1="-34" y1="24" x2="34" y2="24" stroke="rgba(60,80,120,.5)"/>
+ <rect x="-34" y="10" width="68" height="4" fill="#5CC8FF" opacity=".75"/>
+ <path d="M-24 -20 C-24 -52 -14 -66 0 -66 C14 -66 24 -52 24 -20 Z" fill="url(#gSteel)" stroke="#8795AF" stroke-width=".9"/>
+ <circle cx="0" cy="-42" r="9" fill="#18202E" stroke="#5CC8FF" stroke-width="1.4"/><circle cx="-3" cy="-45" r="3" fill="rgba(255,255,255,.35)"/>
+ <rect x="24" y="-38" width="12" height="14" rx="2" fill="url(#gDark)"/>
+</g>`;
+const ship = (s = 1) => `<g transform="scale(${s})">
+ <path d="M-17 56 L-36 74 L-17 66 Z M17 56 L36 74 L17 66 Z" fill="url(#gSteel)" stroke="#5B6679" stroke-width=".8"/>
+ <path d="M-17 -16 L-31 -2 L-17 6 Z M17 -16 L31 -2 L17 6 Z" fill="url(#gSteel)" stroke="#5B6679" stroke-width=".8"/>
+ <path d="M0 -84 C13 -76 18 -48 18 -20 L18 60 L-18 60 L-18 -20 C-18 -48 -13 -76 0 -84 Z" fill="url(#gSteel)" stroke="#5B6679" stroke-width=".9"/>
+ <path d="M0 -84 C13 -76 18 -48 18 -20 L18 60 L-18 60 L-18 -20 C-18 -48 -13 -76 0 -84 Z" fill="url(#pHex)" opacity=".55"/>
+ <rect x="-6" y="-88" width="12" height="6" rx="1.5" fill="url(#gDark)"/>
+ <rect x="-18" y="-4" width="36" height="3" fill="rgba(30,38,52,.5)"/><rect x="-18" y="30" width="36" height="3" fill="rgba(30,38,52,.5)"/>
+ <rect x="-18" y="60" width="36" height="8" fill="url(#gDark)"/>${[-10, 0, 10].map((x) => `<circle cx="${x}" cy="69" r="3.2" fill="#2A3140"/>`).join("")}${flame(0, 70, 14, 20)}
+</g>`;
+const sls = (s = 1) => `<g transform="scale(${s})">
+ <path d="M-8 -100 L8 -100 L12 -84 L-12 -84 Z" fill="url(#gWhite)"/><path d="M-4 -108 L4 -108 L8 -100 L-8 -100 Z" fill="url(#gWhite)"/>
+ <rect x="-12" y="-84" width="24" height="22" fill="url(#gWhite)"/><rect x="-14" y="-62" width="28" height="8" fill="url(#gOrange)"/>
+ <rect x="-14" y="-54" width="28" height="118" fill="url(#gOrange)" stroke="#8A4413" stroke-width=".8"/>
+ ${[-30, -6, 18, 42].map((y) => `<line x1="-14" y1="${y}" x2="14" y2="${y}" stroke="rgba(110,50,10,.55)" stroke-width="1.2"/>`).join("")}
+ ${[-1, 1].map((k) => `<g transform="translate(${k * 24} 0)"><path d="M-9 -26 L0 -50 L9 -26 Z" fill="url(#gWhite)"/><rect x="-9" y="-26" width="18" height="96" fill="url(#gWhite)" stroke="#8795AF" stroke-width=".8"/><rect x="-9" y="14" width="18" height="7" fill="#262B36"/><path d="M-6 70 L6 70 L9 82 L-9 82 Z" fill="url(#gDark)"/>${flame(0, 82, 8, 26)}</g>`).join("")}
+ ${[-8, -2.7, 2.7, 8].map((x) => `<path d="M${x - 2.4} 64 L${x + 2.4} 64 L${x + 3.4} 72 L${x - 3.4} 72 Z" fill="url(#gDark)"/>`).join("")}${flame(0, 72, 11, 28)}
+</g>`;
 const svgWrap = (inner, extra = "") => `<svg class="lay" width="1920" height="1080" viewBox="0 0 1920 1080" ${extra}>${inner}</svg>`;
-const earthArc = (cx, cy, r) => `<defs><radialGradient id="eg${cx}${cy}" cx="50%" cy="38%" r="70%"><stop offset="0%" stop-color="#2B6CB0"/><stop offset="60%" stop-color="#16406F"/><stop offset="100%" stop-color="#0A1B33"/></radialGradient></defs><circle cx="${cx}" cy="${cy}" r="${r + 26}" fill="rgba(92,200,255,.10)"/><circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#eg${cx}${cy})"/>`;
+const earthArc = (cx, cy, r, id = "e") => {
+  const blobs = [[-.35, -.55, .34, .16, "#2F7D4F", .9], [-.1, -.35, .22, .13, "#3E8F57", .85], [.25, -.5, .3, .12, "#8A7A4A", .85], [.45, -.15, .22, .2, "#2F7D4F", .9], [-.55, -.1, .2, .12, "#8A7A4A", .8], [.05, .1, .26, .14, "#3E8F57", .85], [-.2, .3, .3, .12, "#2F7D4F", .85], [.4, .45, .22, .1, "#8A7A4A", .8]];
+  const clouds = [[-.4, -.7, .42, .06], [.1, -.62, .5, .05], [-.6, -.3, .4, .05], [.3, -.28, .45, .06], [-.2, .0, .5, .05], [.45, .2, .4, .05], [-.45, .35, .45, .05], [.1, .55, .5, .05], [-.1, -.45, .3, .04], [.5, -.62, .25, .04]];
+  return `<defs><radialGradient id="eg${id}" cx="40%" cy="30%" r="80%"><stop offset="0" stop-color="#4C9BE8"/><stop offset=".45" stop-color="#1F63B0"/><stop offset=".85" stop-color="#0E3466"/><stop offset="1" stop-color="#07162E"/></radialGradient>
+  <radialGradient id="ea${id}" cx="50%" cy="50%" r="50%"><stop offset=".86" stop-color="rgba(120,205,255,.0)"/><stop offset=".94" stop-color="rgba(120,205,255,.42)"/><stop offset="1" stop-color="rgba(120,205,255,0)"/></radialGradient>
+  <linearGradient id="et${id}" x1="0" y1="0" x2="1" y2="1"><stop offset=".45" stop-color="rgba(0,0,0,0)"/><stop offset="1" stop-color="rgba(0,0,10,.62)"/></linearGradient>
+  <clipPath id="ec${id}"><circle cx="${cx}" cy="${cy}" r="${r}"/></clipPath></defs>
+  <circle cx="${cx}" cy="${cy}" r="${r * 1.12}" fill="url(#ea${id})"/>
+  <circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#eg${id})"/>
+  <g clip-path="url(#ec${id})"><g id="ecl${id}">${blobs.map(([dx, dy, rx, ry, col, op]) => `<ellipse cx="${cx + dx * r}" cy="${cy + dy * r}" rx="${rx * r}" ry="${ry * r}" fill="${col}" opacity="${op * 0.8}"/>`).join("")}${clouds.map(([dx, dy, rx, ry]) => `<ellipse cx="${cx + dx * r}" cy="${cy + dy * r}" rx="${rx * r}" ry="${ry * r}" fill="#fff" opacity=".5" filter="url(#blur6)"/>`).join("")}</g><circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#et${id})"/></g>
+  <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="rgba(170,225,255,.55)" stroke-width="2"/>`;
+};
 
 const order = ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9"];
 // ---------- persistent: chapter label + progress bar
@@ -35,7 +93,7 @@ S.sections.forEach((s, i) => { const t = sc(s.id).start; js.push(`tl.set("#chl",
 
 // ================= C1 HOOK
 scene("c1", 0, sc("c2").start, () => {
-  html.push(svgWrap(`${earthArc(960, 1650, 800)}<circle id="c1orb" cx="960" cy="1650" r="900" fill="none" stroke="${C.cy}" stroke-width="3" stroke-dasharray="3 16" opacity="0"/><g transform="translate(960 700)"><g id="c1lan" opacity="0">${lander(1.5)}</g></g>${line("c1dim", "M1280 917 V809", C.am, 4)}<text id="c1mi" x="1305" y="880" fill="${C.am}" font-family="JetBrains Mono" font-weight="800" font-size="44" opacity="0">273 mi</text>`));
+  html.push(svgWrap(`${earthArc(960, 1650, 800, "1")}<circle id="c1orb" cx="960" cy="1650" r="900" fill="none" stroke="${C.cy}" stroke-width="3" stroke-dasharray="3 16" opacity="0"/><g transform="translate(960 700)"><g id="c1lan" opacity="0">${lander(1.5)}</g></g>${line("c1dim", "M1280 917 V809", C.am, 4)}<text id="c1mi" x="1305" y="880" fill="${C.am}" font-family="JetBrains Mono" font-weight="800" font-size="44" opacity="0">273 mi</text>`));
   text("c1y", 96, 120, 900, `2027`, "huge am");
   text("c1a", 100, 330, 900, `<span class="ppl"><i></i><i></i><i></i><i></i></span><span class="mono grey">FOUR ASTRONAUTS</span>`, "row");
   html.push(`<div id="c1t" class="stamp big2" style="left:420px;top:300px;width:1080px"><div>ARTEMIS III</div></div>`);
@@ -74,9 +132,9 @@ scene("c2", sc("c2").start, sc("c3").start, () => {
 // ================= C3 THREE SPACECRAFT, THREE ROCKETS
 scene("c3", sc("c3").start, sc("c4").start, () => {
   const xs = [380, 960, 1540];
-  html.push(svgWrap(`<g transform="translate(${xs[0]} 440)"><g id="c3o" opacity="0">${sls(2.3)}</g></g><g transform="translate(${xs[1]} 440)"><g id="c3b" opacity="0">${lander(2.3)}</g></g><g transform="translate(${xs[2]} 440)"><g id="c3s" opacity="0">${ship(2.3)}</g></g>`));
-  [["Orion + SLS", "NASA", "c3on"], ["Blue Moon Mark 2", "test article", "c3bn"], ["Starship V3", "test article", "c3sn"]].forEach(([n, s, id], i) => text(id, xs[i] - 240, 650, 480, `<div class="nm">${n}</div><div class="mono grey">${s}</div>`, "ctr"));
-  card("c3q", 260, 730, 1400, 180, `<div class="quote">“We're launching <b>three spacecraft on three different rockets</b> and testing how they operate together, something NASA has never attempted.” <span class="grey">Jeremy Parsons, Artemis program manager</span></div>`, "mock");
+  html.push(svgWrap(`<g transform="translate(${xs[0]} 410)"><g id="c3o" opacity="0">${sls(2.0)}</g></g><g transform="translate(${xs[1]} 420)"><g id="c3b" opacity="0">${lander(2.1)}</g></g><g transform="translate(${xs[2]} 415)"><g id="c3s" opacity="0">${ship(2.0)}</g></g>`));
+  [["Orion + SLS", "NASA", "c3on"], ["Blue Moon Mark 2", "test article", "c3bn"], ["Starship V3", "test article", "c3sn"]].forEach(([n, s, id], i) => text(id, xs[i] - 240, 662, 480, `<div class="nm">${n}</div><div class="mono grey">${s}</div>`, "ctr"));
+  card("c3q", 260, 748, 1400, 160, `<div class="quote">“We're launching <b>three spacecraft on three different rockets</b> and testing how they operate together, something NASA has never attempted.” <span class="grey">Jeremy Parsons, Artemis program manager</span></div>`, "mock");
   text("c3x", 96, 130, 1400, `<div class="mono grey">EARLIER ARTEMIS MISSIONS</div><div class="mid">NASA's rocket + NASA's capsule only</div>`, "l");
   show("#c3x", sc("c3").start + 0.2);
   const tO = A("c3", "Orion"), tB = A("c3", "Blue", 0), tS = A("c3", "SpaceX's");
@@ -91,11 +149,11 @@ scene("c3", sc("c3").start, sc("c4").start, () => {
 // ================= C4 THE SEQUENCE (orbit diagram + steps)
 scene("c4", sc("c4").start, sc("c5").start, () => {
   const cx = 470, cy = 540, R1 = 330, R2 = 400;
-  html.push(svgWrap(`${earthArc(cx, cy, 230)}<circle id="c4r1" cx="${cx}" cy="${cy}" r="${R1}" fill="none" stroke="${C.cy}" stroke-width="3" stroke-dasharray="3 14" opacity="0"/><ellipse id="c4r0" cx="${cx - 70}" cy="${cy}" rx="${R2 - 10}" ry="${R1 - 60}" fill="none" stroke="${C.am}" stroke-width="3" stroke-dasharray="3 14" opacity="0"/><circle id="c4r2" cx="${cx}" cy="${cy}" r="${R2 + 40}" fill="none" stroke="${C.gr}" stroke-width="3" stroke-dasharray="3 14" opacity="0"/>
-  <g id="c4bm" opacity="0"><g transform="translate(${cx} ${cy - R1}) rotate(0)">${lander(.8)}</g></g>
-  <g id="c4or" opacity="0"><g transform="translate(${cx} ${cy - R1 - 0}) rotate(0)">${orion(.8)}</g></g>
-  <g id="c4st" opacity="0"><g transform="translate(${cx} ${cy - R2 - 40})">${ship(.8)}</g></g>
-  <text x="${cx}" y="${cy + 5}" text-anchor="middle" fill="#8FA0C0" font-family="JetBrains Mono" font-size="22">illustration, not to scale</text>`));
+  html.push(svgWrap(`${earthArc(cx, cy, 230, "4")}<circle id="c4r1" cx="${cx}" cy="${cy}" r="${R1}" fill="none" stroke="${C.cy}" stroke-width="3" stroke-dasharray="3 14" opacity="0"/><ellipse id="c4r0" cx="${cx - 70}" cy="${cy}" rx="${R2 - 10}" ry="${R1 - 60}" fill="none" stroke="${C.am}" stroke-width="3" stroke-dasharray="3 14" opacity="0"/><circle id="c4r2" cx="${cx}" cy="${cy}" r="${R2 + 40}" fill="none" stroke="${C.gr}" stroke-width="3" stroke-dasharray="3 14" opacity="0"/>
+  <g id="c4bm" opacity="0"><g transform="translate(${cx} ${cy - R1}) rotate(0)">${lander(.95)}</g></g>
+  <g id="c4or" opacity="0"><g transform="translate(${cx} ${cy - R1 - 0}) rotate(0)">${orion(.9)}</g></g>
+  <g id="c4st" opacity="0"><g transform="translate(${cx} ${cy - R2 - 40})">${ship(.95)}</g></g>
+  <text x="96" y="112" fill="#8FA0C0" font-family="JetBrains Mono" font-size="22">illustration, not to scale</text>`));
   const steps = [
     ["1", "Blue Moon test article launches", "circular orbit ~273 miles up · can wait up to 30 days", "c4s1"],
     ["2", "Days later: Orion launches on SLS", "Kennedy · ~345-mile circle · 2 days of checkout", "c4s2"],
@@ -120,7 +178,7 @@ scene("c4", sc("c4").start, sc("c5").start, () => {
 });
 // ================= C5 TWO DOCKINGS
 scene("c5", sc("c5").start, sc("c6").start, () => {
-  html.push(svgWrap(`<g transform="translate(480 480)"><g id="c5a" opacity="0">${lander(2.4)}<g transform="translate(120 -10)">${orion(1.5)}</g></g></g><g transform="translate(1440 520)"><g id="c5b" opacity="0">${ship(2.4)}<g transform="translate(0 -270)">${orion(1.5)}</g></g></g>${line("c5p1", "M590 450 L640 440", C.am, 5)}${line("c5p2", "M1440 330 V360", C.am, 5)}`));
+  html.push(svgWrap(`<g transform="translate(480 480)"><g id="c5a" opacity="0">${lander(2.4)}<g transform="translate(185 -70) rotate(-90)">${orion(1.15)}</g></g></g><g transform="translate(1440 520)"><g id="c5b" opacity="0">${ship(2.4)}<g transform="translate(0 -292) rotate(180)">${orion(1.15)}</g></g></g>${line("c5p1", "M572 408 L612 408", C.am, 6)}${line("c5p2", "M1440 312 V336", C.am, 6)}`));
   text("c5t1", 200, 700, 560, `<div class="big3">SIDE PORT</div><div class="mono grey">beside Blue Moon's crew cabin</div>`, "ctr");
   text("c5t2", 1160, 700, 560, `<div class="big3">NOSE PORT</div><div class="mono grey">Orion's forward system meets Starship's nose</div>`, "ctr");
   html.push(`<div id="c5k" class="chips" style="left:96px;top:870px;width:1728px">${["CONTROLLABILITY", "COMMUNICATIONS", "SOFTWARE TOGETHER", "DOCKING & UNDOCKING FORCES"].map((x) => tag(x, "cy")).join("")}</div>`);
@@ -202,8 +260,10 @@ scene("c9", sc("c9").start, null, () => {
     js.push(`tl.set("#sb${i}",{opacity:1},${f3(st)});tl.set("#sb${i}",{opacity:0},${f3(en)});`);
   });
 }
+js.push(`tl.to("#ecl1",{rotation:10,svgOrigin:"960 1650",duration:${DUR},ease:"none"},0);tl.to("#ecl4",{rotation:-30,svgOrigin:"470 540",duration:${DUR},ease:"none"},0);`);
 js.push(`tl.set("#sc_c1",{opacity:1},0);tl.to("#stars",{backgroundPosition:"-300px 120px",duration:${DUR},ease:"none"},0);tl.to("#neb",{x:120,y:-60,duration:${DUR / 2},ease:"sine.inOut",yoyo:true,repeat:1},0);`);
 
+js.push(`tl.to(".glow",{opacity:.35,duration:1.1,yoyo:true,repeat:${Math.ceil(DUR / 1.1)},ease:"sine.inOut"},0);`);
 const css = `
 @font-face{font-family:Inter;src:url(./fonts/Inter-400.woff2);font-weight:100 900}
 @font-face{font-family:"JetBrains Mono";src:url(./fonts/JetBrainsMono-400.woff2);font-weight:100 800}
@@ -230,6 +290,7 @@ const css = `
 const page = `<!doctype html>
 <html lang="en" data-resolution="landscape"><head><meta charset="UTF-8"/><meta name="viewport" content="width=1920, height=1080"/><script src="./gsap.min.js"></script><style>${css}</style></head>
 <body><div id="root" data-composition-id="main" data-start="0" data-duration="${DUR.toFixed(3)}" data-width="1920" data-height="1080">
+${DEFS}
 <div id="stars"></div><div id="neb"></div>
 ${html.join("\n")}
 <div id="vig"></div></div>
