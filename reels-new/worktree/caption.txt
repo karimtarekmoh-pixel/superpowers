@@ -1,0 +1,12 @@
+Two Claude Code sessions in the same folder can step on each other's edits.
+
+The fix is a git worktree: a separate checkout, on its own branch. Start Claude with claude --worktree and a name, for example claude --worktree feature-auth. It is created under .claude/worktrees/ on a new branch named worktree-<name>.
+
+The catch: by default a new worktree branches from your repository's default branch, not your current work, so your unpushed commits are not in it. To start from your current work, set worktree.baseRef to "head" in your settings.
+
+Details are in the pinned comment.
+
+Save this for your next session.
+Follow @axiomallai for more Claude Code workflows.
+
+#claudecode #claudeai #aitools #aicoding #developertools #aiworkflow #codingtips

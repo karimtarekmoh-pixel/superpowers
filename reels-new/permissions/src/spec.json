@@ -1,0 +1,151 @@
+{
+ "label": "PERMISSIONS · CLAUDE CODE",
+ "accentWords": [
+  "history",
+  "permission",
+  "list",
+  "read-only",
+  "allowlist",
+  "check",
+  "save",
+  "follow",
+  "write"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "text": "Claude Code can read your own history, and write your permission list for you.",
+   "scene": {
+    "type": "hero",
+    "headA": "IT WRITES YOUR",
+    "headB": "PERMISSION LIST",
+    "icon": "shield",
+    "node": {
+     "t": "/fewer-permission-prompts",
+     "at": "write",
+     "cls": "acc",
+     "sym": "✓"
+    }
+   }
+  },
+  {
+   "id": "s2",
+   "text": "It's a built-in skill, slash fewer permission prompts.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "big",
+      "label": "what it is",
+      "t": "built-in skill",
+      "at": "built-in"
+     },
+     {
+      "k": "term",
+      "text": "/fewer-permission-prompts",
+      "at": "slash"
+     }
+    ],
+    "title": "THE COMMAND"
+   }
+  },
+  {
+   "id": "s3",
+   "text": "It scans your past transcripts for common read-only commands and tool calls, then builds a prioritized allowlist.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "chips",
+      "label": "scan, then build",
+      "arrows": true,
+      "chips": [
+       {
+        "t": "your transcripts",
+        "at": "transcripts"
+       },
+       {
+        "t": "read-only calls",
+        "at": "read-only",
+        "cls": "am"
+       },
+       {
+        "t": "allowlist",
+        "cls": "ac",
+        "at": "allowlist"
+       }
+      ],
+      "dir": "col"
+     }
+    ],
+    "title": "HOW IT WORKS"
+   }
+  },
+  {
+   "id": "s4",
+   "text": "Then it adds the list to your project's settings file. That file lives in your project, so read the list before you keep it.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "chips",
+      "label": "it writes to",
+      "chips": [
+       {
+        "t": ".claude/settings.json",
+        "cls": "am",
+        "at": "settings"
+       }
+      ]
+     },
+     {
+      "k": "warn",
+      "label": "before you keep it",
+      "items": [
+       {
+        "t": "read the list first",
+        "at": "read"
+       }
+      ]
+     }
+    ],
+    "title": "WHERE IT GOES"
+   }
+  },
+  {
+   "id": "s5",
+   "text": "The result is fewer prompts for read-only calls. Just check the list first.",
+   "stamp": {
+    "text": [
+     "CHECK",
+     "THE LIST"
+    ],
+    "at": "check"
+   },
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "rows",
+      "label": "the result",
+      "rows": [
+       {
+        "t": "read-only calls",
+        "tag": "fewer prompts",
+        "cls": "hot",
+        "at": "fewer"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "s6",
+   "text": "Save this for your next session. Follow for more Claude Code workflows.",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}
