@@ -61,8 +61,8 @@ scene("c2", sc("c2").start, sc("c3").start, () => {
   text("c2b", 1130, 200, 460, `<div class="big am">2028</div>`, "ctr");text("c2b2", 1130, 490, 460, `<div class="mono">ARTEMIS IV</div><div class="mono grey sm">landing · south pole · target</div>`, "ctr");
   const names = [["COMMANDER", "Randy Bresnik", "bresnik"], ["PILOT", "Luca Parmitano (ESA)", "parmitano"], ["MISSION SPECIALIST", "Andre Douglas", "douglas"], ["MISSION SPECIALIST", "Frank Rubio", "rubio"]];
   names.forEach(([r, n], i) => card(`c2c${i}`, 130 + i * 420, 640, 390, 160, `<div class="mono grey sm">${r}</div><div class="nm">${n}</div>`, "mock"));
-  card("c2q", 130, 820, 1660, 110, `<div class="quote">NASA: <b>Artemis III will not land on the Moon.</b> The landing is Artemis IV, targeted for 2028.</div>`, "mock");
-  html.push(`<div id="c2k" class="chips" style="left:130px;top:945px;width:1660px">${tag("REDUCE RISK", "cy")}${tag("VALIDATE HARDWARE", "cy")}${tag("GAIN OPERATIONAL EXPERIENCE", "cy")}</div>`);
+  card("c2q", 130, 810, 1660, 100, `<div class="quote">NASA: <b>Artemis III will not land on the Moon.</b> The landing is Artemis IV, targeted for 2028.</div>`, "mock");
+  html.push(`<div id="c2k" class="chips" style="left:130px;top:905px;width:1660px">${tag("REDUCE RISK", "cy")}${tag("VALIDATE HARDWARE", "cy")}${tag("GAIN OPERATIONAL EXPERIENCE", "cy")}</div>`);
   const t0 = sc("c2").start;
   show("#c2a", A("c2", "twenty") - 0.1); show("#c2a2", A("c2", "twenty") - 0.1); draw("#c2l", A("c2", "twenty") - 0.1, 1.4); sfx(A("c2", "twenty") - 0.1, "pluck", 0.7);
   [["bresnik", 0], ["Luca", 1], ["Andre", 2], ["Frank", 3]].forEach(([w, i]) => { const t = (w === "bresnik" ? A("c2", "Randy") : A("c2", w)) - 0.1; show(`#c2c${i}`, t); sfx(t, "tick", 0.6, 1 + 0.1 * i); });
@@ -76,7 +76,7 @@ scene("c3", sc("c3").start, sc("c4").start, () => {
   const xs = [380, 960, 1540];
   html.push(svgWrap(`<g transform="translate(${xs[0]} 440)"><g id="c3o" opacity="0">${sls(2.3)}</g></g><g transform="translate(${xs[1]} 440)"><g id="c3b" opacity="0">${lander(2.3)}</g></g><g transform="translate(${xs[2]} 440)"><g id="c3s" opacity="0">${ship(2.3)}</g></g>`));
   [["Orion + SLS", "NASA", "c3on"], ["Blue Moon Mark 2", "test article", "c3bn"], ["Starship V3", "test article", "c3sn"]].forEach(([n, s, id], i) => text(id, xs[i] - 240, 650, 480, `<div class="nm">${n}</div><div class="mono grey">${s}</div>`, "ctr"));
-  card("c3q", 260, 770, 1400, 180, `<div class="quote">“We're launching <b>three spacecraft on three different rockets</b> and testing how they operate together, something NASA has never attempted.” <span class="grey">Jeremy Parsons, Artemis program manager</span></div>`, "mock");
+  card("c3q", 260, 730, 1400, 180, `<div class="quote">“We're launching <b>three spacecraft on three different rockets</b> and testing how they operate together, something NASA has never attempted.” <span class="grey">Jeremy Parsons, Artemis program manager</span></div>`, "mock");
   text("c3x", 96, 130, 1400, `<div class="mono grey">EARLIER ARTEMIS MISSIONS</div><div class="mid">NASA's rocket + NASA's capsule only</div>`, "l");
   show("#c3x", sc("c3").start + 0.2);
   const tO = A("c3", "Orion"), tB = A("c3", "Blue", 0), tS = A("c3", "SpaceX's");
@@ -85,7 +85,7 @@ scene("c3", sc("c3").start, sc("c4").start, () => {
   [["#c3o", "#c3on", A("c3", "Those") + 0.9], ["#c3b", "#c3bn", 0], ["#c3s", "#c3sn", 0]].forEach(() => {});
   const tt = [A("c3", "Orion", 0), A("c3", "Blue", 0), A("c3", "SpaceX's", 0)];
   ["#c3o:#c3on", "#c3b:#c3bn", "#c3s:#c3sn"].forEach((p, i) => { const [g, n] = p.split(":"); js.push(`tl.fromTo("${g}",{opacity:0,y:20},{opacity:1,y:0,duration:.5,ease:"power2.out"},${f3(tt[i] - 0.1)});`); show(n, tt[i], 14); sfx(tt[i] - 0.1, "pluck", 0.7, [1, 1.26, 1.5][i]); });
-  html.push(`<div id="c3t" style="position:absolute;left:0;width:1920px;top:968px;text-align:center;opacity:0">${tag("TEST VERSIONS, NOT FINISHED LANDERS", "am")}</div>`);
+  html.push(`<div id="c3t" style="position:absolute;left:0;width:1920px;top:912px;text-align:center;opacity:0">${tag("TEST VERSIONS, NOT FINISHED LANDERS", "am")}</div>`);
   popv("#c3t", A("c3", "Test") - 0.05); sfx(A("c3", "Test") - 0.05, "pop", 0.7);
 });
 // ================= C4 THE SEQUENCE (orbit diagram + steps)
@@ -114,7 +114,7 @@ scene("c4", sc("c4").start, sc("c5").start, () => {
   js.push(`tl.to("#c4or",{rotation:360,svgOrigin:"${cx} ${cy}",duration:2.4,ease:"power1.inOut"},${f3(o("c4", "circle") + 0.1)});`);
   js.push(`tl.to("#c4r2",{opacity:.5,duration:.5},${f3(marks[4])});tl.fromTo("#c4st",{opacity:0,rotation:-40,svgOrigin:"${cx} ${cy}"},{opacity:1,rotation:0,svgOrigin:"${cx} ${cy}",duration:1.0,ease:"power2.out"},${f3(marks[4] + 0.1)});`);
   js.push(`tl.to("#c4or",{rotation:430,svgOrigin:"${cx} ${cy}",duration:1.6,ease:"power1.inOut"},${f3(marks[5] - 0.3)});tl.to("#c4st",{rotation:70,svgOrigin:"${cx} ${cy}",duration:1.6,ease:"power1.inOut"},${f3(marks[5] - 0.3)});`);
-  html.push(`<div id="c4n" style="position:absolute;left:96px;top:960px;width:900px;opacity:0">${tag("FIRST COMMERCIAL LANDER EVALUATION WITH A CREW", "am")}</div><div id="c4t" style="position:absolute;left:96px;top:960px;width:900px;opacity:0">${tag("5 MORE DAYS: SUITS · SENSORS · NOISE · HEALTH-CHECK STUDY", "cy")}</div>`);
+  html.push(`<div id="c4n" style="position:absolute;left:96px;top:915px;width:900px;opacity:0">${tag("FIRST COMMERCIAL LANDER EVALUATION WITH A CREW", "am")}</div><div id="c4t" style="position:absolute;left:96px;top:915px;width:900px;opacity:0">${tag("5 MORE DAYS: SUITS · SENSORS · NOISE · HEALTH-CHECK STUDY", "cy")}</div>`);
   popv("#c4n", o("c4", "first") - 0.1); sfx(o("c4", "first") - 0.1, "glass", 0.7); hide("#c4n", o("c4", "Step", 3) - 0.1);
   popv("#c4t", o("c4", "Suits") - 0.1); sfx(o("c4", "Suits") - 0.1, "chirp", 0.6);
 });
@@ -123,7 +123,7 @@ scene("c5", sc("c5").start, sc("c6").start, () => {
   html.push(svgWrap(`<g transform="translate(480 480)"><g id="c5a" opacity="0">${lander(2.4)}<g transform="translate(120 -10)">${orion(1.5)}</g></g></g><g transform="translate(1440 520)"><g id="c5b" opacity="0">${ship(2.4)}<g transform="translate(0 -270)">${orion(1.5)}</g></g></g>${line("c5p1", "M590 450 L640 440", C.am, 5)}${line("c5p2", "M1440 330 V360", C.am, 5)}`));
   text("c5t1", 200, 700, 560, `<div class="big3">SIDE PORT</div><div class="mono grey">beside Blue Moon's crew cabin</div>`, "ctr");
   text("c5t2", 1160, 700, 560, `<div class="big3">NOSE PORT</div><div class="mono grey">Orion's forward system meets Starship's nose</div>`, "ctr");
-  html.push(`<div id="c5k" class="chips" style="left:96px;top:880px;width:1728px">${["CONTROLLABILITY", "COMMUNICATIONS", "SOFTWARE TOGETHER", "DOCKING & UNDOCKING FORCES"].map((x) => tag(x, "cy")).join("")}</div>`);
+  html.push(`<div id="c5k" class="chips" style="left:96px;top:870px;width:1728px">${["CONTROLLABILITY", "COMMUNICATIONS", "SOFTWARE TOGETHER", "DOCKING & UNDOCKING FORCES"].map((x) => tag(x, "cy")).join("")}</div>`);
   text("c5h", 96, 150, 1300, `<div class="mid">Two landers. <span class="am">Two docking designs.</span> One mission.</div>`, "l");
   show("#c5h", sc("c5").start + 0.2);
   js.push(`tl.fromTo("#c5a",{opacity:0},{opacity:1,duration:.5},${f3(A("c5", "Orion") - 0.1)});`); draw("#c5p1", A("c5", "port") - 0.1, 0.5); show("#c5t1", A("c5", "port") - 0.1); sfx(A("c5", "port") - 0.1, "pluck", 0.7);
@@ -141,7 +141,7 @@ scene("c6", sc("c6").start, sc("c7").start, () => {
   text("c6o_t", day(4) - 200, 500, 400, `<div class="mono am sm">ORION launches<br>“only days after”</div>`, "ctr");
   text("c6s_t", day(12) - 220, 500, 440, `<div class="mono gr sm">STARSHIP launches later<br>shorter time on orbit</div>`, "ctr");
   card("c6w", 300, 640, 1320, 230, `<div class="big3 am">WHAT IF ONE PIECE IS LATE?</div><div class="quote" id="c6a" style="opacity:0">NASA's published plan <b>doesn't say</b> what a problem in orbit would do to the 2028 target.</div>`, "mock hotc");
-  html.push(`<div id="c6t" style="position:absolute;left:0;width:1920px;top:920px;text-align:center;opacity:0">${tag("TREAT EVERY DATE AS A TARGET, NOT A PROMISE", "grey")}</div>`);
+  html.push(`<div id="c6t" style="position:absolute;left:0;width:1920px;top:895px;text-align:center;opacity:0">${tag("TREAT EVERY DATE AS A TARGET, NOT A PROMISE", "grey")}</div>`);
   js.push(`tl.to("#c6bm",{strokeDashoffset:0,duration:1.2,ease:"power2.out"},${f3(A("c6", "Blue", 0) - 0.2)});`);
   show("#c6l0", sc("c6").start + 0.3); show("#c6l1", A("c6", "thirty") - 0.2); sfx(A("c6", "thirty") - 0.2, "glass", 0.7);
     show("#c6s_t", A("c6", "Starship") - 0.1); js.push(`tl.fromTo("#c6s",{opacity:0,scale:.5},{opacity:1,scale:1,duration:.3},${f3(A("c6", "late") - 0.1)});`);
@@ -168,8 +168,8 @@ scene("c8", sc("c8").start, sc("c9").start, () => {
   card("c8h", 130, 150, 1660, 120, `<div class="quote">On a landing mission, a commercial lander links up with Orion, then takes <b>two crew to the surface</b> while <b>two stay aboard</b> Orion.</div>`, "mock");
   const spX = [["Several Starships launch as tankers", "tankers"], ["Transfer propellant to a depot Starship", "depot"], ["Lander waits in Earth orbit; Orion docks", "waits"], ["Burn sends the pair to low lunar orbit", "burn"], ["Two crew descend for several days", "crew"]];
   const bO = [["Three transfer stages launch to orbit", "three"], ["Blue Moon Mark 2 lander follows; they dock", "Followed"], ["Stack heads to an elliptical polar orbit", "elliptical"], ["Stages drop away as fuel runs out", "drop"], ["Orion docks there · two crew descend to the south pole", "descend"]];
-  [[spX, 130, "STARSHIP PLAN", "c8x"], [bO, 990, "BLUE ORIGIN PLAN", "c8y"]].forEach(([arr, x, title, id]) => { card(id, x, 300, 800, 70, `<div class="mono am sm">${title}</div>`, "mock hdr"); arr.forEach(([t], i) => card(`${id}${i}`, x, 385 + i * 108, 800, 100, `<div class="st1 sm2">${i + 1}. ${t}</div>`, "mock stepc")); });
-  html.push(`<div id="c8n" style="position:absolute;left:130px;top:945px;width:1660px">${tag("NASA: replaces the earlier near-rectilinear halo orbit meeting point", "grey")}${tag("NEW: lighter ‘Sortie suit’, about half the weight", "cy")}</div>`);
+  [[spX, 130, "STARSHIP PLAN", "c8x"], [bO, 990, "BLUE ORIGIN PLAN", "c8y"]].forEach(([arr, x, title, id]) => { card(id, x, 290, 800, 70, `<div class="mono am sm">${title}</div>`, "mock hdr"); arr.forEach(([t], i) => card(`${id}${i}`, x, 372 + i * 100, 800, 92, `<div class="st1 sm2">${i + 1}. ${t}</div>`, "mock stepc")); });
+  html.push(`<div id="c8n" style="position:absolute;left:130px;top:890px;width:1660px">${tag("NASA: replaces the earlier near-rectilinear halo orbit meeting point", "grey")}${tag("NEW: lighter ‘Sortie suit’, about half the weight", "cy")}</div>`);
   show("#c8h", sc("c8").start + 0.2);
   const ta = [A("c8", "fleet"), A("c8", "transfer"), A("c8", "waits"), A("c8", "burn"), A("c8", "down")];
   show("#c8x", A("c8", "SpaceX's") - 0.1); sfx(A("c8", "SpaceX's") - 0.1, "marimba", 0.7);
@@ -183,12 +183,25 @@ scene("c8", sc("c8").start, sc("c9").start, () => {
 scene("c9", sc("c9").start, null, () => {
   const items = [["1", "Hardware is on track", "NASA: processing times cut by about half", "One"], ["2", "Fuel-line part redesigned in 5 months", "NASA's own claim · about a tenth of an outside estimate", "Two"], ["3", "The docking tests", "Everything else depends on them", "Three"]];
   items.forEach(([n, a, b], i) => card(`c9${i}`, 130, 150 + i * 190, 1660, 165, `<div class="stp"><b>${n}</b><div><div class="st1 big4">${a}</div><div class="st2">${b}</div></div></div>`, "mock step"));
-  card("c9s", 130, 740, 1660, 220, `<div class="big3 cy">SUBSCRIBE</div><div class="mono grey">Next: how a Starship refuels in orbit, and why it matters for the landing</div>`, "mock hotc");
+  card("c9s", 130, 720, 1660, 200, `<div class="big3 cy">SUBSCRIBE</div><div class="mono grey">Next: how a Starship refuels in orbit, and why it matters for the landing</div>`, "mock hotc");
   const tt = [A("c9", "One", 0), A("c9", "Two", 1) , A("c9", "Three")];
   items.forEach((_, i) => { const t = [A("c9", "One"), A("c9", "Two"), A("c9", "Three")][i] - 0.15; show(`#c9${i}`, t); sfx(t, "pluck", 0.7, [1, 1.26, 1.5][i]); });
   show("#c9s", A("c9", "subscribe") - 0.15); sfx(A("c9", "subscribe") - 0.15, "success3", 0.8); sfx(A("c9", "subscribe") + 0.9, "click", 0.8);
   js.push(`tl.to("#c9s",{scale:1.03,duration:.6,ease:"sine.inOut",yoyo:true,repeat:${Math.max(1, Math.floor((DUR - A("c9", "subscribe")) / 0.6))}},${f3(A("c9", "subscribe") + 1.2)});`);
 });
+
+// ================= subtitles (small, bottom, burned in). Spoken numbers shown as digits.
+{
+  const fixNum = (t) => t.replace(/twenty twenty seven/gi, "2027").replace(/twenty twenty eight/gi, "2028").replace(/two hundred and seventy three/gi, "273").replace(/three hundred and forty five/gi, "345").replace(/fourteen day/gi, "14-day").replace(/thirty days/gi, "30 days").replace(/thirty day/gi, "30-day").replace(/Artemis Three/g, "Artemis III").replace(/Artemis Four/g, "Artemis IV").replace(/Artemis Five/g, "Artemis V").replace(/Version Three/g, "V3").replace(/Mark Two/g, "Mark 2").replace(/Mark two/g, "Mark 2").replace(/Version three/g, "V3").replace(/five more days/gi, "5 more days").replace(/five days/gi, "5 days").replace(/up to two hours/gi, "up to 2 hours").replace(/two crew/gi, "2 crew").replace(/two days/gi, "2 days");
+  const ws = T.words, chunks = []; let cur = [];
+  const len = (a) => a.map((w) => w.text).join(" ").length;
+  ws.forEach((w, i) => { cur.push(w); const nx = ws[i + 1]; const stop = /[.?!:;]$/.test(w.text) || (/,$/.test(w.text) && len(cur) > 30) || len(cur) >= 62 || (nx && nx.section !== w.section) || i === ws.length - 1; if (stop) { chunks.push(cur); cur = []; } });
+  chunks.forEach((c, i) => {
+    const txt = fixNum(c.map((w) => w.text).join(" ")), st = Math.max(0, c[0].start - 0.05), en0 = c[c.length - 1].end + 0.35, nxt = chunks[i + 1] ? chunks[i + 1][0].start - 0.05 : DUR, en = Math.min(en0, nxt);
+    html.push(`<div class="sub" id="sb${i}"><span>${e(txt)}</span></div>`);
+    js.push(`tl.set("#sb${i}",{opacity:1},${f3(st)});tl.set("#sb${i}",{opacity:0},${f3(en)});`);
+  });
+}
 js.push(`tl.set("#sc_c1",{opacity:1},0);tl.to("#stars",{backgroundPosition:"-300px 120px",duration:${DUR},ease:"none"},0);tl.to("#neb",{x:120,y:-60,duration:${DUR / 2},ease:"sine.inOut",yoyo:true,repeat:1},0);`);
 
 const css = `
@@ -212,7 +225,7 @@ const css = `
 .row{display:flex;align-items:center;gap:18px}.ppl i{display:inline-block;width:34px;height:34px;border-radius:50%;background:${C.cy};margin-right:10px}
 .stamp{position:absolute;opacity:0;text-align:center;font:900 120px/1 Inter;letter-spacing:-.03em;border:10px solid ${C.am};border-radius:24px;padding:34px 20px;background:rgba(5,7,13,.92);color:${C.am};box-shadow:0 0 70px rgba(255,181,71,.25)}.stamp.red2{border-color:${C.red};color:${C.red};font-size:112px;box-shadow:0 0 70px rgba(255,107,107,.25)}
 .step .stp,.stepc{display:flex;align-items:center}.stp{display:flex;align-items:center;gap:24px}.stp b{display:inline-flex;align-items:center;justify-content:center;flex:none;width:58px;height:58px;border-radius:50%;background:${C.cy};color:#001018;font:900 32px Inter}.st1{font:800 31px/1.2 Inter}.st2{font:500 21px/1.3 "JetBrains Mono",monospace;color:${C.grey};margin-top:6px}.sm2{font-size:28px!important}
-.card.hdr{padding:14px 30px}.rr{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font:700 34px Inter}
+.card.hdr{padding:14px 30px}.sub{position:absolute;left:0;width:1920px;top:972px;text-align:center;opacity:0;z-index:40}.sub span{display:inline-block;background:rgba(5,7,13,.8);padding:4px 16px;border-radius:9px;font:600 26px/1.3 Inter;color:#EAF0FF}.rr{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font:700 34px Inter}
 `;
 const page = `<!doctype html>
 <html lang="en" data-resolution="landscape"><head><meta charset="UTF-8"/><meta name="viewport" content="width=1920, height=1080"/><script src="./gsap.min.js"></script><style>${css}</style></head>

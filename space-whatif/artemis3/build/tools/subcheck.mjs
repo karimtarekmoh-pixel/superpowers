@@ -1,0 +1,5 @@
+import { launch } from "/home/user/superpowers/reel-engine/engine/browser.mjs"; import path from "node:path";
+const b = await launch(), ctx = await b.newContext({ viewport: { width: 1920, height: 1080 } }), p = await ctx.newPage();
+await p.goto("file://" + path.resolve("hf/index.html")); await p.waitForTimeout(900);
+const r = await p.evaluate(() => { const subs = [...document.querySelectorAll(".sub span")].map((e) => e.getBoundingClientRect()); const maxW = Math.max(...subs.map((s) => s.width)); const bad = []; document.querySelectorAll(".scene .card, .scene .chips, .scene .tag, .scene .tx, #c4n, #c4t, #c8n, #c9s, #c3t, #c6t").forEach((e) => { const q = e.getBoundingClientRect(); if (q.width && q.bottom > 968 && q.top < 1022) bad.push((e.id || e.className).toString().slice(0, 24) + ":" + Math.round(q.top) + "-" + Math.round(q.bottom)); }); return { n: subs.length, maxW: Math.round(maxW), tallest: Math.round(Math.max(...subs.map((s) => s.height))), bad }; });
+console.log(JSON.stringify(r)); await b.close();
