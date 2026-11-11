@@ -308,6 +308,38 @@ def lufs(x):
     p = f"{ROOT}/audio/_m.wav"; sf.write(p, x.astype(np.float32), SR)
     r = subprocess.run(["ffmpeg", "-nostats", "-i", p, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
     return float(r[r.rindex("Summary"):].split("I:")[1].split()[0])
+
+def ambient_bed(n):
+    """Very quiet space ambience + music: low drone (slow LFOs), slow chord pad (Am9, Fmaj7, Cadd9, G6), sparse high shimmer notes. Tones only, no noise."""
+    t = np.arange(n) / SR; dur = n / SR
+    drone = np.zeros(n)
+    for f, a, lfo in ((55.0, 1.0, .031), (82.41, .6, .043), (110.0, .4, .057), (164.81, .18, .071)):
+        drone += a * np.sin(2 * np.pi * f * t + .35 * np.sin(2 * np.pi * lfo * t)) * (.78 + .22 * np.sin(2 * np.pi * lfo * t + f))
+    chords = [(110.0, 130.81, 164.81, 246.94), (87.31, 130.81, 164.81, 220.0), (130.81, 164.81, 196.0, 293.66), (98.0, 123.47, 146.83, 220.0)]
+    pad = np.zeros(n); seg = 14.0; k = 0; t0 = -2.0
+    while t0 < dur + 2:
+        ch = chords[k % 4]; Ln = seg + 6.0; m0 = max(0, int(t0 * SR)); m1 = min(n, int((t0 + Ln) * SR))
+        if m1 > m0:
+            tt = np.arange(m0, m1) / SR - t0
+            env = np.minimum(1.0, np.minimum(tt / 4.5, (Ln - tt) / 4.5)); env = np.sin(np.clip(env, 0, 1) * np.pi / 2) ** 2
+            for f in ch:
+                for det in (-1.6, 1.6):
+                    ff = f * 2 ** (det / 1200)
+                    for h, ha in ((1, 1.0), (2, .28), (3, .10)):
+                        pad[m0:m1] += ha * env * np.sin(2 * np.pi * ff * h * (tt + t0) + h * (f % 7))
+        k += 1; t0 += seg
+    sh = np.zeros(n); r = np.random.default_rng(99); tn = 6.0
+    for f in [880.0, 987.77, 1174.66, 1318.51, 1760.0]: pass
+    scale = [880.0, 987.77, 1174.66, 1318.51, 1760.0, 1567.98]
+    while tn < dur - 3:
+        f = scale[int(r.integers(0, len(scale)))]; Ln = 7.0; tt = np.arange(int(Ln * SR)) / SR
+        env = np.minimum(tt / 1.4, 1.0) ** 2 * np.exp(-np.maximum(tt - 1.4, 0) / 1.8)
+        note = np.sin(2 * np.pi * f * tt) * env + .25 * np.sin(2 * np.pi * f * 2.0 * tt) * env
+        for dly, g in ((0, 1.0), (.9, .45), (1.8, .22)): place(sh, note * g, tn + dly)
+        tn += r.uniform(10, 22)
+    d = drone * 10 ** ((-46 - lufs(drone)) / 20); p_ = pad * 10 ** ((-41 - lufs(pad)) / 20); s_ = sh * 10 ** ((-50 - lufs(sh + 1e-9)) / 20) if np.abs(sh).max() > 0 else sh
+    out = d + p_ + s_; out *= np.clip(t / 5.0, 0, 1); out[-int(2 * SR):] *= np.linspace(1, 0, int(2 * SR))
+    return out
 if __name__ == "__main__":
     E = json.load(open(f"{ROOT}/audio/sfx_events.json")); dur = E["duration"]; n = int(dur * SR); s4 = E["s4"]
     v, _ = sf.read(f"{ROOT}/audio/vo.wav"); v = np.pad(v, (0, max(0, n - len(v))))[:n]
@@ -320,10 +352,11 @@ if __name__ == "__main__":
     if os.environ.get("BED") == "none":   # ladder format: voice + effects only; a faint room-tone floor (-50 dBFS) so gaps are quiet, not digital silence
         rt = bp(rng.standard_normal(n), 80, 5000); m[:] = 0 if CLEAN else rt * (10 ** (-50 / 20) / (rt.std() + 1e-12))
         gd = groove(3.2, drop_at=0.0); gd = gd / (np.abs(gd).max() + 1e-9) * 10 ** (-13 / 20)
-        if not os.environ.get("NOEND"): place(m, gd, E["end"])   # MOH signature: one kick + bass ring-out on the end card; no steady music bed
+        if not os.environ.get("NOEND"): place(m, gd, E["end"])
+    if os.environ.get("AMBIENT"): m = ambient_bed(n)   # MOH signature: one kick + bass ring-out on the end card; no steady music bed
     e = np.convolve(np.abs(v), np.ones(int(.12 * SR)) / int(.12 * SR), "same"); speaking = np.clip(e / (np.percentile(e, 90) * .35 + 1e-9), 0, 1)
     speaking = np.convolve(speaking, np.ones(int(.08 * SR)) / int(.08 * SR), "same")
-    duck_db = np.full(n, 9.0); hb = np.ones(n)
+    duck_db = np.full(n, 4.0 if os.environ.get("AMBIENT") else 9.0); hb = np.ones(n)
     if os.environ.get("HOOK_BOOST") == "1":   # the hook needs sound: music +6 dB and only 3 dB of ducking until just after the stamp, then eases back to normal over 1 s
         he = E.get("hook", 5.5); tt = np.arange(n) / SR; ramp = np.clip((he - tt) / 1.0, 0, 1); hb = 1 + (10 ** (10 / 20) - 1) * ramp; duck_db = 9.0 - 7.0 * ramp
     duck = 10 ** (-(duck_db * speaking) / 20)
