@@ -84,7 +84,7 @@ S.sections.forEach((s, i) => { const t = sc(s.id).start; js.push(`tl.set("#chl",
 
 // ================= C1 HOOK
 scene("c1", 0, sc("c2").start, () => {
-  html.push(svgWrap(`${earthArc(960, 1650, 800, "1")}<circle id="c1orb" cx="960" cy="1650" r="900" fill="none" stroke="${C.cy}" stroke-width="3" stroke-dasharray="3 16" opacity="0"/><g transform="translate(960 700)"><g id="c1lan" opacity="0">${lander(1.5)}</g></g>${line("c1dim", "M1280 917 V809", C.am, 4)}<text id="c1mi" x="1305" y="880" fill="${C.am}" font-family="JetBrains Mono" font-weight="800" font-size="44" opacity="0">273 mi</text>`));
+  html.push(svgWrap(`${earthArc(960, 1650, 800, "1")}<circle id="c1orb" cx="960" cy="1650" r="900" fill="none" stroke="${C.cy}" stroke-width="3" stroke-dasharray="3 16" opacity="0"/>${line("c1dim", "M1280 917 V809", C.am, 4)}<text id="c1mi" x="1305" y="880" fill="${C.am}" font-family="JetBrains Mono" font-weight="800" font-size="44" opacity="0">273 mi</text>`));
   html.push(`<image id="c1m" href="assets/moon.png" x="1480" y="90" width="230" height="230" opacity="0"/>`.replace("<image","<svg class=\"lay\" width=\"1920\" height=\"1080\"><image").replace("/>","/></svg>"));
   text("c1y", 96, 120, 900, `2027`, "huge am");
   text("c1a", 100, 330, 900, `<span class="ppl"><i></i><i></i><i></i><i></i></span><span class="mono grey">FOUR ASTRONAUTS</span>`, "row");
@@ -124,7 +124,7 @@ scene("c2", sc("c2").start, sc("c3").start, () => {
 // ================= C3 THREE SPACECRAFT, THREE ROCKETS
 scene("c3", sc("c3").start, sc("c4").start, () => {
   const xs = [380, 960, 1540];
-  html.push(svgWrap(`<g transform="translate(${xs[0]} 410)"><g id="c3o" opacity="0">${sls(2.0)}</g></g><g transform="translate(${xs[1]} 420)"><g id="c3b" opacity="0">${lander(2.1)}</g></g><g transform="translate(${xs[2]} 415)"><g id="c3s" opacity="0">${ship(2.0)}</g></g>`));
+  
   [["Orion + SLS", "NASA", "c3on"], ["Blue Moon Mark 2", "test article", "c3bn"], ["Starship V3", "test article", "c3sn"]].forEach(([n, s, id], i) => text(id, xs[i] - 240, 662, 480, `<div class="nm">${n}</div><div class="mono grey">${s}</div>`, "ctr"));
   card("c3q", 260, 748, 1400, 160, `<div class="quote">“We're launching <b>three spacecraft on three different rockets</b> and testing how they operate together, something NASA has never attempted.” <span class="grey">Jeremy Parsons, Artemis program manager</span></div>`, "mock");
   text("c3x", 96, 130, 1400, `<div class="mono grey">EARLIER ARTEMIS MISSIONS</div><div class="mid">NASA's rocket + NASA's capsule only</div>`, "l");
@@ -172,7 +172,6 @@ scene("c4", sc("c4").start, sc("c5").start, () => {
 });
 // ================= C5 TWO DOCKINGS
 scene("c5", sc("c5").start, sc("c6").start, () => {
-  html.push(svgWrap(`<g transform="translate(480 480)"><g id="c5a" opacity="0">${lander(2.4)}<g transform="translate(185 -70) rotate(-90)">${orion(1.15)}</g></g></g><g transform="translate(1440 520)"><g id="c5b" opacity="0">${ship(2.4)}<g transform="translate(0 -292) rotate(180)">${orion(1.15)}</g></g></g>${line("c5p1", "M572 408 L612 408", C.am, 6)}${line("c5p2", "M1440 312 V336", C.am, 6)}`));
   text("c5t1", 200, 700, 560, `<div class="big3">SIDE PORT</div><div class="mono grey">beside Blue Moon's crew cabin</div>`, "ctr");
   text("c5t2", 1160, 700, 560, `<div class="big3">NOSE PORT</div><div class="mono grey">Orion's forward system meets Starship's nose</div>`, "ctr");
   html.push(`<div id="c5k" class="chips" style="left:96px;top:870px;width:1728px">${["CONTROLLABILITY", "COMMUNICATIONS", "SOFTWARE TOGETHER", "DOCKING & UNDOCKING FORCES"].map((x) => tag(x, "cy")).join("")}</div>`);
@@ -298,6 +297,7 @@ fs.writeFileSync("hf/index.html", page);
 order.forEach((id, i) => { if (i) AUTO.push({ t: +(sc(id).start + 0.05).toFixed(3), type: "bell", gain: 0.5, rate: PENT[i % PENT.length] }); });
 order.forEach((id, i) => { if (i) fx.push({ t: +(sc(id).start - 0.35).toFixed(3), type: "swell", gain: 0.5, rate: 1 }); });
 { AUTO.sort((a, b) => a.t - b.t); let lastA = -9; for (const ev of AUTO) { if (fx.some((m) => Math.abs(m.t - ev.t) < 0.09)) continue; if (ev.t - lastA < 0.11 && ev.type !== "bell") continue; fx.push(ev); lastA = ev.t; } }
+fs.writeFileSync("audio/overlay.json", JSON.stringify({ c1: { appear: A("c1", "float") - 0.1, end: sc("c2").start }, c3: { sls: A("c3", "Orion", 0) - 0.1, lander: A("c3", "Blue", 0) - 0.1, ship: A("c3", "SpaceX's", 0) - 0.1, end: sc("c4").start }, c5: { lander: A("c5", "Orion") - 0.1, ship: A("c5", "Later") - 0.1, end: sc("c6").start } }, null, 1));
 fx.sort((a, b) => a.t - b.t);
 fs.writeFileSync("audio/sfx_events.json", JSON.stringify({ duration: T.duration, s4: 0.0, end: DUR - 3.2, hook: 0.1, events: fx }, null, 1));
 if (MISS.length) console.log("MISSING ANCHORS:", [...new Set(MISS)].join(", "));
