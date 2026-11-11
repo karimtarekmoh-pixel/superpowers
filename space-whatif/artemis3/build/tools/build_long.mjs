@@ -115,7 +115,7 @@ scene("c4", sc("c4").start, sc("c5").start, () => {
   js.push(`tl.to("#c4r2",{opacity:.5,duration:.5},${f3(marks[4])});tl.fromTo("#c4st",{opacity:0,rotation:-40,svgOrigin:"${cx} ${cy}"},{opacity:1,rotation:0,svgOrigin:"${cx} ${cy}",duration:1.0,ease:"power2.out"},${f3(marks[4] + 0.1)});`);
   js.push(`tl.to("#c4or",{rotation:430,svgOrigin:"${cx} ${cy}",duration:1.6,ease:"power1.inOut"},${f3(marks[5] - 0.3)});tl.to("#c4st",{rotation:70,svgOrigin:"${cx} ${cy}",duration:1.6,ease:"power1.inOut"},${f3(marks[5] - 0.3)});`);
   html.push(`<div id="c4n" style="position:absolute;left:96px;top:960px;width:900px;opacity:0">${tag("FIRST COMMERCIAL LANDER EVALUATION WITH A CREW", "am")}</div><div id="c4t" style="position:absolute;left:96px;top:960px;width:900px;opacity:0">${tag("5 MORE DAYS: SUITS · SENSORS · NOISE · HEALTH-CHECK STUDY", "cy")}</div>`);
-  popv("#c4n", o("c4", "first") - 0.1); sfx(o("c4", "first") - 0.1, "glass", 0.7); hide("#c4n", o("c4", "Step", 1) - 0.1);
+  popv("#c4n", o("c4", "first") - 0.1); sfx(o("c4", "first") - 0.1, "glass", 0.7); hide("#c4n", o("c4", "Step", 3) - 0.1);
   popv("#c4t", o("c4", "Suits") - 0.1); sfx(o("c4", "Suits") - 0.1, "chirp", 0.6);
 });
 // ================= C5 TWO DOCKINGS
