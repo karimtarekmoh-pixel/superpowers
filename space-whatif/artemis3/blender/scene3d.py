@@ -22,17 +22,34 @@ sc.view_settings.view_transform = "Filmic" if "Filmic" in [e.identifier for e in
 W_, H_ = {"dock_lander": (860, 700), "dock_ship": (760, 760), "sls": (520, 900), "ship": (520, 900)}.get(SHOT, (RES, RES))
 sc.render.resolution_x, sc.render.resolution_y, sc.render.resolution_percentage = W_, H_, 100
 
-def mat(name, color, metal=0.0, rough=0.5, emit=None, spec=0.5):
-    m = bpy.data.materials.new(name); m.use_nodes = True; b = m.node_tree.nodes["Principled BSDF"]
+def mat(name, color, metal=0.0, rough=0.5, emit=None, spec=0.4, bump=0.0, bump_scale=60.0, rough_var=0.0):
+    m = bpy.data.materials.new(name); m.use_nodes = True; nt = m.node_tree; b = nt.nodes["Principled BSDF"]
     b.inputs["Base Color"].default_value = (*color, 1); b.inputs["Metallic"].default_value = metal; b.inputs["Roughness"].default_value = rough
+    try: b.inputs["Specular IOR Level"].default_value = spec
+    except Exception: pass
     if emit: b.inputs["Emission Color"].default_value = (*emit, 1); b.inputs["Emission Strength"].default_value = 3.0
+    if bump or rough_var:
+        tc = nt.nodes.new("ShaderNodeTexCoord"); no = nt.nodes.new("ShaderNodeTexNoise"); no.inputs["Scale"].default_value = bump_scale; no.inputs["Detail"].default_value = 8; no.inputs["Roughness"].default_value = .62
+        nt.links.new(tc.outputs["Object"], no.inputs["Vector"])
+        if bump:
+            bn = nt.nodes.new("ShaderNodeBump"); bn.inputs["Strength"].default_value = bump; bn.inputs["Distance"].default_value = .05
+            nt.links.new(no.outputs["Fac"], bn.inputs["Height"]); nt.links.new(bn.outputs["Normal"], b.inputs["Normal"])
+        if rough_var:
+            mr = nt.nodes.new("ShaderNodeMapRange"); mr.inputs["To Min"].default_value = max(0, rough - rough_var); mr.inputs["To Max"].default_value = min(1, rough + rough_var)
+            nt.links.new(no.outputs["Fac"], mr.inputs["Value"]); nt.links.new(mr.outputs["Result"], b.inputs["Roughness"])
     return m
-WHITE = mat("white", (.88, .9, .95), .35, .38); ORANGE = mat("orange", (.82, .36, .1), .0, .7); GOLD = mat("gold", (.92, .66, .22), 1.0, .22)
-STEEL = mat("steel", (.78, .8, .84), 1.0, .26); DARK = mat("dark", (.06, .07, .09), .6, .4); BLACK = mat("black", (.02, .02, .025), .2, .5)
-PANEL = mat("panel", (.04, .13, .34), .85, .22); GLOW = mat("glow", (1, .6, .2), 0, .5, emit=(1, .6, .2))
+# matte, realistic: painted white (soft sheen + faint dirt/streak variation), crinkled foil, brushed stainless, rough foam
+WHITE = mat("white", (.78, .79, .80), 0.0, .62, spec=.35, bump=.04, bump_scale=14, rough_var=.12)
+ORANGE = mat("orange", (.66, .30, .09), 0.0, .88, spec=.2, bump=.18, bump_scale=70, rough_var=.06)
+GOLD = mat("gold", (.72, .52, .18), 1.0, .46, spec=.5, bump=.9, bump_scale=34, rough_var=.12)
+STEEL = mat("steel", (.52, .53, .55), .9, .52, spec=.4, bump=.05, bump_scale=120, rough_var=.15)
+DARK = mat("dark", (.05, .055, .065), .3, .62, spec=.3, bump=.06, bump_scale=40)
+BLACK = mat("black", (.015, .015, .018), .0, .6, spec=.2)
+PANEL = mat("panel", (.03, .09, .24), .55, .5, spec=.35)
+GLOW = mat("glow", (1, .6, .2), 0, .5, emit=(1, .6, .2))
 
 # grid lines on solar panels
-pm = PANEL.node_tree; tc = pm.nodes.new("ShaderNodeTexCoord"); br = pm.nodes.new("ShaderNodeTexBrick"); br.inputs["Scale"].default_value = 18; br.inputs["Color1"].default_value = (.04, .14, .36, 1); br.inputs["Color2"].default_value = (.05, .17, .42, 1); br.inputs["Mortar"].default_value = (.7, .8, .95, 1); br.inputs["Mortar Size"].default_value = .02
+pm = PANEL.node_tree; tc = pm.nodes.new("ShaderNodeTexCoord"); br = pm.nodes.new("ShaderNodeTexBrick"); br.inputs["Scale"].default_value = 18; br.inputs["Color1"].default_value = (.03, .10, .26, 1); br.inputs["Color2"].default_value = (.04, .12, .30, 1); br.inputs["Mortar"].default_value = (.45, .55, .7, 1); br.inputs["Mortar Size"].default_value = .02
 pm.links.new(tc.outputs["UV"], br.inputs["Vector"]); pm.links.new(br.outputs["Color"], pm.nodes["Principled BSDF"].inputs["Base Color"])
 
 def assign(o, m): o.data.materials.clear(); o.data.materials.append(m); return o
@@ -94,8 +111,8 @@ def lights():
     def area(name, loc, energy, size, color=(1, 1, 1), target=(0, 0, 0)):
         bpy.ops.object.light_add(type="AREA", location=loc); o = bpy.context.object; o.data.energy = energy; o.data.size = size; o.data.color = color
         d = Vector(target) - Vector(loc); o.rotation_euler = d.to_track_quat("-Z", "Y").to_euler(); return o
-    area("key", (-28, -24, 22), 38000, 22, (1, .96, .9)); area("rim", (26, 20, 14), 26000, 18, (.55, .75, 1)); area("fill", (0, -34, -6), 6000, 26, (.7, .8, 1)); area("top", (0, 0, 40), 9000, 20, (1, 1, 1))
-    w = bpy.data.worlds.new("w"); sc.world = w; w.use_nodes = True; bg = w.node_tree.nodes["Background"]; bg.inputs["Color"].default_value = (.01, .012, .02, 1); bg.inputs["Strength"].default_value = 0.6
+    area("key", (-28, -24, 22), 30000, 44, (1, .96, .9)); area("rim", (26, 20, 14), 16000, 36, (.55, .75, 1)); area("fill", (0, -34, -6), 5000, 50, (.7, .8, 1)); area("top", (0, 0, 40), 6000, 40, (1, 1, 1))
+    w = bpy.data.worlds.new("w"); sc.world = w; w.use_nodes = True; bg = w.node_tree.nodes["Background"]; bg.inputs["Color"].default_value = (.01, .012, .02, 1); bg.inputs["Strength"].default_value = 0.35
 
 def camera(loc, target, lens=50, ortho=None):
     bpy.ops.object.camera_add(location=loc); c = bpy.context.object; c.data.lens = lens; sc.camera = c
@@ -142,7 +159,7 @@ elif SHOT == "dock_ship":
         ori.keyframe_insert("location", frame=f); ori.keyframe_insert("rotation_euler", frame=f)
         sh.rotation_euler = (0, 0, math.radians(-10 + 14 * t)); sh.keyframe_insert("rotation_euler", frame=f)
 
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "frames", SHOT)
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "frames2", SHOT)
 os.makedirs(out, exist_ok=True)
 sc.render.filepath = os.path.join(out, "f_")
 if F0 == F1:

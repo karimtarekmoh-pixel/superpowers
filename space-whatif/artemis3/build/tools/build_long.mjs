@@ -77,6 +77,22 @@ const sls = (s = 1) => `<g transform="scale(${s})">
 const svgWrap = (inner, extra = "") => `<svg class="lay" width="1920" height="1080" viewBox="0 0 1920 1080" ${extra}>${inner}</svg>`;
 const earthArc = (cx, cy, r, id = "e") => { const S = r * 2 * 1.1; return `<image id="eimg${id}" href="assets/earth.png" x="${cx - S / 2}" y="${cy - S / 2}" width="${S}" height="${S}"/>`; };
 
+
+// ================= moving space life: twinkling glints, drifting dust, shooting stars, a slow galaxy, a passing satellite, double nebula drift
+const BG = []; const rnd = (() => { let a = 20261111; return () => (a = (a * 1664525 + 1013904223) % 4294967296) / 4294967296; })();
+for (let i = 0; i < 30; i++) { const x = rnd() * 1860 + 30, y = rnd() * 1000 + 30, sz = 5 + rnd() * 9;
+  BG.push(`<svg class="gl4" id="gl${i}" style="left:${x.toFixed(0)}px;top:${y.toFixed(0)}px" width="${(sz * 2).toFixed(0)}" height="${(sz * 2).toFixed(0)}" viewBox="-10 -10 20 20"><path d="M0 -10 L1.6 -1.6 L10 0 L1.6 1.6 L0 10 L-1.6 1.6 L-10 0 L-1.6 -1.6 Z" fill="#fff"/></svg>`);
+  js.push(`tl.fromTo("#gl${i}",{opacity:.9,scale:1},{opacity:.12,scale:.55,duration:${(1.3 + rnd() * 2.6).toFixed(2)},yoyo:true,repeat:${Math.ceil(DUR / 1.3)},ease:"sine.inOut"},${(rnd() * 3).toFixed(2)});`); }
+for (let i = 0; i < 52; i++) { const x = rnd() * 1920, y = rnd() * 1080, sz = 1.6 + rnd() * 2.6, dx = -(120 + rnd() * 380), dy = -(40 + rnd() * 160);
+  BG.push(`<i class="dust" id="du${i}" style="left:${x.toFixed(0)}px;top:${y.toFixed(0)}px;width:${sz.toFixed(1)}px;height:${sz.toFixed(1)}px;opacity:${(0.25 + rnd() * 0.4).toFixed(2)}"></i>`);
+  js.push(`tl.to("#du${i}",{x:${dx.toFixed(0)},y:${dy.toFixed(0)},duration:${DUR},ease:"none"},0);`); }
+[27, 52, 83, 121, 160, 205, 243, 281, 322, 366, 407, 443].forEach((t, k) => { const x = 300 + rnd() * 1000, y = 70 + rnd() * 330;
+  BG.push(`<div class="meteor" id="mt${k}" style="left:${x.toFixed(0)}px;top:${y.toFixed(0)}px"></div>`);
+  js.push(`tl.fromTo("#mt${k}",{opacity:0,x:0,y:0},{opacity:1,x:300,y:135,duration:.25,ease:"power1.in"},${t});tl.to("#mt${k}",{x:760,y:340,opacity:0,duration:.7,ease:"power1.out"},${t + 0.25});`); sfx(t + 0.05, "sparkle", 0.28, 1.4); });
+BG.push(`<div id="gal"></div><div id="sat"></div>`);
+js.push(`tl.to("#gal",{rotation:-12,duration:${DUR},ease:"none"},0);tl.to("#sat",{x:2100,y:120,duration:48,ease:"none"},29);tl.to("#sat",{opacity:.25,duration:1.1,yoyo:true,repeat:40,ease:"sine.inOut"},29);`);
+js.push(`tl.to("#neb",{x:330,y:-150,scale:1.12,duration:${DUR},ease:"none"},0);tl.to("#neb2",{x:-260,y:90,rotation:3,duration:${DUR},ease:"none"},0);tl.to("#neb",{opacity:.58,duration:14,ease:"sine.inOut",yoyo:true,repeat:${Math.ceil(DUR / 14)}},0);`);
+
 const order = ["c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9"];
 // ---------- persistent: chapter label + progress bar
 html.push(`<div id="chl" class="chl"></div><div id="bar"><i id="barfill"></i>${order.map((_, i) => `<b style="left:${(i + 1) / order.length * 100}%"></b>`).join("")}</div>`);
@@ -263,6 +279,7 @@ const css = `
 *{margin:0;padding:0;box-sizing:border-box}html,body{width:1920px;height:1080px;overflow:hidden;background:${C.bg};font-family:Inter,Arial,sans-serif;color:${C.txt}}
 #root{position:relative;width:1920px;height:1080px;overflow:hidden;background:${C.bg}}
 #neb{position:absolute;left:-340px;top:-280px;width:2700px;height:1700px;background:url(assets/nebula.png) 0 0/2600px 1600px no-repeat;opacity:.68}
+#neb2{position:absolute;left:-200px;top:-120px;width:2600px;height:1600px;background:url(assets/nebula.png) 0 0/2600px 1600px no-repeat;transform:scaleX(-1) rotate(8deg);opacity:.26;mix-blend-mode:screen}
 #sfar{position:absolute;inset:0;background:url(assets/stars_far.png) 0 0/2800px 1600px repeat;opacity:.9}
 #snear{position:absolute;inset:0;background:url(assets/stars_near.png) 0 0/3400px 1900px repeat}
 #vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 55%,rgba(0,0,0,.5));pointer-events:none;z-index:5}
@@ -279,13 +296,13 @@ const css = `
 .row{display:flex;align-items:center;gap:18px}.ppl i{display:inline-block;width:34px;height:34px;border-radius:50%;background:${C.cy};margin-right:10px}
 .stamp{position:absolute;opacity:0;text-align:center;font:900 120px/1 Inter;letter-spacing:-.03em;border:10px solid ${C.am};border-radius:24px;padding:34px 20px;background:rgba(5,7,13,.92);color:${C.am};box-shadow:0 0 70px rgba(255,181,71,.25)}.stamp.red2{border-color:${C.red};color:${C.red};font-size:112px;box-shadow:0 0 70px rgba(255,107,107,.25)}
 .step .stp,.stepc{display:flex;align-items:center}.stp{display:flex;align-items:center;gap:24px}.stp b{display:inline-flex;align-items:center;justify-content:center;flex:none;width:58px;height:58px;border-radius:50%;background:${C.cy};color:#001018;font:900 32px Inter}.st1{font:800 31px/1.2 Inter}.st2{font:500 21px/1.3 "JetBrains Mono",monospace;color:${C.grey};margin-top:6px}.sm2{font-size:28px!important}
-.card.hdr{padding:14px 30px}.sub{position:absolute;left:0;width:1920px;top:972px;text-align:center;opacity:0;z-index:40}.sub span{display:inline-block;background:rgba(5,7,13,.8);padding:4px 16px;border-radius:9px;font:600 26px/1.3 Inter;color:#EAF0FF}.rr{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font:700 34px Inter}
+.gl4{position:absolute;opacity:.8;pointer-events:none}.dust{position:absolute;border-radius:50%;background:#cfe0ff;pointer-events:none;filter:blur(.4px)}.meteor{position:absolute;width:260px;height:2px;border-radius:2px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.95));transform-origin:100% 50%;rotate:24deg;opacity:0;pointer-events:none;box-shadow:0 0 8px rgba(160,200,255,.6)}#gal{position:absolute;left:1480px;top:130px;width:300px;height:110px;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,rgba(255,240,210,.55) 0,rgba(180,190,255,.28) 22%,rgba(110,130,255,.10) 50%,transparent 72%);transform:rotate(-26deg);filter:blur(1.2px);opacity:.55;pointer-events:none}#sat{position:absolute;left:-60px;top:90px;width:4px;height:4px;border-radius:50%;background:#fff;box-shadow:0 0 8px 2px rgba(255,255,255,.7);pointer-events:none}.card.hdr{padding:14px 30px}.sub{position:absolute;left:0;width:1920px;top:972px;text-align:center;opacity:0;z-index:40}.sub span{display:inline-block;background:rgba(5,7,13,.8);padding:4px 16px;border-radius:9px;font:600 26px/1.3 Inter;color:#EAF0FF}.rr{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font:700 34px Inter}
 `;
 const page = `<!doctype html>
 <html lang="en" data-resolution="landscape"><head><meta charset="UTF-8"/><meta name="viewport" content="width=1920, height=1080"/><script src="./gsap.min.js"></script><style>${css}</style></head>
 <body><div id="root" data-composition-id="main" data-start="0" data-duration="${DUR.toFixed(3)}" data-width="1920" data-height="1080">
 ${DEFS}
-<div id="neb"></div><div id="sfar"></div><div id="snear"></div>
+<div id="neb"></div><div id="neb2"></div><div id="sfar"></div><div id="snear"></div>${BG.join("")}
 ${html.join("\n")}
 <div id="vig"></div></div>
 <script>

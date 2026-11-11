@@ -19,7 +19,7 @@ for name, d, *_ in jobs:
     if d in movs: continue
     mov = f"{BL}/clips/{d}.mov"
     if not os.path.exists(mov):
-        subprocess.run(["ffmpeg", "-y", "-v", "error", "-framerate", "24", "-i", f"{BL}/frames/{d}/f_%04d.png", "-c:v", "prores_ks", "-profile:v", "4444", "-pix_fmt", "yuva444p10le", mov], check=True)
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-framerate", "24", "-i", f"{BL}/frames2/{d}/f_%04d.png", "-c:v", "prores_ks", "-profile:v", "4444", "-pix_fmt", "yuva444p10le", mov], check=True)
     movs[d] = mov
 cmd = ["ffmpeg", "-y", "-v", "error", "-i", base]; filt = []; last = "0:v"; idx = 1
 for name, d, (w, h), (cx, cy), a, e, mode in jobs:
