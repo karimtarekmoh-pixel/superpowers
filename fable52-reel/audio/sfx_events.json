@@ -1,0 +1,456 @@
+{
+ "duration": 45.173,
+ "s4": 0,
+ "end": 41.676,
+ "hook": 4.22,
+ "events": [
+  {
+   "t": 0.02,
+   "type": "impact",
+   "gain": 1,
+   "rate": 1,
+   "cue": "s1_open"
+  },
+  {
+   "t": 0.02,
+   "type": "drop",
+   "gain": 0.9,
+   "rate": 1,
+   "cue": "s1_open"
+  },
+  {
+   "t": 0.02,
+   "type": "tick",
+   "gain": 0.8,
+   "rate": 1,
+   "cue": "s1_r0"
+  },
+  {
+   "t": 0.05,
+   "type": "riser_t",
+   "gain": 0.9,
+   "rate": 1.38,
+   "cue": "s1_riser"
+  },
+  {
+   "t": 0.14,
+   "type": "tick",
+   "gain": 0.8,
+   "rate": 1.15,
+   "cue": "s1_r1"
+  },
+  {
+   "t": 0.26,
+   "type": "tick",
+   "gain": 0.8,
+   "rate": 1.3,
+   "cue": "s1_r2"
+  },
+  {
+   "t": 0.5,
+   "type": "bloop",
+   "gain": 0.9,
+   "rate": 1,
+   "cue": "s1_tag"
+  },
+  {
+   "t": 1.5,
+   "type": "heartbeat",
+   "gain": 0.8,
+   "rate": 1,
+   "cue": "s1_hb"
+  },
+  {
+   "t": 3.72,
+   "type": "zap",
+   "gain": 0.8,
+   "rate": 1,
+   "cue": "s1_swap"
+  },
+  {
+   "t": 3.82,
+   "type": "error2",
+   "gain": 0.6,
+   "rate": 1,
+   "cue": "s1_swap"
+  },
+  {
+   "t": 3.92,
+   "type": "pop",
+   "gain": 0.7,
+   "rate": 1.1,
+   "cue": "s1_swapped"
+  },
+  {
+   "t": 5.149,
+   "type": "marimba",
+   "gain": 0.85,
+   "rate": 1,
+   "cue": "s2_title"
+  },
+  {
+   "t": 5.499,
+   "type": "pluck",
+   "gain": 0.8,
+   "rate": 1,
+   "cue": "s2_card"
+  },
+  {
+   "t": 6.889,
+   "type": "click",
+   "gain": 0.9,
+   "rate": 1,
+   "cue": "s2_pin"
+  },
+  {
+   "t": 7.899,
+   "type": "wobble",
+   "gain": 0.8,
+   "rate": 1,
+   "cue": "s2_tag"
+  },
+  {
+   "t": 9.069,
+   "type": "marimba",
+   "gain": 0.85,
+   "rate": 1.26,
+   "cue": "s3_title"
+  },
+  {
+   "t": 10.509,
+   "type": "glass",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s3_a"
+  },
+  {
+   "t": 10.649,
+   "type": "pop",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s3_pro"
+  },
+  {
+   "t": 11.009,
+   "type": "pop",
+   "gain": 0.7,
+   "rate": 1.12,
+   "cue": "s3_max"
+  },
+  {
+   "t": 11.699,
+   "type": "tick",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s3_c0"
+  },
+  {
+   "t": 13.549,
+   "type": "chirp",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s3_c1"
+  },
+  {
+   "t": 14.389,
+   "type": "pop",
+   "gain": 0.8,
+   "rate": 1.1,
+   "cue": "s3_c2"
+  },
+  {
+   "t": 15.589,
+   "type": "coin",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s3_ver"
+  },
+  {
+   "t": 17.129,
+   "type": "pluck",
+   "gain": 0.8,
+   "rate": 1.26,
+   "cue": "s3_b"
+  },
+  {
+   "t": 17.289,
+   "type": "tick",
+   "gain": 0.6,
+   "rate": 1,
+   "cue": "s3_b0"
+  },
+  {
+   "t": 18.809,
+   "type": "success3",
+   "gain": 0.8,
+   "rate": 1,
+   "cue": "s3_b1"
+  },
+  {
+   "t": 18.909,
+   "type": "sparkle",
+   "gain": 0.4,
+   "rate": 1,
+   "cue": "s3_b1"
+  },
+  {
+   "t": 20.109,
+   "type": "pluck",
+   "gain": 0.8,
+   "rate": 1.498,
+   "cue": "s3_c"
+  },
+  {
+   "t": 21.529,
+   "type": "tick",
+   "gain": 0.7,
+   "rate": 1.1,
+   "cue": "s3_eff"
+  },
+  {
+   "t": 22.279,
+   "type": "pop",
+   "gain": 0.8,
+   "rate": 1.2,
+   "cue": "s3_med"
+  },
+  {
+   "t": 23.769,
+   "type": "wobble",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s3_unl"
+  },
+  {
+   "t": 25.038,
+   "type": "pluck",
+   "gain": 0.8,
+   "rate": 1,
+   "cue": "s4_a"
+  },
+  {
+   "t": 25.338,
+   "type": "pop",
+   "gain": 0.6,
+   "rate": 1,
+   "cue": "s4_r0"
+  },
+  {
+   "t": 27.898,
+   "type": "wobble",
+   "gain": 0.8,
+   "rate": 1,
+   "cue": "s4_tag"
+  },
+  {
+   "t": 29.518,
+   "type": "coin",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s4_r1"
+  },
+  {
+   "t": 29.568,
+   "type": "pop",
+   "gain": 0.7,
+   "rate": 1.15,
+   "cue": "s4_r1"
+  },
+  {
+   "t": 29.978,
+   "type": "glass",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s4_b"
+  },
+  {
+   "t": 30.368,
+   "type": "buzz",
+   "gain": 0.4,
+   "rate": 1,
+   "cue": "s4_dim"
+  },
+  {
+   "t": 32.805,
+   "type": "tap",
+   "gain": 0.55,
+   "rate": 1,
+   "cue": "s5_keys"
+  },
+  {
+   "t": 32.985,
+   "type": "tap",
+   "gain": 0.7235319293164599,
+   "rate": 1,
+   "cue": "s5_keys"
+  },
+  {
+   "t": 33.165,
+   "type": "tap",
+   "gain": 0.8331087008332313,
+   "rate": 1,
+   "cue": "s5_keys"
+  },
+  {
+   "t": 33.275,
+   "type": "pluck",
+   "gain": 0.8,
+   "rate": 1,
+   "cue": "s5_card"
+  },
+  {
+   "t": 33.345,
+   "type": "tap",
+   "gain": 0.8383458173506351,
+   "rate": 1,
+   "cue": "s5_keys"
+  },
+  {
+   "t": 33.425,
+   "type": "tick",
+   "gain": 0.6,
+   "rate": 1,
+   "cue": "s5_r0"
+  },
+  {
+   "t": 33.525,
+   "type": "tap",
+   "gain": 0.7373131406249183,
+   "rate": 1,
+   "cue": "s5_keys"
+  },
+  {
+   "t": 33.575,
+   "type": "tick",
+   "gain": 0.6,
+   "rate": 1.1,
+   "cue": "s5_r1"
+  },
+  {
+   "t": 33.705,
+   "type": "tap",
+   "gain": 0.5672462434314774,
+   "rate": 1,
+   "cue": "s5_keys"
+  },
+  {
+   "t": 33.725,
+   "type": "tick",
+   "gain": 0.6,
+   "rate": 1.2,
+   "cue": "s5_r2"
+  },
+  {
+   "t": 34.115,
+   "type": "pop",
+   "gain": 0.7,
+   "rate": 1.1,
+   "cue": "s5_hl"
+  },
+  {
+   "t": 35.515,
+   "type": "pop",
+   "gain": 0.7,
+   "rate": 1.2,
+   "cue": "s5_eff"
+  },
+  {
+   "t": 38.915,
+   "type": "stamp",
+   "gain": 1,
+   "rate": 1,
+   "cue": "s5_stamp"
+  },
+  {
+   "t": 38.915,
+   "type": "impact",
+   "gain": 0.6,
+   "rate": 1,
+   "cue": "s5_stamp"
+  },
+  {
+   "t": 38.945,
+   "type": "error2",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s5_stamp"
+  },
+  {
+   "t": 39.686,
+   "type": "stamp",
+   "gain": 0.9,
+   "rate": 1,
+   "cue": "s6_save"
+  },
+  {
+   "t": 39.686,
+   "type": "impact",
+   "gain": 0.6,
+   "rate": 1,
+   "cue": "s6_save"
+  },
+  {
+   "t": 39.706,
+   "type": "boing",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s6_save"
+  },
+  {
+   "t": 41.676,
+   "type": "whoosh",
+   "gain": 0.6,
+   "rate": 1,
+   "cue": "s6_end"
+  },
+  {
+   "t": 41.676,
+   "type": "impact",
+   "gain": 0.9,
+   "rate": 1,
+   "cue": "s6_end"
+  },
+  {
+   "t": 41.826,
+   "type": "pop",
+   "gain": 0.5,
+   "rate": 1.15,
+   "cue": "s6_pop0"
+  },
+  {
+   "t": 41.976,
+   "type": "pop",
+   "gain": 0.5,
+   "rate": 1.3,
+   "cue": "s6_pop1"
+  },
+  {
+   "t": 42.076,
+   "type": "pop",
+   "gain": 0.5,
+   "rate": 1.4,
+   "cue": "s6_pop2"
+  },
+  {
+   "t": 42.226,
+   "type": "pop",
+   "gain": 0.5,
+   "rate": 1.55,
+   "cue": "s6_pop3"
+  },
+  {
+   "t": 42.726,
+   "type": "click",
+   "gain": 1,
+   "rate": 1,
+   "cue": "s6_click"
+  },
+  {
+   "t": 42.746,
+   "type": "sparkle",
+   "gain": 0.7,
+   "rate": 1,
+   "cue": "s6_click"
+  }
+ ]
+}

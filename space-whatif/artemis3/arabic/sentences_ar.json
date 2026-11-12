@@ -1,0 +1,602 @@
+[
+ {
+  "k": 0,
+  "sec": "c1",
+  "en": "In twenty twenty seven, four astronauts will open a hatch and float into a Moon lander.",
+  "ar": "في سنة ألفين وسبعة وعشرين، أربعة رواد فضاء هيفتحوا باب ويطفوا جوّه مركبة هبوط على القمر."
+ },
+ {
+  "k": 1,
+  "sec": "c1",
+  "en": "It won't be on the Moon.",
+  "ar": "بس المركبة دي مش هتكون على القمر."
+ },
+ {
+  "k": 2,
+  "sec": "c1",
+  "en": "It will be about two hundred and seventy three miles above Earth, and it's only a test version.",
+  "ar": "هتكون على ارتفاع حوالي ميتين وتلاتة وسبعين ميل فوق الأرض، وكمان دي نسخة تجريبية بس."
+ },
+ {
+  "k": 3,
+  "sec": "c1",
+  "en": "This is Artemis Three.",
+  "ar": "دي مهمة أرتميس تلاتة."
+ },
+ {
+  "k": 4,
+  "sec": "c1",
+  "en": "It is not the landing.",
+  "ar": "ودي مش مهمة الهبوط."
+ },
+ {
+  "k": 5,
+  "sec": "c1",
+  "en": "And once you see what NASA is testing, you'll see why it put this mission before the landing.",
+  "ar": "ولما تعرف ناسا بتختبر إيه، هتفهم ليه قدّمت المهمة دي قبل الهبوط."
+ },
+ {
+  "k": 6,
+  "sec": "c2",
+  "en": "Here's the plan, straight from NASA's own announcement.",
+  "ar": "دي الخطة، زي ما أعلنتها ناسا بنفسها."
+ },
+ {
+  "k": 7,
+  "sec": "c2",
+  "en": "Artemis Three launches in twenty twenty seven.",
+  "ar": "أرتميس تلاتة هتنطلق في سنة ألفين وسبعة وعشرين."
+ },
+ {
+  "k": 8,
+  "sec": "c2",
+  "en": "Four astronauts fly aboard the Orion spacecraft: commander Randy Bresnik, pilot Luca Parmitano of the European Space Agency, and mission specialists Andre Douglas and Frank Rubio.",
+  "ar": "أربعة رواد فضاء هيطيروا على متن مركبة أوريون: القائد راندي بريسنيك، والطيار لوكا بارميتانو من وكالة الفضاء الأوروبية، وأخصائيا المهمة أندريه دوجلاس وفرانك روبيو."
+ },
+ {
+  "k": 9,
+  "sec": "c2",
+  "en": "They don't go to the Moon.",
+  "ar": "هما مش رايحين القمر."
+ },
+ {
+  "k": 10,
+  "sec": "c2",
+  "en": "They go into low Earth orbit, for a planned fourteen day mission.",
+  "ar": "هيدخلوا مدار أرضي منخفض، في مهمة مخططة مدتها أربعتاشر يوم."
+ },
+ {
+  "k": 11,
+  "sec": "c2",
+  "en": "NASA's crew page says it plainly: Artemis Three will not land on the Moon.",
+  "ar": "صفحة الطاقم عند ناسا بتقولها بوضوح: أرتميس تلاتة مش هتهبط على القمر."
+ },
+ {
+  "k": 12,
+  "sec": "c2",
+  "en": "The landing is the next mission, Artemis Four, and NASA is targeting twenty twenty eight, near the Moon's south pole.",
+  "ar": "الهبوط هيكون في المهمة اللي بعدها، أرتميس أربعة، وناسا مستهدفة سنة ألفين وتمانية وعشرين، قريب من القطب الجنوبي للقمر."
+ },
+ {
+  "k": 13,
+  "sec": "c2",
+  "en": "So why spend a whole mission close to home?",
+  "ar": "طب ليه نقضي مهمة كاملة قريبين من الأرض؟"
+ },
+ {
+  "k": 14,
+  "sec": "c2",
+  "en": "NASA says the mission is designed to reduce risk, validate hardware, and gain operational experience before it attempts a crewed lunar landing.",
+  "ar": "ناسا بتقول إن المهمة دي متصممة عشان تقلل المخاطر، وتتأكد من الأجهزة، وتكسب خبرة تشغيلية قبل ما تحاول تهبط بطاقم على القمر."
+ },
+ {
+  "k": 15,
+  "sec": "c3",
+  "en": "Earlier Artemis missions used only NASA's own rocket and capsule.",
+  "ar": "المهمات اللي فاتت من أرتميس كانت بتستخدم صاروخ ناسا ومركبتها بس."
+ },
+ {
+  "k": 16,
+  "sec": "c3",
+  "en": "Artemis Three is different.",
+  "ar": "أرتميس تلاتة مختلفة."
+ },
+ {
+  "k": 17,
+  "sec": "c3",
+  "en": "NASA's Artemis program manager, Jeremy Parsons, put it this way: quote, we're launching three spacecraft on three different rockets and testing how they operate together, something NASA has never attempted.",
+  "ar": "جيريمي بارسونز، مدير برنامج أرتميس في ناسا، قالها كده: اقتباس، إحنا بنطلّق تلات مركبات فضاء على تلات صواريخ مختلفة، وبنختبر إزاي بتشتغل مع بعض، حاجة ناسا عمرها ما حاولتها."
+ },
+ {
+  "k": 18,
+  "sec": "c3",
+  "en": "End quote.",
+  "ar": "انتهى الاقتباس."
+ },
+ {
+  "k": 19,
+  "sec": "c3",
+  "en": "Those three spacecraft are Orion, a test version of Blue Origin's Blue Moon lander, and a test version of SpaceX's Starship lander.",
+  "ar": "التلات مركبات دول هما أوريون، ونسخة تجريبية من مركبة بلو مون بتاعة بلو أوريجن، ونسخة تجريبية من مركبة ستارشيب بتاعة سبيس إكس."
+ },
+ {
+  "k": 20,
+  "sec": "c3",
+  "en": "Test versions, not finished landers.",
+  "ar": "نسخ تجريبية، مش مركبات هبوط جاهزة."
+ },
+ {
+  "k": 21,
+  "sec": "c3",
+  "en": "The point is to see how they behave together, with people on board.",
+  "ar": "الفكرة إننا نشوف بيتصرفوا إزاي مع بعض، وفيه ناس على متنهم."
+ },
+ {
+  "k": 22,
+  "sec": "c4",
+  "en": "Step one.",
+  "ar": "الخطوة الأولى."
+ },
+ {
+  "k": 23,
+  "sec": "c4",
+  "en": "Blue Origin launches its Blue Moon Mark Two test article into a circular orbit about two hundred and seventy three miles up.",
+  "ar": "بلو أوريجن بتطلّق النسخة التجريبية من بلو مون مارك تو في مدار دائري على ارتفاع حوالي ميتين وتلاتة وسبعين ميل."
+ },
+ {
+  "k": 24,
+  "sec": "c4",
+  "en": "NASA says it can stay there for up to thirty days.",
+  "ar": "ناسا بتقول إنها تقدر تفضل هناك لحد تلاتين يوم."
+ },
+ {
+  "k": 25,
+  "sec": "c4",
+  "en": "Step two.",
+  "ar": "الخطوة التانية."
+ },
+ {
+  "k": 26,
+  "sec": "c4",
+  "en": "Only days later, once that vehicle is confirmed healthy, NASA launches Orion on top of its SLS rocket from Kennedy Space Center in Florida.",
+  "ar": "بعدها بأيام بس، لما تتأكد إن المركبة دي سليمة، ناسا بتطلّق أوريون فوق صاروخ إس إل إس من مركز كينيدي للفضاء في فلوريدا."
+ },
+ {
+  "k": 27,
+  "sec": "c4",
+  "en": "Orion starts in a stretched orbit, then uses its service module to move into a circle about three hundred and forty five miles up.",
+  "ar": "أوريون بتبدأ في مدار ممدود، وبعدين بتستخدم وحدة الخدمة بتاعتها عشان تنتقل لمدار دائري على ارتفاع حوالي تلتميت وخمسة وأربعين ميل."
+ },
+ {
+  "k": 28,
+  "sec": "c4",
+  "en": "From there it slowly sets up the rendezvous.",
+  "ar": "ومن هناك بتجهّز ببطء للالتقاء بالمركبة التانية."
+ },
+ {
+  "k": 29,
+  "sec": "c4",
+  "en": "The first two days are checkouts.",
+  "ar": "أول يومين بيكونوا فحوصات."
+ },
+ {
+  "k": 30,
+  "sec": "c4",
+  "en": "The crew tests Orion's systems and prepares for what's called proximity operations: flying close to another spacecraft.",
+  "ar": "الطاقم بيختبر أنظمة أوريون ويجهّز لحاجة اسمها عمليات الاقتراب: يعني الطيران بالقرب من مركبة فضاء تانية."
+ },
+ {
+  "k": 31,
+  "sec": "c4",
+  "en": "Step three.",
+  "ar": "الخطوة التالتة."
+ },
+ {
+  "k": 32,
+  "sec": "c4",
+  "en": "Orion docks with the Blue Moon test article.",
+  "ar": "أوريون بتلتحم بالنسخة التجريبية من بلو مون."
+ },
+ {
+  "k": 33,
+  "sec": "c4",
+  "en": "Then the crew spends about two days evaluating it.",
+  "ar": "وبعدها الطاقم بيقضي حوالي يومين في تقييمها."
+ },
+ {
+  "k": 34,
+  "sec": "c4",
+  "en": "They open the hatch, go inside, and check the cabin, the controls, and the life support systems.",
+  "ar": "بيفتحوا الباب، ويدخلوا جوّه، ويفحصوا الكابينة وأجهزة التحكم وأنظمة دعم الحياة."
+ },
+ {
+  "k": 35,
+  "sec": "c4",
+  "en": "NASA says it will also verify that the spacecraft can hold the right atmosphere and pressure.",
+  "ar": "وناسا بتقول إنها هتتأكد كمان إن المركبة تقدر تحافظ على الغلاف الجوي والضغط المناسبين."
+ },
+ {
+  "k": 36,
+  "sec": "c4",
+  "en": "This will be NASA's first evaluation of a commercial lunar lander with a crew on board.",
+  "ar": "ودي هتكون أول مرة ناسا تقيّم فيها مركبة هبوط تجارية على القمر وعليها طاقم."
+ },
+ {
+  "k": 37,
+  "sec": "c4",
+  "en": "Step four.",
+  "ar": "الخطوة الرابعة."
+ },
+ {
+  "k": 38,
+  "sec": "c4",
+  "en": "Orion undocks and repositions.",
+  "ar": "أوريون بتفك الالتحام وتغيّر مكانها."
+ },
+ {
+  "k": 39,
+  "sec": "c4",
+  "en": "Step five.",
+  "ar": "الخطوة الخامسة."
+ },
+ {
+  "k": 40,
+  "sec": "c4",
+  "en": "SpaceX launches a Starship Version Three test article from Florida.",
+  "ar": "سبيس إكس بتطلّق نسخة تجريبية من ستارشيب الإصدار التالت من فلوريدا."
+ },
+ {
+  "k": 41,
+  "sec": "c4",
+  "en": "It goes into a lower orbit, and it carries an extra docking system on its nose.",
+  "ar": "بتدخل مدار أقل ارتفاعًا، وبتشيل نظام التحام إضافي في مقدمتها."
+ },
+ {
+  "k": 42,
+  "sec": "c4",
+  "en": "Orion docks with it for a test that can last up to two hours.",
+  "ar": "أوريون بتلتحم بيها في اختبار ممكن يمتد لحد ساعتين."
+ },
+ {
+  "k": 43,
+  "sec": "c4",
+  "en": "This time, the crew does not go inside.",
+  "ar": "المرة دي، الطاقم مش بيدخل جوّه."
+ },
+ {
+  "k": 44,
+  "sec": "c4",
+  "en": "Then comes up to five more days of testing.",
+  "ar": "وبعدها فيه لحد خمس أيام تانيين من الاختبارات."
+ },
+ {
+  "k": 45,
+  "sec": "c4",
+  "en": "Suits, docking sensors, noise and temperature measurements, and some science, including a study on how astronauts could do health checks when they can't talk to mission control.",
+  "ar": "بدلات الفضاء، وحساسات الالتحام، وقياسات الضوضاء ودرجة الحرارة، وشوية تجارب علمية، منها دراسة عن إزاي رواد الفضاء ممكن يعملوا فحوصات صحية لما ميقدروش يكلموا مركز التحكم."
+ },
+ {
+  "k": 46,
+  "sec": "c5",
+  "en": "Here's a detail that's easy to miss.",
+  "ar": "فيه تفصيلة سهل تفوتك."
+ },
+ {
+  "k": 47,
+  "sec": "c5",
+  "en": "The two landers don't connect the same way.",
+  "ar": "المركبتين مش بيتوصلوا بنفس الطريقة."
+ },
+ {
+  "k": 48,
+  "sec": "c5",
+  "en": "Orion links to a port beside Blue Moon's crew cabin.",
+  "ar": "أوريون بتتوصّل بفتحة جنب كابينة الطاقم في بلو مون."
+ },
+ {
+  "k": 49,
+  "sec": "c5",
+  "en": "Later, it lines up its own forward docking system with the one on Starship's nose.",
+  "ar": "وبعدها، بتظبّط نظام الالتحام الأمامي بتاعها مع النظام اللي في مقدمة ستارشيب."
+ },
+ {
+  "k": 50,
+  "sec": "c5",
+  "en": "Two different connections, in a single mission.",
+  "ar": "طريقتين مختلفتين للتوصيل، في مهمة واحدة."
+ },
+ {
+  "k": 51,
+  "sec": "c5",
+  "en": "NASA says that gives it a chance to compare two different ways of operating, and to gather engineering data on both.",
+  "ar": "وناسا بتقول إن ده بيدّيها فرصة تقارن بين طريقتين مختلفتين للتشغيل، وتجمع بيانات هندسية عن الاتنين."
+ },
+ {
+  "k": 52,
+  "sec": "c5",
+  "en": "On the Starship dock, NASA and SpaceX plan to evaluate how the docked pair handles, how they communicate, how the software performs together, and what the forces look like during docking and undocking.",
+  "ar": "في التحام ستارشيب، ناسا وسبيس إكس بيخططوا يقيّموا إزاي الزوج الملتحم بيتحكم فيه، وإزاي بيتواصلوا، وإزاي البرمجيات بتشتغل مع بعض، وشكل القوى وقت الالتحام وفك الالتحام."
+ },
+ {
+  "k": 53,
+  "sec": "c6",
+  "en": "Now the part that makes this mission hard.",
+  "ar": "دلوقتي الجزء اللي بيخلّي المهمة دي صعبة."
+ },
+ {
+  "k": 54,
+  "sec": "c6",
+  "en": "Starship is designed to stay in orbit for a much shorter time than Blue Origin's lander.",
+  "ar": "ستارشيب متصممة تفضل في المدار وقت أقصر بكتير من مركبة بلو أوريجن."
+ },
+ {
+  "k": 55,
+  "sec": "c6",
+  "en": "So its launch comes late in the mission.",
+  "ar": "علشان كده إطلاقها بيجي متأخر في المهمة."
+ },
+ {
+  "k": 56,
+  "sec": "c6",
+  "en": "Blue Moon's test article waits in orbit, for up to thirty days.",
+  "ar": "والنسخة التجريبية من بلو مون بتستنى في المدار لحد تلاتين يوم."
+ },
+ {
+  "k": 57,
+  "sec": "c6",
+  "en": "NASA calls the whole thing a tightly choreographed campaign.",
+  "ar": "ناسا بتسمّي ده كله حملة منسّقة بعناية شديدة."
+ },
+ {
+  "k": 58,
+  "sec": "c6",
+  "en": "So here's the what if.",
+  "ar": "وهنا بييجي السؤال: لو حصل إيه؟"
+ },
+ {
+  "k": 59,
+  "sec": "c6",
+  "en": "What if one piece is late?",
+  "ar": "لو حتة واحدة اتأخرت؟"
+ },
+ {
+  "k": 60,
+  "sec": "c6",
+  "en": "I'll be honest: in the NASA pages I read, there's no answer.",
+  "ar": "هقولك بصراحة: في صفحات ناسا اللي قريتها، مفيش إجابة."
+ },
+ {
+  "k": 61,
+  "sec": "c6",
+  "en": "The thirty day figure is the schedule flexibility NASA states for the Blue Moon side.",
+  "ar": "رقم التلاتين يوم هو المرونة في الجدول اللي ناسا بتذكرها لجانب بلو مون."
+ },
+ {
+  "k": 62,
+  "sec": "c6",
+  "en": "NASA's published plan doesn't say what a problem in orbit would do to the twenty twenty eight target.",
+  "ar": "خطة ناسا المنشورة مبتقولش إيه تأثير أي مشكلة في المدار على هدف سنة ألفين وتمانية وعشرين."
+ },
+ {
+  "k": 63,
+  "sec": "c6",
+  "en": "That's why I'd treat every date in this story as a target, not a promise.",
+  "ar": "علشان كده أنا بعتبر أي تاريخ في القصة دي هدف، مش وعد."
+ },
+ {
+  "k": 64,
+  "sec": "c7",
+  "en": "Here's a twist most coverage skips.",
+  "ar": "وفيه حاجة غريبة أغلب التغطيات بتتخطّاها."
+ },
+ {
+  "k": 65,
+  "sec": "c7",
+  "en": "Originally, SpaceX's Starship was assigned to Artemis Three and Four, and Blue Origin's lander to Artemis Five.",
+  "ar": "في الأول، ستارشيب بتاعة سبيس إكس كانت مخصصة لأرتميس تلاتة وأربعة، ومركبة بلو أوريجن لأرتميس خمسة."
+ },
+ {
+  "k": 66,
+  "sec": "c7",
+  "en": "NASA then realigned the contracts.",
+  "ar": "وبعدين ناسا عدّلت العقود."
+ },
+ {
+  "k": 67,
+  "sec": "c7",
+  "en": "Now both companies take part in Artemis Three, in orbit, and neither one is assigned to a specific landing mission.",
+  "ar": "دلوقتي الشركتين بيشاركوا في أرتميس تلاتة، في المدار، ومفيش واحدة فيهم مخصصة لمهمة هبوط بعينها."
+ },
+ {
+  "k": 68,
+  "sec": "c7",
+  "en": "NASA says that, based on lander readiness, it will decide which company is first to deliver astronauts to the Moon's surface in twenty twenty eight.",
+  "ar": "وناسا بتقول إنها، بناءً على جاهزية مركبات الهبوط، هتقرر أنهي شركة هتكون الأولى في توصيل رواد فضاء لسطح القمر في سنة ألفين وتمانية وعشرين."
+ },
+ {
+  "k": 69,
+  "sec": "c7",
+  "en": "A second crewed landing opportunity follows.",
+  "ar": "وبعدها بتيجي فرصة هبوط تانية بطاقم."
+ },
+ {
+  "k": 70,
+  "sec": "c7",
+  "en": "And before any crew flies to the Moon, both companies have to fly an uncrewed demonstration mission with their crewed lander.",
+  "ar": "وقبل ما أي طاقم يطير للقمر، الشركتين لازم يطيّروا مهمة تجريبية من غير طاقم بمركبة الهبوط المخصصة للبشر."
+ },
+ {
+  "k": 71,
+  "sec": "c7",
+  "en": "NASA says it will certify the landers first.",
+  "ar": "وناسا بتقول إنها هتعتمد مركبات الهبوط الأول."
+ },
+ {
+  "k": 72,
+  "sec": "c7",
+  "en": "So Artemis Three isn't only a test of hardware.",
+  "ar": "يعني أرتميس تلاتة مش مجرد اختبار للأجهزة."
+ },
+ {
+  "k": 73,
+  "sec": "c7",
+  "en": "It's also information NASA will use as it decides what comes next.",
+  "ar": "دي كمان معلومات هتستخدمها ناسا وهي بتقرر الخطوة الجاية."
+ },
+ {
+  "k": 74,
+  "sec": "c8",
+  "en": "On a landing mission, a commercial lander links up with Orion.",
+  "ar": "في مهمة الهبوط، مركبة هبوط تجارية بتلتحم بأوريون."
+ },
+ {
+  "k": 75,
+  "sec": "c8",
+  "en": "Then it takes two crew members to the surface while two stay aboard Orion.",
+  "ar": "وبعدين بتنزل بتنين من الطاقم على السطح، وبيفضل التانيين على متن أوريون."
+ },
+ {
+  "k": 76,
+  "sec": "c8",
+  "en": "SpaceX's plan starts with a fleet.",
+  "ar": "خطة سبيس إكس بتبدأ بأسطول."
+ },
+ {
+  "k": 77,
+  "sec": "c8",
+  "en": "Several Starships launch to low Earth orbit as tankers and transfer super cold propellant to a depot Starship, which then fuels the lander.",
+  "ar": "كذا ستارشيب بتنطلق لمدار أرضي منخفض كناقلات وقود، وبتنقل وقود فائق البرودة لستارشيب مخزن، واللي بيمدّ مركبة الهبوط بالوقود بعد كده."
+ },
+ {
+  "k": 78,
+  "sec": "c8",
+  "en": "The lander waits in Earth orbit.",
+  "ar": "مركبة الهبوط بتستنى في مدار الأرض."
+ },
+ {
+  "k": 79,
+  "sec": "c8",
+  "en": "Orion docks with it, and the Starship performs a burn that sends the pair to low lunar orbit.",
+  "ar": "أوريون بتلتحم بيها، وستارشيب بتعمل إشعال محرك يبعت الاتنين لمدار قمري منخفض."
+ },
+ {
+  "k": 80,
+  "sec": "c8",
+  "en": "NASA says it's working to modify Orion so Starship can push it.",
+  "ar": "وناسا بتقول إنها بتشتغل على تعديل أوريون علشان ستارشيب تقدر تدفعها."
+ },
+ {
+  "k": 81,
+  "sec": "c8",
+  "en": "Two crew then go down for several days.",
+  "ar": "وبعدين بينزل اتنين من الطاقم لعدة أيام."
+ },
+ {
+  "k": 82,
+  "sec": "c8",
+  "en": "Blue Origin's plan uses three transfer stages.",
+  "ar": "خطة بلو أوريجن بتستخدم تلات مراحل نقل."
+ },
+ {
+  "k": 83,
+  "sec": "c8",
+  "en": "They launch to Earth orbit, followed by the Blue Moon Mark Two lander.",
+  "ar": "بتنطلق لمدار الأرض، وبعدها مركبة الهبوط بلو مون مارك تو."
+ },
+ {
+  "k": 84,
+  "sec": "c8",
+  "en": "Once docked, the stack heads for an elliptical polar orbit around the Moon, and each stage drops away as its fuel runs out.",
+  "ar": "ولما يلتحموا، المجموعة بتتجه لمدار قطبي بيضاوي حوالين القمر، وكل مرحلة بتنفصل لما وقودها يخلص."
+ },
+ {
+  "k": 85,
+  "sec": "c8",
+  "en": "Orion launches and docks with the lander there.",
+  "ar": "أوريون بتنطلق وتلتحم بمركبة الهبوط هناك."
+ },
+ {
+  "k": 86,
+  "sec": "c8",
+  "en": "Two crew descend to the Moon's south pole.",
+  "ar": "واتنين من الطاقم بينزلوا على القطب الجنوبي للقمر."
+ },
+ {
+  "k": 87,
+  "sec": "c8",
+  "en": "NASA says both plans replace an earlier idea of meeting in a near rectilinear halo orbit, because the new orbits make the return from the surface to Orion faster.",
+  "ar": "وناسا بتقول إن الخطتين بتحلّوا محل فكرة أقدم كانت بتقضي بالتقاء في مدار هالو شبه خطي، لأن المدارات الجديدة بتخلّي رحلة العودة من السطح لأوريون أسرع."
+ },
+ {
+  "k": 88,
+  "sec": "c8",
+  "en": "NASA also announced a lighter second spacesuit, the Sortie suit, roughly half the weight of the larger one, to help with the very first moonwalks.",
+  "ar": "وناسا أعلنت كمان عن بدلة فضاء تانية أخف، اسمها بدلة سورتي، وزنها تقريبًا نص وزن البدلة الأكبر، علشان تساعد في أول مشاوير على القمر."
+ },
+ {
+  "k": 89,
+  "sec": "c9",
+  "en": "Three things.",
+  "ar": "تلات حاجات."
+ },
+ {
+  "k": 90,
+  "sec": "c9",
+  "en": "One.",
+  "ar": "واحد."
+ },
+ {
+  "k": 91,
+  "sec": "c9",
+  "en": "NASA says Artemis Three hardware is on track, with processing times cut by about half.",
+  "ar": "ناسا بتقول إن أجهزة أرتميس تلاتة ماشية في الميعاد، وأوقات التجهيز اتقلّت بحوالي النص."
+ },
+ {
+  "k": 92,
+  "sec": "c9",
+  "en": "Two.",
+  "ar": "اتنين."
+ },
+ {
+  "k": 93,
+  "sec": "c9",
+  "en": "NASA says it redesigned, built, and tested a critical fuel line part in house in five months, at roughly a tenth of an earlier outside estimate.",
+  "ar": "ناسا بتقول إنها أعادت تصميم وصنع واختبار جزء حيوي في خط الوقود جوّه ناسا في خمس شهور، بحوالي عُشر تقدير خارجي سابق."
+ },
+ {
+  "k": 94,
+  "sec": "c9",
+  "en": "That's NASA's own claim.",
+  "ar": "ده كلام ناسا نفسها."
+ },
+ {
+  "k": 95,
+  "sec": "c9",
+  "en": "Three.",
+  "ar": "تلاتة."
+ },
+ {
+  "k": 96,
+  "sec": "c9",
+  "en": "Watch the docking tests themselves.",
+  "ar": "تابع اختبارات الالتحام نفسها."
+ },
+ {
+  "k": 97,
+  "sec": "c9",
+  "en": "Everything else depends on them.",
+  "ar": "كل حاجة تانية بتعتمد عليها."
+ },
+ {
+  "k": 98,
+  "sec": "c9",
+  "en": "If this was useful, subscribe.",
+  "ar": "لو الفيديو ده فادك، اشترك."
+ },
+ {
+  "k": 99,
+  "sec": "c9",
+  "en": "Next, I'll look at how a Starship refuels in orbit, and why that matters for the landing.",
+  "ar": "في الفيديو الجاي، هتكلم عن إزاي ستارشيب بتتزوّد بالوقود في المدار، وليه ده مهم للهبوط."
+ }
+]

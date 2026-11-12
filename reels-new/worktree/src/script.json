@@ -1,0 +1,59 @@
+{
+ "handle": "@axiomallai",
+ "accentWords": [
+  "worktree",
+  "branch",
+  "catch",
+  "default",
+  "unpushed",
+  "head",
+  "save",
+  "follow",
+  "fix",
+  "step"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "text": "Two Claude Code sessions in the same folder can step on each other's edits.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s2",
+   "text": "The fix is a git worktree: a separate checkout, on its own branch. Start Claude with the worktree flag, and a name.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s3",
+   "text": "Claude puts it in your worktrees folder, on a new branch named after it.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s4",
+   "text": "Here's the catch. By default, a new worktree branches from your default branch, not your current work. Your unpushed commits aren't in it.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s5",
+   "text": "To start from your current work instead, set the baseRef setting to head.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s6",
+   "text": "Save this for your next session. Follow for more Claude Code workflows.",
+   "chunks": [
+    99
+   ]
+  }
+ ]
+}

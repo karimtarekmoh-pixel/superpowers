@@ -1,0 +1,92 @@
+{
+ "handle": "",
+ "accentWords": [
+  "artemis",
+  "orion",
+  "moon",
+  "landing",
+  "test",
+  "docking",
+  "lander",
+  "starship",
+  "blue",
+  "origin",
+  "nasa",
+  "orbit",
+  "2028"
+ ],
+ "sections": [
+  {
+   "id": "c1",
+   "title": "Hook",
+   "text": "In twenty twenty seven, four astronauts will open a hatch and float into a Moon lander. It won't be on the Moon. It will be about two hundred and seventy three miles above Earth, and it's only a test version. This is Artemis Three. It is not the landing. And once you see what NASA is testing, you'll see why it put this mission before the landing.",
+   "chunks": [
+    999
+   ]
+  },
+  {
+   "id": "c2",
+   "title": "What Artemis Three actually is",
+   "text": "Here's the plan, straight from NASA's own announcement. Artemis Three launches in twenty twenty seven. Four astronauts fly aboard the Orion spacecraft: commander Randy Bresnik, pilot Luca Parmitano of the European Space Agency, and mission specialists Andre Douglas and Frank Rubio. They don't go to the Moon. They go into low Earth orbit, for a planned fourteen day mission. NASA's crew page says it plainly: Artemis Three will not land on the Moon. The landing is the next mission, Artemis Four, and NASA is targeting twenty twenty eight, near the Moon's south pole. So why spend a whole mission close to home? NASA says the mission is designed to reduce risk, validate hardware, and gain operational experience before it attempts a crewed lunar landing.",
+   "chunks": [
+    999
+   ]
+  },
+  {
+   "id": "c3",
+   "title": "Three spacecraft, three rockets",
+   "text": "Earlier Artemis missions used only NASA's own rocket and capsule. Artemis Three is different. NASA's Artemis program manager, Jeremy Parsons, put it this way: quote, we're launching three spacecraft on three different rockets and testing how they operate together, something NASA has never attempted. End quote. Those three spacecraft are Orion, a test version of Blue Origin's Blue Moon lander, and a test version of SpaceX's Starship lander. Test versions, not finished landers. The point is to see how they behave together, with people on board.",
+   "chunks": [
+    999
+   ]
+  },
+  {
+   "id": "c4",
+   "title": "The sequence, step by step",
+   "text": "Step one. Blue Origin launches its Blue Moon Mark Two test article into a circular orbit about two hundred and seventy three miles up. NASA says it can stay there for up to thirty days. Step two. Only days later, once that vehicle is confirmed healthy, NASA launches Orion on top of its SLS rocket from Kennedy Space Center in Florida. Orion starts in a stretched orbit, then uses its service module to move into a circle about three hundred and forty five miles up. From there it slowly sets up the rendezvous. The first two days are checkouts. The crew tests Orion's systems and prepares for what's called proximity operations: flying close to another spacecraft. Step three. Orion docks with the Blue Moon test article. Then the crew spends about two days evaluating it. They open the hatch, go inside, and check the cabin, the controls, and the life support systems. NASA says it will also verify that the spacecraft can hold the right atmosphere and pressure. This will be NASA's first evaluation of a commercial lunar lander with a crew on board. Step four. Orion undocks and repositions. Step five. SpaceX launches a Starship Version Three test article from Florida. It goes into a lower orbit, and it carries an extra docking system on its nose. Orion docks with it for a test that can last up to two hours. This time, the crew does not go inside. Then comes up to five more days of testing. Suits, docking sensors, noise and temperature measurements, and some science, including a study on how astronauts could do health checks when they can't talk to mission control.",
+   "chunks": [
+    999
+   ]
+  },
+  {
+   "id": "c5",
+   "title": "Two dockings, two designs",
+   "text": "Here's a detail that's easy to miss. The two landers don't connect the same way. Orion links to a port beside Blue Moon's crew cabin. Later, it lines up its own forward docking system with the one on Starship's nose. Two different connections, in a single mission. NASA says that gives it a chance to compare two different ways of operating, and to gather engineering data on both. On the Starship dock, NASA and SpaceX plan to evaluate how the docked pair handles, how they communicate, how the software performs together, and what the forces look like during docking and undocking.",
+   "chunks": [
+    999
+   ]
+  },
+  {
+   "id": "c6",
+   "title": "The schedule puzzle, and a what-if",
+   "text": "Now the part that makes this mission hard. Starship is designed to stay in orbit for a much shorter time than Blue Origin's lander. So its launch comes late in the mission. Blue Moon's test article waits in orbit, for up to thirty days. NASA calls the whole thing a tightly choreographed campaign. So here's the what if. What if one piece is late? I'll be honest: in the NASA pages I read, there's no answer. The thirty day figure is the schedule flexibility NASA states for the Blue Moon side. NASA's published plan doesn't say what a problem in orbit would do to the twenty twenty eight target. That's why I'd treat every date in this story as a target, not a promise.",
+   "chunks": [
+    999
+   ]
+  },
+  {
+   "id": "c7",
+   "title": "The race nobody has decided",
+   "text": "Here's a twist most coverage skips. Originally, SpaceX's Starship was assigned to Artemis Three and Four, and Blue Origin's lander to Artemis Five. NASA then realigned the contracts. Now both companies take part in Artemis Three, in orbit, and neither one is assigned to a specific landing mission. NASA says that, based on lander readiness, it will decide which company is first to deliver astronauts to the Moon's surface in twenty twenty eight. A second crewed landing opportunity follows. And before any crew flies to the Moon, both companies have to fly an uncrewed demonstration mission with their crewed lander. NASA says it will certify the landers first. So Artemis Three isn't only a test of hardware. It's also information NASA will use as it decides what comes next.",
+   "chunks": [
+    999
+   ]
+  },
+  {
+   "id": "c8",
+   "title": "How the landings are meant to work",
+   "text": "On a landing mission, a commercial lander links up with Orion. Then it takes two crew members to the surface while two stay aboard Orion. SpaceX's plan starts with a fleet. Several Starships launch to low Earth orbit as tankers and transfer super cold propellant to a depot Starship, which then fuels the lander. The lander waits in Earth orbit. Orion docks with it, and the Starship performs a burn that sends the pair to low lunar orbit. NASA says it's working to modify Orion so Starship can push it. Two crew then go down for several days. Blue Origin's plan uses three transfer stages. They launch to Earth orbit, followed by the Blue Moon Mark Two lander. Once docked, the stack heads for an elliptical polar orbit around the Moon, and each stage drops away as its fuel runs out. Orion launches and docks with the lander there. Two crew descend to the Moon's south pole. NASA says both plans replace an earlier idea of meeting in a near rectilinear halo orbit, because the new orbits make the return from the surface to Orion faster. NASA also announced a lighter second spacesuit, the Sortie suit, roughly half the weight of the larger one, to help with the very first moonwalks.",
+   "chunks": [
+    999
+   ]
+  },
+  {
+   "id": "c9",
+   "title": "What to watch",
+   "text": "Three things. One. NASA says Artemis Three hardware is on track, with processing times cut by about half. Two. NASA says it redesigned, built, and tested a critical fuel line part in house in five months, at roughly a tenth of an earlier outside estimate. That's NASA's own claim. Three. Watch the docking tests themselves. Everything else depends on them. If this was useful, subscribe. Next, I'll look at how a Starship refuels in orbit, and why that matters for the landing.",
+   "chunks": [
+    999
+   ]
+  }
+ ]
+}

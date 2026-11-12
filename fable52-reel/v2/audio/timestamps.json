@@ -1,0 +1,893 @@
+{
+ "source": "vo_full_raw.wav",
+ "method": "PocketSphinx forced alignment per section clip",
+ "tempo": 1.0,
+ "gap": 0.4,
+ "duration": 60.659,
+ "sections": [
+  {
+   "id": "s1",
+   "start": 0.06,
+   "end": 7.036,
+   "first": 0.06,
+   "last": 7.03
+  },
+  {
+   "id": "s2",
+   "start": 7.436,
+   "end": 16.098,
+   "first": 7.436,
+   "last": 16.086
+  },
+  {
+   "id": "s3",
+   "start": 16.498,
+   "end": 30.185,
+   "first": 16.498,
+   "last": 30.178
+  },
+  {
+   "id": "s4",
+   "start": 30.585,
+   "end": 47.183,
+   "first": 30.585,
+   "last": 47.175
+  },
+  {
+   "id": "s5",
+   "start": 47.583,
+   "end": 55.219,
+   "first": 47.583,
+   "last": 55.213
+  },
+  {
+   "id": "s6",
+   "start": 55.619,
+   "end": 60.259,
+   "first": 55.619,
+   "last": 60.249
+  }
+ ],
+ "words": [
+  {
+   "text": "Ask",
+   "start": 0.06,
+   "end": 0.41,
+   "section": "s1"
+  },
+  {
+   "text": "Claude",
+   "start": 0.41,
+   "end": 0.89,
+   "section": "s1"
+  },
+  {
+   "text": "Code's",
+   "start": 0.89,
+   "end": 1.42,
+   "section": "s1"
+  },
+  {
+   "text": "most",
+   "start": 1.42,
+   "end": 1.68,
+   "section": "s1"
+  },
+  {
+   "text": "capable",
+   "start": 1.68,
+   "end": 2.2,
+   "section": "s1"
+  },
+  {
+   "text": "model",
+   "start": 2.2,
+   "end": 2.67,
+   "section": "s1"
+  },
+  {
+   "text": "the",
+   "start": 2.67,
+   "end": 2.77,
+   "section": "s1"
+  },
+  {
+   "text": "wrong",
+   "start": 2.77,
+   "end": 3.17,
+   "section": "s1"
+  },
+  {
+   "text": "question,",
+   "start": 3.17,
+   "end": 3.78,
+   "section": "s1"
+  },
+  {
+   "text": "and",
+   "start": 4.25,
+   "end": 4.38,
+   "section": "s1"
+  },
+  {
+   "text": "your",
+   "start": 4.38,
+   "end": 4.55,
+   "section": "s1"
+  },
+  {
+   "text": "request",
+   "start": 4.55,
+   "end": 5.13,
+   "section": "s1"
+  },
+  {
+   "text": "can",
+   "start": 5.13,
+   "end": 5.25,
+   "section": "s1"
+  },
+  {
+   "text": "be",
+   "start": 5.25,
+   "end": 5.34,
+   "section": "s1"
+  },
+  {
+   "text": "handed",
+   "start": 5.34,
+   "end": 5.86,
+   "section": "s1"
+  },
+  {
+   "text": "to",
+   "start": 5.86,
+   "end": 6.04,
+   "section": "s1"
+  },
+  {
+   "text": "a",
+   "start": 6.04,
+   "end": 6.09,
+   "section": "s1"
+  },
+  {
+   "text": "different",
+   "start": 6.09,
+   "end": 6.52,
+   "section": "s1"
+  },
+  {
+   "text": "model.",
+   "start": 6.52,
+   "end": 7.03,
+   "section": "s1"
+  },
+  {
+   "text": "Fable",
+   "start": 7.436,
+   "end": 7.836,
+   "section": "s2"
+  },
+  {
+   "text": "five",
+   "start": 7.836,
+   "end": 8.286,
+   "section": "s2"
+  },
+  {
+   "text": "point",
+   "start": 8.286,
+   "end": 8.666,
+   "section": "s2"
+  },
+  {
+   "text": "two",
+   "start": 8.666,
+   "end": 8.946,
+   "section": "s2"
+  },
+  {
+   "text": "runs",
+   "start": 8.946,
+   "end": 9.396,
+   "section": "s2"
+  },
+  {
+   "text": "with",
+   "start": 9.396,
+   "end": 9.566,
+   "section": "s2"
+  },
+  {
+   "text": "safety",
+   "start": 9.566,
+   "end": 10.026,
+   "section": "s2"
+  },
+  {
+   "text": "classifiers.",
+   "start": 10.026,
+   "end": 11.026,
+   "section": "s2"
+  },
+  {
+   "text": "They",
+   "start": 11.516,
+   "end": 11.616,
+   "section": "s2"
+  },
+  {
+   "text": "mostly",
+   "start": 11.616,
+   "end": 12.026,
+   "section": "s2"
+  },
+  {
+   "text": "watch",
+   "start": 12.026,
+   "end": 12.476,
+   "section": "s2"
+  },
+  {
+   "text": "for",
+   "start": 12.476,
+   "end": 12.606,
+   "section": "s2"
+  },
+  {
+   "text": "two",
+   "start": 12.606,
+   "end": 12.896,
+   "section": "s2"
+  },
+  {
+   "text": "things:",
+   "start": 12.896,
+   "end": 13.486,
+   "section": "s2"
+  },
+  {
+   "text": "cybersecurity,",
+   "start": 13.866,
+   "end": 15.056,
+   "section": "s2"
+  },
+  {
+   "text": "and",
+   "start": 15.056,
+   "end": 15.206,
+   "section": "s2"
+  },
+  {
+   "text": "biology.",
+   "start": 15.206,
+   "end": 16.086,
+   "section": "s2"
+  },
+  {
+   "text": "When",
+   "start": 16.498,
+   "end": 16.658,
+   "section": "s3"
+  },
+  {
+   "text": "one",
+   "start": 16.658,
+   "end": 16.858,
+   "section": "s3"
+  },
+  {
+   "text": "flags",
+   "start": 16.858,
+   "end": 17.338,
+   "section": "s3"
+  },
+  {
+   "text": "your",
+   "start": 17.338,
+   "end": 17.458,
+   "section": "s3"
+  },
+  {
+   "text": "request,",
+   "start": 17.458,
+   "end": 18.168,
+   "section": "s3"
+  },
+  {
+   "text": "Claude",
+   "start": 18.378,
+   "end": 18.828,
+   "section": "s3"
+  },
+  {
+   "text": "Code",
+   "start": 18.828,
+   "end": 19.298,
+   "section": "s3"
+  },
+  {
+   "text": "doesn't",
+   "start": 19.298,
+   "end": 19.618,
+   "section": "s3"
+  },
+  {
+   "text": "stop.",
+   "start": 19.618,
+   "end": 20.198,
+   "section": "s3"
+  },
+  {
+   "text": "It",
+   "start": 20.658,
+   "end": 20.788,
+   "section": "s3"
+  },
+  {
+   "text": "re-runs",
+   "start": 20.788,
+   "end": 21.508,
+   "section": "s3"
+  },
+  {
+   "text": "the",
+   "start": 21.508,
+   "end": 21.588,
+   "section": "s3"
+  },
+  {
+   "text": "same",
+   "start": 21.588,
+   "end": 21.998,
+   "section": "s3"
+  },
+  {
+   "text": "request",
+   "start": 21.998,
+   "end": 22.628,
+   "section": "s3"
+  },
+  {
+   "text": "on",
+   "start": 22.628,
+   "end": 22.778,
+   "section": "s3"
+  },
+  {
+   "text": "another",
+   "start": 22.778,
+   "end": 23.088,
+   "section": "s3"
+  },
+  {
+   "text": "model.",
+   "start": 23.088,
+   "end": 23.608,
+   "section": "s3"
+  },
+  {
+   "text": "Biology",
+   "start": 24.178,
+   "end": 24.928,
+   "section": "s3"
+  },
+  {
+   "text": "goes",
+   "start": 24.928,
+   "end": 25.318,
+   "section": "s3"
+  },
+  {
+   "text": "to",
+   "start": 25.318,
+   "end": 25.418,
+   "section": "s3"
+  },
+  {
+   "text": "Opus",
+   "start": 25.418,
+   "end": 25.838,
+   "section": "s3"
+  },
+  {
+   "text": "five.",
+   "start": 25.838,
+   "end": 26.478,
+   "section": "s3"
+  },
+  {
+   "text": "Cybersecurity",
+   "start": 26.898,
+   "end": 27.968,
+   "section": "s3"
+  },
+  {
+   "text": "goes",
+   "start": 27.968,
+   "end": 28.338,
+   "section": "s3"
+  },
+  {
+   "text": "to",
+   "start": 28.338,
+   "end": 28.428,
+   "section": "s3"
+  },
+  {
+   "text": "Opus",
+   "start": 28.428,
+   "end": 28.888,
+   "section": "s3"
+  },
+  {
+   "text": "four",
+   "start": 28.888,
+   "end": 29.298,
+   "section": "s3"
+  },
+  {
+   "text": "point",
+   "start": 29.298,
+   "end": 29.778,
+   "section": "s3"
+  },
+  {
+   "text": "eight.",
+   "start": 29.778,
+   "end": 30.178,
+   "section": "s3"
+  },
+  {
+   "text": "And",
+   "start": 30.585,
+   "end": 30.715,
+   "section": "s4"
+  },
+  {
+   "text": "it",
+   "start": 30.715,
+   "end": 30.805,
+   "section": "s4"
+  },
+  {
+   "text": "can",
+   "start": 30.805,
+   "end": 30.965,
+   "section": "s4"
+  },
+  {
+   "text": "trigger",
+   "start": 30.965,
+   "end": 31.415,
+   "section": "s4"
+  },
+  {
+   "text": "on",
+   "start": 31.415,
+   "end": 31.575,
+   "section": "s4"
+  },
+  {
+   "text": "your",
+   "start": 31.575,
+   "end": 31.705,
+   "section": "s4"
+  },
+  {
+   "text": "very",
+   "start": 31.705,
+   "end": 32.055,
+   "section": "s4"
+  },
+  {
+   "text": "first",
+   "start": 32.055,
+   "end": 32.525,
+   "section": "s4"
+  },
+  {
+   "text": "message.",
+   "start": 32.525,
+   "end": 33.155,
+   "section": "s4"
+  },
+  {
+   "text": "That",
+   "start": 33.645,
+   "end": 33.815,
+   "section": "s4"
+  },
+  {
+   "text": "request",
+   "start": 33.815,
+   "end": 34.345,
+   "section": "s4"
+  },
+  {
+   "text": "also",
+   "start": 34.345,
+   "end": 34.845,
+   "section": "s4"
+  },
+  {
+   "text": "carries",
+   "start": 34.845,
+   "end": 35.295,
+   "section": "s4"
+  },
+  {
+   "text": "your",
+   "start": 35.295,
+   "end": 35.445,
+   "section": "s4"
+  },
+  {
+   "text": "CLAUDE",
+   "start": 35.445,
+   "end": 36.035,
+   "section": "s4"
+  },
+  {
+   "text": "dot",
+   "start": 36.035,
+   "end": 36.395,
+   "section": "s4"
+  },
+  {
+   "text": "M",
+   "start": 36.395,
+   "end": 36.705,
+   "section": "s4"
+  },
+  {
+   "text": "D",
+   "start": 36.705,
+   "end": 37.215,
+   "section": "s4"
+  },
+  {
+   "text": "and",
+   "start": 37.485,
+   "end": 37.635,
+   "section": "s4"
+  },
+  {
+   "text": "your",
+   "start": 37.635,
+   "end": 37.775,
+   "section": "s4"
+  },
+  {
+   "text": "git",
+   "start": 37.775,
+   "end": 38.055,
+   "section": "s4"
+  },
+  {
+   "text": "status.",
+   "start": 38.055,
+   "end": 38.765,
+   "section": "s4"
+  },
+  {
+   "text": "A",
+   "start": 39.355,
+   "end": 39.415,
+   "section": "s4"
+  },
+  {
+   "text": "repo",
+   "start": 39.415,
+   "end": 39.895,
+   "section": "s4"
+  },
+  {
+   "text": "with",
+   "start": 39.895,
+   "end": 40.105,
+   "section": "s4"
+  },
+  {
+   "text": "security",
+   "start": 40.105,
+   "end": 40.775,
+   "section": "s4"
+  },
+  {
+   "text": "material",
+   "start": 40.775,
+   "end": 41.385,
+   "section": "s4"
+  },
+  {
+   "text": "can",
+   "start": 41.385,
+   "end": 41.585,
+   "section": "s4"
+  },
+  {
+   "text": "trip",
+   "start": 41.585,
+   "end": 41.915,
+   "section": "s4"
+  },
+  {
+   "text": "it",
+   "start": 41.915,
+   "end": 42.075,
+   "section": "s4"
+  },
+  {
+   "text": "before",
+   "start": 42.075,
+   "end": 42.435,
+   "section": "s4"
+  },
+  {
+   "text": "you",
+   "start": 42.435,
+   "end": 42.595,
+   "section": "s4"
+  },
+  {
+   "text": "type",
+   "start": 42.595,
+   "end": 42.925,
+   "section": "s4"
+  },
+  {
+   "text": "a",
+   "start": 42.925,
+   "end": 42.955,
+   "section": "s4"
+  },
+  {
+   "text": "word.",
+   "start": 42.955,
+   "end": 43.565,
+   "section": "s4"
+  },
+  {
+   "text": "After",
+   "start": 44.065,
+   "end": 44.395,
+   "section": "s4"
+  },
+  {
+   "text": "that,",
+   "start": 44.395,
+   "end": 44.735,
+   "section": "s4"
+  },
+  {
+   "text": "the",
+   "start": 45.025,
+   "end": 45.125,
+   "section": "s4"
+  },
+  {
+   "text": "session",
+   "start": 45.125,
+   "end": 45.605,
+   "section": "s4"
+  },
+  {
+   "text": "stays",
+   "start": 45.605,
+   "end": 46.205,
+   "section": "s4"
+  },
+  {
+   "text": "on",
+   "start": 46.205,
+   "end": 46.325,
+   "section": "s4"
+  },
+  {
+   "text": "the",
+   "start": 46.325,
+   "end": 46.385,
+   "section": "s4"
+  },
+  {
+   "text": "fallback.",
+   "start": 46.385,
+   "end": 47.175,
+   "section": "s4"
+  },
+  {
+   "text": "So",
+   "start": 47.583,
+   "end": 47.843,
+   "section": "s5"
+  },
+  {
+   "text": "if",
+   "start": 47.843,
+   "end": 47.913,
+   "section": "s5"
+  },
+  {
+   "text": "Fable",
+   "start": 47.913,
+   "end": 48.393,
+   "section": "s5"
+  },
+  {
+   "text": "suddenly",
+   "start": 48.393,
+   "end": 48.853,
+   "section": "s5"
+  },
+  {
+   "text": "feels",
+   "start": 48.853,
+   "end": 49.323,
+   "section": "s5"
+  },
+  {
+   "text": "different,",
+   "start": 49.323,
+   "end": 49.863,
+   "section": "s5"
+  },
+  {
+   "text": "look",
+   "start": 50.123,
+   "end": 50.353,
+   "section": "s5"
+  },
+  {
+   "text": "for",
+   "start": 50.353,
+   "end": 50.513,
+   "section": "s5"
+  },
+  {
+   "text": "the",
+   "start": 50.513,
+   "end": 50.603,
+   "section": "s5"
+  },
+  {
+   "text": "notice",
+   "start": 50.603,
+   "end": 51.043,
+   "section": "s5"
+  },
+  {
+   "text": "in",
+   "start": 51.043,
+   "end": 51.133,
+   "section": "s5"
+  },
+  {
+   "text": "your",
+   "start": 51.133,
+   "end": 51.233,
+   "section": "s5"
+  },
+  {
+   "text": "transcript.",
+   "start": 51.233,
+   "end": 52.083,
+   "section": "s5"
+  },
+  {
+   "text": "Then",
+   "start": 52.563,
+   "end": 52.933,
+   "section": "s5"
+  },
+  {
+   "text": "type",
+   "start": 52.933,
+   "end": 53.283,
+   "section": "s5"
+  },
+  {
+   "text": "slash",
+   "start": 53.283,
+   "end": 53.803,
+   "section": "s5"
+  },
+  {
+   "text": "model",
+   "start": 53.803,
+   "end": 54.253,
+   "section": "s5"
+  },
+  {
+   "text": "to",
+   "start": 54.253,
+   "end": 54.363,
+   "section": "s5"
+  },
+  {
+   "text": "switch",
+   "start": 54.363,
+   "end": 54.753,
+   "section": "s5"
+  },
+  {
+   "text": "back.",
+   "start": 54.753,
+   "end": 55.213,
+   "section": "s5"
+  },
+  {
+   "text": "Save",
+   "start": 55.619,
+   "end": 55.989,
+   "section": "s6"
+  },
+  {
+   "text": "this",
+   "start": 55.989,
+   "end": 56.189,
+   "section": "s6"
+  },
+  {
+   "text": "for",
+   "start": 56.189,
+   "end": 56.319,
+   "section": "s6"
+  },
+  {
+   "text": "your",
+   "start": 56.319,
+   "end": 56.459,
+   "section": "s6"
+  },
+  {
+   "text": "next",
+   "start": 56.459,
+   "end": 56.749,
+   "section": "s6"
+  },
+  {
+   "text": "session.",
+   "start": 56.749,
+   "end": 57.299,
+   "section": "s6"
+  },
+  {
+   "text": "Follow",
+   "start": 57.719,
+   "end": 58.139,
+   "section": "s6"
+  },
+  {
+   "text": "for",
+   "start": 58.139,
+   "end": 58.279,
+   "section": "s6"
+  },
+  {
+   "text": "more",
+   "start": 58.279,
+   "end": 58.519,
+   "section": "s6"
+  },
+  {
+   "text": "Claude",
+   "start": 58.519,
+   "end": 59.009,
+   "section": "s6"
+  },
+  {
+   "text": "Code",
+   "start": 59.009,
+   "end": 59.359,
+   "section": "s6"
+  },
+  {
+   "text": "workflows.",
+   "start": 59.359,
+   "end": 60.249,
+   "section": "s6"
+  }
+ ]
+}

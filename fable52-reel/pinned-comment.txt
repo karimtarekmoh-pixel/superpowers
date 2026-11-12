@@ -1,0 +1,7 @@
+Check what you are running:
+/model
+
+Change it for this session: /model fable (selects Fable 5.2; needs Claude Code 2.1.321 or later, run `claude update`)
+Older model by ID: /model claude-fable-5-1
+
+Source: Claude Code docs, Model configuration (code.claude.com/docs/en/model-config)

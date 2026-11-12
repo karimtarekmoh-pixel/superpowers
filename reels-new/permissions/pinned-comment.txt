@@ -1,0 +1,5 @@
+Run it: /fewer-permission-prompts
+It scans your transcripts for common read-only Bash and MCP tool calls and adds a prioritized allowlist to project .claude/settings.json.
+Review the list before you keep it.
+
+Source: Claude Code docs, Commands (code.claude.com/docs/en/commands)
