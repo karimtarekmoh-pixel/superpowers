@@ -239,6 +239,7 @@ STEP = int(A[5]) if len(A) > 5 else 1
 sc.frame_step = STEP
 if PLATE:
     world(1.0); sun(4.2)
+    if SHOT == "pthumb": SUN_DIR = Vector((-.75, -.35, .5)).normalized()
     if SHOT == "p3": SUN_DIR = Vector((0, 1, .03)).normalized()
     if SHOT == "p7": SUN_DIR = Vector((-1, .2, .08)).normalized()
     for o in sc.objects:
@@ -275,6 +276,11 @@ if PLATE:
             bp.co = co; bp.handle_left = tuple(Vector(co) - Vector(h)); bp.handle_right = tuple(Vector(co) + Vector(h))
         tj = link(bpy.data.objects.new("traj", cu)); tj.data.materials.append(ring_mat("tj", (1, .71, .28), 3.0))
         c = cam((2, -88, 34), (2, 2, 0), 30); key_cam(c, (-2, -88, 34), (6, -86, 36), (2, 2, 0), (3, 3, 0), FR); spin(E[0], .7, .76, FR); spin(E[1], 1.1, 1.17, FR)
+    elif SHOT == "pthumb":   # thumbnail: bright sunlit Earth limb, low camera
+        E = earth(10, (7, 16, -10.2), float(os.environ.get("ROTZ", "2.2")))
+        for o in E[:2]: o.rotation_euler[0] = math.radians(95)
+        c = cam((0, -3, 1.4), (1.5, 30, -1.2), 30)
+        for f in range(1, FR + 1): pass
     elif SHOT == "p9":   # slow push toward the Moon, Earth behind
         moon(3.4, (0, 30, 0), .8); E = earth(10, (-46, 190, 12), 2.0)
         c = cam((0, -4, .6), (0, 40, 0), 34); key_cam(c, (0, -4, .6), (0, 6, .4), (0, 30, 0), (0, 30, 0), FR)

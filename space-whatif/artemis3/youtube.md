@@ -1,9 +1,9 @@
 # YouTube package: Artemis III
 
 ## Title options (under 65 characters)
-1. Why Artemis III Won't Land on the Moon (It's Weirder)
-2. NASA's Next Moon Mission Never Leaves Earth Orbit
-3. Artemis III Explained: 3 Spacecraft, 3 Rockets, 14 Days
+1. Why Artemis III Won't Land on the Moon  (recommended: strongest search words, 38 characters, nothing cut off on mobile)
+2. Artemis III Won't Land on the Moon. Here's What It Does Instead  (63 characters)
+3. NASA's Next Moon Mission Stays in Earth Orbit (Artemis III)  (61 characters)
 
 ## Description
 In 2027, four astronauts will float into a Moon lander about 273 miles above Earth. It won't be on the Moon. This is Artemis III, NASA's Earth-orbit test before the landing, and here is exactly what it tests.
@@ -36,18 +36,18 @@ SOURCES (NASA)
 - Our Artemis III Crew: https://www.nasa.gov/our-artemis-iii-crew/
 
 NOTES
-Dates are NASA targets and can change. This channel is not affiliated with or endorsed by NASA, Blue Origin or SpaceX. The script was written with AI assistance and checked against the NASA pages above; the voice is a human narrator.
+Dates are NASA targets and can change. This channel is not affiliated with or endorsed by NASA, Blue Origin or SpaceX. The script was written with AI assistance and checked against the NASA pages above. The narration uses an AI-generated voice.
 
-#Artemis #NASA #Moon #Space
+#ArtemisIII #NASA #Moon
 
 ## Tags
-Artemis III, Artemis 3, NASA Artemis, Artemis IV, Moon landing 2028, Orion spacecraft, Blue Moon lander, Starship HLS, SLS rocket, NASA 2027, Moon mission explained, space explained, what if space
+Artemis III, Artemis 3, NASA Artemis, Artemis IV, Moon landing 2028, Orion spacecraft, Blue Moon Mark 2, Starship HLS, Starship V3, SLS rocket, NASA 2027, Moon mission explained, space explained, what if space
 
-## Thumbnail text (from NASA's text)
-NOT THE LANDING  /  273 MILES UP
+## Thumbnail
+thumbnail.png (1280x720): new matte 3D lander over a sunlit Earth. Text: ARTEMIS III · 2027 / NOT THE LANDING / 273 MILES UP. The previous version is kept as thumbnail_v2.png.
 
 ## Studio settings
-Category: Science & Technology. Audience: not made for kids. Altered/synthetic content: the narration is yours, but the visuals are original illustrations; answer YouTube's question about realistic synthetic media accordingly (the illustrations are not realistic footage of real events). Visibility: your choice. I did not upload anything.
+Category: Science & Technology. Audience: not made for kids. Altered/synthetic content: the narration is an AI voice (ElevenLabs) and the visuals are original illustrations, not realistic footage of real events or people. Answer YouTube's synthetic-media question with that in mind; if the form asks about AI-generated voice, say yes. Visibility: your choice. I did not upload anything.
 
 ## Pinned comment
 All facts come from NASA's pages linked in the description (Oct 23 and Nov 4, 2026). Dates are targets. What should the next video cover: how Starship refuels in orbit, or the Artemis IV landing plans?
