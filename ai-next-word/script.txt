@@ -1,0 +1,13 @@
+AI doesn't know anything. It guesses the next word.
+
+Tools like ChatGPT and Claude are trained on huge amounts of text. First they learn to predict the next word.
+
+When you ask a question, the model writes the most likely answer, one small piece at a time.
+
+That's why it can sound completely sure, and still be wrong. People call that a hallucination.
+
+So when it gives you a name, a number or a link, check it.
+
+Use AI to draft. You do the checking.
+
+Follow for more AI workflows.
