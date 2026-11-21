@@ -1,0 +1,7 @@
+References for this style. The stills are here only so the look can be studied. Never copy their logos, channel names, titles, characters or on-screen text.
+
+frames/ and sheets/: the drawn explainer look (flat vector scenes and navy diagram boards).
+  https://www.youtube.com/watch?v=11WT1rKtNns
+  "What If Your Body Healed 100x Faster?" by If Then Tales.
+
+approved-look/code/: reusable drawing helpers (stick figure, scenery, boards, props, easing, camera) from an earlier approved video in this style.
