@@ -11,3 +11,9 @@
 
 ## Allowed on-screen labels (uppercase, short)
 NEXT WORD, TRAINED ON TEXT, MOST LIKELY ANSWER, SOUNDS SURE, STILL WRONG, HALLUCINATION, CHECK NAMES, CHECK NUMBERS, CHECK LINKS, AI DRAFTS, YOU CHECK, FOLLOW @axiomallai
+
+## Real measurements shown in the footage (run 2026-11-21 on this computer)
+5. Model used: GPT-2 small (open model released in 2019), run locally from the Xenova/gpt2 ONNX files. It is NOT ChatGPT or Claude: label it "GPT-2 (2019 model)". Newer chatbots are much more accurate; say nothing about how much.
+6. Prompt "The sun rises in the east and sets in the": next-word probabilities west 65.5%, south 7.9%, north 5.7%, middle 1.9%, east 1.9%. These are the real measured values; show them exactly (rounded to one decimal) or not at all.
+7. Prompt "The capital of Australia is the city of": the model's most likely continuation was " Sydney, and the capital". Canberra is the capital of Australia (source: Wikipedia, "Canberra": "Canberra ... is the capital city of Australia"). So the model's answer is wrong, and it was written fluently.
+8. Show these model outputs only as examples of one small model, not as a statistic about all AI.
