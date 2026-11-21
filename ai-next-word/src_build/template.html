@@ -241,7 +241,7 @@ arrive("#p4a",WT[38],40,.2); arrive("#p4b",WT[41],40,.2);
 tl.set(["#bub5","#stamp"],{opacity:0},0);
 pose("f5",{aR:-30,fR:-30,aL:30,fL:30,head:6},WT[51],.5,"back.out(1.5)"); mouth("f5","S",WT[51]);
 tl.fromTo("#bub5",{opacity:0,scale:.3,transformOrigin:"0% 100%"},{opacity:1,scale:1,duration:.4,ease:"back.out(1.7)"},WT[52]);
-punch("#pz5",0,300,1.12,20.2,.6);                                  // camera moves to the answer lines
+// no punch-in on S5: the long answer line would be cropped
 tl.to("#bub5",{opacity:0,scale:.6,duration:.25},21.0);
 // stillness before the climax: hold ~0.5 s, then the stamp lands
 tl.set("#stamp",{opacity:1},WT[57]-.02);
