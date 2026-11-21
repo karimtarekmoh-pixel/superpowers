@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape"><head><meta charset="UTF-8"/><meta name="viewport" content="width=1920, height=1080"/>
+<script src="./gsap.min.js"></script>
+<style>
+@font-face{font-family:Mont;src:url(./fonts/Montserrat-VF.ttf);font-weight:100 900}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#161c34;font-family:Mont,Arial,sans-serif;color:#fff}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden;background:radial-gradient(ellipse 70% 60% at 50% 48%,#34436b 0%,#262f52 45%,#1b2340 100%)}
+#grid{position:absolute;inset:-100px;background-image:radial-gradient(rgba(255,255,255,.10) 2px,transparent 2.5px);background-size:64px 64px}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,transparent 58%,rgba(8,10,24,.55));z-index:40;pointer-events:none}
+.bar{position:absolute;left:0;width:1920px;height:60px;background:#000;z-index:60}
+.scene{position:absolute;inset:0;opacity:0}
+.abs{position:absolute}
+.big{font-weight:900;letter-spacing:-.02em;line-height:1.02;text-transform:uppercase}
+.coral{color:#e8574e}.dim{color:#a9b4d8}
+.w{display:inline-block;opacity:0}
+.win{position:absolute;border-radius:22px;background:#0e1220;box-shadow:0 30px 80px rgba(5,8,22,.6),0 0 0 2px rgba(255,255,255,.10);overflow:hidden}
+.win .hd{height:58px;background:#171c2e;display:flex;align-items:center;padding-left:22px;gap:10px;font:700 20px Mont;color:#8b93ad;letter-spacing:.08em}
+.win .hd i{width:16px;height:16px;border-radius:50%;display:inline-block}
+.win .vw{position:relative;overflow:hidden;width:100%}
+.win video{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+.lab{position:absolute;font-weight:900;font-size:58px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;text-shadow:0 4px 18px rgba(0,0,0,.45)}
+.pill{position:absolute;padding:14px 30px;border-radius:999px;font-weight:800;font-size:34px;white-space:nowrap;background:rgba(255,255,255,.10);border:2px solid rgba(255,255,255,.35)}
+.pill.c{background:rgba(232,87,78,.18);border-color:#e8574e;color:#ffb3ad}
+.tagr{position:absolute;padding:8px 20px;border-radius:999px;font-weight:800;font-size:22px;letter-spacing:.1em;background:rgba(0,0,0,.45);color:#f5c26b;border:2px solid rgba(245,194,107,.6)}
+.fig{position:absolute;overflow:visible}
+.row{position:absolute;height:150px;border-radius:30px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.28);display:flex;align-items:center;padding:0 46px;gap:40px}
+.row b{font-weight:900;font-size:62px;letter-spacing:.02em;width:360px}
+.row span{font-weight:600;font-size:46px;color:#a9b4d8}
+.paper{position:absolute;border-radius:22px;background:#f4f1e8;box-shadow:0 30px 70px rgba(5,8,22,.55)}
+.ln{position:absolute;height:22px;border-radius:11px;background:#c9c4b2}
+</style></head>
+<body><div id="root" data-composition-id="main" data-start="0" data-duration="33.6" data-width="1920" data-height="1080">
+<div id="grid"></div>
+
+<!-- S1: hook -->
+<div class="scene" id="s1">
+  <div class="abs big" id="s1a" style="left:130px;top:240px;font-size:140px"><span class="w">AI</span> <span class="w">DOESN'T</span><br><span class="w coral">KNOW</span> <span class="w coral">ANYTHING.</span></div>
+  <div class="abs big" id="s1b" style="left:130px;top:300px;font-size:128px;opacity:0"><span class="w2">IT GUESSES</span><br><span class="w2">THE <span class="coral">NEXT WORD</span><i id="caret" style="display:inline-block;width:14px;height:130px;background:#e8574e;margin-left:18px;vertical-align:-14px"></i></span></div>
+  <svg class="fig" id="f1" viewBox="-200 -440 400 460" width="400" height="460" style="left:1470px;top:430px"></svg>
+  <div class="abs big coral" id="q1" style="left:1480px;top:310px;font-size:120px;opacity:0">?</div>
+  <div class="abs big coral" id="q2" style="left:1740px;top:300px;font-size:90px;opacity:0">?</div>
+</div>
+
+<!-- S2: trained on huge amounts of text -->
+<div class="scene" id="s2">
+  <div class="win" id="w2" style="left:120px;top:200px;width:1120px;height:626px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; WIKIPEDIA · REAL PAGE</div><div class="vw" style="height:568px"><video id="v2" class="clip" src="footage/c_r04.mp4" muted playsinline data-start="3.55" data-duration="5.2" data-track-index="1"></video></div></div>
+  <div class="pill" id="p_chat" style="left:1330px;top:250px">ChatGPT</div>
+  <div class="pill" id="p_claude" style="left:1330px;top:350px">Claude</div>
+  <div class="lab" id="l2a" style="left:1330px;top:500px;line-height:1.15;white-space:normal;width:520px;font-size:62px">TRAINED ON <span class="coral">HUGE</span> AMOUNTS<br>OF TEXT</div>
+  <div class="tagr" style="left:130px;top:860px">SOURCE: en.wikipedia.org (CC BY-SA)</div>
+</div>
+
+<!-- S3: predict the next word -->
+<div class="scene" id="s3">
+  <div class="win" id="w3" style="left:110px;top:170px;width:1180px;height:648px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; REAL MODEL · RUNNING LIVE</div><div class="vw" style="height:590px"><video id="v3" class="clip" src="footage/c_r01.mp4" muted playsinline data-start="8.7" data-duration="3.4" data-track-index="2"></video></div></div>
+  <div class="abs big" id="l3" style="left:1350px;top:300px;font-size:88px;width:520px">PREDICT<br>THE <span class="coral">NEXT</span><br><span class="coral">WORD</span></div>
+  <div class="tagr" id="t3" style="left:120px;top:850px">GPT-2 · SMALL MODEL FROM 2019</div>
+</div>
+
+<!-- S4: ask a question -->
+<div class="scene" id="s4">
+  <svg class="fig" id="f4" viewBox="-200 -440 400 460" width="400" height="460" style="left:60px;top:430px"></svg>
+  <div class="abs" id="bub4" style="left:40px;top:250px;opacity:0"><div style="padding:20px 32px;border-radius:30px 30px 30px 6px;background:#fff;color:#1b2340;font-weight:800;font-size:34px;box-shadow:0 10px 30px rgba(0,0,0,.35)">ASK A QUESTION</div></div>
+  <div class="win" id="w4" style="left:560px;top:150px;width:1260px;height:690px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; REAL MODEL · RUNNING LIVE</div><div class="vw" style="height:632px"><video id="v4" class="clip" src="footage/c_r02a.mp4" muted playsinline data-start="11.4" data-duration="6.6" data-track-index="3"></video></div></div>
+  <div class="pill c" id="p4a" style="left:600px;top:880px">MOST LIKELY ANSWER</div>
+  <div class="pill" id="p4b" style="left:1090px;top:880px">ONE SMALL PIECE AT A TIME</div>
+</div>
+
+<!-- S5: sure but wrong -->
+<div class="scene" id="s5">
+  <svg class="fig" id="f5" viewBox="-200 -440 400 460" width="400" height="460" style="left:60px;top:430px"></svg>
+  <div class="abs" id="bub5" style="left:60px;top:250px;opacity:0"><div style="padding:20px 32px;border-radius:30px 30px 30px 6px;background:#fff;color:#1b2340;font-weight:900;font-size:46px;box-shadow:0 10px 30px rgba(0,0,0,.35)">I AM SURE!</div></div>
+  <div class="win" id="w5" style="left:560px;top:150px;width:1260px;height:690px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; REAL MODEL · RUNNING LIVE</div><div class="vw" style="height:632px"><video id="v5" class="clip" src="footage/c_r02b.mp4" muted playsinline data-start="18.0" data-duration="4.7" data-track-index="4"></video></div></div>
+  <div class="abs big" id="stamp" style="left:1130px;top:690px;font-size:96px;color:#e8574e;border:10px solid #e8574e;border-radius:20px;padding:6px 30px;background:rgba(22,28,52,.92);opacity:0;transform:rotate(-8deg)">WRONG</div>
+</div>
+
+<!-- S5b: hallucination -->
+<div class="scene" id="s5b">
+  <div class="win" id="w5b" style="left:90px;top:190px;width:1120px;height:626px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; WIKIPEDIA · REAL PAGE</div><div class="vw" style="height:568px"><video id="v5b" class="clip" src="footage/c_r05.mp4" muted playsinline data-start="22.3" data-duration="3.2" data-track-index="5"></video></div></div>
+  <div class="abs big" id="l5b" style="left:1260px;top:300px;font-size:76px;width:600px;line-height:1.08">A <span class="coral">HALLUCI-<br>NATION</span> SOUNDS<br>RIGHT.<br>IT ISN'T.</div>
+  <div class="tagr" style="left:100px;top:850px">SOURCE: en.wikipedia.org (CC BY-SA)</div>
+</div>
+
+<!-- S6: check name number link -->
+<div class="scene" id="s6">
+  <div class="row" id="r1" style="left:150px;top:200px;width:1100px"><b>NAME</b><span>Dr. J. Smith</span><svg class="ck" id="k1" width="90" height="90" viewBox="-45 -45 90 90" style="margin-left:auto;opacity:0"><circle r="40" fill="#e8574e"/><path d="M-18 2 L-5 16 L20 -14" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="row" id="r2" style="left:150px;top:400px;width:1100px"><b>NUMBER</b><span>42%</span><svg class="ck" id="k2" width="90" height="90" viewBox="-45 -45 90 90" style="margin-left:auto;opacity:0"><circle r="40" fill="#e8574e"/><path d="M-18 2 L-5 16 L20 -14" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="row" id="r3" style="left:150px;top:600px;width:1100px"><b>LINK</b><span>example.com/page</span><svg class="ck" id="k3" width="90" height="90" viewBox="-45 -45 90 90" style="margin-left:auto;opacity:0"><circle r="40" fill="#e8574e"/><path d="M-18 2 L-5 16 L20 -14" stroke="#fff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <svg id="mag" class="abs" width="230" height="230" viewBox="-20 -20 230 230" style="left:0;top:0;opacity:0"><circle cx="85" cy="85" r="70" fill="rgba(232,87,78,.14)" stroke="#e8574e" stroke-width="14"/><line x1="135" y1="135" x2="205" y2="205" stroke="#e8574e" stroke-width="20" stroke-linecap="round"/></svg>
+  <div class="abs big" id="l6" style="left:150px;top:850px;font-size:70px">ALWAYS <span class="coral">CHECK IT.</span></div>
+  <div class="tagr" style="left:1330px;top:216px">ILLUSTRATION · EXAMPLE VALUES</div>
+  <svg class="fig" id="f6" viewBox="-200 -440 400 460" width="400" height="460" style="left:1420px;top:480px"></svg>
+</div>
+
+<!-- S7: AI drafts, you check -->
+<div class="scene" id="s7">
+  <div class="abs big" id="l7a" style="left:130px;top:260px;font-size:130px;opacity:0">AI<br>DRAFTS.</div>
+  <div class="abs big coral" id="l7b" style="left:130px;top:610px;font-size:130px;opacity:0">YOU<br>CHECK.</div>
+  <div class="paper" id="pp" style="left:760px;top:130px;width:620px;height:820px"><div class="abs" style="left:56px;top:50px;font-weight:900;font-size:30px;letter-spacing:.14em;color:#b9b4a2">DRAFT</div></div>
+  <div class="abs" id="hl" style="left:790px;top:380px;width:560px;height:60px;background:rgba(232,87,78,.4);border-radius:10px;opacity:0"></div>
+  <svg id="mag7" class="abs" width="250" height="250" viewBox="-20 -20 230 230" style="left:0;top:0;opacity:0"><circle cx="85" cy="85" r="70" fill="rgba(232,87,78,.12)" stroke="#e8574e" stroke-width="14"/><line x1="135" y1="135" x2="205" y2="205" stroke="#e8574e" stroke-width="20" stroke-linecap="round"/></svg>
+  <svg class="fig" id="f7" viewBox="-200 -440 400 460" width="400" height="460" style="left:1450px;top:480px"></svg>
+</div>
+
+<!-- S8: end card -->
+<div class="scene" id="s8">
+  <svg class="abs" id="bolt" width="260" height="260" viewBox="-130 -130 260 260" style="left:830px;top:200px"><circle r="115" fill="#e8574e"/><path d="M14 -62 L-38 12 L-4 12 L-14 62 L40 -14 L6 -14 Z" fill="#fff"/></svg>
+  <div class="abs big" id="hnd" style="left:0;width:1920px;text-align:center;top:500px;font-size:150px;letter-spacing:-.01em;text-transform:none">@axiomallai</div>
+  <div class="abs big dim" id="sub" style="left:0;width:1920px;text-align:center;top:690px;font-size:46px;letter-spacing:.14em">AI WORKFLOWS</div>
+  <div class="abs" id="fol" style="left:790px;top:810px;width:340px;height:96px;border-radius:48px;background:#e8574e;font-weight:900;font-size:44px;display:flex;align-items:center;justify-content:center;letter-spacing:.06em">FOLLOW</div>
+</div>
+
+<div id="wipe" style="position:absolute;left:-300px;top:0;width:2520px;height:1080px;z-index:45;background:linear-gradient(100deg,transparent 0%,transparent 38%,#e8574e 38%,#e8574e 62%,transparent 62%);opacity:0"></div>
+<div id="vig"></div>
+<div class="bar" style="top:0"></div><div class="bar" style="bottom:0"></div>
+</div>
+
+<script>
+const WT=__WT__;
+const tl=gsap.timeline({paused:true,defaults:{ease:"power3.out"}});
+const $=s=>document.querySelector(s);
+
+// ---------- stick figure rig (orange jacket) ----------
+function fig(id){
+  const el=document.getElementById(id);
+  el.innerHTML=`
+  <defs><linearGradient id="${id}j" x1="0" x2="1"><stop offset="0" stop-color="#f59a45"/><stop offset="1" stop-color="#d9741f"/></linearGradient></defs>
+  <ellipse cx="0" cy="12" rx="120" ry="14" fill="rgba(5,8,22,.35)"/>
+  <g id="${id}_body">
+    <line x1="-22" y1="-170" x2="-26" y2="-22" stroke="#3d4049" stroke-width="32" stroke-linecap="round"/>
+    <line x1="22" y1="-170" x2="26" y2="-22" stroke="#3d4049" stroke-width="32" stroke-linecap="round"/>
+    <ellipse cx="-32" cy="-6" rx="34" ry="14" fill="#f4f4f2"/><ellipse cx="34" cy="-6" rx="34" ry="14" fill="#f4f4f2"/>
+    <g transform="translate(58 -284)"><g id="${id}_aR"><circle r="20" fill="#e98a2c"/><line x1="0" y1="0" x2="0" y2="64" stroke="#e98a2c" stroke-width="32" stroke-linecap="round"/>
+      <g transform="translate(0 64)"><g id="${id}_fR"><line x1="0" y1="0" x2="0" y2="58" stroke="#e98a2c" stroke-width="29" stroke-linecap="round"/><g transform="translate(0 62)"><circle r="16" fill="#0b0c12"/></g></g></g></g></g>
+    <path d="M-60 -298 Q0 -316 60 -298 L56 -150 Q0 -136 -56 -150 Z" fill="url(#${id}j)"/>
+    <path d="M-20 -304 L0 -270 L20 -304" fill="none" stroke="#c9691a" stroke-width="7" stroke-linejoin="round"/>
+    <line x1="0" y1="-268" x2="0" y2="-150" stroke="#c9691a" stroke-width="5"/>
+    <g transform="translate(-58 -284)"><g id="${id}_aL"><circle r="20" fill="#e98a2c"/><line x1="0" y1="0" x2="0" y2="64" stroke="#e98a2c" stroke-width="32" stroke-linecap="round"/>
+      <g transform="translate(0 64)"><g id="${id}_fL"><line x1="0" y1="0" x2="0" y2="58" stroke="#e98a2c" stroke-width="29" stroke-linecap="round"/><g transform="translate(0 62)"><circle r="16" fill="#0b0c12"/></g></g></g></g></g>
+    <g id="${id}_head"><circle cx="0" cy="-356" r="48" fill="#0b0c12"/><path d="M34 -388 A48 48 0 0 1 44 -352" fill="none" stroke="#f7cf9f" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+      <circle cx="-17" cy="-362" r="8.5" fill="#fff"/><circle cx="17" cy="-362" r="8.5" fill="#fff"/>
+      <g id="${id}_eyes"><circle cx="-15" cy="-361" r="3.6" fill="#0b0c12"/><circle cx="19" cy="-361" r="3.6" fill="#0b0c12"/></g>
+      <path id="${id}_mS" d="M-16 -338 Q0 -324 16 -338" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+      <path id="${id}_mO" d="M-14 -332 Q0 -344 14 -332" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity="0"/>
+      <ellipse id="${id}_mA" cx="0" cy="-334" rx="9" ry="11" fill="#fff" opacity="0"/>
+    </g>
+  </g>`;
+  ['aR','fR','aL','fL'].forEach(n=>gsap.set(`#${id}_${n}`,{svgOrigin:"0 0"}));
+  gsap.set(`#${id}_head`,{svgOrigin:"0 -310"});
+  return id;
+}
+// pose: arm angles (deg). right arm outward is negative, left arm outward is positive.
+function pose(id,P,at,d=.45,ease="power2.out"){
+  const g=n=>`#${id}_${n}`;
+  const m={aR:P.aR,fR:P.fR,aL:P.aL,fL:P.fL,head:P.head};
+  for(const k in m){ if(m[k]!==undefined) tl.to(g(k),{rotation:m[k],duration:d,ease},at) }
+}
+function mouth(id,kind,at){ // S smile, O sad, A open
+  tl.set(`#${id}_mS`,{opacity:kind=="S"?1:0},at);tl.set(`#${id}_mO`,{opacity:kind=="O"?1:0},at);tl.set(`#${id}_mA`,{opacity:kind=="A"?1:0},at);
+}
+['f1','f4','f5','f6','f7'].forEach(fig);
+const REST={aR:-6,fR:-4,aL:6,fL:4,head:0};
+['f1','f4','f5','f6','f7'].forEach(id=>pose(id,REST,0,.01));
+
+// ---------- scene helpers ----------
+function sceneIn(id,at,x=70){tl.fromTo(id,{opacity:0,x:x},{opacity:1,x:0,duration:.45,ease:"power3.out"},at)}
+function sceneOut(id,at,x=-70){tl.to(id,{opacity:0,x:x,duration:.35,ease:"power2.in"},at)}
+function whoosh(at){tl.to("#grid",{xPercent:"-=1.2",duration:.6,ease:"power2.out"},at);tl.fromTo("#wipe",{x:-1900,opacity:1},{x:1900,opacity:1,duration:.5,ease:"power3.inOut",immediateRender:false},at-.15);tl.set("#wipe",{opacity:0},at+.4)}
+function pop(sel,at,from={scale:.2,opacity:0},d=.5){tl.fromTo(sel,from,{scale:1,opacity:1,duration:d,ease:"back.out(2.2)"},at)}
+// idle bob for figures
+function bob(id,t0,t1){tl.fromTo(`#${id}`,{y:"+=0"},{y:"-=10",duration:.7,yoyo:true,repeat:Math.max(1,Math.floor((t1-t0)/.7)-1),ease:"sine.inOut"},t0)}
+
+// ======== S1 (0 - 3.7) ========
+tl.set("#s1",{opacity:1},0);
+[0,1,2,3].forEach((wi,k)=>{ tl.fromTo(`#s1a .w:nth-of-type(${k+1})`,{opacity:0,y:60,rotation:3},{opacity:1,y:0,rotation:0,duration:.5,ease:"back.out(1.7)"},WT[wi]) });
+tl.fromTo("#f1",{x:260,opacity:0},{x:0,opacity:1,duration:.7,ease:"back.out(1.4)"},.1);
+mouth("f1","S",0);
+pose("f1",{aR:-60,fR:-60,aL:60,fL:60,head:-6},1.0,.5,"back.out(2)");   // shrug at "anything"
+tl.fromTo("#q1",{opacity:0,scale:.2,rotation:-30},{opacity:1,scale:1,rotation:-12,duration:.5,ease:"back.out(3)"},1.15);
+tl.fromTo("#q2",{opacity:0,scale:.2,rotation:20},{opacity:1,scale:1,rotation:14,duration:.5,ease:"back.out(3)"},1.35);
+tl.to("#s1a",{opacity:0,y:-40,duration:.3,ease:"power2.in"},2.0);
+tl.to(["#q1","#q2"],{opacity:0,scale:.4,duration:.25},2.0);
+tl.set("#s1b",{opacity:1},2.1);
+tl.fromTo("#s1b .w2",{opacity:0,y:70},{opacity:1,y:0,duration:.55,stagger:.28,ease:"power4.out"},2.14);
+tl.fromTo("#caret",{opacity:1},{opacity:0,duration:.25,repeat:7,yoyo:true,ease:"steps(1)"},3.0);
+pose("f1",{aR:-35,fR:125,aL:6,fL:4,head:8},2.6,.5);                 // thinking, hand to chin
+mouth("f1","A",2.9);
+bob("f1",.8,3.6);
+tl.to("#s1",{opacity:0,x:-80,duration:.4,ease:"power2.in"},3.4);
+
+// ======== S2 (3.5 - 8.8) ========
+whoosh(3.45);
+tl.set("#s2",{opacity:1},3.5);
+tl.fromTo("#w2",{x:-120,opacity:0,scale:.94},{x:0,opacity:1,scale:1,duration:.6,ease:"power3.out"},3.5);
+tl.fromTo("#p_chat",{x:80,opacity:0,scale:.6},{x:0,opacity:1,scale:1,duration:.5,ease:"back.out(2)"},WT[11]-.05);
+tl.fromTo("#p_claude",{x:80,opacity:0,scale:.6},{x:0,opacity:1,scale:1,duration:.5,ease:"back.out(2)"},WT[13]-.05);
+tl.fromTo("#l2a",{opacity:0,y:40},{opacity:1,y:0,duration:.6,ease:"power3.out"},WT[15]-.1);
+tl.fromTo("#w2",{scale:1},{scale:1.04,duration:5,ease:"none"},3.6);
+tl.to("#s2",{opacity:0,x:-80,duration:.4,ease:"power2.in"},8.5);
+
+// ======== S3 (8.7 - 11.7) ========
+whoosh(8.7);
+tl.set("#s3",{opacity:1},8.7);
+tl.fromTo("#w3",{x:140,opacity:0,scale:.95},{x:0,opacity:1,scale:1,duration:.6},8.7);
+tl.fromTo("#l3",{opacity:0,x:60},{opacity:1,x:0,duration:.6},WT[25]-.15);
+tl.fromTo("#t3",{opacity:0,y:20},{opacity:1,y:0,duration:.5},9.2);
+tl.fromTo("#w3",{scale:1},{scale:1.05,duration:3.2,ease:"none"},9.3);
+tl.to("#s3",{opacity:0,x:-80,duration:.4,ease:"power2.in"},11.3);
+
+// ======== S4 (11.4 - 18.0) ========
+whoosh(11.4);
+tl.set("#s4",{opacity:1},11.4);
+tl.fromTo("#f4",{x:-200,opacity:0},{x:0,opacity:1,duration:.6,ease:"back.out(1.4)"},11.4);
+tl.fromTo("#w4",{x:120,opacity:0,scale:.95},{x:0,opacity:1,scale:1,duration:.6},11.5);
+tl.fromTo("#bub4",{opacity:0,scale:.3,transformOrigin:"0% 100%"},{opacity:1,scale:1,duration:.5,ease:"back.out(2.4)"},WT[31]);
+pose("f4",{aR:-75,fR:-10,aL:6,fL:4,head:-4},WT[31],.5); mouth("f4","A",WT[31]);
+tl.to("#bub4",{opacity:0,scale:.6,duration:.3},13.0);
+pose("f4",REST,13.1,.5); mouth("f4","S",13.2);
+tl.fromTo("#p4a",{y:30,opacity:0},{y:0,opacity:1,duration:.5,ease:"back.out(2)"},WT[38]);
+tl.fromTo("#p4b",{y:30,opacity:0},{y:0,opacity:1,duration:.5,ease:"back.out(2)"},WT[41]);
+bob("f4",11.6,17.8);
+tl.to("#s4",{opacity:0,x:-80,duration:.4,ease:"power2.in"},17.7);
+
+// ======== S5 (18.0 - 22.2) ========
+whoosh(18.0);
+tl.set("#s5",{opacity:1},18.0);
+tl.fromTo("#f5",{x:-200,opacity:0},{x:0,opacity:1,duration:.6,ease:"back.out(1.4)"},18.0);
+tl.fromTo("#w5",{x:120,opacity:0,scale:.95},{x:0,opacity:1,scale:1,duration:.6},18.05);
+pose("f5",{aR:-30,fR:-30,aL:30,fL:30,head:6},WT[51],.5,"back.out(2)"); mouth("f5","S",WT[51]);
+tl.fromTo("#bub5",{opacity:0,scale:.3,transformOrigin:"0% 100%"},{opacity:1,scale:1,duration:.5,ease:"back.out(2.4)"},WT[52]);
+tl.set("#stamp",{opacity:1},WT[57]-.02);
+tl.fromTo("#stamp",{scale:3.2,opacity:0},{scale:1,opacity:1,duration:.22,ease:"power4.in"},WT[57]-.02);
+tl.to("#w5",{x:-10,duration:.06,yoyo:true,repeat:3,ease:"none"},WT[57]+.2);
+mouth("f5","O",WT[57]+.15);
+pose("f5",{aR:-155,fR:-130,aL:6,fL:4,head:-8},WT[57]+.15,.4);   // hand on forehead, worried
+tl.to("#bub5",{opacity:0,scale:.6,duration:.25},WT[57]+.2);
+tl.to("#s5",{opacity:0,x:-80,duration:.35,ease:"power2.in"},22.15);
+
+// ======== S5b (22.3 - 25.5) ========
+whoosh(22.3);
+tl.set("#s5b",{opacity:1},22.3);
+tl.fromTo("#w5b",{x:-120,opacity:0,scale:.95},{x:0,opacity:1,scale:1,duration:.6},22.3);
+tl.fromTo("#l5b",{opacity:0,x:60},{opacity:1,x:0,duration:.6},WT[62]-.2);
+tl.fromTo("#w5b",{scale:1},{scale:1.04,duration:3,ease:"none"},22.8);
+tl.to("#s5b",{opacity:0,x:-80,duration:.35,ease:"power2.in"},24.15);
+
+// ======== S6 (24.3 - 28.0) ========
+whoosh(24.3);
+tl.set("#s6",{opacity:1},24.3);
+[["#r1",WT[69]],["#r2",WT[71]],["#r3",WT[74]]].forEach(([r,t],i)=>{
+  tl.fromTo(r,{x:-140,opacity:0},{x:0,opacity:1,duration:.5,ease:"power3.out"},t-.35);
+});
+tl.fromTo("#f6",{x:240,opacity:0},{x:0,opacity:1,duration:.6,ease:"back.out(1.4)"},24.4);
+pose("f6",{aR:-6,fR:-4,aL:80,fL:10,head:4},24.5,.5);
+tl.set("#mag",{opacity:1,x:1050,y:150},WT[75]-.9);
+[["#k1",250,WT[75]-.55],["#k2",450,WT[75]-.2],["#k3",650,WT[75]+.15]].forEach(([k,y,t],i)=>{
+  tl.to("#mag",{x:1010,y:y-90,duration:.3,ease:"power2.inOut"},t-.25);
+  tl.fromTo(k,{scale:0,opacity:0},{scale:1,opacity:1,duration:.4,ease:"back.out(3)"},t+.05);
+});
+tl.fromTo("#l6",{opacity:0,y:40},{opacity:1,y:0,duration:.5},WT[75]);
+tl.to("#s6",{opacity:0,x:-80,duration:.35,ease:"power2.in"},27.8);
+
+// ======== S7 (27.9 - 31.8) ========
+whoosh(27.9);
+tl.set("#s7",{opacity:1},27.9);
+tl.fromTo("#pp",{y:100,opacity:0,rotation:3},{y:0,opacity:1,rotation:-1.5,duration:.6,ease:"back.out(1.5)"},27.95);
+tl.fromTo("#l7a",{opacity:0,x:-70},{opacity:1,x:0,duration:.5},WT[77]);
+// AI writes lines
+const lines=[[56,130,430],[56,185,500],[56,240,380],[56,295,470],[56,350,520],[56,405,400],[56,460,490],[56,515,350]];
+lines.forEach(([x,y,w],i)=>{const d=document.createElement('div');d.className='ln';d.style.cssText=`left:${x}px;top:${y}px;width:${w}px;`;document.getElementById('pp').appendChild(d);
+  tl.fromTo(d,{scaleX:0,transformOrigin:"0 50%"},{scaleX:1,duration:.22,ease:"power1.out"},WT[78]+i*.15)});
+tl.fromTo("#f7",{x:240,opacity:0},{x:0,opacity:1,duration:.6,ease:"back.out(1.4)"},28.0);
+tl.fromTo("#l7b",{opacity:0,x:-70},{opacity:1,x:0,duration:.5},WT[81]);
+tl.set("#mag7",{opacity:1},WT[81]);
+tl.fromTo("#mag7",{x:1260,y:520,rotation:-20},{x:1000,y:640,rotation:0,duration:.6,ease:"back.out(1.6)"},WT[81]);
+tl.fromTo("#hl",{opacity:0,scaleX:0,transformOrigin:"0 50%"},{opacity:1,scaleX:1,duration:.5},WT[84]-.1);
+tl.to("#mag7",{x:1100,y:260,duration:.5,ease:"power2.inOut"},WT[84]-.05);
+pose("f7",{aR:-6,fR:-4,aL:75,fL:10,head:6},WT[81],.5);
+tl.to("#s7",{opacity:0,duration:.3,ease:"power2.in"},31.6);
+
+// ======== S8 (31.8 - 33.6) ========
+tl.set("#s8",{opacity:1},31.8);
+tl.fromTo("#bolt",{scale:0,rotation:-40},{scale:1,rotation:0,duration:.6,ease:"back.out(2)"},31.85);
+tl.fromTo("#hnd",{opacity:0,y:40},{opacity:1,y:0,duration:.5},WT[85]+.05);
+tl.fromTo("#sub",{opacity:0,y:30},{opacity:1,y:0,duration:.5},WT[87]);
+tl.fromTo("#fol",{scale:0},{scale:1,duration:.5,ease:"back.out(2.5)"},WT[89]-.3);
+tl.to("#fol",{scale:1.06,duration:.35,yoyo:true,repeat:3,ease:"sine.inOut"},WT[89]+.3);
+
+
+window.__timelines=window.__timelines||{};window.__timelines["main"]=tl;tl.seek(0);
+</script></body></html>

@@ -18,7 +18,7 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:#161c34;font-fam
 .win .hd{height:58px;background:#171c2e;display:flex;align-items:center;padding-left:22px;gap:10px;font:700 20px Mont;color:#8b93ad;letter-spacing:.08em}
 .win .hd i{width:16px;height:16px;border-radius:50%;display:inline-block}
 .win .vw{position:relative;overflow:hidden;width:100%}
-.win video{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+.pz{position:absolute;inset:0}.win video{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
 .lab{position:absolute;font-weight:900;font-size:58px;letter-spacing:.02em;text-transform:uppercase;white-space:nowrap;text-shadow:0 4px 18px rgba(0,0,0,.45)}
 .pill{position:absolute;padding:14px 30px;border-radius:999px;font-weight:800;font-size:34px;white-space:nowrap;background:rgba(255,255,255,.10);border:2px solid rgba(255,255,255,.35)}
 .pill.c{background:rgba(232,87,78,.18);border-color:#e8574e;color:#ffb3ad}
@@ -28,9 +28,10 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:#161c34;font-fam
 .row b{font-weight:900;font-size:62px;letter-spacing:.02em;width:360px}
 .row span{font-weight:600;font-size:46px;color:#a9b4d8}
 .paper{position:absolute;border-radius:22px;background:#f4f1e8;box-shadow:0 30px 70px rgba(5,8,22,.55)}
+.tk{padding:10px 24px;border-radius:14px;background:rgba(232,87,78,.16);border:2px solid #e8574e;font:800 34px Mont;color:#ffb3ad;opacity:0}
 .ln{position:absolute;height:22px;border-radius:11px;background:#c9c4b2}
 </style></head>
-<body><div id="root" data-composition-id="main" data-start="0" data-duration="33.6" data-width="1920" data-height="1080">
+<body><div id="root" data-composition-id="main" data-start="0" data-duration="33.6" data-width="1920" data-height="1080" data-motion-blur="on">
 <div id="grid"></div>
 
 <!-- S1: hook -->
@@ -44,7 +45,7 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:#161c34;font-fam
 
 <!-- S2: trained on huge amounts of text -->
 <div class="scene" id="s2">
-  <div class="win" id="w2" style="left:120px;top:200px;width:1120px;height:626px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; WIKIPEDIA · REAL PAGE</div><div class="vw" style="height:568px"><video id="v2" class="clip" src="footage/c_r04.mp4" muted playsinline data-start="3.55" data-duration="5.2" data-track-index="1"></video></div></div>
+  <div class="win" id="w2" style="left:120px;top:200px;width:1120px;height:626px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; WIKIPEDIA · REAL PAGE</div><div class="vw" style="height:568px"><div class="pz" style="position:absolute;inset:0"><video id="v2" class="clip" src="footage/c_r04.mp4" muted playsinline data-start="3.55" data-duration="5.2" data-track-index="1"></video></div></div></div>
   <div class="pill" id="p_chat" style="left:1330px;top:250px">ChatGPT</div>
   <div class="pill" id="p_claude" style="left:1330px;top:350px">Claude</div>
   <div class="lab" id="l2a" style="left:1330px;top:500px;line-height:1.15;white-space:normal;width:520px;font-size:62px">TRAINED ON <span class="coral">HUGE</span> AMOUNTS<br>OF TEXT</div>
@@ -53,8 +54,9 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:#161c34;font-fam
 
 <!-- S3: predict the next word -->
 <div class="scene" id="s3">
-  <div class="win" id="w3" style="left:110px;top:170px;width:1180px;height:648px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; REAL MODEL · RUNNING LIVE</div><div class="vw" style="height:590px"><video id="v3" class="clip" src="footage/c_r01.mp4" muted playsinline data-start="8.7" data-duration="3.4" data-track-index="2"></video></div></div>
+  <div class="win" id="w3" style="left:110px;top:170px;width:1180px;height:648px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; REAL MODEL · RUNNING LIVE</div><div class="vw" style="height:590px"><div class="pz" id="pz3" style="position:absolute;inset:0"><video id="v3" class="clip" src="footage/c_r01.mp4" muted playsinline data-start="8.7" data-duration="3.4" data-track-index="2"></video></div></div></div>
   <div class="abs big" id="l3" style="left:1350px;top:300px;font-size:88px;width:520px">PREDICT<br>THE <span class="coral">NEXT</span><br><span class="coral">WORD</span></div>
+  <div class="abs" id="cnt" style="left:1350px;top:640px;opacity:0"><div class="big coral" id="cntn" style="font-size:150px">0%</div><div class="big" style="font-size:34px;letter-spacing:.06em;margin-top:6px">WEST · MOST LIKELY</div></div>
   <div class="tagr" id="t3" style="left:120px;top:850px">GPT-2 · SMALL MODEL FROM 2019</div>
 </div>
 
@@ -62,22 +64,23 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:#161c34;font-fam
 <div class="scene" id="s4">
   <svg class="fig" id="f4" viewBox="-200 -440 400 460" width="400" height="460" style="left:60px;top:430px"></svg>
   <div class="abs" id="bub4" style="left:40px;top:250px;opacity:0"><div style="padding:20px 32px;border-radius:30px 30px 30px 6px;background:#fff;color:#1b2340;font-weight:800;font-size:34px;box-shadow:0 10px 30px rgba(0,0,0,.35)">ASK A QUESTION</div></div>
-  <div class="win" id="w4" style="left:560px;top:150px;width:1260px;height:690px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; REAL MODEL · RUNNING LIVE</div><div class="vw" style="height:632px"><video id="v4" class="clip" src="footage/c_r02a.mp4" muted playsinline data-start="11.4" data-duration="6.6" data-track-index="3"></video></div></div>
-  <div class="pill c" id="p4a" style="left:600px;top:880px">MOST LIKELY ANSWER</div>
-  <div class="pill" id="p4b" style="left:1090px;top:880px">ONE SMALL PIECE AT A TIME</div>
+  <div class="win" id="w4" style="left:640px;top:130px;width:1100px;height:608px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; REAL MODEL · RUNNING LIVE</div><div class="vw" style="height:550px"><div class="pz" style="position:absolute;inset:0"><video id="v4" class="clip" src="footage/c_r02a.mp4" muted playsinline data-start="11.4" data-duration="6.6" data-track-index="3"></video></div></div></div>
+  <div class="pill c" id="p4a" style="left:640px;top:900px">MOST LIKELY ANSWER</div>
+  <div class="pill" id="p4b" style="left:1130px;top:900px">ONE SMALL PIECE AT A TIME</div>
+  <div id="tok4" class="abs" style="left:640px;top:780px;display:flex;gap:14px"><span class="tk">Sydney</span><span class="tk">,</span><span class="tk">and</span><span class="tk">the</span><span class="tk">capital</span></div>
 </div>
 
 <!-- S5: sure but wrong -->
 <div class="scene" id="s5">
   <svg class="fig" id="f5" viewBox="-200 -440 400 460" width="400" height="460" style="left:60px;top:430px"></svg>
   <div class="abs" id="bub5" style="left:60px;top:250px;opacity:0"><div style="padding:20px 32px;border-radius:30px 30px 30px 6px;background:#fff;color:#1b2340;font-weight:900;font-size:46px;box-shadow:0 10px 30px rgba(0,0,0,.35)">I AM SURE!</div></div>
-  <div class="win" id="w5" style="left:560px;top:150px;width:1260px;height:690px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; REAL MODEL · RUNNING LIVE</div><div class="vw" style="height:632px"><video id="v5" class="clip" src="footage/c_r02b.mp4" muted playsinline data-start="18.0" data-duration="4.7" data-track-index="4"></video></div></div>
-  <div class="abs big" id="stamp" style="left:1130px;top:690px;font-size:96px;color:#e8574e;border:10px solid #e8574e;border-radius:20px;padding:6px 30px;background:rgba(22,28,52,.92);opacity:0;transform:rotate(-8deg)">WRONG</div>
+  <div class="win" id="w5" style="left:640px;top:130px;width:1100px;height:608px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; REAL MODEL · RUNNING LIVE</div><div class="vw" style="height:550px"><div class="pz" id="pz5" style="position:absolute;inset:0"><video id="v5" class="clip" src="footage/c_r02b.mp4" muted playsinline data-start="18.0" data-duration="4.7" data-track-index="4"></video></div></div></div>
+  <div class="abs big" id="stamp" style="left:1390px;top:560px;font-size:96px;color:#e8574e;border:10px solid #e8574e;border-radius:20px;padding:6px 30px;background:rgba(22,28,52,.92);opacity:0;transform:rotate(-8deg)">WRONG</div>
 </div>
 
 <!-- S5b: hallucination -->
 <div class="scene" id="s5b">
-  <div class="win" id="w5b" style="left:90px;top:190px;width:1120px;height:626px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; WIKIPEDIA · REAL PAGE</div><div class="vw" style="height:568px"><video id="v5b" class="clip" src="footage/c_r05.mp4" muted playsinline data-start="22.3" data-duration="3.2" data-track-index="5"></video></div></div>
+  <div class="win" id="w5b" style="left:90px;top:190px;width:1120px;height:626px"><div class="hd"><i style="background:#e8574e"></i><i style="background:#f5c26b"></i><i style="background:#6bd68a"></i>&nbsp; WIKIPEDIA · REAL PAGE</div><div class="vw" style="height:568px"><div class="pz" style="position:absolute;inset:0"><video id="v5b" class="clip" src="footage/c_r05.mp4" muted playsinline data-start="22.3" data-duration="3.2" data-track-index="5"></video></div></div></div>
   <div class="abs big" id="l5b" style="left:1260px;top:300px;font-size:76px;width:600px;line-height:1.08">A <span class="coral">HALLUCI-<br>NATION</span> SOUNDS<br>RIGHT.<br>IT ISN'T.</div>
   <div class="tagr" style="left:100px;top:850px">SOURCE: en.wikipedia.org (CC BY-SA)</div>
 </div>
@@ -95,7 +98,7 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:#161c34;font-fam
 
 <!-- S7: AI drafts, you check -->
 <div class="scene" id="s7">
-  <div class="abs big" id="l7a" style="left:130px;top:260px;font-size:130px;opacity:0">AI<br>DRAFTS.</div>
+  <div class="abs big" id="l7a" style="left:130px;top:420px;font-size:130px;opacity:0">AI<br>DRAFTS.</div>
   <div class="abs big coral" id="l7b" style="left:130px;top:610px;font-size:130px;opacity:0">YOU<br>CHECK.</div>
   <div class="paper" id="pp" style="left:760px;top:130px;width:620px;height:820px"><div class="abs" style="left:56px;top:50px;font-weight:900;font-size:30px;letter-spacing:.14em;color:#b9b4a2">DRAFT</div></div>
   <div class="abs" id="hl" style="left:790px;top:380px;width:560px;height:60px;background:rgba(232,87,78,.4);border-radius:10px;opacity:0"></div>
@@ -111,7 +114,6 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:#161c34;font-fam
   <div class="abs" id="fol" style="left:790px;top:810px;width:340px;height:96px;border-radius:48px;background:#e8574e;font-weight:900;font-size:44px;display:flex;align-items:center;justify-content:center;letter-spacing:.06em">FOLLOW</div>
 </div>
 
-<div id="wipe" style="position:absolute;left:-300px;top:0;width:2520px;height:1080px;z-index:45;background:linear-gradient(100deg,transparent 0%,transparent 38%,#e8574e 38%,#e8574e 62%,transparent 62%);opacity:0"></div>
 <div id="vig"></div>
 <div class="bar" style="top:0"></div><div class="bar" style="bottom:0"></div>
 </div>
@@ -164,129 +166,137 @@ const REST={aR:-6,fR:-4,aL:6,fL:4,head:0};
 ['f1','f4','f5','f6','f7'].forEach(id=>pose(id,REST,0,.01));
 
 // ---------- scene helpers ----------
-function sceneIn(id,at,x=70){tl.fromTo(id,{opacity:0,x:x},{opacity:1,x:0,duration:.45,ease:"power3.out"},at)}
-function sceneOut(id,at,x=-70){tl.to(id,{opacity:0,x:x,duration:.35,ease:"power2.in"},at)}
-function whoosh(at){tl.to("#grid",{xPercent:"-=1.2",duration:.6,ease:"power2.out"},at);tl.fromTo("#wipe",{x:-1900,opacity:1},{x:1900,opacity:1,duration:.5,ease:"power3.inOut",immediateRender:false},at-.15);tl.set("#wipe",{opacity:0},at+.4)}
-function pop(sel,at,from={scale:.2,opacity:0},d=.5){tl.fromTo(sel,from,{scale:1,opacity:1,duration:d,ease:"back.out(2.2)"},at)}
+
 // idle bob for figures
-function bob(id,t0,t1){tl.fromTo(`#${id}`,{y:"+=0"},{y:"-=10",duration:.7,yoyo:true,repeat:Math.max(1,Math.floor((t1-t0)/.7)-1),ease:"sine.inOut"},t0)}
 
-// ======== S1 (0 - 3.7) ========
+// ---------- seam + motion helpers (motion-doctrine / cut-the-curve) ----------
+const CUR=-230; // the current: LEFT, partial travel ~12% of frame
+function exitL(scene,Tc){ // outgoing scene: power4.in, fades out by the cut (zero overlap)
+  tl.to(scene,{x:CUR,duration:.34,ease:"power4.in"},Tc-.34);
+  tl.to(scene,{opacity:0,duration:.26,ease:"none"},Tc-.30);
+}
+function enterL(scene,heroes,Tc){ // incoming: hero items ride in mid-flight, power4.out, ignite at .35 opacity
+  tl.set(scene,{opacity:1,x:0},Tc);
+  let gap=0;
+  heroes.forEach((h,i)=>{ const at=Tc+gap; tl.set(h,{x:-CUR,opacity:0},0); tl.set(h,{opacity:.35},at); tl.to(h,{x:0,duration:.34,ease:"power4.out"},at); tl.to(h,{opacity:1,duration:.2,ease:"none"},at); gap+=.05*Math.pow(.84,i); });
+}
+// arrival (waterfall entry, binary 0->1)
+function arrive(sel,at,y=50,d=.2){ tl.set(sel,{opacity:1},at); tl.fromTo(sel,{y:y},{y:0,duration:d,ease:"power4.out",immediateRender:false},at); }
+// punch-in on the footage wrapper (camera with intent)
+function punch(sel,ox,oy,sc,at,d=.55,tx=0,ty=0){ tl.set(sel,{transformOrigin:`${ox}px ${oy}px`},0); tl.to(sel,{scale:sc,x:tx,y:ty,duration:d,ease:"power2.inOut"},at); }
+// sequential seams: [outScene, inScene, heroes, Tc]
+const SEAMS=[["#s1","#s2",["#w2"],3.5],["#s2","#s3",["#w3"],8.7],["#s3","#s4",["#f4","#w4"],11.4],["#s4","#s5",["#f5","#w5"],18.0],["#s5","#s5b",["#w5b"],22.3],["#s5b","#s6",["#f6"],24.3],["#s6","#s7",["#pp","#f7"],28.05]];
+SEAMS.forEach(([o,n,h,Tc])=>{ exitL(o,Tc); enterL(n,h,Tc); });
+['#s2','#s3','#s4','#s5','#s5b','#s6','#s7'].forEach(id=>tl.set(id,{opacity:0},0));
+
+// ======== S1: hook (0 - 3.5) ========
 tl.set("#s1",{opacity:1},0);
-[0,1,2,3].forEach((wi,k)=>{ tl.fromTo(`#s1a .w:nth-of-type(${k+1})`,{opacity:0,y:60,rotation:3},{opacity:1,y:0,rotation:0,duration:.5,ease:"back.out(1.7)"},WT[wi]) });
-tl.fromTo("#f1",{x:260,opacity:0},{x:0,opacity:1,duration:.7,ease:"back.out(1.4)"},.1);
+// per-word: blur 6 -> 0 + opacity 0 -> 1, no translate (title craft)
+[0,1,2,3].forEach((wi,k)=>{ const w=`#s1a .w:nth-of-type(${k+1})`; tl.set(w,{opacity:0,filter:"blur(8px)"},0); tl.to(w,{opacity:1,duration:.14,ease:"none"},WT[wi]); tl.to(w,{filter:"blur(0px)",duration:.16,ease:"power2.out"},WT[wi]); });
+tl.fromTo("#f1",{x:300,opacity:0},{x:0,opacity:1,duration:.7,ease:"power4.out"},.05);
+pose("f1",{aR:-60,fR:-60,aL:60,fL:60,head:-6},1.0,.5,"back.out(1.4)");
 mouth("f1","S",0);
-pose("f1",{aR:-60,fR:-60,aL:60,fL:60,head:-6},1.0,.5,"back.out(2)");   // shrug at "anything"
-tl.fromTo("#q1",{opacity:0,scale:.2,rotation:-30},{opacity:1,scale:1,rotation:-12,duration:.5,ease:"back.out(3)"},1.15);
-tl.fromTo("#q2",{opacity:0,scale:.2,rotation:20},{opacity:1,scale:1,rotation:14,duration:.5,ease:"back.out(3)"},1.35);
-tl.to("#s1a",{opacity:0,y:-40,duration:.3,ease:"power2.in"},2.0);
-tl.to(["#q1","#q2"],{opacity:0,scale:.4,duration:.25},2.0);
-tl.set("#s1b",{opacity:1},2.1);
-tl.fromTo("#s1b .w2",{opacity:0,y:70},{opacity:1,y:0,duration:.55,stagger:.28,ease:"power4.out"},2.14);
-tl.fromTo("#caret",{opacity:1},{opacity:0,duration:.25,repeat:7,yoyo:true,ease:"steps(1)"},3.0);
-pose("f1",{aR:-35,fR:125,aL:6,fL:4,head:8},2.6,.5);                 // thinking, hand to chin
+tl.fromTo("#q1",{opacity:0,scale:.2,rotation:-30},{opacity:1,scale:1,rotation:-12,duration:.5,ease:"back.out(2.2)"},1.2);
+tl.fromTo("#q2",{opacity:0,scale:.2,rotation:20},{opacity:1,scale:1,rotation:14,duration:.5,ease:"back.out(2.2)"},1.4);
+// zoom-through (forward): headline swap, never both visible
+const ZC=WT[4];
+tl.to(["#q1","#q2"],{opacity:0,duration:.2,ease:"none"},ZC-.25);
+tl.to("#s1a",{scale:1.2,duration:.2,ease:"power3.in",transformOrigin:"50% 50%"},ZC-.2);
+tl.to("#s1a",{filter:"blur(10px)",duration:.2,ease:"power3.in"},ZC-.2);
+tl.to("#s1a",{opacity:.15,duration:.2,ease:"none"},ZC-.2);
+tl.set("#s1a",{opacity:0},ZC);
+tl.set("#s1b",{opacity:.15,scale:.75,filter:"blur(10px)",transformOrigin:"0% 50%"},ZC);
+tl.to("#s1b",{scale:1,duration:.5,ease:"expo.out"},ZC);
+tl.to("#s1b",{filter:"blur(0px)",duration:.5,ease:"expo.out"},ZC);
+tl.to("#s1b",{opacity:1,duration:.5,ease:"expo.out"},ZC);
+pose("f1",{aR:-35,fR:125,aL:6,fL:4,head:8},2.7,.5);
 mouth("f1","A",2.9);
-bob("f1",.8,3.6);
-tl.to("#s1",{opacity:0,x:-80,duration:.4,ease:"power2.in"},3.4);
+tl.to("#caret",{opacity:0,duration:.01,repeat:0},3.2);
 
-// ======== S2 (3.5 - 8.8) ========
-whoosh(3.45);
-tl.set("#s2",{opacity:1},3.5);
-tl.fromTo("#w2",{x:-120,opacity:0,scale:.94},{x:0,opacity:1,scale:1,duration:.6,ease:"power3.out"},3.5);
-tl.fromTo("#p_chat",{x:80,opacity:0,scale:.6},{x:0,opacity:1,scale:1,duration:.5,ease:"back.out(2)"},WT[11]-.05);
-tl.fromTo("#p_claude",{x:80,opacity:0,scale:.6},{x:0,opacity:1,scale:1,duration:.5,ease:"back.out(2)"},WT[13]-.05);
-tl.fromTo("#l2a",{opacity:0,y:40},{opacity:1,y:0,duration:.6,ease:"power3.out"},WT[15]-.1);
-tl.fromTo("#w2",{scale:1},{scale:1.04,duration:5,ease:"none"},3.6);
-tl.to("#s2",{opacity:0,x:-80,duration:.4,ease:"power2.in"},8.5);
+// ======== S2: trained on huge amounts of text ========
+tl.set(["#p_chat","#p_claude"],{opacity:0},0); tl.set("#l2a",{opacity:0},0);
+// whip: arrives blurred and sharpens
+function whip(sel,at){ tl.set(sel,{opacity:0,x:140,filter:"blur(10px)"},0); tl.to(sel,{opacity:1,duration:.12,ease:"none"},at); tl.to(sel,{x:0,duration:.28,ease:"power4.out"},at); tl.to(sel,{filter:"blur(0px)",duration:.2,ease:"power2.out"},at+.08); }
+whip("#p_chat",WT[11]-.05); whip("#p_claude",WT[13]-.05);
+tl.set("#l2a",{opacity:1},WT[15]-.1); tl.fromTo("#l2a",{y:60},{y:0,duration:.2,ease:"power4.out",immediateRender:false},WT[15]-.1);
 
-// ======== S3 (8.7 - 11.7) ========
-whoosh(8.7);
-tl.set("#s3",{opacity:1},8.7);
-tl.fromTo("#w3",{x:140,opacity:0,scale:.95},{x:0,opacity:1,scale:1,duration:.6},8.7);
-tl.fromTo("#l3",{opacity:0,x:60},{opacity:1,x:0,duration:.6},WT[25]-.15);
-tl.fromTo("#t3",{opacity:0,y:20},{opacity:1,y:0,duration:.5},9.2);
-tl.fromTo("#w3",{scale:1},{scale:1.05,duration:3.2,ease:"none"},9.3);
-tl.to("#s3",{opacity:0,x:-80,duration:.4,ease:"power2.in"},11.3);
+// ======== S3: predict the next word ========
+tl.set(["#l3","#t3","#cnt"],{opacity:0},0);
+arrive("#l3",WT[25]-.1,60,.22); arrive("#t3",9.25,30,.18);
+punch("#pz3",480,400,1.5,9.95,.7,110,-105);                               // punch-in on the bars
+tl.set("#cnt",{opacity:1},9.95); tl.fromTo("#cnt",{y:50},{y:0,duration:.2,ease:"power4.out",immediateRender:false},9.95);
+const cn={v:0}; tl.to(cn,{v:65.5,duration:.9,ease:"power2.out",onUpdate:()=>{document.getElementById('cntn').textContent=cn.v.toFixed(1)+'%'}},9.95);
 
-// ======== S4 (11.4 - 18.0) ========
-whoosh(11.4);
-tl.set("#s4",{opacity:1},11.4);
-tl.fromTo("#f4",{x:-200,opacity:0},{x:0,opacity:1,duration:.6,ease:"back.out(1.4)"},11.4);
-tl.fromTo("#w4",{x:120,opacity:0,scale:.95},{x:0,opacity:1,scale:1,duration:.6},11.5);
-tl.fromTo("#bub4",{opacity:0,scale:.3,transformOrigin:"0% 100%"},{opacity:1,scale:1,duration:.5,ease:"back.out(2.4)"},WT[31]);
+// ======== S4: ask a question ========
+tl.set(["#bub4","#p4a","#p4b"],{opacity:0},0); tl.set(".tk",{opacity:0},0);
+tl.set("#bub4",{opacity:1,scale:.3,transformOrigin:"0% 100%"},0); tl.set("#bub4",{opacity:0},0);
+tl.fromTo("#bub4",{opacity:0,scale:.3},{opacity:1,scale:1,duration:.4,ease:"back.out(1.7)"},WT[31]);
 pose("f4",{aR:-75,fR:-10,aL:6,fL:4,head:-4},WT[31],.5); mouth("f4","A",WT[31]);
-tl.to("#bub4",{opacity:0,scale:.6,duration:.3},13.0);
-pose("f4",REST,13.1,.5); mouth("f4","S",13.2);
-tl.fromTo("#p4a",{y:30,opacity:0},{y:0,opacity:1,duration:.5,ease:"back.out(2)"},WT[38]);
-tl.fromTo("#p4b",{y:30,opacity:0},{y:0,opacity:1,duration:.5,ease:"back.out(2)"},WT[41]);
-bob("f4",11.6,17.8);
-tl.to("#s4",{opacity:0,x:-80,duration:.4,ease:"power2.in"},17.7);
+tl.to("#bub4",{opacity:0,scale:.6,duration:.25},13.0);
+pose("f4",REST,13.05,.5); mouth("f4","S",13.2);
+arrive("#p4a",WT[38],40,.2); arrive("#p4b",WT[41],40,.2);
+[13.15,14.05,14.45,14.9,15.3].forEach((tt,i)=>{ const k=`#tok4 .tk:nth-child(${i+1})`; tl.set(k,{opacity:1},tt); tl.fromTo(k,{y:30,scale:.7},{y:0,scale:1,duration:.22,ease:"back.out(2)",immediateRender:false},tt); });
 
-// ======== S5 (18.0 - 22.2) ========
-whoosh(18.0);
-tl.set("#s5",{opacity:1},18.0);
-tl.fromTo("#f5",{x:-200,opacity:0},{x:0,opacity:1,duration:.6,ease:"back.out(1.4)"},18.0);
-tl.fromTo("#w5",{x:120,opacity:0,scale:.95},{x:0,opacity:1,scale:1,duration:.6},18.05);
-pose("f5",{aR:-30,fR:-30,aL:30,fL:30,head:6},WT[51],.5,"back.out(2)"); mouth("f5","S",WT[51]);
-tl.fromTo("#bub5",{opacity:0,scale:.3,transformOrigin:"0% 100%"},{opacity:1,scale:1,duration:.5,ease:"back.out(2.4)"},WT[52]);
+// ======== S5: sure but wrong ========
+tl.set(["#bub5","#stamp"],{opacity:0},0);
+pose("f5",{aR:-30,fR:-30,aL:30,fL:30,head:6},WT[51],.5,"back.out(1.5)"); mouth("f5","S",WT[51]);
+tl.fromTo("#bub5",{opacity:0,scale:.3,transformOrigin:"0% 100%"},{opacity:1,scale:1,duration:.4,ease:"back.out(1.7)"},WT[52]);
+punch("#pz5",0,300,1.12,20.2,.6);                                  // camera moves to the answer lines
+tl.to("#bub5",{opacity:0,scale:.6,duration:.25},21.0);
+// stillness before the climax: hold ~0.5 s, then the stamp lands
 tl.set("#stamp",{opacity:1},WT[57]-.02);
-tl.fromTo("#stamp",{scale:3.2,opacity:0},{scale:1,opacity:1,duration:.22,ease:"power4.in"},WT[57]-.02);
+tl.fromTo("#stamp",{scale:3.2,opacity:0},{scale:1,opacity:1,duration:.22,ease:"power4.in",immediateRender:false},WT[57]-.02);
 tl.to("#w5",{x:-10,duration:.06,yoyo:true,repeat:3,ease:"none"},WT[57]+.2);
 mouth("f5","O",WT[57]+.15);
-pose("f5",{aR:-155,fR:-130,aL:6,fL:4,head:-8},WT[57]+.15,.4);   // hand on forehead, worried
-tl.to("#bub5",{opacity:0,scale:.6,duration:.25},WT[57]+.2);
-tl.to("#s5",{opacity:0,x:-80,duration:.35,ease:"power2.in"},22.15);
+pose("f5",{aR:-155,fR:-130,aL:6,fL:4,head:-8},WT[57]+.15,.4);
 
-// ======== S5b (22.3 - 25.5) ========
-whoosh(22.3);
-tl.set("#s5b",{opacity:1},22.3);
-tl.fromTo("#w5b",{x:-120,opacity:0,scale:.95},{x:0,opacity:1,scale:1,duration:.6},22.3);
-tl.fromTo("#l5b",{opacity:0,x:60},{opacity:1,x:0,duration:.6},WT[62]-.2);
-tl.fromTo("#w5b",{scale:1},{scale:1.04,duration:3,ease:"none"},22.8);
-tl.to("#s5b",{opacity:0,x:-80,duration:.35,ease:"power2.in"},24.15);
+// ======== S5b: hallucination ========
+tl.set("#l5b",{opacity:0},0);
+arrive("#l5b",WT[62]-.2,60,.24);
 
-// ======== S6 (24.3 - 28.0) ========
-whoosh(24.3);
-tl.set("#s6",{opacity:1},24.3);
-[["#r1",WT[69]],["#r2",WT[71]],["#r3",WT[74]]].forEach(([r,t],i)=>{
-  tl.fromTo(r,{x:-140,opacity:0},{x:0,opacity:1,duration:.5,ease:"power3.out"},t-.35);
-});
-tl.fromTo("#f6",{x:240,opacity:0},{x:0,opacity:1,duration:.6,ease:"back.out(1.4)"},24.4);
+// ======== S6: check name / number / link ========
+['#r1','#r2','#r3'].forEach(r=>tl.set(r,{opacity:0},0));
+[["#r1",WT[69]],["#r2",WT[71]],["#r3",WT[74]]].forEach(([r,t])=>{ arrive(r,t-.3,60,.2); });
 pose("f6",{aR:-6,fR:-4,aL:80,fL:10,head:4},24.5,.5);
-tl.set("#mag",{opacity:1,x:1050,y:150},WT[75]-.9);
-[["#k1",250,WT[75]-.55],["#k2",450,WT[75]-.2],["#k3",650,WT[75]+.15]].forEach(([k,y,t],i)=>{
+tl.set("#mag",{opacity:0},0); tl.set("#mag",{opacity:1,x:1050,y:150},WT[75]-.9);
+[["#k1",250,WT[75]-.55],["#k2",450,WT[75]-.2],["#k3",650,WT[75]+.15]].forEach(([k,y,t])=>{
   tl.to("#mag",{x:1010,y:y-90,duration:.3,ease:"power2.inOut"},t-.25);
-  tl.fromTo(k,{scale:0,opacity:0},{scale:1,opacity:1,duration:.4,ease:"back.out(3)"},t+.05);
+  tl.fromTo(k,{scale:0,opacity:0},{scale:1,opacity:1,duration:.35,ease:"back.out(2.4)"},t+.05);
 });
-tl.fromTo("#l6",{opacity:0,y:40},{opacity:1,y:0,duration:.5},WT[75]);
-tl.to("#s6",{opacity:0,x:-80,duration:.35,ease:"power2.in"},27.8);
+tl.set("#l6",{opacity:0},0); arrive("#l6",WT[75],40,.2);
 
-// ======== S7 (27.9 - 31.8) ========
-whoosh(27.9);
-tl.set("#s7",{opacity:1},27.9);
-tl.fromTo("#pp",{y:100,opacity:0,rotation:3},{y:0,opacity:1,rotation:-1.5,duration:.6,ease:"back.out(1.5)"},27.95);
-tl.fromTo("#l7a",{opacity:0,x:-70},{opacity:1,x:0,duration:.5},WT[77]);
-// AI writes lines
+// ======== S7: AI drafts, you check ========
+tl.set(["#l7a","#l7b","#hl","#mag7"],{opacity:0},0);
+tl.set("#l7a",{opacity:1},WT[77]); tl.fromTo("#l7a",{y:50},{y:0,duration:.2,ease:"power4.out",immediateRender:false},WT[77]);
 const lines=[[56,130,430],[56,185,500],[56,240,380],[56,295,470],[56,350,520],[56,405,400],[56,460,490],[56,515,350]];
 lines.forEach(([x,y,w],i)=>{const d=document.createElement('div');d.className='ln';d.style.cssText=`left:${x}px;top:${y}px;width:${w}px;`;document.getElementById('pp').appendChild(d);
-  tl.fromTo(d,{scaleX:0,transformOrigin:"0 50%"},{scaleX:1,duration:.22,ease:"power1.out"},WT[78]+i*.15)});
-tl.fromTo("#f7",{x:240,opacity:0},{x:0,opacity:1,duration:.6,ease:"back.out(1.4)"},28.0);
-tl.fromTo("#l7b",{opacity:0,x:-70},{opacity:1,x:0,duration:.5},WT[81]);
+  tl.fromTo(d,{scaleX:0,transformOrigin:"0 50%"},{scaleX:1,duration:.22,ease:"power1.out",immediateRender:false},WT[78]+i*.15)});
+// nudge curve: the AI DRAFTS group slides up to make room (10% / 65% / 25%, slow-fast-slow) while YOU CHECK arrives under it
+const N0=WT[81]-.25, dist=-160;
+tl.to("#l7a",{y:dist*.10,duration:.12,ease:"power3.in"},N0);
+tl.to("#l7a",{y:dist*.75,duration:.11,ease:"none"},N0+.12);
+tl.to("#l7a",{y:dist,duration:.38,ease:"power4.out"},N0+.23);
+tl.set("#l7b",{opacity:1},N0+.16); tl.fromTo("#l7b",{y:70},{y:0,duration:.2,ease:"power4.out",immediateRender:false},N0+.16);
 tl.set("#mag7",{opacity:1},WT[81]);
-tl.fromTo("#mag7",{x:1260,y:520,rotation:-20},{x:1000,y:640,rotation:0,duration:.6,ease:"back.out(1.6)"},WT[81]);
-tl.fromTo("#hl",{opacity:0,scaleX:0,transformOrigin:"0 50%"},{opacity:1,scaleX:1,duration:.5},WT[84]-.1);
-tl.to("#mag7",{x:1100,y:260,duration:.5,ease:"power2.inOut"},WT[84]-.05);
+tl.fromTo("#mag7",{x:1260,y:520,rotation:-20},{x:1000,y:640,rotation:0,duration:.5,ease:"power4.out",immediateRender:false},WT[81]);
+tl.fromTo("#hl",{opacity:0,scaleX:0,transformOrigin:"0 50%"},{opacity:1,scaleX:1,duration:.5,ease:"power3.out",immediateRender:false},WT[84]-.1);
+tl.to("#mag7",{x:1100,y:260,duration:.5,ease:"power2.inOut"},WT[81]+.55);
 pose("f7",{aR:-6,fR:-4,aL:75,fL:10,head:6},WT[81],.5);
-tl.to("#s7",{opacity:0,duration:.3,ease:"power2.in"},31.6);
 
-// ======== S8 (31.8 - 33.6) ========
-tl.set("#s8",{opacity:1},31.8);
-tl.fromTo("#bolt",{scale:0,rotation:-40},{scale:1,rotation:0,duration:.6,ease:"back.out(2)"},31.85);
-tl.fromTo("#hnd",{opacity:0,y:40},{opacity:1,y:0,duration:.5},WT[85]+.05);
-tl.fromTo("#sub",{opacity:0,y:30},{opacity:1,y:0,duration:.5},WT[87]);
-tl.fromTo("#fol",{scale:0},{scale:1,duration:.5,ease:"back.out(2.5)"},WT[89]-.3);
-tl.to("#fol",{scale:1.06,duration:.35,yoyo:true,repeat:3,ease:"sine.inOut"},WT[89]+.3);
-
+// ======== inverse zoom-through into the end card (arrival) ========
+const IZ=31.78;
+tl.to("#s7",{scale:.8,duration:.2,ease:"power3.in",transformOrigin:"50% 50%"},IZ-.2);
+tl.to("#s7",{filter:"blur(10px)",duration:.2,ease:"power3.in"},IZ-.2);
+tl.to("#s7",{opacity:.15,duration:.2,ease:"none"},IZ-.2);
+tl.set("#s7",{opacity:0},IZ);
+tl.set("#s8",{opacity:.15,scale:1.25,filter:"blur(10px)",transformOrigin:"50% 50%"},IZ);
+tl.to("#s8",{scale:1,duration:.5,ease:"expo.out"},IZ);
+tl.to("#s8",{filter:"blur(0px)",duration:.5,ease:"expo.out"},IZ);
+tl.to("#s8",{opacity:1,duration:.5,ease:"expo.out"},IZ);
+// staged after the retraction settles
+tl.set("#sub",{opacity:0},0); tl.set("#fol",{opacity:0},0);
+tl.set("#sub",{opacity:1},WT[87]); tl.fromTo("#sub",{y:30},{y:0,duration:.2,ease:"power4.out",immediateRender:false},WT[87]);
+tl.set("#fol",{opacity:1},WT[89]-.25); tl.fromTo("#fol",{scale:.6},{scale:1,duration:.35,ease:"back.out(1.7)",immediateRender:false},WT[89]-.25);
 
 window.__timelines=window.__timelines||{};window.__timelines["main"]=tl;tl.seek(0);
 </script></body></html>
