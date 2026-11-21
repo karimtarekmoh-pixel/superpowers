@@ -3,20 +3,30 @@
 This is the **stickman explainer** style: short videos made over a voiceover, mixing
 
 1. **Explainer animation**: clean flat vector scenes and navy diagram boards with the channel's stick figure. The stills in `frames/` and `sheets/` show the drawn look. Copy how it looks and moves, with your own scenes, characters and diagrams. Never copy their titles, channel name, logos or end card.
-2. **Real screenshots** of real pages (docs, product pages, articles) framed as a browser window and zoomed into the part the voice talks about, with key words outlined in coral. No video footage from third parties.
+2. **Footage made for this video** (the run's `footage/` folder): screen captures of real public pages, code-built app and terminal scenes, and sometimes generated clips, cut fast to the words with short labels. Its README says what each clip shows and the words it fits.
 
-Switch between scenes and boards every few seconds so the video stays varied.
+Roughly half of the screen time is footage and half is the stickman and boards, switching every few seconds so the video stays varied.
 
 ## The helper code
 
 `approved-look/code/` has reusable drawing code from an earlier approved video: `core.js` (easing, gradients, camera, text, boards), `char.js` (the stick-figure rig: poses, walk, faces, outfits), `scenery.js`, `geo.js`, `props.js`, `ui.js`, plus `render.mjs` (renders every frame in headless Chrome) and `sfx.py` (quiet sound effects). Start from it. Its sizes are landscape (1920x1080); for a vertical Short set W=1080, H=1920, BAR=0 and lay every shot out for the tall frame. Make new scenes for your own words.
 
+## Footage rules
+
+- Footage has no sound. The voice and quiet sound effects are the only audio.
+- Cut footage fast: one shot every 1 to 2.5 seconds while footage is on screen, each shot matching the words said at that moment. A slow push-in and a small punch-in on each cut.
+- Labels over footage: short bold uppercase, white, the key word or number in coral `#e8574e`, with a soft dark shadow or a small navy pill. Only key words and numbers, never sentences.
+- Real pages are framed as a browser window and zoomed into the line the voice talks about, with the key words outlined in coral.
+- Show only what is true. Anything illustrative is labelled ILLUSTRATION. Never show a logo, watermark, price or number that is not in facts.md.
+- The two meet: footage clips can play inside board frames, and a label card can sit over a clip.
+
 ## Scenes or boards?
 
 - **Drawn scenes** where the voice talks about a person's situation or a feeling: the stick figure at a desk, on a couch, in front of a screen, with a prop for the moment.
 - **Navy boards** where the voice explains: steps, commands, comparisons, numbers, limits, "this vs that", a flow from A to B to C.
-- **Real page screenshots** when the voice names a real source (a docs page): framed as a browser window, zoomed into the exact line, key words outlined in coral.
-- Never stay on one kind of shot for more than about 6 seconds without a reason.
+- **Footage** when the voice talks about the real thing: the page, the app, the command, the result.
+- **Both at once** often works best.
+- Never stay on one kind of shot for more than about 6 to 8 seconds without a reason.
 
 ## The channel character
 
@@ -41,6 +51,10 @@ Switch between scenes and boards every few seconds so the video stays varied.
 - Short bold uppercase labels in a clean geometric sans serif (Montserrat Bold or ExtraBold) with a little letter spacing: white, with coral for the key word or number.
 - Only key words, numbers, units and commands, never full sentences. Commands shown on screen must be exactly what the voice and the verified sources say.
 
+## Wide video (16:9, 1920x1080, the default)
+
+- Thin black letterbox bars at the top and bottom (about 60 px each, so the picture is 1920x960), over footage and animation alike.
+
 ## Vertical Shorts (9:16, 1080x1920)
 
 - No letterbox bars.
@@ -56,4 +70,4 @@ Switch between scenes and boards every few seconds so the video stays varied.
 
 - Channel: Axiom (@axiomallai), Claude Code workflows.
 - Keep the orange jacket (the user chose to keep it, 2026-11-21).
-- Vertical 9:16 Shorts with the safe zone above.
+- Default 16:9 with letterbox bars; vertical 9:16 only when the user says it is a Short.
