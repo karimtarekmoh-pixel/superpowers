@@ -1,0 +1,7274 @@
+{
+ "source": "Egyptian Arabic recording",
+ "method": "sentence-level pause alignment",
+ "tempo": 1,
+ "gap": 0,
+ "duration": 503.406,
+ "sections": [
+  {
+   "id": "c1",
+   "start": 0.1,
+   "end": 24.258,
+   "first": 0.1,
+   "last": 24.258
+  },
+  {
+   "id": "c2",
+   "start": 24.764,
+   "end": 77.571,
+   "first": 24.764,
+   "last": 77.571
+  },
+  {
+   "id": "c3",
+   "start": 78.154,
+   "end": 118.086,
+   "first": 78.154,
+   "last": 118.086
+  },
+  {
+   "id": "c4",
+   "start": 118.749,
+   "end": 234.347,
+   "first": 118.749,
+   "last": 234.347
+  },
+  {
+   "id": "c5",
+   "start": 234.977,
+   "end": 274.57,
+   "first": 234.977,
+   "last": 274.57
+  },
+  {
+   "id": "c6",
+   "start": 275.484,
+   "end": 324.522,
+   "first": 275.484,
+   "last": 324.522
+  },
+  {
+   "id": "c7",
+   "start": 325.495,
+   "end": 381.767,
+   "first": 325.495,
+   "last": 381.767
+  },
+  {
+   "id": "c8",
+   "start": 382.516,
+   "end": 467.938,
+   "first": 382.516,
+   "last": 467.938
+  },
+  {
+   "id": "c9",
+   "start": 468.436,
+   "end": 503.193,
+   "first": 468.436,
+   "last": 503.193
+  }
+ ],
+ "words": [
+  {
+   "text": "In",
+   "start": 0.1,
+   "section": "c1",
+   "end": 0.282
+  },
+  {
+   "text": "twenty",
+   "start": 0.282,
+   "section": "c1",
+   "end": 0.668
+  },
+  {
+   "text": "twenty",
+   "start": 0.668,
+   "section": "c1",
+   "end": 0.987
+  },
+  {
+   "text": "seven,",
+   "start": 0.987,
+   "section": "c1",
+   "end": 1.387
+  },
+  {
+   "text": "four",
+   "start": 2.204,
+   "section": "c1",
+   "end": 2.271
+  },
+  {
+   "text": "astronauts",
+   "start": 2.271,
+   "section": "c1",
+   "end": 2.671
+  },
+  {
+   "text": "will",
+   "start": 3.033,
+   "section": "c1",
+   "end": 3.26
+  },
+  {
+   "text": "open",
+   "start": 3.26,
+   "section": "c1",
+   "end": 3.567
+  },
+  {
+   "text": "a",
+   "start": 3.567,
+   "section": "c1",
+   "end": 3.781
+  },
+  {
+   "text": "hatch",
+   "start": 3.781,
+   "section": "c1",
+   "end": 4.181
+  },
+  {
+   "text": "and",
+   "start": 4.181,
+   "section": "c1",
+   "end": 4.231
+  },
+  {
+   "text": "float",
+   "start": 4.044,
+   "section": "c1",
+   "end": 4.444
+  },
+  {
+   "text": "into",
+   "start": 4.943,
+   "section": "c1",
+   "end": 5.261
+  },
+  {
+   "text": "a",
+   "start": 5.261,
+   "section": "c1",
+   "end": 5.661
+  },
+  {
+   "text": "Moon",
+   "start": 5.754,
+   "section": "c1",
+   "end": 5.804
+  },
+  {
+   "text": "lander.",
+   "start": 5.727,
+   "section": "c1",
+   "end": 6.127
+  },
+  {
+   "text": "It",
+   "start": 6.872,
+   "section": "c1",
+   "end": 7.228
+  },
+  {
+   "text": "won't",
+   "start": 7.228,
+   "section": "c1",
+   "end": 7.628
+  },
+  {
+   "text": "be",
+   "start": 7.77,
+   "section": "c1",
+   "end": 7.984
+  },
+  {
+   "text": "on",
+   "start": 7.984,
+   "section": "c1",
+   "end": 8.212
+  },
+  {
+   "text": "the",
+   "start": 8.212,
+   "section": "c1",
+   "end": 8.298
+  },
+  {
+   "text": "Moon.",
+   "start": 8.298,
+   "section": "c1",
+   "end": 8.698
+  },
+  {
+   "text": "It",
+   "start": 9.574,
+   "section": "c1",
+   "end": 9.665
+  },
+  {
+   "text": "will",
+   "start": 9.665,
+   "section": "c1",
+   "end": 9.757
+  },
+  {
+   "text": "be",
+   "start": 9.757,
+   "section": "c1",
+   "end": 9.888
+  },
+  {
+   "text": "about",
+   "start": 9.888,
+   "section": "c1",
+   "end": 10.182
+  },
+  {
+   "text": "two",
+   "start": 10.182,
+   "section": "c1",
+   "end": 10.582
+  },
+  {
+   "text": "hundred",
+   "start": 11.005,
+   "section": "c1",
+   "end": 11.055
+  },
+  {
+   "text": "and",
+   "start": 10.781,
+   "section": "c1",
+   "end": 10.882
+  },
+  {
+   "text": "seventy",
+   "start": 10.882,
+   "section": "c1",
+   "end": 11.282
+  },
+  {
+   "text": "three",
+   "start": 11.338,
+   "section": "c1",
+   "end": 11.592
+  },
+  {
+   "text": "miles",
+   "start": 11.592,
+   "section": "c1",
+   "end": 11.992
+  },
+  {
+   "text": "above",
+   "start": 12.16,
+   "section": "c1",
+   "end": 12.454
+  },
+  {
+   "text": "Earth,",
+   "start": 12.454,
+   "section": "c1",
+   "end": 12.854
+  },
+  {
+   "text": "and",
+   "start": 13.225,
+   "section": "c1",
+   "end": 13.519
+  },
+  {
+   "text": "it's",
+   "start": 13.519,
+   "section": "c1",
+   "end": 13.843
+  },
+  {
+   "text": "only",
+   "start": 13.843,
+   "section": "c1",
+   "end": 14.168
+  },
+  {
+   "text": "a",
+   "start": 14.168,
+   "section": "c1",
+   "end": 14.366
+  },
+  {
+   "text": "test",
+   "start": 14.366,
+   "section": "c1",
+   "end": 14.604
+  },
+  {
+   "text": "version.",
+   "start": 14.604,
+   "section": "c1",
+   "end": 15.004
+  },
+  {
+   "text": "This",
+   "start": 15.564,
+   "section": "c1",
+   "end": 15.931
+  },
+  {
+   "text": "is",
+   "start": 15.931,
+   "section": "c1",
+   "end": 16.164
+  },
+  {
+   "text": "Artemis",
+   "start": 16.164,
+   "section": "c1",
+   "end": 16.564
+  },
+  {
+   "text": "Three.",
+   "start": 16.639,
+   "section": "c1",
+   "end": 17.039
+  },
+  {
+   "text": "It",
+   "start": 17.408,
+   "section": "c1",
+   "end": 17.501
+  },
+  {
+   "text": "is",
+   "start": 17.501,
+   "section": "c1",
+   "end": 17.714
+  },
+  {
+   "text": "not",
+   "start": 17.714,
+   "section": "c1",
+   "end": 18.114
+  },
+  {
+   "text": "the",
+   "start": 18.299,
+   "section": "c1",
+   "end": 18.472
+  },
+  {
+   "text": "landing.",
+   "start": 18.472,
+   "section": "c1",
+   "end": 18.872
+  },
+  {
+   "text": "And",
+   "start": 19.627,
+   "section": "c1",
+   "end": 19.715
+  },
+  {
+   "text": "once",
+   "start": 19.715,
+   "section": "c1",
+   "end": 19.919
+  },
+  {
+   "text": "you",
+   "start": 19.919,
+   "section": "c1",
+   "end": 19.998
+  },
+  {
+   "text": "see",
+   "start": 19.998,
+   "section": "c1",
+   "end": 20.254
+  },
+  {
+   "text": "what",
+   "start": 20.254,
+   "section": "c1",
+   "end": 20.431
+  },
+  {
+   "text": "NASA",
+   "start": 20.431,
+   "section": "c1",
+   "end": 20.767
+  },
+  {
+   "text": "is",
+   "start": 20.767,
+   "section": "c1",
+   "end": 20.908
+  },
+  {
+   "text": "testing,",
+   "start": 20.908,
+   "section": "c1",
+   "end": 21.308
+  },
+  {
+   "text": "you'll",
+   "start": 21.686,
+   "section": "c1",
+   "end": 21.792
+  },
+  {
+   "text": "see",
+   "start": 21.792,
+   "section": "c1",
+   "end": 21.978
+  },
+  {
+   "text": "why",
+   "start": 21.978,
+   "section": "c1",
+   "end": 22.278
+  },
+  {
+   "text": "it",
+   "start": 22.278,
+   "section": "c1",
+   "end": 22.402
+  },
+  {
+   "text": "put",
+   "start": 22.402,
+   "section": "c1",
+   "end": 22.596
+  },
+  {
+   "text": "this",
+   "start": 22.596,
+   "section": "c1",
+   "end": 22.835
+  },
+  {
+   "text": "mission",
+   "start": 22.835,
+   "section": "c1",
+   "end": 23.206
+  },
+  {
+   "text": "before",
+   "start": 23.206,
+   "section": "c1",
+   "end": 23.606
+  },
+  {
+   "text": "the",
+   "start": 23.684,
+   "section": "c1",
+   "end": 23.798
+  },
+  {
+   "text": "landing.",
+   "start": 23.798,
+   "section": "c1",
+   "end": 24.198
+  },
+  {
+   "text": "Here's",
+   "start": 24.764,
+   "section": "c2",
+   "end": 24.995
+  },
+  {
+   "text": "the",
+   "start": 24.995,
+   "section": "c2",
+   "end": 25.079
+  },
+  {
+   "text": "plan,",
+   "start": 25.079,
+   "section": "c2",
+   "end": 25.479
+  },
+  {
+   "text": "straight",
+   "start": 25.615,
+   "section": "c2",
+   "end": 25.939
+  },
+  {
+   "text": "from",
+   "start": 25.939,
+   "section": "c2",
+   "end": 26.106
+  },
+  {
+   "text": "NASA's",
+   "start": 26.106,
+   "section": "c2",
+   "end": 26.506
+  },
+  {
+   "text": "own",
+   "start": 26.55,
+   "section": "c2",
+   "end": 26.781
+  },
+  {
+   "text": "announcement.",
+   "start": 26.781,
+   "section": "c2",
+   "end": 27.181
+  },
+  {
+   "text": "Artemis",
+   "start": 27.816,
+   "section": "c2",
+   "end": 28.216
+  },
+  {
+   "text": "Three",
+   "start": 28.36,
+   "section": "c2",
+   "end": 28.76
+  },
+  {
+   "text": "launches",
+   "start": 28.762,
+   "section": "c2",
+   "end": 29.162
+  },
+  {
+   "text": "in",
+   "start": 29.487,
+   "section": "c2",
+   "end": 29.694
+  },
+  {
+   "text": "twenty",
+   "start": 29.694,
+   "section": "c2",
+   "end": 30.094
+  },
+  {
+   "text": "twenty",
+   "start": 30.148,
+   "section": "c2",
+   "end": 30.498
+  },
+  {
+   "text": "seven.",
+   "start": 30.498,
+   "section": "c2",
+   "end": 30.898
+  },
+  {
+   "text": "Four",
+   "start": 31.427,
+   "section": "c2",
+   "end": 31.773
+  },
+  {
+   "text": "astronauts",
+   "start": 31.773,
+   "section": "c2",
+   "end": 32.173
+  },
+  {
+   "text": "fly",
+   "start": 32.423,
+   "section": "c2",
+   "end": 32.707
+  },
+  {
+   "text": "aboard",
+   "start": 32.707,
+   "section": "c2",
+   "end": 33.104
+  },
+  {
+   "text": "the",
+   "start": 33.104,
+   "section": "c2",
+   "end": 33.226
+  },
+  {
+   "text": "Orion",
+   "start": 33.226,
+   "section": "c2",
+   "end": 33.626
+  },
+  {
+   "text": "spacecraft:",
+   "start": 33.713,
+   "section": "c2",
+   "end": 34.113
+  },
+  {
+   "text": "commander",
+   "start": 34.841,
+   "section": "c2",
+   "end": 35.241
+  },
+  {
+   "text": "Randy",
+   "start": 35.392,
+   "section": "c2",
+   "end": 35.685
+  },
+  {
+   "text": "Bresnik,",
+   "start": 35.685,
+   "section": "c2",
+   "end": 36.085
+  },
+  {
+   "text": "pilot",
+   "start": 36.549,
+   "section": "c2",
+   "end": 36.949
+  },
+  {
+   "text": "Luca",
+   "start": 37.306,
+   "section": "c2",
+   "end": 37.362
+  },
+  {
+   "text": "Parmitano",
+   "start": 37.362,
+   "section": "c2",
+   "end": 37.762
+  },
+  {
+   "text": "of",
+   "start": 38.175,
+   "section": "c2",
+   "end": 38.276
+  },
+  {
+   "text": "the",
+   "start": 38.276,
+   "section": "c2",
+   "end": 38.378
+  },
+  {
+   "text": "European",
+   "start": 38.378,
+   "section": "c2",
+   "end": 38.778
+  },
+  {
+   "text": "Space",
+   "start": 38.896,
+   "section": "c2",
+   "end": 39.242
+  },
+  {
+   "text": "Agency,",
+   "start": 39.242,
+   "section": "c2",
+   "end": 39.642
+  },
+  {
+   "text": "and",
+   "start": 40.146,
+   "section": "c2",
+   "end": 40.319
+  },
+  {
+   "text": "mission",
+   "start": 40.319,
+   "section": "c2",
+   "end": 40.644
+  },
+  {
+   "text": "specialists",
+   "start": 40.644,
+   "section": "c2",
+   "end": 41.044
+  },
+  {
+   "text": "Andre",
+   "start": 41.613,
+   "section": "c2",
+   "end": 41.823
+  },
+  {
+   "text": "Douglas",
+   "start": 41.823,
+   "section": "c2",
+   "end": 42.223
+  },
+  {
+   "text": "and",
+   "start": 42.361,
+   "section": "c2",
+   "end": 42.57
+  },
+  {
+   "text": "Frank",
+   "start": 42.57,
+   "section": "c2",
+   "end": 42.97
+  },
+  {
+   "text": "Rubio.",
+   "start": 42.981,
+   "section": "c2",
+   "end": 43.381
+  },
+  {
+   "text": "They",
+   "start": 44.044,
+   "section": "c2",
+   "end": 44.142
+  },
+  {
+   "text": "don't",
+   "start": 44.142,
+   "section": "c2",
+   "end": 44.513
+  },
+  {
+   "text": "go",
+   "start": 44.513,
+   "section": "c2",
+   "end": 44.695
+  },
+  {
+   "text": "to",
+   "start": 44.695,
+   "section": "c2",
+   "end": 44.793
+  },
+  {
+   "text": "the",
+   "start": 44.793,
+   "section": "c2",
+   "end": 44.854
+  },
+  {
+   "text": "Moon.",
+   "start": 44.854,
+   "section": "c2",
+   "end": 45.254
+  },
+  {
+   "text": "They",
+   "start": 45.623,
+   "section": "c2",
+   "end": 45.732
+  },
+  {
+   "text": "go",
+   "start": 45.732,
+   "section": "c2",
+   "end": 46.084
+  },
+  {
+   "text": "into",
+   "start": 46.084,
+   "section": "c2",
+   "end": 46.339
+  },
+  {
+   "text": "low",
+   "start": 46.339,
+   "section": "c2",
+   "end": 46.739
+  },
+  {
+   "text": "Earth",
+   "start": 46.813,
+   "section": "c2",
+   "end": 47.141
+  },
+  {
+   "text": "orbit,",
+   "start": 47.141,
+   "section": "c2",
+   "end": 47.541
+  },
+  {
+   "text": "for",
+   "start": 47.954,
+   "section": "c2",
+   "end": 48.137
+  },
+  {
+   "text": "a",
+   "start": 48.137,
+   "section": "c2",
+   "end": 48.187
+  },
+  {
+   "text": "planned",
+   "start": 48.185,
+   "section": "c2",
+   "end": 48.585
+  },
+  {
+   "text": "fourteen",
+   "start": 48.732,
+   "section": "c2",
+   "end": 49.132
+  },
+  {
+   "text": "day",
+   "start": 49.642,
+   "section": "c2",
+   "end": 49.91
+  },
+  {
+   "text": "mission.",
+   "start": 49.91,
+   "section": "c2",
+   "end": 50.31
+  },
+  {
+   "text": "NASA's",
+   "start": 50.957,
+   "section": "c2",
+   "end": 51.357
+  },
+  {
+   "text": "crew",
+   "start": 51.397,
+   "section": "c2",
+   "end": 51.656
+  },
+  {
+   "text": "page",
+   "start": 51.656,
+   "section": "c2",
+   "end": 52.051
+  },
+  {
+   "text": "says",
+   "start": 52.051,
+   "section": "c2",
+   "end": 52.344
+  },
+  {
+   "text": "it",
+   "start": 52.344,
+   "section": "c2",
+   "end": 52.744
+  },
+  {
+   "text": "plainly:",
+   "start": 53.054,
+   "section": "c2",
+   "end": 53.454
+  },
+  {
+   "text": "Artemis",
+   "start": 53.506,
+   "section": "c2",
+   "end": 53.906
+  },
+  {
+   "text": "Three",
+   "start": 53.979,
+   "section": "c2",
+   "end": 54.374
+  },
+  {
+   "text": "will",
+   "start": 54.374,
+   "section": "c2",
+   "end": 54.679
+  },
+  {
+   "text": "not",
+   "start": 54.679,
+   "section": "c2",
+   "end": 55.079
+  },
+  {
+   "text": "land",
+   "start": 55.209,
+   "section": "c2",
+   "end": 55.609
+  },
+  {
+   "text": "on",
+   "start": 55.649,
+   "section": "c2",
+   "end": 55.773
+  },
+  {
+   "text": "the",
+   "start": 55.773,
+   "section": "c2",
+   "end": 55.84
+  },
+  {
+   "text": "Moon.",
+   "start": 55.84,
+   "section": "c2",
+   "end": 56.24
+  },
+  {
+   "text": "The",
+   "start": 56.763,
+   "section": "c2",
+   "end": 56.834
+  },
+  {
+   "text": "landing",
+   "start": 56.834,
+   "section": "c2",
+   "end": 57.234
+  },
+  {
+   "text": "is",
+   "start": 57.435,
+   "section": "c2",
+   "end": 57.623
+  },
+  {
+   "text": "the",
+   "start": 57.623,
+   "section": "c2",
+   "end": 57.718
+  },
+  {
+   "text": "next",
+   "start": 57.718,
+   "section": "c2",
+   "end": 58.118
+  },
+  {
+   "text": "mission,",
+   "start": 58.13,
+   "section": "c2",
+   "end": 58.53
+  },
+  {
+   "text": "Artemis",
+   "start": 58.885,
+   "section": "c2",
+   "end": 59.285
+  },
+  {
+   "text": "Four,",
+   "start": 59.368,
+   "section": "c2",
+   "end": 59.768
+  },
+  {
+   "text": "and",
+   "start": 60.299,
+   "section": "c2",
+   "end": 60.499
+  },
+  {
+   "text": "NASA",
+   "start": 60.499,
+   "section": "c2",
+   "end": 60.899
+  },
+  {
+   "text": "is",
+   "start": 60.935,
+   "section": "c2",
+   "end": 61.112
+  },
+  {
+   "text": "targeting",
+   "start": 61.112,
+   "section": "c2",
+   "end": 61.512
+  },
+  {
+   "text": "twenty",
+   "start": 61.69,
+   "section": "c2",
+   "end": 62.09
+  },
+  {
+   "text": "twenty",
+   "start": 62.102,
+   "section": "c2",
+   "end": 62.502
+  },
+  {
+   "text": "eight,",
+   "start": 62.515,
+   "section": "c2",
+   "end": 62.915
+  },
+  {
+   "text": "near",
+   "start": 63.092,
+   "section": "c2",
+   "end": 63.304
+  },
+  {
+   "text": "the",
+   "start": 63.304,
+   "section": "c2",
+   "end": 63.434
+  },
+  {
+   "text": "Moon's",
+   "start": 63.434,
+   "section": "c2",
+   "end": 63.834
+  },
+  {
+   "text": "south",
+   "start": 63.964,
+   "section": "c2",
+   "end": 64.364
+  },
+  {
+   "text": "pole.",
+   "start": 64.424,
+   "section": "c2",
+   "end": 64.824
+  },
+  {
+   "text": "So",
+   "start": 65.478,
+   "section": "c2",
+   "end": 65.749
+  },
+  {
+   "text": "why",
+   "start": 65.749,
+   "section": "c2",
+   "end": 66.1
+  },
+  {
+   "text": "spend",
+   "start": 66.1,
+   "section": "c2",
+   "end": 66.398
+  },
+  {
+   "text": "a",
+   "start": 66.398,
+   "section": "c2",
+   "end": 66.448
+  },
+  {
+   "text": "whole",
+   "start": 66.443,
+   "section": "c2",
+   "end": 66.777
+  },
+  {
+   "text": "mission",
+   "start": 66.777,
+   "section": "c2",
+   "end": 67.177
+  },
+  {
+   "text": "close",
+   "start": 67.201,
+   "section": "c2",
+   "end": 67.498
+  },
+  {
+   "text": "to",
+   "start": 67.498,
+   "section": "c2",
+   "end": 67.579
+  },
+  {
+   "text": "home?",
+   "start": 67.579,
+   "section": "c2",
+   "end": 67.979
+  },
+  {
+   "text": "NASA",
+   "start": 68.589,
+   "section": "c2",
+   "end": 68.945
+  },
+  {
+   "text": "says",
+   "start": 68.945,
+   "section": "c2",
+   "end": 69.259
+  },
+  {
+   "text": "the",
+   "start": 69.259,
+   "section": "c2",
+   "end": 69.343
+  },
+  {
+   "text": "mission",
+   "start": 69.343,
+   "section": "c2",
+   "end": 69.73
+  },
+  {
+   "text": "is",
+   "start": 69.73,
+   "section": "c2",
+   "end": 69.856
+  },
+  {
+   "text": "designed",
+   "start": 69.856,
+   "section": "c2",
+   "end": 70.256
+  },
+  {
+   "text": "to",
+   "start": 70.39,
+   "section": "c2",
+   "end": 70.79
+  },
+  {
+   "text": "reduce",
+   "start": 71.039,
+   "section": "c2",
+   "end": 71.089
+  },
+  {
+   "text": "risk,",
+   "start": 71.018,
+   "section": "c2",
+   "end": 71.418
+  },
+  {
+   "text": "validate",
+   "start": 72.332,
+   "section": "c2",
+   "end": 72.382
+  },
+  {
+   "text": "hardware,",
+   "start": 72.201,
+   "section": "c2",
+   "end": 72.601
+  },
+  {
+   "text": "and",
+   "start": 73.122,
+   "section": "c2",
+   "end": 73.522
+  },
+  {
+   "text": "gain",
+   "start": 73.965,
+   "section": "c2",
+   "end": 74.015
+  },
+  {
+   "text": "operational",
+   "start": 73.572,
+   "section": "c2",
+   "end": 73.972
+  },
+  {
+   "text": "experience",
+   "start": 74.347,
+   "section": "c2",
+   "end": 74.747
+  },
+  {
+   "text": "before",
+   "start": 75.142,
+   "section": "c2",
+   "end": 75.542
+  },
+  {
+   "text": "it",
+   "start": 75.655,
+   "section": "c2",
+   "end": 75.739
+  },
+  {
+   "text": "attempts",
+   "start": 75.739,
+   "section": "c2",
+   "end": 76.139
+  },
+  {
+   "text": "a",
+   "start": 76.189,
+   "section": "c2",
+   "end": 76.252
+  },
+  {
+   "text": "crewed",
+   "start": 76.252,
+   "section": "c2",
+   "end": 76.652
+  },
+  {
+   "text": "lunar",
+   "start": 76.723,
+   "section": "c2",
+   "end": 77.048
+  },
+  {
+   "text": "landing.",
+   "start": 77.048,
+   "section": "c2",
+   "end": 77.448
+  },
+  {
+   "text": "Earlier",
+   "start": 78.154,
+   "section": "c3",
+   "end": 78.554
+  },
+  {
+   "text": "Artemis",
+   "start": 78.663,
+   "section": "c3",
+   "end": 79.063
+  },
+  {
+   "text": "missions",
+   "start": 79.171,
+   "section": "c3",
+   "end": 79.571
+  },
+  {
+   "text": "used",
+   "start": 79.74,
+   "section": "c3",
+   "end": 80.091
+  },
+  {
+   "text": "only",
+   "start": 80.091,
+   "section": "c3",
+   "end": 80.491
+  },
+  {
+   "text": "NASA's",
+   "start": 80.515,
+   "section": "c3",
+   "end": 80.915
+  },
+  {
+   "text": "own",
+   "start": 81.133,
+   "section": "c3",
+   "end": 81.533
+  },
+  {
+   "text": "rocket",
+   "start": 81.557,
+   "section": "c3",
+   "end": 81.957
+  },
+  {
+   "text": "and",
+   "start": 81.992,
+   "section": "c3",
+   "end": 82.114
+  },
+  {
+   "text": "capsule.",
+   "start": 82.114,
+   "section": "c3",
+   "end": 82.514
+  },
+  {
+   "text": "Artemis",
+   "start": 83.23,
+   "section": "c3",
+   "end": 83.63
+  },
+  {
+   "text": "Three",
+   "start": 83.651,
+   "section": "c3",
+   "end": 84.051
+  },
+  {
+   "text": "is",
+   "start": 84.119,
+   "section": "c3",
+   "end": 84.316
+  },
+  {
+   "text": "different.",
+   "start": 84.316,
+   "section": "c3",
+   "end": 84.716
+  },
+  {
+   "text": "NASA's",
+   "start": 85.344,
+   "section": "c3",
+   "end": 85.744
+  },
+  {
+   "text": "Artemis",
+   "start": 85.853,
+   "section": "c3",
+   "end": 86.253
+  },
+  {
+   "text": "program",
+   "start": 86.327,
+   "section": "c3",
+   "end": 86.727
+  },
+  {
+   "text": "manager,",
+   "start": 86.882,
+   "section": "c3",
+   "end": 87.282
+  },
+  {
+   "text": "Jeremy",
+   "start": 87.437,
+   "section": "c3",
+   "end": 87.837
+  },
+  {
+   "text": "Parsons,",
+   "start": 87.957,
+   "section": "c3",
+   "end": 88.357
+  },
+  {
+   "text": "put",
+   "start": 88.628,
+   "section": "c3",
+   "end": 88.825
+  },
+  {
+   "text": "it",
+   "start": 88.825,
+   "section": "c3",
+   "end": 88.952
+  },
+  {
+   "text": "this",
+   "start": 88.952,
+   "section": "c3",
+   "end": 89.206
+  },
+  {
+   "text": "way:",
+   "start": 89.206,
+   "section": "c3",
+   "end": 89.606
+  },
+  {
+   "text": "quote,",
+   "start": 89.854,
+   "section": "c3",
+   "end": 90.254
+  },
+  {
+   "text": "we're",
+   "start": 90.571,
+   "section": "c3",
+   "end": 90.767
+  },
+  {
+   "text": "launching",
+   "start": 90.767,
+   "section": "c3",
+   "end": 91.167
+  },
+  {
+   "text": "three",
+   "start": 91.299,
+   "section": "c3",
+   "end": 91.699
+  },
+  {
+   "text": "spacecraft",
+   "start": 91.75,
+   "section": "c3",
+   "end": 92.15
+  },
+  {
+   "text": "on",
+   "start": 92.675,
+   "section": "c3",
+   "end": 92.907
+  },
+  {
+   "text": "three",
+   "start": 92.907,
+   "section": "c3",
+   "end": 93.307
+  },
+  {
+   "text": "different",
+   "start": 93.381,
+   "section": "c3",
+   "end": 93.781
+  },
+  {
+   "text": "rockets",
+   "start": 93.797,
+   "section": "c3",
+   "end": 94.197
+  },
+  {
+   "text": "and",
+   "start": 94.537,
+   "section": "c3",
+   "end": 94.722
+  },
+  {
+   "text": "testing",
+   "start": 94.722,
+   "section": "c3",
+   "end": 95.122
+  },
+  {
+   "text": "how",
+   "start": 95.208,
+   "section": "c3",
+   "end": 95.427
+  },
+  {
+   "text": "they",
+   "start": 95.427,
+   "section": "c3",
+   "end": 95.589
+  },
+  {
+   "text": "operate",
+   "start": 95.589,
+   "section": "c3",
+   "end": 95.989
+  },
+  {
+   "text": "together,",
+   "start": 96.121,
+   "section": "c3",
+   "end": 96.521
+  },
+  {
+   "text": "something",
+   "start": 96.977,
+   "section": "c3",
+   "end": 97.377
+  },
+  {
+   "text": "NASA",
+   "start": 97.44,
+   "section": "c3",
+   "end": 97.84
+  },
+  {
+   "text": "has",
+   "start": 97.867,
+   "section": "c3",
+   "end": 98.191
+  },
+  {
+   "text": "never",
+   "start": 98.191,
+   "section": "c3",
+   "end": 98.591
+  },
+  {
+   "text": "attempted.",
+   "start": 98.735,
+   "section": "c3",
+   "end": 99.135
+  },
+  {
+   "text": "End",
+   "start": 99.784,
+   "section": "c3",
+   "end": 100.112
+  },
+  {
+   "text": "quote.",
+   "start": 100.112,
+   "section": "c3",
+   "end": 100.512
+  },
+  {
+   "text": "Those",
+   "start": 101.216,
+   "section": "c3",
+   "end": 101.548
+  },
+  {
+   "text": "three",
+   "start": 101.548,
+   "section": "c3",
+   "end": 101.746
+  },
+  {
+   "text": "spacecraft",
+   "start": 101.746,
+   "section": "c3",
+   "end": 102.146
+  },
+  {
+   "text": "are",
+   "start": 102.546,
+   "section": "c3",
+   "end": 102.709
+  },
+  {
+   "text": "Orion,",
+   "start": 102.709,
+   "section": "c3",
+   "end": 103.109
+  },
+  {
+   "text": "a",
+   "start": 103.751,
+   "section": "c3",
+   "end": 103.813
+  },
+  {
+   "text": "test",
+   "start": 103.813,
+   "section": "c3",
+   "end": 104.177
+  },
+  {
+   "text": "version",
+   "start": 104.177,
+   "section": "c3",
+   "end": 104.53
+  },
+  {
+   "text": "of",
+   "start": 104.53,
+   "section": "c3",
+   "end": 104.93
+  },
+  {
+   "text": "Blue",
+   "start": 105.152,
+   "section": "c3",
+   "end": 105.202
+  },
+  {
+   "text": "Origin's",
+   "start": 104.945,
+   "section": "c3",
+   "end": 105.345
+  },
+  {
+   "text": "Blue",
+   "start": 105.527,
+   "section": "c3",
+   "end": 105.89
+  },
+  {
+   "text": "Moon",
+   "start": 105.89,
+   "section": "c3",
+   "end": 106.202
+  },
+  {
+   "text": "lander,",
+   "start": 106.202,
+   "section": "c3",
+   "end": 106.602
+  },
+  {
+   "text": "and",
+   "start": 107.033,
+   "section": "c3",
+   "end": 107.345
+  },
+  {
+   "text": "a",
+   "start": 107.345,
+   "section": "c3",
+   "end": 107.397
+  },
+  {
+   "text": "test",
+   "start": 107.397,
+   "section": "c3",
+   "end": 107.781
+  },
+  {
+   "text": "version",
+   "start": 107.781,
+   "section": "c3",
+   "end": 108.165
+  },
+  {
+   "text": "of",
+   "start": 108.165,
+   "section": "c3",
+   "end": 108.565
+  },
+  {
+   "text": "SpaceX's",
+   "start": 109.767,
+   "section": "c3",
+   "end": 109.817
+  },
+  {
+   "text": "Starship",
+   "start": 109.215,
+   "section": "c3",
+   "end": 109.615
+  },
+  {
+   "text": "lander.",
+   "start": 109.931,
+   "section": "c3",
+   "end": 110.331
+  },
+  {
+   "text": "Test",
+   "start": 110.877,
+   "section": "c3",
+   "end": 111.277
+  },
+  {
+   "text": "versions,",
+   "start": 111.298,
+   "section": "c3",
+   "end": 111.698
+  },
+  {
+   "text": "not",
+   "start": 112.151,
+   "section": "c3",
+   "end": 112.456
+  },
+  {
+   "text": "finished",
+   "start": 112.456,
+   "section": "c3",
+   "end": 112.856
+  },
+  {
+   "text": "landers.",
+   "start": 113.056,
+   "section": "c3",
+   "end": 113.456
+  },
+  {
+   "text": "The",
+   "start": 114.154,
+   "section": "c3",
+   "end": 114.218
+  },
+  {
+   "text": "point",
+   "start": 114.218,
+   "section": "c3",
+   "end": 114.618
+  },
+  {
+   "text": "is",
+   "start": 114.691,
+   "section": "c3",
+   "end": 114.852
+  },
+  {
+   "text": "to",
+   "start": 114.852,
+   "section": "c3",
+   "end": 114.949
+  },
+  {
+   "text": "see",
+   "start": 114.949,
+   "section": "c3",
+   "end": 115.218
+  },
+  {
+   "text": "how",
+   "start": 115.218,
+   "section": "c3",
+   "end": 115.443
+  },
+  {
+   "text": "they",
+   "start": 115.443,
+   "section": "c3",
+   "end": 115.583
+  },
+  {
+   "text": "behave",
+   "start": 115.583,
+   "section": "c3",
+   "end": 115.983
+  },
+  {
+   "text": "together,",
+   "start": 116.023,
+   "section": "c3",
+   "end": 116.423
+  },
+  {
+   "text": "with",
+   "start": 116.883,
+   "section": "c3",
+   "end": 117.055
+  },
+  {
+   "text": "people",
+   "start": 117.055,
+   "section": "c3",
+   "end": 117.455
+  },
+  {
+   "text": "on",
+   "start": 117.484,
+   "section": "c3",
+   "end": 117.656
+  },
+  {
+   "text": "board.",
+   "start": 117.656,
+   "section": "c3",
+   "end": 118.056
+  },
+  {
+   "text": "Step",
+   "start": 118.749,
+   "section": "c4",
+   "end": 119.132
+  },
+  {
+   "text": "one.",
+   "start": 119.132,
+   "section": "c4",
+   "end": 119.532
+  },
+  {
+   "text": "Blue",
+   "start": 119.991,
+   "section": "c4",
+   "end": 120.275
+  },
+  {
+   "text": "Origin",
+   "start": 120.275,
+   "section": "c4",
+   "end": 120.675
+  },
+  {
+   "text": "launches",
+   "start": 120.803,
+   "section": "c4",
+   "end": 121.203
+  },
+  {
+   "text": "its",
+   "start": 121.29,
+   "section": "c4",
+   "end": 121.442
+  },
+  {
+   "text": "Blue",
+   "start": 121.442,
+   "section": "c4",
+   "end": 121.777
+  },
+  {
+   "text": "Moon",
+   "start": 121.777,
+   "section": "c4",
+   "end": 122.122
+  },
+  {
+   "text": "Mark",
+   "start": 122.122,
+   "section": "c4",
+   "end": 122.436
+  },
+  {
+   "text": "Two",
+   "start": 122.436,
+   "section": "c4",
+   "end": 122.72
+  },
+  {
+   "text": "test",
+   "start": 122.72,
+   "section": "c4",
+   "end": 123.086
+  },
+  {
+   "text": "article",
+   "start": 123.086,
+   "section": "c4",
+   "end": 123.486
+  },
+  {
+   "text": "into",
+   "start": 123.542,
+   "section": "c4",
+   "end": 123.826
+  },
+  {
+   "text": "a",
+   "start": 123.826,
+   "section": "c4",
+   "end": 123.876
+  },
+  {
+   "text": "circular",
+   "start": 123.867,
+   "section": "c4",
+   "end": 124.267
+  },
+  {
+   "text": "orbit",
+   "start": 124.415,
+   "section": "c4",
+   "end": 124.815
+  },
+  {
+   "text": "about",
+   "start": 124.841,
+   "section": "c4",
+   "end": 125.115
+  },
+  {
+   "text": "two",
+   "start": 125.115,
+   "section": "c4",
+   "end": 125.43
+  },
+  {
+   "text": "hundred",
+   "start": 125.43,
+   "section": "c4",
+   "end": 125.734
+  },
+  {
+   "text": "and",
+   "start": 125.734,
+   "section": "c4",
+   "end": 125.835
+  },
+  {
+   "text": "seventy",
+   "start": 125.835,
+   "section": "c4",
+   "end": 126.235
+  },
+  {
+   "text": "three",
+   "start": 126.262,
+   "section": "c4",
+   "end": 126.525
+  },
+  {
+   "text": "miles",
+   "start": 126.525,
+   "section": "c4",
+   "end": 126.925
+  },
+  {
+   "text": "up.",
+   "start": 126.972,
+   "section": "c4",
+   "end": 127.372
+  },
+  {
+   "text": "NASA",
+   "start": 127.787,
+   "section": "c4",
+   "end": 128.187
+  },
+  {
+   "text": "says",
+   "start": 128.192,
+   "section": "c4",
+   "end": 128.592
+  },
+  {
+   "text": "it",
+   "start": 128.61,
+   "section": "c4",
+   "end": 128.724
+  },
+  {
+   "text": "can",
+   "start": 128.724,
+   "section": "c4",
+   "end": 128.901
+  },
+  {
+   "text": "stay",
+   "start": 128.901,
+   "section": "c4",
+   "end": 129.294
+  },
+  {
+   "text": "there",
+   "start": 129.294,
+   "section": "c4",
+   "end": 129.598
+  },
+  {
+   "text": "for",
+   "start": 129.598,
+   "section": "c4",
+   "end": 129.838
+  },
+  {
+   "text": "up",
+   "start": 129.838,
+   "section": "c4",
+   "end": 129.99
+  },
+  {
+   "text": "to",
+   "start": 129.99,
+   "section": "c4",
+   "end": 130.13
+  },
+  {
+   "text": "thirty",
+   "start": 130.13,
+   "section": "c4",
+   "end": 130.53
+  },
+  {
+   "text": "days.",
+   "start": 130.636,
+   "section": "c4",
+   "end": 131.036
+  },
+  {
+   "text": "Step",
+   "start": 131.95,
+   "section": "c4",
+   "end": 132.309
+  },
+  {
+   "text": "two.",
+   "start": 132.309,
+   "section": "c4",
+   "end": 132.709
+  },
+  {
+   "text": "Only",
+   "start": 133.22,
+   "section": "c4",
+   "end": 133.506
+  },
+  {
+   "text": "days",
+   "start": 133.506,
+   "section": "c4",
+   "end": 133.88
+  },
+  {
+   "text": "later,",
+   "start": 133.88,
+   "section": "c4",
+   "end": 134.28
+  },
+  {
+   "text": "once",
+   "start": 134.452,
+   "section": "c4",
+   "end": 134.688
+  },
+  {
+   "text": "that",
+   "start": 134.688,
+   "section": "c4",
+   "end": 134.856
+  },
+  {
+   "text": "vehicle",
+   "start": 134.856,
+   "section": "c4",
+   "end": 135.256
+  },
+  {
+   "text": "is",
+   "start": 135.269,
+   "section": "c4",
+   "end": 135.388
+  },
+  {
+   "text": "confirmed",
+   "start": 135.388,
+   "section": "c4",
+   "end": 135.788
+  },
+  {
+   "text": "healthy,",
+   "start": 135.841,
+   "section": "c4",
+   "end": 136.241
+  },
+  {
+   "text": "NASA",
+   "start": 136.609,
+   "section": "c4",
+   "end": 136.944
+  },
+  {
+   "text": "launches",
+   "start": 136.944,
+   "section": "c4",
+   "end": 137.344
+  },
+  {
+   "text": "Orion",
+   "start": 137.397,
+   "section": "c4",
+   "end": 137.797
+  },
+  {
+   "text": "on",
+   "start": 137.939,
+   "section": "c4",
+   "end": 138.127
+  },
+  {
+   "text": "top",
+   "start": 138.127,
+   "section": "c4",
+   "end": 138.383
+  },
+  {
+   "text": "of",
+   "start": 138.383,
+   "section": "c4",
+   "end": 138.481
+  },
+  {
+   "text": "its",
+   "start": 138.481,
+   "section": "c4",
+   "end": 138.659
+  },
+  {
+   "text": "SLS",
+   "start": 138.659,
+   "section": "c4",
+   "end": 139.059
+  },
+  {
+   "text": "rocket",
+   "start": 139.22,
+   "section": "c4",
+   "end": 139.585
+  },
+  {
+   "text": "from",
+   "start": 139.585,
+   "section": "c4",
+   "end": 139.782
+  },
+  {
+   "text": "Kennedy",
+   "start": 139.782,
+   "section": "c4",
+   "end": 140.176
+  },
+  {
+   "text": "Space",
+   "start": 140.176,
+   "section": "c4",
+   "end": 140.531
+  },
+  {
+   "text": "Center",
+   "start": 140.531,
+   "section": "c4",
+   "end": 140.895
+  },
+  {
+   "text": "in",
+   "start": 140.895,
+   "section": "c4",
+   "end": 141.004
+  },
+  {
+   "text": "Florida.",
+   "start": 141.004,
+   "section": "c4",
+   "end": 141.404
+  },
+  {
+   "text": "Orion",
+   "start": 142.034,
+   "section": "c4",
+   "end": 142.434
+  },
+  {
+   "text": "starts",
+   "start": 142.543,
+   "section": "c4",
+   "end": 142.943
+  },
+  {
+   "text": "in",
+   "start": 143.135,
+   "section": "c4",
+   "end": 143.289
+  },
+  {
+   "text": "a",
+   "start": 143.289,
+   "section": "c4",
+   "end": 143.444
+  },
+  {
+   "text": "stretched",
+   "start": 143.444,
+   "section": "c4",
+   "end": 143.844
+  },
+  {
+   "text": "orbit,",
+   "start": 144.023,
+   "section": "c4",
+   "end": 144.423
+  },
+  {
+   "text": "then",
+   "start": 144.817,
+   "section": "c4",
+   "end": 145.172
+  },
+  {
+   "text": "uses",
+   "start": 145.172,
+   "section": "c4",
+   "end": 145.572
+  },
+  {
+   "text": "its",
+   "start": 145.61,
+   "section": "c4",
+   "end": 145.799
+  },
+  {
+   "text": "service",
+   "start": 145.799,
+   "section": "c4",
+   "end": 146.199
+  },
+  {
+   "text": "module",
+   "start": 146.261,
+   "section": "c4",
+   "end": 146.661
+  },
+  {
+   "text": "to",
+   "start": 146.782,
+   "section": "c4",
+   "end": 146.924
+  },
+  {
+   "text": "move",
+   "start": 146.924,
+   "section": "c4",
+   "end": 147.279
+  },
+  {
+   "text": "into",
+   "start": 147.279,
+   "section": "c4",
+   "end": 147.552
+  },
+  {
+   "text": "a",
+   "start": 147.552,
+   "section": "c4",
+   "end": 147.74
+  },
+  {
+   "text": "circle",
+   "start": 147.74,
+   "section": "c4",
+   "end": 148.14
+  },
+  {
+   "text": "about",
+   "start": 148.239,
+   "section": "c4",
+   "end": 148.546
+  },
+  {
+   "text": "three",
+   "start": 148.546,
+   "section": "c4",
+   "end": 148.914
+  },
+  {
+   "text": "hundred",
+   "start": 148.914,
+   "section": "c4",
+   "end": 149.304
+  },
+  {
+   "text": "and",
+   "start": 149.304,
+   "section": "c4",
+   "end": 149.423
+  },
+  {
+   "text": "forty",
+   "start": 149.423,
+   "section": "c4",
+   "end": 149.802
+  },
+  {
+   "text": "five",
+   "start": 149.802,
+   "section": "c4",
+   "end": 150.202
+  },
+  {
+   "text": "miles",
+   "start": 150.228,
+   "section": "c4",
+   "end": 150.628
+  },
+  {
+   "text": "up.",
+   "start": 150.702,
+   "section": "c4",
+   "end": 151.102
+  },
+  {
+   "text": "From",
+   "start": 151.537,
+   "section": "c4",
+   "end": 151.797
+  },
+  {
+   "text": "there",
+   "start": 151.797,
+   "section": "c4",
+   "end": 152.197
+  },
+  {
+   "text": "it",
+   "start": 152.535,
+   "section": "c4",
+   "end": 152.726
+  },
+  {
+   "text": "slowly",
+   "start": 152.726,
+   "section": "c4",
+   "end": 153.126
+  },
+  {
+   "text": "sets",
+   "start": 153.41,
+   "section": "c4",
+   "end": 153.81
+  },
+  {
+   "text": "up",
+   "start": 153.902,
+   "section": "c4",
+   "end": 154.175
+  },
+  {
+   "text": "the",
+   "start": 154.175,
+   "section": "c4",
+   "end": 154.298
+  },
+  {
+   "text": "rendezvous.",
+   "start": 154.298,
+   "section": "c4",
+   "end": 154.698
+  },
+  {
+   "text": "The",
+   "start": 155.635,
+   "section": "c4",
+   "end": 155.695
+  },
+  {
+   "text": "first",
+   "start": 155.695,
+   "section": "c4",
+   "end": 156.028
+  },
+  {
+   "text": "two",
+   "start": 156.028,
+   "section": "c4",
+   "end": 156.189
+  },
+  {
+   "text": "days",
+   "start": 156.189,
+   "section": "c4",
+   "end": 156.551
+  },
+  {
+   "text": "are",
+   "start": 156.551,
+   "section": "c4",
+   "end": 156.672
+  },
+  {
+   "text": "checkouts.",
+   "start": 156.672,
+   "section": "c4",
+   "end": 157.072
+  },
+  {
+   "text": "The",
+   "start": 157.72,
+   "section": "c4",
+   "end": 157.809
+  },
+  {
+   "text": "crew",
+   "start": 157.809,
+   "section": "c4",
+   "end": 158.122
+  },
+  {
+   "text": "tests",
+   "start": 158.122,
+   "section": "c4",
+   "end": 158.522
+  },
+  {
+   "text": "Orion's",
+   "start": 158.635,
+   "section": "c4",
+   "end": 159.035
+  },
+  {
+   "text": "systems",
+   "start": 159.192,
+   "section": "c4",
+   "end": 159.592
+  },
+  {
+   "text": "and",
+   "start": 159.862,
+   "section": "c4",
+   "end": 160.018
+  },
+  {
+   "text": "prepares",
+   "start": 160.018,
+   "section": "c4",
+   "end": 160.418
+  },
+  {
+   "text": "for",
+   "start": 160.553,
+   "section": "c4",
+   "end": 160.654
+  },
+  {
+   "text": "what's",
+   "start": 160.654,
+   "section": "c4",
+   "end": 160.955
+  },
+  {
+   "text": "called",
+   "start": 160.955,
+   "section": "c4",
+   "end": 161.355
+  },
+  {
+   "text": "proximity",
+   "start": 161.367,
+   "section": "c4",
+   "end": 161.767
+  },
+  {
+   "text": "operations:",
+   "start": 162.204,
+   "section": "c4",
+   "end": 162.604
+  },
+  {
+   "text": "flying",
+   "start": 163.431,
+   "section": "c4",
+   "end": 163.831
+  },
+  {
+   "text": "close",
+   "start": 163.899,
+   "section": "c4",
+   "end": 164.299
+  },
+  {
+   "text": "to",
+   "start": 164.401,
+   "section": "c4",
+   "end": 164.569
+  },
+  {
+   "text": "another",
+   "start": 164.569,
+   "section": "c4",
+   "end": 164.87
+  },
+  {
+   "text": "spacecraft.",
+   "start": 164.87,
+   "section": "c4",
+   "end": 165.27
+  },
+  {
+   "text": "Step",
+   "start": 166.347,
+   "section": "c4",
+   "end": 166.693
+  },
+  {
+   "text": "three.",
+   "start": 166.693,
+   "section": "c4",
+   "end": 167.093
+  },
+  {
+   "text": "Orion",
+   "start": 167.656,
+   "section": "c4",
+   "end": 168.056
+  },
+  {
+   "text": "docks",
+   "start": 168.194,
+   "section": "c4",
+   "end": 168.594
+  },
+  {
+   "text": "with",
+   "start": 168.667,
+   "section": "c4",
+   "end": 168.828
+  },
+  {
+   "text": "the",
+   "start": 168.828,
+   "section": "c4",
+   "end": 168.903
+  },
+  {
+   "text": "Blue",
+   "start": 168.903,
+   "section": "c4",
+   "end": 169.237
+  },
+  {
+   "text": "Moon",
+   "start": 169.237,
+   "section": "c4",
+   "end": 169.549
+  },
+  {
+   "text": "test",
+   "start": 169.549,
+   "section": "c4",
+   "end": 169.925
+  },
+  {
+   "text": "article.",
+   "start": 169.925,
+   "section": "c4",
+   "end": 170.325
+  },
+  {
+   "text": "Then",
+   "start": 170.774,
+   "section": "c4",
+   "end": 171.141
+  },
+  {
+   "text": "the",
+   "start": 171.141,
+   "section": "c4",
+   "end": 171.235
+  },
+  {
+   "text": "crew",
+   "start": 171.235,
+   "section": "c4",
+   "end": 171.497
+  },
+  {
+   "text": "spends",
+   "start": 171.497,
+   "section": "c4",
+   "end": 171.897
+  },
+  {
+   "text": "about",
+   "start": 171.906,
+   "section": "c4",
+   "end": 172.179
+  },
+  {
+   "text": "two",
+   "start": 172.179,
+   "section": "c4",
+   "end": 172.504
+  },
+  {
+   "text": "days",
+   "start": 172.504,
+   "section": "c4",
+   "end": 172.904
+  },
+  {
+   "text": "evaluating",
+   "start": 172.933,
+   "section": "c4",
+   "end": 173.333
+  },
+  {
+   "text": "it.",
+   "start": 173.594,
+   "section": "c4",
+   "end": 173.994
+  },
+  {
+   "text": "They",
+   "start": 174.257,
+   "section": "c4",
+   "end": 174.397
+  },
+  {
+   "text": "open",
+   "start": 174.397,
+   "section": "c4",
+   "end": 174.656
+  },
+  {
+   "text": "the",
+   "start": 174.656,
+   "section": "c4",
+   "end": 174.736
+  },
+  {
+   "text": "hatch,",
+   "start": 174.736,
+   "section": "c4",
+   "end": 175.136
+  },
+  {
+   "text": "go",
+   "start": 175.424,
+   "section": "c4",
+   "end": 175.604
+  },
+  {
+   "text": "inside,",
+   "start": 175.604,
+   "section": "c4",
+   "end": 176.004
+  },
+  {
+   "text": "and",
+   "start": 176.312,
+   "section": "c4",
+   "end": 176.451
+  },
+  {
+   "text": "check",
+   "start": 176.451,
+   "section": "c4",
+   "end": 176.701
+  },
+  {
+   "text": "the",
+   "start": 176.701,
+   "section": "c4",
+   "end": 176.791
+  },
+  {
+   "text": "cabin,",
+   "start": 176.791,
+   "section": "c4",
+   "end": 177.191
+  },
+  {
+   "text": "the",
+   "start": 177.429,
+   "section": "c4",
+   "end": 177.489
+  },
+  {
+   "text": "controls,",
+   "start": 177.489,
+   "section": "c4",
+   "end": 177.889
+  },
+  {
+   "text": "and",
+   "start": 178.327,
+   "section": "c4",
+   "end": 178.536
+  },
+  {
+   "text": "the",
+   "start": 178.536,
+   "section": "c4",
+   "end": 178.596
+  },
+  {
+   "text": "life",
+   "start": 178.596,
+   "section": "c4",
+   "end": 178.845
+  },
+  {
+   "text": "support",
+   "start": 178.845,
+   "section": "c4",
+   "end": 179.204
+  },
+  {
+   "text": "systems.",
+   "start": 179.204,
+   "section": "c4",
+   "end": 179.604
+  },
+  {
+   "text": "NASA",
+   "start": 180.256,
+   "section": "c4",
+   "end": 180.644
+  },
+  {
+   "text": "says",
+   "start": 180.644,
+   "section": "c4",
+   "end": 181.044
+  },
+  {
+   "text": "it",
+   "start": 181.115,
+   "section": "c4",
+   "end": 181.256
+  },
+  {
+   "text": "will",
+   "start": 181.256,
+   "section": "c4",
+   "end": 181.421
+  },
+  {
+   "text": "also",
+   "start": 181.421,
+   "section": "c4",
+   "end": 181.821
+  },
+  {
+   "text": "verify",
+   "start": 181.868,
+   "section": "c4",
+   "end": 182.268
+  },
+  {
+   "text": "that",
+   "start": 182.55,
+   "section": "c4",
+   "end": 182.739
+  },
+  {
+   "text": "the",
+   "start": 182.739,
+   "section": "c4",
+   "end": 182.809
+  },
+  {
+   "text": "spacecraft",
+   "start": 182.809,
+   "section": "c4",
+   "end": 183.209
+  },
+  {
+   "text": "can",
+   "start": 183.657,
+   "section": "c4",
+   "end": 183.798
+  },
+  {
+   "text": "hold",
+   "start": 183.798,
+   "section": "c4",
+   "end": 184.198
+  },
+  {
+   "text": "the",
+   "start": 184.221,
+   "section": "c4",
+   "end": 184.351
+  },
+  {
+   "text": "right",
+   "start": 184.351,
+   "section": "c4",
+   "end": 184.704
+  },
+  {
+   "text": "atmosphere",
+   "start": 184.704,
+   "section": "c4",
+   "end": 185.104
+  },
+  {
+   "text": "and",
+   "start": 185.516,
+   "section": "c4",
+   "end": 185.763
+  },
+  {
+   "text": "pressure.",
+   "start": 185.763,
+   "section": "c4",
+   "end": 186.163
+  },
+  {
+   "text": "This",
+   "start": 186.642,
+   "section": "c4",
+   "end": 186.862
+  },
+  {
+   "text": "will",
+   "start": 186.862,
+   "section": "c4",
+   "end": 186.997
+  },
+  {
+   "text": "be",
+   "start": 186.997,
+   "section": "c4",
+   "end": 187.132
+  },
+  {
+   "text": "NASA's",
+   "start": 187.132,
+   "section": "c4",
+   "end": 187.532
+  },
+  {
+   "text": "first",
+   "start": 187.72,
+   "section": "c4",
+   "end": 188.12
+  },
+  {
+   "text": "evaluation",
+   "start": 188.185,
+   "section": "c4",
+   "end": 188.585
+  },
+  {
+   "text": "of",
+   "start": 189.115,
+   "section": "c4",
+   "end": 189.25
+  },
+  {
+   "text": "a",
+   "start": 189.25,
+   "section": "c4",
+   "end": 189.311
+  },
+  {
+   "text": "commercial",
+   "start": 189.311,
+   "section": "c4",
+   "end": 189.711
+  },
+  {
+   "text": "lunar",
+   "start": 190.083,
+   "section": "c4",
+   "end": 190.462
+  },
+  {
+   "text": "lander",
+   "start": 190.462,
+   "section": "c4",
+   "end": 190.862
+  },
+  {
+   "text": "with",
+   "start": 191.136,
+   "section": "c4",
+   "end": 191.283
+  },
+  {
+   "text": "a",
+   "start": 191.283,
+   "section": "c4",
+   "end": 191.344
+  },
+  {
+   "text": "crew",
+   "start": 191.344,
+   "section": "c4",
+   "end": 191.744
+  },
+  {
+   "text": "on",
+   "start": 191.76,
+   "section": "c4",
+   "end": 191.956
+  },
+  {
+   "text": "board.",
+   "start": 191.956,
+   "section": "c4",
+   "end": 192.356
+  },
+  {
+   "text": "Step",
+   "start": 193.38,
+   "section": "c4",
+   "end": 193.706
+  },
+  {
+   "text": "four.",
+   "start": 193.706,
+   "section": "c4",
+   "end": 194.106
+  },
+  {
+   "text": "Orion",
+   "start": 194.707,
+   "section": "c4",
+   "end": 195.107
+  },
+  {
+   "text": "undocks",
+   "start": 195.276,
+   "section": "c4",
+   "end": 195.676
+  },
+  {
+   "text": "and",
+   "start": 196.158,
+   "section": "c4",
+   "end": 196.367
+  },
+  {
+   "text": "repositions.",
+   "start": 196.367,
+   "section": "c4",
+   "end": 196.767
+  },
+  {
+   "text": "Step",
+   "start": 198.292,
+   "section": "c4",
+   "end": 198.618
+  },
+  {
+   "text": "five.",
+   "start": 198.618,
+   "section": "c4",
+   "end": 199.018
+  },
+  {
+   "text": "SpaceX",
+   "start": 199.672,
+   "section": "c4",
+   "end": 200.072
+  },
+  {
+   "text": "launches",
+   "start": 200.4,
+   "section": "c4",
+   "end": 200.8
+  },
+  {
+   "text": "a",
+   "start": 200.94,
+   "section": "c4",
+   "end": 201.006
+  },
+  {
+   "text": "Starship",
+   "start": 201.006,
+   "section": "c4",
+   "end": 201.406
+  },
+  {
+   "text": "Version",
+   "start": 201.712,
+   "section": "c4",
+   "end": 202.112
+  },
+  {
+   "text": "Three",
+   "start": 202.198,
+   "section": "c4",
+   "end": 202.584
+  },
+  {
+   "text": "test",
+   "start": 202.584,
+   "section": "c4",
+   "end": 202.984
+  },
+  {
+   "text": "article",
+   "start": 203.014,
+   "section": "c4",
+   "end": 203.414
+  },
+  {
+   "text": "from",
+   "start": 203.422,
+   "section": "c4",
+   "end": 203.653
+  },
+  {
+   "text": "Florida.",
+   "start": 203.653,
+   "section": "c4",
+   "end": 204.053
+  },
+  {
+   "text": "It",
+   "start": 204.759,
+   "section": "c4",
+   "end": 204.874
+  },
+  {
+   "text": "goes",
+   "start": 204.874,
+   "section": "c4",
+   "end": 205.168
+  },
+  {
+   "text": "into",
+   "start": 205.168,
+   "section": "c4",
+   "end": 205.419
+  },
+  {
+   "text": "a",
+   "start": 205.419,
+   "section": "c4",
+   "end": 205.469
+  },
+  {
+   "text": "lower",
+   "start": 205.451,
+   "section": "c4",
+   "end": 205.851
+  },
+  {
+   "text": "orbit,",
+   "start": 205.891,
+   "section": "c4",
+   "end": 206.291
+  },
+  {
+   "text": "and",
+   "start": 206.561,
+   "section": "c4",
+   "end": 206.687
+  },
+  {
+   "text": "it",
+   "start": 206.687,
+   "section": "c4",
+   "end": 206.781
+  },
+  {
+   "text": "carries",
+   "start": 206.781,
+   "section": "c4",
+   "end": 207.181
+  },
+  {
+   "text": "an",
+   "start": 207.211,
+   "section": "c4",
+   "end": 207.305
+  },
+  {
+   "text": "extra",
+   "start": 207.305,
+   "section": "c4",
+   "end": 207.705
+  },
+  {
+   "text": "docking",
+   "start": 207.777,
+   "section": "c4",
+   "end": 208.177
+  },
+  {
+   "text": "system",
+   "start": 208.227,
+   "section": "c4",
+   "end": 208.627
+  },
+  {
+   "text": "on",
+   "start": 208.657,
+   "section": "c4",
+   "end": 208.824
+  },
+  {
+   "text": "its",
+   "start": 208.824,
+   "section": "c4",
+   "end": 209.002
+  },
+  {
+   "text": "nose.",
+   "start": 209.002,
+   "section": "c4",
+   "end": 209.402
+  },
+  {
+   "text": "Orion",
+   "start": 210.074,
+   "section": "c4",
+   "end": 210.474
+  },
+  {
+   "text": "docks",
+   "start": 210.571,
+   "section": "c4",
+   "end": 210.934
+  },
+  {
+   "text": "with",
+   "start": 210.934,
+   "section": "c4",
+   "end": 211.11
+  },
+  {
+   "text": "it",
+   "start": 211.11,
+   "section": "c4",
+   "end": 211.213
+  },
+  {
+   "text": "for",
+   "start": 211.213,
+   "section": "c4",
+   "end": 211.41
+  },
+  {
+   "text": "a",
+   "start": 211.41,
+   "section": "c4",
+   "end": 211.462
+  },
+  {
+   "text": "test",
+   "start": 211.462,
+   "section": "c4",
+   "end": 211.862
+  },
+  {
+   "text": "that",
+   "start": 211.959,
+   "section": "c4",
+   "end": 212.146
+  },
+  {
+   "text": "can",
+   "start": 212.146,
+   "section": "c4",
+   "end": 212.301
+  },
+  {
+   "text": "last",
+   "start": 212.301,
+   "section": "c4",
+   "end": 212.684
+  },
+  {
+   "text": "up",
+   "start": 212.684,
+   "section": "c4",
+   "end": 212.819
+  },
+  {
+   "text": "to",
+   "start": 212.819,
+   "section": "c4",
+   "end": 212.933
+  },
+  {
+   "text": "two",
+   "start": 212.933,
+   "section": "c4",
+   "end": 213.333
+  },
+  {
+   "text": "hours.",
+   "start": 213.378,
+   "section": "c4",
+   "end": 213.778
+  },
+  {
+   "text": "This",
+   "start": 214.452,
+   "section": "c4",
+   "end": 214.665
+  },
+  {
+   "text": "time,",
+   "start": 214.665,
+   "section": "c4",
+   "end": 215.065
+  },
+  {
+   "text": "the",
+   "start": 215.119,
+   "section": "c4",
+   "end": 215.183
+  },
+  {
+   "text": "crew",
+   "start": 215.183,
+   "section": "c4",
+   "end": 215.471
+  },
+  {
+   "text": "does",
+   "start": 215.471,
+   "section": "c4",
+   "end": 215.656
+  },
+  {
+   "text": "not",
+   "start": 215.656,
+   "section": "c4",
+   "end": 216.008
+  },
+  {
+   "text": "go",
+   "start": 216.008,
+   "section": "c4",
+   "end": 216.193
+  },
+  {
+   "text": "inside.",
+   "start": 216.193,
+   "section": "c4",
+   "end": 216.593
+  },
+  {
+   "text": "Then",
+   "start": 217.244,
+   "section": "c4",
+   "end": 217.56
+  },
+  {
+   "text": "comes",
+   "start": 217.56,
+   "section": "c4",
+   "end": 217.96
+  },
+  {
+   "text": "up",
+   "start": 218.071,
+   "section": "c4",
+   "end": 218.205
+  },
+  {
+   "text": "to",
+   "start": 218.205,
+   "section": "c4",
+   "end": 218.363
+  },
+  {
+   "text": "five",
+   "start": 218.363,
+   "section": "c4",
+   "end": 218.763
+  },
+  {
+   "text": "more",
+   "start": 219.008,
+   "section": "c4",
+   "end": 219.337
+  },
+  {
+   "text": "days",
+   "start": 219.337,
+   "section": "c4",
+   "end": 219.737
+  },
+  {
+   "text": "of",
+   "start": 219.836,
+   "section": "c4",
+   "end": 219.945
+  },
+  {
+   "text": "testing.",
+   "start": 219.945,
+   "section": "c4",
+   "end": 220.345
+  },
+  {
+   "text": "Suits,",
+   "start": 221.031,
+   "section": "c4",
+   "end": 221.431
+  },
+  {
+   "text": "docking",
+   "start": 222.143,
+   "section": "c4",
+   "end": 222.543
+  },
+  {
+   "text": "sensors,",
+   "start": 222.619,
+   "section": "c4",
+   "end": 223.019
+  },
+  {
+   "text": "noise",
+   "start": 223.877,
+   "section": "c4",
+   "end": 224.277
+  },
+  {
+   "text": "and",
+   "start": 224.393,
+   "section": "c4",
+   "end": 224.605
+  },
+  {
+   "text": "temperature",
+   "start": 224.605,
+   "section": "c4",
+   "end": 225.005
+  },
+  {
+   "text": "measurements,",
+   "start": 225.174,
+   "section": "c4",
+   "end": 225.574
+  },
+  {
+   "text": "and",
+   "start": 226.273,
+   "section": "c4",
+   "end": 226.551
+  },
+  {
+   "text": "some",
+   "start": 226.551,
+   "section": "c4",
+   "end": 226.776
+  },
+  {
+   "text": "science,",
+   "start": 226.776,
+   "section": "c4",
+   "end": 227.176
+  },
+  {
+   "text": "including",
+   "start": 228.033,
+   "section": "c4",
+   "end": 228.433
+  },
+  {
+   "text": "a",
+   "start": 228.695,
+   "section": "c4",
+   "end": 228.745
+  },
+  {
+   "text": "study",
+   "start": 228.735,
+   "section": "c4",
+   "end": 229.135
+  },
+  {
+   "text": "on",
+   "start": 229.291,
+   "section": "c4",
+   "end": 229.449
+  },
+  {
+   "text": "how",
+   "start": 229.449,
+   "section": "c4",
+   "end": 229.82
+  },
+  {
+   "text": "astronauts",
+   "start": 229.82,
+   "section": "c4",
+   "end": 230.22
+  },
+  {
+   "text": "could",
+   "start": 230.601,
+   "section": "c4",
+   "end": 230.8
+  },
+  {
+   "text": "do",
+   "start": 230.8,
+   "section": "c4",
+   "end": 230.985
+  },
+  {
+   "text": "health",
+   "start": 230.985,
+   "section": "c4",
+   "end": 231.385
+  },
+  {
+   "text": "checks",
+   "start": 231.422,
+   "section": "c4",
+   "end": 231.822
+  },
+  {
+   "text": "when",
+   "start": 231.938,
+   "section": "c4",
+   "end": 232.176
+  },
+  {
+   "text": "they",
+   "start": 232.176,
+   "section": "c4",
+   "end": 232.295
+  },
+  {
+   "text": "can't",
+   "start": 232.295,
+   "section": "c4",
+   "end": 232.679
+  },
+  {
+   "text": "talk",
+   "start": 232.679,
+   "section": "c4",
+   "end": 233.076
+  },
+  {
+   "text": "to",
+   "start": 233.076,
+   "section": "c4",
+   "end": 233.209
+  },
+  {
+   "text": "mission",
+   "start": 233.209,
+   "section": "c4",
+   "end": 233.593
+  },
+  {
+   "text": "control.",
+   "start": 233.593,
+   "section": "c4",
+   "end": 233.993
+  },
+  {
+   "text": "Here's",
+   "start": 234.977,
+   "section": "c5",
+   "end": 235.204
+  },
+  {
+   "text": "a",
+   "start": 235.204,
+   "section": "c5",
+   "end": 235.254
+  },
+  {
+   "text": "detail",
+   "start": 235.248,
+   "section": "c5",
+   "end": 235.648
+  },
+  {
+   "text": "that's",
+   "start": 235.651,
+   "section": "c5",
+   "end": 235.878
+  },
+  {
+   "text": "easy",
+   "start": 235.878,
+   "section": "c5",
+   "end": 236.141
+  },
+  {
+   "text": "to",
+   "start": 236.141,
+   "section": "c5",
+   "end": 236.211
+  },
+  {
+   "text": "miss.",
+   "start": 236.211,
+   "section": "c5",
+   "end": 236.611
+  },
+  {
+   "text": "The",
+   "start": 236.987,
+   "section": "c5",
+   "end": 237.073
+  },
+  {
+   "text": "two",
+   "start": 237.073,
+   "section": "c5",
+   "end": 237.341
+  },
+  {
+   "text": "landers",
+   "start": 237.341,
+   "section": "c5",
+   "end": 237.741
+  },
+  {
+   "text": "don't",
+   "start": 237.932,
+   "section": "c5",
+   "end": 238.286
+  },
+  {
+   "text": "connect",
+   "start": 238.286,
+   "section": "c5",
+   "end": 238.686
+  },
+  {
+   "text": "the",
+   "start": 238.833,
+   "section": "c5",
+   "end": 238.919
+  },
+  {
+   "text": "same",
+   "start": 238.919,
+   "section": "c5",
+   "end": 239.273
+  },
+  {
+   "text": "way.",
+   "start": 239.273,
+   "section": "c5",
+   "end": 239.673
+  },
+  {
+   "text": "Orion",
+   "start": 240.134,
+   "section": "c5",
+   "end": 240.534
+  },
+  {
+   "text": "links",
+   "start": 240.685,
+   "section": "c5",
+   "end": 241.063
+  },
+  {
+   "text": "to",
+   "start": 241.063,
+   "section": "c5",
+   "end": 241.236
+  },
+  {
+   "text": "a",
+   "start": 241.236,
+   "section": "c5",
+   "end": 241.286
+  },
+  {
+   "text": "port",
+   "start": 241.268,
+   "section": "c5",
+   "end": 241.668
+  },
+  {
+   "text": "beside",
+   "start": 241.689,
+   "section": "c5",
+   "end": 242.089
+  },
+  {
+   "text": "Blue",
+   "start": 242.294,
+   "section": "c5",
+   "end": 242.553
+  },
+  {
+   "text": "Moon's",
+   "start": 242.553,
+   "section": "c5",
+   "end": 242.953
+  },
+  {
+   "text": "crew",
+   "start": 242.953,
+   "section": "c5",
+   "end": 243.212
+  },
+  {
+   "text": "cabin.",
+   "start": 243.212,
+   "section": "c5",
+   "end": 243.612
+  },
+  {
+   "text": "Later,",
+   "start": 244.115,
+   "section": "c5",
+   "end": 244.515
+  },
+  {
+   "text": "it",
+   "start": 244.744,
+   "section": "c5",
+   "end": 244.879
+  },
+  {
+   "text": "lines",
+   "start": 244.879,
+   "section": "c5",
+   "end": 245.261
+  },
+  {
+   "text": "up",
+   "start": 245.261,
+   "section": "c5",
+   "end": 245.384
+  },
+  {
+   "text": "its",
+   "start": 245.384,
+   "section": "c5",
+   "end": 245.575
+  },
+  {
+   "text": "own",
+   "start": 245.575,
+   "section": "c5",
+   "end": 245.957
+  },
+  {
+   "text": "forward",
+   "start": 245.957,
+   "section": "c5",
+   "end": 246.357
+  },
+  {
+   "text": "docking",
+   "start": 246.507,
+   "section": "c5",
+   "end": 246.907
+  },
+  {
+   "text": "system",
+   "start": 246.912,
+   "section": "c5",
+   "end": 247.312
+  },
+  {
+   "text": "with",
+   "start": 247.484,
+   "section": "c5",
+   "end": 247.642
+  },
+  {
+   "text": "the",
+   "start": 247.642,
+   "section": "c5",
+   "end": 247.731
+  },
+  {
+   "text": "one",
+   "start": 247.731,
+   "section": "c5",
+   "end": 248.046
+  },
+  {
+   "text": "on",
+   "start": 248.046,
+   "section": "c5",
+   "end": 248.259
+  },
+  {
+   "text": "Starship's",
+   "start": 248.259,
+   "section": "c5",
+   "end": 248.659
+  },
+  {
+   "text": "nose.",
+   "start": 248.978,
+   "section": "c5",
+   "end": 249.378
+  },
+  {
+   "text": "Two",
+   "start": 249.954,
+   "section": "c5",
+   "end": 250.342
+  },
+  {
+   "text": "different",
+   "start": 250.342,
+   "section": "c5",
+   "end": 250.742
+  },
+  {
+   "text": "connections,",
+   "start": 250.836,
+   "section": "c5",
+   "end": 251.236
+  },
+  {
+   "text": "in",
+   "start": 251.78,
+   "section": "c5",
+   "end": 251.875
+  },
+  {
+   "text": "a",
+   "start": 251.875,
+   "section": "c5",
+   "end": 251.927
+  },
+  {
+   "text": "single",
+   "start": 251.927,
+   "section": "c5",
+   "end": 252.327
+  },
+  {
+   "text": "mission.",
+   "start": 252.515,
+   "section": "c5",
+   "end": 252.915
+  },
+  {
+   "text": "NASA",
+   "start": 253.478,
+   "section": "c5",
+   "end": 253.824
+  },
+  {
+   "text": "says",
+   "start": 253.824,
+   "section": "c5",
+   "end": 254.224
+  },
+  {
+   "text": "that",
+   "start": 254.226,
+   "section": "c5",
+   "end": 254.449
+  },
+  {
+   "text": "gives",
+   "start": 254.449,
+   "section": "c5",
+   "end": 254.717
+  },
+  {
+   "text": "it",
+   "start": 254.717,
+   "section": "c5",
+   "end": 254.806
+  },
+  {
+   "text": "a",
+   "start": 254.806,
+   "section": "c5",
+   "end": 254.873
+  },
+  {
+   "text": "chance",
+   "start": 254.873,
+   "section": "c5",
+   "end": 255.273
+  },
+  {
+   "text": "to",
+   "start": 255.308,
+   "section": "c5",
+   "end": 255.409
+  },
+  {
+   "text": "compare",
+   "start": 255.409,
+   "section": "c5",
+   "end": 255.809
+  },
+  {
+   "text": "two",
+   "start": 255.877,
+   "section": "c5",
+   "end": 256.277
+  },
+  {
+   "text": "different",
+   "start": 256.324,
+   "section": "c5",
+   "end": 256.724
+  },
+  {
+   "text": "ways",
+   "start": 256.759,
+   "section": "c5",
+   "end": 257.116
+  },
+  {
+   "text": "of",
+   "start": 257.116,
+   "section": "c5",
+   "end": 257.227
+  },
+  {
+   "text": "operating,",
+   "start": 257.227,
+   "section": "c5",
+   "end": 257.627
+  },
+  {
+   "text": "and",
+   "start": 258.176,
+   "section": "c5",
+   "end": 258.477
+  },
+  {
+   "text": "to",
+   "start": 258.477,
+   "section": "c5",
+   "end": 258.578
+  },
+  {
+   "text": "gather",
+   "start": 258.578,
+   "section": "c5",
+   "end": 258.978
+  },
+  {
+   "text": "engineering",
+   "start": 258.979,
+   "section": "c5",
+   "end": 259.379
+  },
+  {
+   "text": "data",
+   "start": 259.682,
+   "section": "c5",
+   "end": 259.95
+  },
+  {
+   "text": "on",
+   "start": 259.95,
+   "section": "c5",
+   "end": 260.274
+  },
+  {
+   "text": "both.",
+   "start": 260.274,
+   "section": "c5",
+   "end": 260.674
+  },
+  {
+   "text": "On",
+   "start": 261.373,
+   "section": "c5",
+   "end": 261.514
+  },
+  {
+   "text": "the",
+   "start": 261.514,
+   "section": "c5",
+   "end": 261.579
+  },
+  {
+   "text": "Starship",
+   "start": 261.579,
+   "section": "c5",
+   "end": 261.979
+  },
+  {
+   "text": "dock,",
+   "start": 262.155,
+   "section": "c5",
+   "end": 262.555
+  },
+  {
+   "text": "NASA",
+   "start": 262.796,
+   "section": "c5",
+   "end": 263.196
+  },
+  {
+   "text": "and",
+   "start": 263.252,
+   "section": "c5",
+   "end": 263.393
+  },
+  {
+   "text": "SpaceX",
+   "start": 263.393,
+   "section": "c5",
+   "end": 263.793
+  },
+  {
+   "text": "plan",
+   "start": 264.088,
+   "section": "c5",
+   "end": 264.447
+  },
+  {
+   "text": "to",
+   "start": 264.447,
+   "section": "c5",
+   "end": 264.632
+  },
+  {
+   "text": "evaluate",
+   "start": 264.632,
+   "section": "c5",
+   "end": 265.032
+  },
+  {
+   "text": "how",
+   "start": 265.272,
+   "section": "c5",
+   "end": 265.609
+  },
+  {
+   "text": "the",
+   "start": 265.609,
+   "section": "c5",
+   "end": 265.729
+  },
+  {
+   "text": "docked",
+   "start": 265.729,
+   "section": "c5",
+   "end": 266.129
+  },
+  {
+   "text": "pair",
+   "start": 266.152,
+   "section": "c5",
+   "end": 266.552
+  },
+  {
+   "text": "handles,",
+   "start": 266.58,
+   "section": "c5",
+   "end": 266.98
+  },
+  {
+   "text": "how",
+   "start": 267.456,
+   "section": "c5",
+   "end": 267.575
+  },
+  {
+   "text": "they",
+   "start": 267.575,
+   "section": "c5",
+   "end": 267.975
+  },
+  {
+   "text": "communicate,",
+   "start": 268.221,
+   "section": "c5",
+   "end": 268.621
+  },
+  {
+   "text": "how",
+   "start": 268.759,
+   "section": "c5",
+   "end": 268.9
+  },
+  {
+   "text": "the",
+   "start": 268.9,
+   "section": "c5",
+   "end": 269.3
+  },
+  {
+   "text": "software",
+   "start": 269.791,
+   "section": "c5",
+   "end": 269.841
+  },
+  {
+   "text": "performs",
+   "start": 269.552,
+   "section": "c5",
+   "end": 269.952
+  },
+  {
+   "text": "together,",
+   "start": 270.106,
+   "section": "c5",
+   "end": 270.506
+  },
+  {
+   "text": "and",
+   "start": 270.92,
+   "section": "c5",
+   "end": 271.257
+  },
+  {
+   "text": "what",
+   "start": 271.257,
+   "section": "c5",
+   "end": 271.485
+  },
+  {
+   "text": "the",
+   "start": 271.485,
+   "section": "c5",
+   "end": 271.885
+  },
+  {
+   "text": "forces",
+   "start": 272.287,
+   "section": "c5",
+   "end": 272.337
+  },
+  {
+   "text": "look",
+   "start": 272.18,
+   "section": "c5",
+   "end": 272.419
+  },
+  {
+   "text": "like",
+   "start": 272.419,
+   "section": "c5",
+   "end": 272.702
+  },
+  {
+   "text": "during",
+   "start": 272.702,
+   "section": "c5",
+   "end": 273.049
+  },
+  {
+   "text": "docking",
+   "start": 273.049,
+   "section": "c5",
+   "end": 273.449
+  },
+  {
+   "text": "and",
+   "start": 273.582,
+   "section": "c5",
+   "end": 273.875
+  },
+  {
+   "text": "undocking.",
+   "start": 273.875,
+   "section": "c5",
+   "end": 274.275
+  },
+  {
+   "text": "Now",
+   "start": 275.484,
+   "section": "c6",
+   "end": 275.865
+  },
+  {
+   "text": "the",
+   "start": 275.865,
+   "section": "c6",
+   "end": 276.015
+  },
+  {
+   "text": "part",
+   "start": 276.015,
+   "section": "c6",
+   "end": 276.415
+  },
+  {
+   "text": "that",
+   "start": 276.465,
+   "section": "c6",
+   "end": 276.697
+  },
+  {
+   "text": "makes",
+   "start": 276.697,
+   "section": "c6",
+   "end": 277.097
+  },
+  {
+   "text": "this",
+   "start": 277.119,
+   "section": "c6",
+   "end": 277.378
+  },
+  {
+   "text": "mission",
+   "start": 277.378,
+   "section": "c6",
+   "end": 277.778
+  },
+  {
+   "text": "hard.",
+   "start": 277.909,
+   "section": "c6",
+   "end": 278.309
+  },
+  {
+   "text": "Starship",
+   "start": 279.523,
+   "section": "c6",
+   "end": 279.923
+  },
+  {
+   "text": "is",
+   "start": 280.054,
+   "section": "c6",
+   "end": 280.166
+  },
+  {
+   "text": "designed",
+   "start": 280.166,
+   "section": "c6",
+   "end": 280.566
+  },
+  {
+   "text": "to",
+   "start": 280.615,
+   "section": "c6",
+   "end": 280.697
+  },
+  {
+   "text": "stay",
+   "start": 280.697,
+   "section": "c6",
+   "end": 281.013
+  },
+  {
+   "text": "in",
+   "start": 281.013,
+   "section": "c6",
+   "end": 281.125
+  },
+  {
+   "text": "orbit",
+   "start": 281.125,
+   "section": "c6",
+   "end": 281.523
+  },
+  {
+   "text": "for",
+   "start": 281.523,
+   "section": "c6",
+   "end": 281.717
+  },
+  {
+   "text": "a",
+   "start": 281.717,
+   "section": "c6",
+   "end": 281.767
+  },
+  {
+   "text": "much",
+   "start": 281.748,
+   "section": "c6",
+   "end": 282.105
+  },
+  {
+   "text": "shorter",
+   "start": 282.105,
+   "section": "c6",
+   "end": 282.505
+  },
+  {
+   "text": "time",
+   "start": 282.575,
+   "section": "c6",
+   "end": 282.975
+  },
+  {
+   "text": "than",
+   "start": 283.044,
+   "section": "c6",
+   "end": 283.444
+  },
+  {
+   "text": "Blue",
+   "start": 283.644,
+   "section": "c6",
+   "end": 283.694
+  },
+  {
+   "text": "Origin's",
+   "start": 283.513,
+   "section": "c6",
+   "end": 283.913
+  },
+  {
+   "text": "lander.",
+   "start": 284.044,
+   "section": "c6",
+   "end": 284.444
+  },
+  {
+   "text": "So",
+   "start": 284.979,
+   "section": "c6",
+   "end": 285.379
+  },
+  {
+   "text": "its",
+   "start": 285.384,
+   "section": "c6",
+   "end": 285.729
+  },
+  {
+   "text": "launch",
+   "start": 285.729,
+   "section": "c6",
+   "end": 286.129
+  },
+  {
+   "text": "comes",
+   "start": 286.158,
+   "section": "c6",
+   "end": 286.558
+  },
+  {
+   "text": "late",
+   "start": 286.575,
+   "section": "c6",
+   "end": 286.975
+  },
+  {
+   "text": "in",
+   "start": 287.087,
+   "section": "c6",
+   "end": 287.206
+  },
+  {
+   "text": "the",
+   "start": 287.206,
+   "section": "c6",
+   "end": 287.278
+  },
+  {
+   "text": "mission.",
+   "start": 287.278,
+   "section": "c6",
+   "end": 287.678
+  },
+  {
+   "text": "Blue",
+   "start": 288.206,
+   "section": "c6",
+   "end": 288.513
+  },
+  {
+   "text": "Moon's",
+   "start": 288.513,
+   "section": "c6",
+   "end": 288.913
+  },
+  {
+   "text": "test",
+   "start": 288.963,
+   "section": "c6",
+   "end": 289.306
+  },
+  {
+   "text": "article",
+   "start": 289.306,
+   "section": "c6",
+   "end": 289.706
+  },
+  {
+   "text": "waits",
+   "start": 289.719,
+   "section": "c6",
+   "end": 290.119
+  },
+  {
+   "text": "in",
+   "start": 290.18,
+   "section": "c6",
+   "end": 290.299
+  },
+  {
+   "text": "orbit,",
+   "start": 290.299,
+   "section": "c6",
+   "end": 290.699
+  },
+  {
+   "text": "for",
+   "start": 290.973,
+   "section": "c6",
+   "end": 291.162
+  },
+  {
+   "text": "up",
+   "start": 291.162,
+   "section": "c6",
+   "end": 291.304
+  },
+  {
+   "text": "to",
+   "start": 291.304,
+   "section": "c6",
+   "end": 291.446
+  },
+  {
+   "text": "thirty",
+   "start": 291.446,
+   "section": "c6",
+   "end": 291.846
+  },
+  {
+   "text": "days.",
+   "start": 292.013,
+   "section": "c6",
+   "end": 292.413
+  },
+  {
+   "text": "NASA",
+   "start": 293.127,
+   "section": "c6",
+   "end": 293.455
+  },
+  {
+   "text": "calls",
+   "start": 293.455,
+   "section": "c6",
+   "end": 293.794
+  },
+  {
+   "text": "the",
+   "start": 293.794,
+   "section": "c6",
+   "end": 293.883
+  },
+  {
+   "text": "whole",
+   "start": 293.883,
+   "section": "c6",
+   "end": 294.162
+  },
+  {
+   "text": "thing",
+   "start": 294.162,
+   "section": "c6",
+   "end": 294.56
+  },
+  {
+   "text": "a",
+   "start": 294.56,
+   "section": "c6",
+   "end": 294.898
+  },
+  {
+   "text": "tightly",
+   "start": 294.898,
+   "section": "c6",
+   "end": 295.298
+  },
+  {
+   "text": "choreographed",
+   "start": 295.375,
+   "section": "c6",
+   "end": 295.775
+  },
+  {
+   "text": "campaign.",
+   "start": 296.181,
+   "section": "c6",
+   "end": 296.581
+  },
+  {
+   "text": "So",
+   "start": 297.483,
+   "section": "c6",
+   "end": 297.883
+  },
+  {
+   "text": "here's",
+   "start": 298.13,
+   "section": "c6",
+   "end": 298.53
+  },
+  {
+   "text": "the",
+   "start": 298.823,
+   "section": "c6",
+   "end": 299.199
+  },
+  {
+   "text": "what",
+   "start": 299.199,
+   "section": "c6",
+   "end": 299.599
+  },
+  {
+   "text": "if.",
+   "start": 299.726,
+   "section": "c6",
+   "end": 300.126
+  },
+  {
+   "text": "What",
+   "start": 300.822,
+   "section": "c6",
+   "end": 300.979
+  },
+  {
+   "text": "if",
+   "start": 300.979,
+   "section": "c6",
+   "end": 301.168
+  },
+  {
+   "text": "one",
+   "start": 301.168,
+   "section": "c6",
+   "end": 301.536
+  },
+  {
+   "text": "piece",
+   "start": 301.536,
+   "section": "c6",
+   "end": 301.903
+  },
+  {
+   "text": "is",
+   "start": 301.903,
+   "section": "c6",
+   "end": 302.039
+  },
+  {
+   "text": "late?",
+   "start": 302.039,
+   "section": "c6",
+   "end": 302.439
+  },
+  {
+   "text": "I'll",
+   "start": 303.057,
+   "section": "c6",
+   "end": 303.19
+  },
+  {
+   "text": "be",
+   "start": 303.19,
+   "section": "c6",
+   "end": 303.323
+  },
+  {
+   "text": "honest:",
+   "start": 303.323,
+   "section": "c6",
+   "end": 303.723
+  },
+  {
+   "text": "in",
+   "start": 304.13,
+   "section": "c6",
+   "end": 304.222
+  },
+  {
+   "text": "the",
+   "start": 304.222,
+   "section": "c6",
+   "end": 304.294
+  },
+  {
+   "text": "NASA",
+   "start": 304.294,
+   "section": "c6",
+   "end": 304.621
+  },
+  {
+   "text": "pages",
+   "start": 304.621,
+   "section": "c6",
+   "end": 305.02
+  },
+  {
+   "text": "I",
+   "start": 305.02,
+   "section": "c6",
+   "end": 305.091
+  },
+  {
+   "text": "read,",
+   "start": 305.091,
+   "section": "c6",
+   "end": 305.491
+  },
+  {
+   "text": "there's",
+   "start": 305.776,
+   "section": "c6",
+   "end": 305.991
+  },
+  {
+   "text": "no",
+   "start": 305.991,
+   "section": "c6",
+   "end": 306.267
+  },
+  {
+   "text": "answer.",
+   "start": 306.267,
+   "section": "c6",
+   "end": 306.667
+  },
+  {
+   "text": "The",
+   "start": 307.245,
+   "section": "c6",
+   "end": 307.322
+  },
+  {
+   "text": "thirty",
+   "start": 307.322,
+   "section": "c6",
+   "end": 307.697
+  },
+  {
+   "text": "day",
+   "start": 307.697,
+   "section": "c6",
+   "end": 307.917
+  },
+  {
+   "text": "figure",
+   "start": 307.917,
+   "section": "c6",
+   "end": 308.317
+  },
+  {
+   "text": "is",
+   "start": 308.413,
+   "section": "c6",
+   "end": 308.567
+  },
+  {
+   "text": "the",
+   "start": 308.567,
+   "section": "c6",
+   "end": 308.656
+  },
+  {
+   "text": "schedule",
+   "start": 308.656,
+   "section": "c6",
+   "end": 309.056
+  },
+  {
+   "text": "flexibility",
+   "start": 309.185,
+   "section": "c6",
+   "end": 309.585
+  },
+  {
+   "text": "NASA",
+   "start": 309.989,
+   "section": "c6",
+   "end": 310.375
+  },
+  {
+   "text": "states",
+   "start": 310.375,
+   "section": "c6",
+   "end": 310.775
+  },
+  {
+   "text": "for",
+   "start": 310.849,
+   "section": "c6",
+   "end": 310.959
+  },
+  {
+   "text": "the",
+   "start": 310.959,
+   "section": "c6",
+   "end": 311.058
+  },
+  {
+   "text": "Blue",
+   "start": 311.058,
+   "section": "c6",
+   "end": 311.4
+  },
+  {
+   "text": "Moon",
+   "start": 311.4,
+   "section": "c6",
+   "end": 311.708
+  },
+  {
+   "text": "side.",
+   "start": 311.708,
+   "section": "c6",
+   "end": 312.108
+  },
+  {
+   "text": "NASA's",
+   "start": 312.684,
+   "section": "c6",
+   "end": 313.084
+  },
+  {
+   "text": "published",
+   "start": 313.217,
+   "section": "c6",
+   "end": 313.617
+  },
+  {
+   "text": "plan",
+   "start": 313.842,
+   "section": "c6",
+   "end": 314.242
+  },
+  {
+   "text": "doesn't",
+   "start": 314.336,
+   "section": "c6",
+   "end": 314.736
+  },
+  {
+   "text": "say",
+   "start": 314.791,
+   "section": "c6",
+   "end": 315.191
+  },
+  {
+   "text": "what",
+   "start": 315.194,
+   "section": "c6",
+   "end": 315.415
+  },
+  {
+   "text": "a",
+   "start": 315.415,
+   "section": "c6",
+   "end": 315.467
+  },
+  {
+   "text": "problem",
+   "start": 315.467,
+   "section": "c6",
+   "end": 315.867
+  },
+  {
+   "text": "in",
+   "start": 316.079,
+   "section": "c6",
+   "end": 316.196
+  },
+  {
+   "text": "orbit",
+   "start": 316.196,
+   "section": "c6",
+   "end": 316.596
+  },
+  {
+   "text": "would",
+   "start": 316.755,
+   "section": "c6",
+   "end": 316.976
+  },
+  {
+   "text": "do",
+   "start": 316.976,
+   "section": "c6",
+   "end": 317.353
+  },
+  {
+   "text": "to",
+   "start": 317.353,
+   "section": "c6",
+   "end": 317.483
+  },
+  {
+   "text": "the",
+   "start": 317.483,
+   "section": "c6",
+   "end": 317.613
+  },
+  {
+   "text": "twenty",
+   "start": 317.613,
+   "section": "c6",
+   "end": 318.013
+  },
+  {
+   "text": "twenty",
+   "start": 318.029,
+   "section": "c6",
+   "end": 318.42
+  },
+  {
+   "text": "eight",
+   "start": 318.42,
+   "section": "c6",
+   "end": 318.654
+  },
+  {
+   "text": "target.",
+   "start": 318.654,
+   "section": "c6",
+   "end": 319.054
+  },
+  {
+   "text": "That's",
+   "start": 319.785,
+   "section": "c6",
+   "end": 320.035
+  },
+  {
+   "text": "why",
+   "start": 320.035,
+   "section": "c6",
+   "end": 320.306
+  },
+  {
+   "text": "I'd",
+   "start": 320.306,
+   "section": "c6",
+   "end": 320.576
+  },
+  {
+   "text": "treat",
+   "start": 320.576,
+   "section": "c6",
+   "end": 320.976
+  },
+  {
+   "text": "every",
+   "start": 321.007,
+   "section": "c6",
+   "end": 321.377
+  },
+  {
+   "text": "date",
+   "start": 321.377,
+   "section": "c6",
+   "end": 321.638
+  },
+  {
+   "text": "in",
+   "start": 321.638,
+   "section": "c6",
+   "end": 321.748
+  },
+  {
+   "text": "this",
+   "start": 321.748,
+   "section": "c6",
+   "end": 321.918
+  },
+  {
+   "text": "story",
+   "start": 321.918,
+   "section": "c6",
+   "end": 322.318
+  },
+  {
+   "text": "as",
+   "start": 322.319,
+   "section": "c6",
+   "end": 322.579
+  },
+  {
+   "text": "a",
+   "start": 322.579,
+   "section": "c6",
+   "end": 322.629
+  },
+  {
+   "text": "target,",
+   "start": 322.629,
+   "section": "c6",
+   "end": 323.029
+  },
+  {
+   "text": "not",
+   "start": 323.551,
+   "section": "c6",
+   "end": 323.861
+  },
+  {
+   "text": "a",
+   "start": 323.861,
+   "section": "c6",
+   "end": 323.911
+  },
+  {
+   "text": "promise.",
+   "start": 323.911,
+   "section": "c6",
+   "end": 324.311
+  },
+  {
+   "text": "Here's",
+   "start": 325.495,
+   "section": "c7",
+   "end": 325.865
+  },
+  {
+   "text": "a",
+   "start": 325.865,
+   "section": "c7",
+   "end": 325.944
+  },
+  {
+   "text": "twist",
+   "start": 325.944,
+   "section": "c7",
+   "end": 326.344
+  },
+  {
+   "text": "most",
+   "start": 326.511,
+   "section": "c7",
+   "end": 326.911
+  },
+  {
+   "text": "coverage",
+   "start": 326.999,
+   "section": "c7",
+   "end": 327.399
+  },
+  {
+   "text": "skips.",
+   "start": 327.567,
+   "section": "c7",
+   "end": 327.967
+  },
+  {
+   "text": "Originally,",
+   "start": 328.809,
+   "section": "c7",
+   "end": 329.209
+  },
+  {
+   "text": "SpaceX's",
+   "start": 329.61,
+   "section": "c7",
+   "end": 330.01
+  },
+  {
+   "text": "Starship",
+   "start": 330.399,
+   "section": "c7",
+   "end": 330.799
+  },
+  {
+   "text": "was",
+   "start": 331.056,
+   "section": "c7",
+   "end": 331.223
+  },
+  {
+   "text": "assigned",
+   "start": 331.223,
+   "section": "c7",
+   "end": 331.623
+  },
+  {
+   "text": "to",
+   "start": 331.756,
+   "section": "c7",
+   "end": 331.857
+  },
+  {
+   "text": "Artemis",
+   "start": 331.857,
+   "section": "c7",
+   "end": 332.257
+  },
+  {
+   "text": "Three",
+   "start": 332.446,
+   "section": "c7",
+   "end": 332.846
+  },
+  {
+   "text": "and",
+   "start": 332.924,
+   "section": "c7",
+   "end": 333.069
+  },
+  {
+   "text": "Four,",
+   "start": 333.069,
+   "section": "c7",
+   "end": 333.469
+  },
+  {
+   "text": "and",
+   "start": 333.981,
+   "section": "c7",
+   "end": 334.125
+  },
+  {
+   "text": "Blue",
+   "start": 334.125,
+   "section": "c7",
+   "end": 334.404
+  },
+  {
+   "text": "Origin's",
+   "start": 334.404,
+   "section": "c7",
+   "end": 334.804
+  },
+  {
+   "text": "lander",
+   "start": 334.993,
+   "section": "c7",
+   "end": 335.393
+  },
+  {
+   "text": "to",
+   "start": 335.516,
+   "section": "c7",
+   "end": 335.638
+  },
+  {
+   "text": "Artemis",
+   "start": 335.638,
+   "section": "c7",
+   "end": 336.038
+  },
+  {
+   "text": "Five.",
+   "start": 336.116,
+   "section": "c7",
+   "end": 336.516
+  },
+  {
+   "text": "NASA",
+   "start": 337.08,
+   "section": "c7",
+   "end": 337.48
+  },
+  {
+   "text": "then",
+   "start": 337.502,
+   "section": "c7",
+   "end": 337.856
+  },
+  {
+   "text": "realigned",
+   "start": 337.856,
+   "section": "c7",
+   "end": 338.256
+  },
+  {
+   "text": "the",
+   "start": 338.514,
+   "section": "c7",
+   "end": 338.602
+  },
+  {
+   "text": "contracts.",
+   "start": 338.602,
+   "section": "c7",
+   "end": 339.002
+  },
+  {
+   "text": "Now",
+   "start": 339.798,
+   "section": "c7",
+   "end": 340.099
+  },
+  {
+   "text": "both",
+   "start": 340.099,
+   "section": "c7",
+   "end": 340.488
+  },
+  {
+   "text": "companies",
+   "start": 340.488,
+   "section": "c7",
+   "end": 340.888
+  },
+  {
+   "text": "take",
+   "start": 340.984,
+   "section": "c7",
+   "end": 341.227
+  },
+  {
+   "text": "part",
+   "start": 341.227,
+   "section": "c7",
+   "end": 341.538
+  },
+  {
+   "text": "in",
+   "start": 341.538,
+   "section": "c7",
+   "end": 341.654
+  },
+  {
+   "text": "Artemis",
+   "start": 341.654,
+   "section": "c7",
+   "end": 342.054
+  },
+  {
+   "text": "Three,",
+   "start": 342.102,
+   "section": "c7",
+   "end": 342.502
+  },
+  {
+   "text": "in",
+   "start": 342.675,
+   "section": "c7",
+   "end": 342.801
+  },
+  {
+   "text": "orbit,",
+   "start": 342.801,
+   "section": "c7",
+   "end": 343.201
+  },
+  {
+   "text": "and",
+   "start": 343.589,
+   "section": "c7",
+   "end": 343.754
+  },
+  {
+   "text": "neither",
+   "start": 343.754,
+   "section": "c7",
+   "end": 344.153
+  },
+  {
+   "text": "one",
+   "start": 344.153,
+   "section": "c7",
+   "end": 344.512
+  },
+  {
+   "text": "is",
+   "start": 344.512,
+   "section": "c7",
+   "end": 344.677
+  },
+  {
+   "text": "assigned",
+   "start": 344.677,
+   "section": "c7",
+   "end": 345.077
+  },
+  {
+   "text": "to",
+   "start": 345.183,
+   "section": "c7",
+   "end": 345.319
+  },
+  {
+   "text": "a",
+   "start": 345.319,
+   "section": "c7",
+   "end": 345.369
+  },
+  {
+   "text": "specific",
+   "start": 345.348,
+   "section": "c7",
+   "end": 345.748
+  },
+  {
+   "text": "landing",
+   "start": 345.98,
+   "section": "c7",
+   "end": 346.359
+  },
+  {
+   "text": "mission.",
+   "start": 346.359,
+   "section": "c7",
+   "end": 346.759
+  },
+  {
+   "text": "NASA",
+   "start": 347.215,
+   "section": "c7",
+   "end": 347.606
+  },
+  {
+   "text": "says",
+   "start": 347.606,
+   "section": "c7",
+   "end": 348.006
+  },
+  {
+   "text": "that,",
+   "start": 348.132,
+   "section": "c7",
+   "end": 348.532
+  },
+  {
+   "text": "based",
+   "start": 348.547,
+   "section": "c7",
+   "end": 348.947
+  },
+  {
+   "text": "on",
+   "start": 349.109,
+   "section": "c7",
+   "end": 349.268
+  },
+  {
+   "text": "lander",
+   "start": 349.268,
+   "section": "c7",
+   "end": 349.668
+  },
+  {
+   "text": "readiness,",
+   "start": 349.769,
+   "section": "c7",
+   "end": 350.169
+  },
+  {
+   "text": "it",
+   "start": 350.747,
+   "section": "c7",
+   "end": 350.869
+  },
+  {
+   "text": "will",
+   "start": 350.869,
+   "section": "c7",
+   "end": 351.003
+  },
+  {
+   "text": "decide",
+   "start": 351.003,
+   "section": "c7",
+   "end": 351.403
+  },
+  {
+   "text": "which",
+   "start": 351.541,
+   "section": "c7",
+   "end": 351.896
+  },
+  {
+   "text": "company",
+   "start": 351.896,
+   "section": "c7",
+   "end": 352.296
+  },
+  {
+   "text": "is",
+   "start": 352.458,
+   "section": "c7",
+   "end": 352.69
+  },
+  {
+   "text": "first",
+   "start": 352.69,
+   "section": "c7",
+   "end": 353.09
+  },
+  {
+   "text": "to",
+   "start": 353.289,
+   "section": "c7",
+   "end": 353.472
+  },
+  {
+   "text": "deliver",
+   "start": 353.472,
+   "section": "c7",
+   "end": 353.872
+  },
+  {
+   "text": "astronauts",
+   "start": 353.936,
+   "section": "c7",
+   "end": 354.336
+  },
+  {
+   "text": "to",
+   "start": 354.719,
+   "section": "c7",
+   "end": 354.841
+  },
+  {
+   "text": "the",
+   "start": 354.841,
+   "section": "c7",
+   "end": 354.939
+  },
+  {
+   "text": "Moon's",
+   "start": 354.939,
+   "section": "c7",
+   "end": 355.339
+  },
+  {
+   "text": "surface",
+   "start": 355.342,
+   "section": "c7",
+   "end": 355.742
+  },
+  {
+   "text": "in",
+   "start": 355.99,
+   "section": "c7",
+   "end": 356.234
+  },
+  {
+   "text": "twenty",
+   "start": 356.234,
+   "section": "c7",
+   "end": 356.634
+  },
+  {
+   "text": "twenty",
+   "start": 356.772,
+   "section": "c7",
+   "end": 357.172
+  },
+  {
+   "text": "eight.",
+   "start": 357.248,
+   "section": "c7",
+   "end": 357.648
+  },
+  {
+   "text": "A",
+   "start": 358.034,
+   "section": "c7",
+   "end": 358.089
+  },
+  {
+   "text": "second",
+   "start": 358.089,
+   "section": "c7",
+   "end": 358.489
+  },
+  {
+   "text": "crewed",
+   "start": 358.628,
+   "section": "c7",
+   "end": 359.028
+  },
+  {
+   "text": "landing",
+   "start": 359.056,
+   "section": "c7",
+   "end": 359.456
+  },
+  {
+   "text": "opportunity",
+   "start": 359.496,
+   "section": "c7",
+   "end": 359.896
+  },
+  {
+   "text": "follows.",
+   "start": 360.122,
+   "section": "c7",
+   "end": 360.522
+  },
+  {
+   "text": "And",
+   "start": 361.298,
+   "section": "c7",
+   "end": 361.404
+  },
+  {
+   "text": "before",
+   "start": 361.404,
+   "section": "c7",
+   "end": 361.767
+  },
+  {
+   "text": "any",
+   "start": 361.767,
+   "section": "c7",
+   "end": 362.143
+  },
+  {
+   "text": "crew",
+   "start": 362.143,
+   "section": "c7",
+   "end": 362.518
+  },
+  {
+   "text": "flies",
+   "start": 362.518,
+   "section": "c7",
+   "end": 362.918
+  },
+  {
+   "text": "to",
+   "start": 363.0,
+   "section": "c7",
+   "end": 363.093
+  },
+  {
+   "text": "the",
+   "start": 363.093,
+   "section": "c7",
+   "end": 363.199
+  },
+  {
+   "text": "Moon,",
+   "start": 363.199,
+   "section": "c7",
+   "end": 363.599
+  },
+  {
+   "text": "both",
+   "start": 364.032,
+   "section": "c7",
+   "end": 364.396
+  },
+  {
+   "text": "companies",
+   "start": 364.396,
+   "section": "c7",
+   "end": 364.796
+  },
+  {
+   "text": "have",
+   "start": 364.971,
+   "section": "c7",
+   "end": 365.171
+  },
+  {
+   "text": "to",
+   "start": 365.171,
+   "section": "c7",
+   "end": 365.264
+  },
+  {
+   "text": "fly",
+   "start": 365.264,
+   "section": "c7",
+   "end": 365.664
+  },
+  {
+   "text": "an",
+   "start": 365.687,
+   "section": "c7",
+   "end": 365.886
+  },
+  {
+   "text": "uncrewed",
+   "start": 365.886,
+   "section": "c7",
+   "end": 366.286
+  },
+  {
+   "text": "demonstration",
+   "start": 366.778,
+   "section": "c7",
+   "end": 367.178
+  },
+  {
+   "text": "mission",
+   "start": 367.658,
+   "section": "c7",
+   "end": 368.058
+  },
+  {
+   "text": "with",
+   "start": 368.163,
+   "section": "c7",
+   "end": 368.363
+  },
+  {
+   "text": "their",
+   "start": 368.363,
+   "section": "c7",
+   "end": 368.539
+  },
+  {
+   "text": "crewed",
+   "start": 368.539,
+   "section": "c7",
+   "end": 368.939
+  },
+  {
+   "text": "lander.",
+   "start": 369.043,
+   "section": "c7",
+   "end": 369.443
+  },
+  {
+   "text": "NASA",
+   "start": 370.123,
+   "section": "c7",
+   "end": 370.501
+  },
+  {
+   "text": "says",
+   "start": 370.501,
+   "section": "c7",
+   "end": 370.901
+  },
+  {
+   "text": "it",
+   "start": 370.996,
+   "section": "c7",
+   "end": 371.178
+  },
+  {
+   "text": "will",
+   "start": 371.178,
+   "section": "c7",
+   "end": 371.309
+  },
+  {
+   "text": "certify",
+   "start": 371.309,
+   "section": "c7",
+   "end": 371.709
+  },
+  {
+   "text": "the",
+   "start": 372.065,
+   "section": "c7",
+   "end": 372.182
+  },
+  {
+   "text": "landers",
+   "start": 372.182,
+   "section": "c7",
+   "end": 372.582
+  },
+  {
+   "text": "first.",
+   "start": 372.964,
+   "section": "c7",
+   "end": 373.364
+  },
+  {
+   "text": "So",
+   "start": 374.182,
+   "section": "c7",
+   "end": 374.501
+  },
+  {
+   "text": "Artemis",
+   "start": 374.501,
+   "section": "c7",
+   "end": 374.901
+  },
+  {
+   "text": "Three",
+   "start": 375.028,
+   "section": "c7",
+   "end": 375.428
+  },
+  {
+   "text": "isn't",
+   "start": 375.456,
+   "section": "c7",
+   "end": 375.786
+  },
+  {
+   "text": "only",
+   "start": 375.786,
+   "section": "c7",
+   "end": 376.181
+  },
+  {
+   "text": "a",
+   "start": 376.181,
+   "section": "c7",
+   "end": 376.236
+  },
+  {
+   "text": "test",
+   "start": 376.236,
+   "section": "c7",
+   "end": 376.599
+  },
+  {
+   "text": "of",
+   "start": 376.599,
+   "section": "c7",
+   "end": 376.698
+  },
+  {
+   "text": "hardware.",
+   "start": 376.698,
+   "section": "c7",
+   "end": 377.098
+  },
+  {
+   "text": "It's",
+   "start": 377.786,
+   "section": "c7",
+   "end": 377.922
+  },
+  {
+   "text": "also",
+   "start": 377.922,
+   "section": "c7",
+   "end": 378.322
+  },
+  {
+   "text": "information",
+   "start": 378.339,
+   "section": "c7",
+   "end": 378.739
+  },
+  {
+   "text": "NASA",
+   "start": 379.068,
+   "section": "c7",
+   "end": 379.427
+  },
+  {
+   "text": "will",
+   "start": 379.427,
+   "section": "c7",
+   "end": 379.563
+  },
+  {
+   "text": "use",
+   "start": 379.563,
+   "section": "c7",
+   "end": 379.963
+  },
+  {
+   "text": "as",
+   "start": 379.99,
+   "section": "c7",
+   "end": 380.136
+  },
+  {
+   "text": "it",
+   "start": 380.136,
+   "section": "c7",
+   "end": 380.213
+  },
+  {
+   "text": "decides",
+   "start": 380.213,
+   "section": "c7",
+   "end": 380.613
+  },
+  {
+   "text": "what",
+   "start": 380.777,
+   "section": "c7",
+   "end": 380.99
+  },
+  {
+   "text": "comes",
+   "start": 380.99,
+   "section": "c7",
+   "end": 381.291
+  },
+  {
+   "text": "next.",
+   "start": 381.291,
+   "section": "c7",
+   "end": 381.691
+  },
+  {
+   "text": "On",
+   "start": 382.516,
+   "section": "c8",
+   "end": 382.672
+  },
+  {
+   "text": "a",
+   "start": 382.672,
+   "section": "c8",
+   "end": 382.722
+  },
+  {
+   "text": "landing",
+   "start": 382.705,
+   "section": "c8",
+   "end": 383.105
+  },
+  {
+   "text": "mission,",
+   "start": 383.183,
+   "section": "c8",
+   "end": 383.583
+  },
+  {
+   "text": "a",
+   "start": 383.851,
+   "section": "c8",
+   "end": 383.928
+  },
+  {
+   "text": "commercial",
+   "start": 383.928,
+   "section": "c8",
+   "end": 384.328
+  },
+  {
+   "text": "lander",
+   "start": 384.496,
+   "section": "c8",
+   "end": 384.896
+  },
+  {
+   "text": "links",
+   "start": 384.941,
+   "section": "c8",
+   "end": 385.341
+  },
+  {
+   "text": "up",
+   "start": 385.374,
+   "section": "c8",
+   "end": 385.619
+  },
+  {
+   "text": "with",
+   "start": 385.619,
+   "section": "c8",
+   "end": 385.797
+  },
+  {
+   "text": "Orion.",
+   "start": 385.797,
+   "section": "c8",
+   "end": 386.197
+  },
+  {
+   "text": "Then",
+   "start": 386.639,
+   "section": "c8",
+   "end": 387.039
+  },
+  {
+   "text": "it",
+   "start": 387.103,
+   "section": "c8",
+   "end": 387.266
+  },
+  {
+   "text": "takes",
+   "start": 387.266,
+   "section": "c8",
+   "end": 387.637
+  },
+  {
+   "text": "two",
+   "start": 387.637,
+   "section": "c8",
+   "end": 387.962
+  },
+  {
+   "text": "crew",
+   "start": 387.962,
+   "section": "c8",
+   "end": 388.24
+  },
+  {
+   "text": "members",
+   "start": 388.24,
+   "section": "c8",
+   "end": 388.64
+  },
+  {
+   "text": "to",
+   "start": 388.693,
+   "section": "c8",
+   "end": 388.798
+  },
+  {
+   "text": "the",
+   "start": 388.798,
+   "section": "c8",
+   "end": 388.902
+  },
+  {
+   "text": "surface",
+   "start": 388.902,
+   "section": "c8",
+   "end": 389.302
+  },
+  {
+   "text": "while",
+   "start": 389.772,
+   "section": "c8",
+   "end": 389.993
+  },
+  {
+   "text": "two",
+   "start": 389.993,
+   "section": "c8",
+   "end": 390.393
+  },
+  {
+   "text": "stay",
+   "start": 390.48,
+   "section": "c8",
+   "end": 390.805
+  },
+  {
+   "text": "aboard",
+   "start": 390.805,
+   "section": "c8",
+   "end": 391.205
+  },
+  {
+   "text": "Orion.",
+   "start": 391.304,
+   "section": "c8",
+   "end": 391.704
+  },
+  {
+   "text": "SpaceX's",
+   "start": 392.311,
+   "section": "c8",
+   "end": 392.711
+  },
+  {
+   "text": "plan",
+   "start": 393.049,
+   "section": "c8",
+   "end": 393.443
+  },
+  {
+   "text": "starts",
+   "start": 393.443,
+   "section": "c8",
+   "end": 393.843
+  },
+  {
+   "text": "with",
+   "start": 393.949,
+   "section": "c8",
+   "end": 394.111
+  },
+  {
+   "text": "a",
+   "start": 394.111,
+   "section": "c8",
+   "end": 394.161
+  },
+  {
+   "text": "fleet.",
+   "start": 393.995,
+   "section": "c8",
+   "end": 394.395
+  },
+  {
+   "text": "Several",
+   "start": 395.025,
+   "section": "c8",
+   "end": 395.425
+  },
+  {
+   "text": "Starships",
+   "start": 395.475,
+   "section": "c8",
+   "end": 395.875
+  },
+  {
+   "text": "launch",
+   "start": 396.221,
+   "section": "c8",
+   "end": 396.621
+  },
+  {
+   "text": "to",
+   "start": 396.682,
+   "section": "c8",
+   "end": 396.801
+  },
+  {
+   "text": "low",
+   "start": 396.801,
+   "section": "c8",
+   "end": 397.201
+  },
+  {
+   "text": "Earth",
+   "start": 397.203,
+   "section": "c8",
+   "end": 397.487
+  },
+  {
+   "text": "orbit",
+   "start": 397.487,
+   "section": "c8",
+   "end": 397.887
+  },
+  {
+   "text": "as",
+   "start": 397.973,
+   "section": "c8",
+   "end": 398.186
+  },
+  {
+   "text": "tankers",
+   "start": 398.186,
+   "section": "c8",
+   "end": 398.586
+  },
+  {
+   "text": "and",
+   "start": 399.097,
+   "section": "c8",
+   "end": 399.147
+  },
+  {
+   "text": "transfer",
+   "start": 398.95,
+   "section": "c8",
+   "end": 399.35
+  },
+  {
+   "text": "super",
+   "start": 399.867,
+   "section": "c8",
+   "end": 400.267
+  },
+  {
+   "text": "cold",
+   "start": 400.376,
+   "section": "c8",
+   "end": 400.766
+  },
+  {
+   "text": "propellant",
+   "start": 400.766,
+   "section": "c8",
+   "end": 401.166
+  },
+  {
+   "text": "to",
+   "start": 401.465,
+   "section": "c8",
+   "end": 401.642
+  },
+  {
+   "text": "a",
+   "start": 401.642,
+   "section": "c8",
+   "end": 401.701
+  },
+  {
+   "text": "depot",
+   "start": 401.701,
+   "section": "c8",
+   "end": 402.101
+  },
+  {
+   "text": "Starship,",
+   "start": 402.175,
+   "section": "c8",
+   "end": 402.575
+  },
+  {
+   "text": "which",
+   "start": 403.169,
+   "section": "c8",
+   "end": 403.394
+  },
+  {
+   "text": "then",
+   "start": 403.394,
+   "section": "c8",
+   "end": 403.794
+  },
+  {
+   "text": "fuels",
+   "start": 403.797,
+   "section": "c8",
+   "end": 404.197
+  },
+  {
+   "text": "the",
+   "start": 404.353,
+   "section": "c8",
+   "end": 404.436
+  },
+  {
+   "text": "lander.",
+   "start": 404.436,
+   "section": "c8",
+   "end": 404.836
+  },
+  {
+   "text": "The",
+   "start": 405.487,
+   "section": "c8",
+   "end": 405.578
+  },
+  {
+   "text": "lander",
+   "start": 405.578,
+   "section": "c8",
+   "end": 405.978
+  },
+  {
+   "text": "waits",
+   "start": 406.16,
+   "section": "c8",
+   "end": 406.56
+  },
+  {
+   "text": "in",
+   "start": 406.743,
+   "section": "c8",
+   "end": 406.899
+  },
+  {
+   "text": "Earth",
+   "start": 406.899,
+   "section": "c8",
+   "end": 407.235
+  },
+  {
+   "text": "orbit.",
+   "start": 407.235,
+   "section": "c8",
+   "end": 407.635
+  },
+  {
+   "text": "Orion",
+   "start": 408.207,
+   "section": "c8",
+   "end": 408.607
+  },
+  {
+   "text": "docks",
+   "start": 408.705,
+   "section": "c8",
+   "end": 409.054
+  },
+  {
+   "text": "with",
+   "start": 409.054,
+   "section": "c8",
+   "end": 409.213
+  },
+  {
+   "text": "it,",
+   "start": 409.213,
+   "section": "c8",
+   "end": 409.613
+  },
+  {
+   "text": "and",
+   "start": 409.658,
+   "section": "c8",
+   "end": 409.764
+  },
+  {
+   "text": "the",
+   "start": 409.764,
+   "section": "c8",
+   "end": 409.827
+  },
+  {
+   "text": "Starship",
+   "start": 409.827,
+   "section": "c8",
+   "end": 410.227
+  },
+  {
+   "text": "performs",
+   "start": 410.41,
+   "section": "c8",
+   "end": 410.81
+  },
+  {
+   "text": "a",
+   "start": 410.918,
+   "section": "c8",
+   "end": 410.968
+  },
+  {
+   "text": "burn",
+   "start": 410.96,
+   "section": "c8",
+   "end": 411.36
+  },
+  {
+   "text": "that",
+   "start": 411.395,
+   "section": "c8",
+   "end": 411.702
+  },
+  {
+   "text": "sends",
+   "start": 411.702,
+   "section": "c8",
+   "end": 412.083
+  },
+  {
+   "text": "the",
+   "start": 412.083,
+   "section": "c8",
+   "end": 412.168
+  },
+  {
+   "text": "pair",
+   "start": 412.168,
+   "section": "c8",
+   "end": 412.528
+  },
+  {
+   "text": "to",
+   "start": 412.528,
+   "section": "c8",
+   "end": 412.676
+  },
+  {
+   "text": "low",
+   "start": 412.676,
+   "section": "c8",
+   "end": 413.076
+  },
+  {
+   "text": "lunar",
+   "start": 413.099,
+   "section": "c8",
+   "end": 413.499
+  },
+  {
+   "text": "orbit.",
+   "start": 413.555,
+   "section": "c8",
+   "end": 413.955
+  },
+  {
+   "text": "NASA",
+   "start": 414.482,
+   "section": "c8",
+   "end": 414.841
+  },
+  {
+   "text": "says",
+   "start": 414.841,
+   "section": "c8",
+   "end": 415.241
+  },
+  {
+   "text": "it's",
+   "start": 415.26,
+   "section": "c8",
+   "end": 415.44
+  },
+  {
+   "text": "working",
+   "start": 415.44,
+   "section": "c8",
+   "end": 415.84
+  },
+  {
+   "text": "to",
+   "start": 415.883,
+   "section": "c8",
+   "end": 416.003
+  },
+  {
+   "text": "modify",
+   "start": 416.003,
+   "section": "c8",
+   "end": 416.403
+  },
+  {
+   "text": "Orion",
+   "start": 416.721,
+   "section": "c8",
+   "end": 417.121
+  },
+  {
+   "text": "so",
+   "start": 417.332,
+   "section": "c8",
+   "end": 417.583
+  },
+  {
+   "text": "Starship",
+   "start": 417.583,
+   "section": "c8",
+   "end": 417.983
+  },
+  {
+   "text": "can",
+   "start": 418.338,
+   "section": "c8",
+   "end": 418.589
+  },
+  {
+   "text": "push",
+   "start": 418.589,
+   "section": "c8",
+   "end": 418.984
+  },
+  {
+   "text": "it.",
+   "start": 418.984,
+   "section": "c8",
+   "end": 419.384
+  },
+  {
+   "text": "Two",
+   "start": 419.61,
+   "section": "c8",
+   "end": 419.886
+  },
+  {
+   "text": "crew",
+   "start": 419.886,
+   "section": "c8",
+   "end": 420.286
+  },
+  {
+   "text": "then",
+   "start": 420.336,
+   "section": "c8",
+   "end": 420.699
+  },
+  {
+   "text": "go",
+   "start": 420.699,
+   "section": "c8",
+   "end": 420.9
+  },
+  {
+   "text": "down",
+   "start": 420.9,
+   "section": "c8",
+   "end": 421.3
+  },
+  {
+   "text": "for",
+   "start": 421.363,
+   "section": "c8",
+   "end": 421.551
+  },
+  {
+   "text": "several",
+   "start": 421.551,
+   "section": "c8",
+   "end": 421.951
+  },
+  {
+   "text": "days.",
+   "start": 422.077,
+   "section": "c8",
+   "end": 422.477
+  },
+  {
+   "text": "Blue",
+   "start": 423.111,
+   "section": "c8",
+   "end": 423.347
+  },
+  {
+   "text": "Origin's",
+   "start": 423.347,
+   "section": "c8",
+   "end": 423.747
+  },
+  {
+   "text": "plan",
+   "start": 423.865,
+   "section": "c8",
+   "end": 424.265
+  },
+  {
+   "text": "uses",
+   "start": 424.27,
+   "section": "c8",
+   "end": 424.67
+  },
+  {
+   "text": "three",
+   "start": 424.675,
+   "section": "c8",
+   "end": 425.023
+  },
+  {
+   "text": "transfer",
+   "start": 425.023,
+   "section": "c8",
+   "end": 425.423
+  },
+  {
+   "text": "stages.",
+   "start": 425.476,
+   "section": "c8",
+   "end": 425.876
+  },
+  {
+   "text": "They",
+   "start": 426.416,
+   "section": "c8",
+   "end": 426.531
+  },
+  {
+   "text": "launch",
+   "start": 426.531,
+   "section": "c8",
+   "end": 426.931
+  },
+  {
+   "text": "to",
+   "start": 426.945,
+   "section": "c8",
+   "end": 427.037
+  },
+  {
+   "text": "Earth",
+   "start": 427.037,
+   "section": "c8",
+   "end": 427.417
+  },
+  {
+   "text": "orbit,",
+   "start": 427.417,
+   "section": "c8",
+   "end": 427.817
+  },
+  {
+   "text": "followed",
+   "start": 428.108,
+   "section": "c8",
+   "end": 428.508
+  },
+  {
+   "text": "by",
+   "start": 428.557,
+   "section": "c8",
+   "end": 428.718
+  },
+  {
+   "text": "the",
+   "start": 428.718,
+   "section": "c8",
+   "end": 428.833
+  },
+  {
+   "text": "Blue",
+   "start": 428.833,
+   "section": "c8",
+   "end": 429.213
+  },
+  {
+   "text": "Moon",
+   "start": 429.213,
+   "section": "c8",
+   "end": 429.613
+  },
+  {
+   "text": "Mark",
+   "start": 429.627,
+   "section": "c8",
+   "end": 429.972
+  },
+  {
+   "text": "Two",
+   "start": 429.972,
+   "section": "c8",
+   "end": 430.306
+  },
+  {
+   "text": "lander.",
+   "start": 430.306,
+   "section": "c8",
+   "end": 430.706
+  },
+  {
+   "text": "Once",
+   "start": 431.301,
+   "section": "c8",
+   "end": 431.586
+  },
+  {
+   "text": "docked,",
+   "start": 431.586,
+   "section": "c8",
+   "end": 431.986
+  },
+  {
+   "text": "the",
+   "start": 432.282,
+   "section": "c8",
+   "end": 432.345
+  },
+  {
+   "text": "stack",
+   "start": 432.345,
+   "section": "c8",
+   "end": 432.745
+  },
+  {
+   "text": "heads",
+   "start": 433.371,
+   "section": "c8",
+   "end": 433.421
+  },
+  {
+   "text": "for",
+   "start": 433.126,
+   "section": "c8",
+   "end": 433.284
+  },
+  {
+   "text": "an",
+   "start": 433.284,
+   "section": "c8",
+   "end": 433.358
+  },
+  {
+   "text": "elliptical",
+   "start": 433.358,
+   "section": "c8",
+   "end": 433.758
+  },
+  {
+   "text": "polar",
+   "start": 433.98,
+   "section": "c8",
+   "end": 434.38
+  },
+  {
+   "text": "orbit",
+   "start": 434.455,
+   "section": "c8",
+   "end": 434.771
+  },
+  {
+   "text": "around",
+   "start": 434.771,
+   "section": "c8",
+   "end": 435.14
+  },
+  {
+   "text": "the",
+   "start": 435.14,
+   "section": "c8",
+   "end": 435.204
+  },
+  {
+   "text": "Moon,",
+   "start": 435.204,
+   "section": "c8",
+   "end": 435.604
+  },
+  {
+   "text": "and",
+   "start": 435.952,
+   "section": "c8",
+   "end": 436.068
+  },
+  {
+   "text": "each",
+   "start": 436.068,
+   "section": "c8",
+   "end": 436.343
+  },
+  {
+   "text": "stage",
+   "start": 436.343,
+   "section": "c8",
+   "end": 436.743
+  },
+  {
+   "text": "drops",
+   "start": 437.29,
+   "section": "c8",
+   "end": 437.34
+  },
+  {
+   "text": "away",
+   "start": 437.229,
+   "section": "c8",
+   "end": 437.629
+  },
+  {
+   "text": "as",
+   "start": 437.65,
+   "section": "c8",
+   "end": 437.883
+  },
+  {
+   "text": "its",
+   "start": 437.883,
+   "section": "c8",
+   "end": 438.051
+  },
+  {
+   "text": "fuel",
+   "start": 438.051,
+   "section": "c8",
+   "end": 438.389
+  },
+  {
+   "text": "runs",
+   "start": 438.389,
+   "section": "c8",
+   "end": 438.695
+  },
+  {
+   "text": "out.",
+   "start": 438.695,
+   "section": "c8",
+   "end": 439.095
+  },
+  {
+   "text": "Orion",
+   "start": 439.389,
+   "section": "c8",
+   "end": 439.789
+  },
+  {
+   "text": "launches",
+   "start": 439.957,
+   "section": "c8",
+   "end": 440.357
+  },
+  {
+   "text": "and",
+   "start": 440.678,
+   "section": "c8",
+   "end": 440.914
+  },
+  {
+   "text": "docks",
+   "start": 440.914,
+   "section": "c8",
+   "end": 441.314
+  },
+  {
+   "text": "with",
+   "start": 441.375,
+   "section": "c8",
+   "end": 441.541
+  },
+  {
+   "text": "the",
+   "start": 441.541,
+   "section": "c8",
+   "end": 441.612
+  },
+  {
+   "text": "lander",
+   "start": 441.612,
+   "section": "c8",
+   "end": 442.012
+  },
+  {
+   "text": "there.",
+   "start": 442.073,
+   "section": "c8",
+   "end": 442.473
+  },
+  {
+   "text": "Two",
+   "start": 442.823,
+   "section": "c8",
+   "end": 443.109
+  },
+  {
+   "text": "crew",
+   "start": 443.109,
+   "section": "c8",
+   "end": 443.509
+  },
+  {
+   "text": "descend",
+   "start": 443.569,
+   "section": "c8",
+   "end": 443.969
+  },
+  {
+   "text": "to",
+   "start": 444.302,
+   "section": "c8",
+   "end": 444.439
+  },
+  {
+   "text": "the",
+   "start": 444.439,
+   "section": "c8",
+   "end": 444.551
+  },
+  {
+   "text": "Moon's",
+   "start": 444.551,
+   "section": "c8",
+   "end": 444.951
+  },
+  {
+   "text": "south",
+   "start": 445.023,
+   "section": "c8",
+   "end": 445.423
+  },
+  {
+   "text": "pole.",
+   "start": 445.446,
+   "section": "c8",
+   "end": 445.846
+  },
+  {
+   "text": "NASA",
+   "start": 446.341,
+   "section": "c8",
+   "end": 446.686
+  },
+  {
+   "text": "says",
+   "start": 446.686,
+   "section": "c8",
+   "end": 447.053
+  },
+  {
+   "text": "both",
+   "start": 447.053,
+   "section": "c8",
+   "end": 447.453
+  },
+  {
+   "text": "plans",
+   "start": 447.476,
+   "section": "c8",
+   "end": 447.876
+  },
+  {
+   "text": "replace",
+   "start": 447.998,
+   "section": "c8",
+   "end": 448.398
+  },
+  {
+   "text": "an",
+   "start": 448.466,
+   "section": "c8",
+   "end": 448.632
+  },
+  {
+   "text": "earlier",
+   "start": 448.632,
+   "section": "c8",
+   "end": 449.032
+  },
+  {
+   "text": "idea",
+   "start": 449.122,
+   "section": "c8",
+   "end": 449.522
+  },
+  {
+   "text": "of",
+   "start": 449.656,
+   "section": "c8",
+   "end": 449.812
+  },
+  {
+   "text": "meeting",
+   "start": 449.812,
+   "section": "c8",
+   "end": 450.212
+  },
+  {
+   "text": "in",
+   "start": 450.257,
+   "section": "c8",
+   "end": 450.412
+  },
+  {
+   "text": "a",
+   "start": 450.412,
+   "section": "c8",
+   "end": 450.468
+  },
+  {
+   "text": "near",
+   "start": 450.468,
+   "section": "c8",
+   "end": 450.868
+  },
+  {
+   "text": "rectilinear",
+   "start": 450.868,
+   "section": "c8",
+   "end": 451.268
+  },
+  {
+   "text": "halo",
+   "start": 451.692,
+   "section": "c8",
+   "end": 452.092
+  },
+  {
+   "text": "orbit,",
+   "start": 452.203,
+   "section": "c8",
+   "end": 452.603
+  },
+  {
+   "text": "because",
+   "start": 452.937,
+   "section": "c8",
+   "end": 453.238
+  },
+  {
+   "text": "the",
+   "start": 453.238,
+   "section": "c8",
+   "end": 453.327
+  },
+  {
+   "text": "new",
+   "start": 453.327,
+   "section": "c8",
+   "end": 453.605
+  },
+  {
+   "text": "orbits",
+   "start": 453.605,
+   "section": "c8",
+   "end": 454.005
+  },
+  {
+   "text": "make",
+   "start": 454.105,
+   "section": "c8",
+   "end": 454.361
+  },
+  {
+   "text": "the",
+   "start": 454.361,
+   "section": "c8",
+   "end": 454.45
+  },
+  {
+   "text": "return",
+   "start": 454.45,
+   "section": "c8",
+   "end": 454.85
+  },
+  {
+   "text": "from",
+   "start": 454.962,
+   "section": "c8",
+   "end": 455.14
+  },
+  {
+   "text": "the",
+   "start": 455.14,
+   "section": "c8",
+   "end": 455.229
+  },
+  {
+   "text": "surface",
+   "start": 455.229,
+   "section": "c8",
+   "end": 455.629
+  },
+  {
+   "text": "to",
+   "start": 455.796,
+   "section": "c8",
+   "end": 455.963
+  },
+  {
+   "text": "Orion",
+   "start": 455.963,
+   "section": "c8",
+   "end": 456.363
+  },
+  {
+   "text": "faster.",
+   "start": 456.541,
+   "section": "c8",
+   "end": 456.941
+  },
+  {
+   "text": "NASA",
+   "start": 457.646,
+   "section": "c8",
+   "end": 458.002
+  },
+  {
+   "text": "also",
+   "start": 458.002,
+   "section": "c8",
+   "end": 458.402
+  },
+  {
+   "text": "announced",
+   "start": 458.543,
+   "section": "c8",
+   "end": 458.943
+  },
+  {
+   "text": "a",
+   "start": 459.095,
+   "section": "c8",
+   "end": 459.152
+  },
+  {
+   "text": "lighter",
+   "start": 459.152,
+   "section": "c8",
+   "end": 459.552
+  },
+  {
+   "text": "second",
+   "start": 459.727,
+   "section": "c8",
+   "end": 460.127
+  },
+  {
+   "text": "spacesuit,",
+   "start": 460.279,
+   "section": "c8",
+   "end": 460.679
+  },
+  {
+   "text": "the",
+   "start": 461.383,
+   "section": "c8",
+   "end": 461.692
+  },
+  {
+   "text": "Sortie",
+   "start": 461.692,
+   "section": "c8",
+   "end": 461.935
+  },
+  {
+   "text": "suit,",
+   "start": 461.935,
+   "section": "c8",
+   "end": 462.335
+  },
+  {
+   "text": "roughly",
+   "start": 462.717,
+   "section": "c8",
+   "end": 463.117
+  },
+  {
+   "text": "half",
+   "start": 463.131,
+   "section": "c8",
+   "end": 463.531
+  },
+  {
+   "text": "the",
+   "start": 463.58,
+   "section": "c8",
+   "end": 463.683
+  },
+  {
+   "text": "weight",
+   "start": 463.683,
+   "section": "c8",
+   "end": 464.051
+  },
+  {
+   "text": "of",
+   "start": 464.051,
+   "section": "c8",
+   "end": 464.166
+  },
+  {
+   "text": "the",
+   "start": 464.166,
+   "section": "c8",
+   "end": 464.247
+  },
+  {
+   "text": "larger",
+   "start": 464.247,
+   "section": "c8",
+   "end": 464.647
+  },
+  {
+   "text": "one,",
+   "start": 464.661,
+   "section": "c8",
+   "end": 465.061
+  },
+  {
+   "text": "to",
+   "start": 465.293,
+   "section": "c8",
+   "end": 465.397
+  },
+  {
+   "text": "help",
+   "start": 465.397,
+   "section": "c8",
+   "end": 465.797
+  },
+  {
+   "text": "with",
+   "start": 465.834,
+   "section": "c8",
+   "end": 465.983
+  },
+  {
+   "text": "the",
+   "start": 465.983,
+   "section": "c8",
+   "end": 466.064
+  },
+  {
+   "text": "very",
+   "start": 466.064,
+   "section": "c8",
+   "end": 466.464
+  },
+  {
+   "text": "first",
+   "start": 466.512,
+   "section": "c8",
+   "end": 466.912
+  },
+  {
+   "text": "moonwalks.",
+   "start": 467.122,
+   "section": "c8",
+   "end": 467.522
+  },
+  {
+   "text": "Three",
+   "start": 468.436,
+   "section": "c9",
+   "end": 468.715
+  },
+  {
+   "text": "things.",
+   "start": 468.715,
+   "section": "c9",
+   "end": 469.115
+  },
+  {
+   "text": "One.",
+   "start": 469.589,
+   "section": "c9",
+   "end": 469.989
+  },
+  {
+   "text": "NASA",
+   "start": 470.466,
+   "section": "c9",
+   "end": 470.831
+  },
+  {
+   "text": "says",
+   "start": 470.831,
+   "section": "c9",
+   "end": 471.231
+  },
+  {
+   "text": "Artemis",
+   "start": 471.278,
+   "section": "c9",
+   "end": 471.678
+  },
+  {
+   "text": "Three",
+   "start": 471.819,
+   "section": "c9",
+   "end": 472.102
+  },
+  {
+   "text": "hardware",
+   "start": 472.102,
+   "section": "c9",
+   "end": 472.502
+  },
+  {
+   "text": "is",
+   "start": 472.761,
+   "section": "c9",
+   "end": 472.949
+  },
+  {
+   "text": "on",
+   "start": 472.949,
+   "section": "c9",
+   "end": 473.149
+  },
+  {
+   "text": "track,",
+   "start": 473.149,
+   "section": "c9",
+   "end": 473.549
+  },
+  {
+   "text": "with",
+   "start": 473.95,
+   "section": "c9",
+   "end": 474.114
+  },
+  {
+   "text": "processing",
+   "start": 474.114,
+   "section": "c9",
+   "end": 474.514
+  },
+  {
+   "text": "times",
+   "start": 474.738,
+   "section": "c9",
+   "end": 475.138
+  },
+  {
+   "text": "cut",
+   "start": 475.244,
+   "section": "c9",
+   "end": 475.644
+  },
+  {
+   "text": "by",
+   "start": 475.656,
+   "section": "c9",
+   "end": 475.903
+  },
+  {
+   "text": "about",
+   "start": 475.903,
+   "section": "c9",
+   "end": 476.197
+  },
+  {
+   "text": "half.",
+   "start": 476.197,
+   "section": "c9",
+   "end": 476.597
+  },
+  {
+   "text": "Two.",
+   "start": 477.154,
+   "section": "c9",
+   "end": 477.554
+  },
+  {
+   "text": "NASA",
+   "start": 478.022,
+   "section": "c9",
+   "end": 478.33
+  },
+  {
+   "text": "says",
+   "start": 478.33,
+   "section": "c9",
+   "end": 478.677
+  },
+  {
+   "text": "it",
+   "start": 478.677,
+   "section": "c9",
+   "end": 478.836
+  },
+  {
+   "text": "redesigned,",
+   "start": 478.836,
+   "section": "c9",
+   "end": 479.236
+  },
+  {
+   "text": "built,",
+   "start": 479.66,
+   "section": "c9",
+   "end": 480.06
+  },
+  {
+   "text": "and",
+   "start": 480.147,
+   "section": "c9",
+   "end": 480.445
+  },
+  {
+   "text": "tested",
+   "start": 480.445,
+   "section": "c9",
+   "end": 480.845
+  },
+  {
+   "text": "a",
+   "start": 481.011,
+   "section": "c9",
+   "end": 481.061
+  },
+  {
+   "text": "critical",
+   "start": 481.06,
+   "section": "c9",
+   "end": 481.46
+  },
+  {
+   "text": "fuel",
+   "start": 481.567,
+   "section": "c9",
+   "end": 481.904
+  },
+  {
+   "text": "line",
+   "start": 481.904,
+   "section": "c9",
+   "end": 482.172
+  },
+  {
+   "text": "part",
+   "start": 482.172,
+   "section": "c9",
+   "end": 482.47
+  },
+  {
+   "text": "in",
+   "start": 482.47,
+   "section": "c9",
+   "end": 482.748
+  },
+  {
+   "text": "house",
+   "start": 482.748,
+   "section": "c9",
+   "end": 483.148
+  },
+  {
+   "text": "in",
+   "start": 483.225,
+   "section": "c9",
+   "end": 483.384
+  },
+  {
+   "text": "five",
+   "start": 483.384,
+   "section": "c9",
+   "end": 483.784
+  },
+  {
+   "text": "months,",
+   "start": 483.87,
+   "section": "c9",
+   "end": 484.27
+  },
+  {
+   "text": "at",
+   "start": 484.565,
+   "section": "c9",
+   "end": 484.674
+  },
+  {
+   "text": "roughly",
+   "start": 484.674,
+   "section": "c9",
+   "end": 485.072
+  },
+  {
+   "text": "a",
+   "start": 485.072,
+   "section": "c9",
+   "end": 485.122
+  },
+  {
+   "text": "tenth",
+   "start": 485.121,
+   "section": "c9",
+   "end": 485.521
+  },
+  {
+   "text": "of",
+   "start": 485.637,
+   "section": "c9",
+   "end": 485.786
+  },
+  {
+   "text": "an",
+   "start": 485.786,
+   "section": "c9",
+   "end": 485.896
+  },
+  {
+   "text": "earlier",
+   "start": 485.896,
+   "section": "c9",
+   "end": 486.296
+  },
+  {
+   "text": "outside",
+   "start": 486.342,
+   "section": "c9",
+   "end": 486.742
+  },
+  {
+   "text": "estimate.",
+   "start": 486.879,
+   "section": "c9",
+   "end": 487.279
+  },
+  {
+   "text": "That's",
+   "start": 487.717,
+   "section": "c9",
+   "end": 487.907
+  },
+  {
+   "text": "NASA's",
+   "start": 487.907,
+   "section": "c9",
+   "end": 488.278
+  },
+  {
+   "text": "own",
+   "start": 488.278,
+   "section": "c9",
+   "end": 488.558
+  },
+  {
+   "text": "claim.",
+   "start": 488.558,
+   "section": "c9",
+   "end": 488.958
+  },
+  {
+   "text": "Three.",
+   "start": 489.387,
+   "section": "c9",
+   "end": 489.787
+  },
+  {
+   "text": "Watch",
+   "start": 490.187,
+   "section": "c9",
+   "end": 490.471
+  },
+  {
+   "text": "the",
+   "start": 490.471,
+   "section": "c9",
+   "end": 490.563
+  },
+  {
+   "text": "docking",
+   "start": 490.563,
+   "section": "c9",
+   "end": 490.963
+  },
+  {
+   "text": "tests",
+   "start": 490.984,
+   "section": "c9",
+   "end": 491.378
+  },
+  {
+   "text": "themselves.",
+   "start": 491.378,
+   "section": "c9",
+   "end": 491.778
+  },
+  {
+   "text": "Everything",
+   "start": 492.434,
+   "section": "c9",
+   "end": 492.834
+  },
+  {
+   "text": "else",
+   "start": 492.865,
+   "section": "c9",
+   "end": 493.239
+  },
+  {
+   "text": "depends",
+   "start": 493.239,
+   "section": "c9",
+   "end": 493.639
+  },
+  {
+   "text": "on",
+   "start": 493.754,
+   "section": "c9",
+   "end": 493.904
+  },
+  {
+   "text": "them.",
+   "start": 493.904,
+   "section": "c9",
+   "end": 494.304
+  },
+  {
+   "text": "If",
+   "start": 494.656,
+   "section": "c9",
+   "end": 494.828
+  },
+  {
+   "text": "this",
+   "start": 494.828,
+   "section": "c9",
+   "end": 495.044
+  },
+  {
+   "text": "was",
+   "start": 495.044,
+   "section": "c9",
+   "end": 495.248
+  },
+  {
+   "text": "useful,",
+   "start": 495.248,
+   "section": "c9",
+   "end": 495.648
+  },
+  {
+   "text": "subscribe.",
+   "start": 495.894,
+   "section": "c9",
+   "end": 496.294
+  },
+  {
+   "text": "Next,",
+   "start": 496.961,
+   "section": "c9",
+   "end": 497.361
+  },
+  {
+   "text": "I'll",
+   "start": 497.684,
+   "section": "c9",
+   "end": 497.865
+  },
+  {
+   "text": "look",
+   "start": 497.865,
+   "section": "c9",
+   "end": 498.07
+  },
+  {
+   "text": "at",
+   "start": 498.07,
+   "section": "c9",
+   "end": 498.154
+  },
+  {
+   "text": "how",
+   "start": 498.154,
+   "section": "c9",
+   "end": 498.383
+  },
+  {
+   "text": "a",
+   "start": 498.383,
+   "section": "c9",
+   "end": 498.433
+  },
+  {
+   "text": "Starship",
+   "start": 498.42,
+   "section": "c9",
+   "end": 498.82
+  },
+  {
+   "text": "refuels",
+   "start": 499.155,
+   "section": "c9",
+   "end": 499.555
+  },
+  {
+   "text": "in",
+   "start": 500.071,
+   "section": "c9",
+   "end": 500.167
+  },
+  {
+   "text": "orbit,",
+   "start": 500.167,
+   "section": "c9",
+   "end": 500.567
+  },
+  {
+   "text": "and",
+   "start": 500.963,
+   "section": "c9",
+   "end": 501.144
+  },
+  {
+   "text": "why",
+   "start": 501.144,
+   "section": "c9",
+   "end": 501.433
+  },
+  {
+   "text": "that",
+   "start": 501.433,
+   "section": "c9",
+   "end": 501.783
+  },
+  {
+   "text": "matters",
+   "start": 501.783,
+   "section": "c9",
+   "end": 502.183
+  },
+  {
+   "text": "for",
+   "start": 502.397,
+   "section": "c9",
+   "end": 502.506
+  },
+  {
+   "text": "the",
+   "start": 502.506,
+   "section": "c9",
+   "end": 502.602
+  },
+  {
+   "text": "landing.",
+   "start": 502.602,
+   "section": "c9",
+   "end": 503.002
+  }
+ ]
+}

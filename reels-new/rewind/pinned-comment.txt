@@ -1,0 +1,5 @@
+Open the menu: /rewind (or press Esc twice with an empty prompt)
+Actions: Restore code and conversation / Restore conversation / Restore code / Summarize from here
+Not tracked: files changed only by Bash commands, and usually subagent edits. Use git for those.
+
+Source: Claude Code docs, Checkpointing (code.claude.com/docs/en/checkpointing)

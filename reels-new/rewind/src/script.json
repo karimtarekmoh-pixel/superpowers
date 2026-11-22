@@ -1,0 +1,59 @@
+{
+ "handle": "@axiomallai",
+ "accentWords": [
+  "wrong",
+  "rewind",
+  "git",
+  "catch",
+  "save",
+  "follow",
+  "undo",
+  "tracks",
+  "restore",
+  "summarize"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "text": "Claude Code just edited your files in the wrong direction. You don't have to undo it by hand.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s2",
+   "text": "Claude Code tracks every edit it makes with its file tools. Type slash rewind, or press escape twice, to open the menu.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s3",
+   "text": "Pick a point in the session, then restore the code, the conversation, or both. Or summarize from there to free up context.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s4",
+   "text": "But there's a catch. If a file was changed only by a shell command, rewind doesn't track it. Edits made by subagents usually aren't captured either.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s5",
+   "text": "So rewind is not a replacement for git. For those changes, git is what brings them back.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s6",
+   "text": "Save this for your next session. Follow for more Claude Code workflows.",
+   "chunks": [
+    99
+   ]
+  }
+ ]
+}

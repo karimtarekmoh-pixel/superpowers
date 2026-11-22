@@ -1,0 +1,14 @@
+ELEVENLABS SETTINGS AND PRONUNCIATION NOTES
+- Paste elevenlabs_full.txt (all chapters, one generation) or each chapter from elevenlabs_by_chapter.txt (safer: easier re-takes, and ElevenLabs limits the characters per generation by plan/model).
+- Credits: about one credit per character on the standard models (about 7,000 characters for the full script; half price on the Flash/Turbo models).
+- Voice settings that suit long narration: Stability 50-60, Similarity 75, Style 0-10, speed 0.95-1.0.
+- Pauses: blank lines give a natural pause. For a longer pause between chapters, add <break time="0.7s" /> on its own line (works on Multilingual v2 / Turbo / Flash; the v3 and v4 models use audio tags instead).
+- Names that may be mispronounced; fix by re-generating just that paragraph, or temporarily respell in the text:
+  Bresnik = BREZ-nik  ("Brez-nik")
+  Parmitano = par-mee-TAH-no  ("Par-mee-tah-no")
+  Rubio = ROO-bee-oh  ("Roo-bee-oh")
+  Orion = oh-RYE-on
+  SLS = say "S L S"
+  Blue Moon Mark Two = "Blue Moon Mark Two"
+- Numbers are written as words on purpose (twenty twenty-seven, two hundred and seventy-three miles).
+- If you record it yourself later, send me the audio and I'll re-time the video to it.

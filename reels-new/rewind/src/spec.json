@@ -1,0 +1,165 @@
+{
+ "label": "/REWIND · CLAUDE CODE",
+ "accentWords": [
+  "wrong",
+  "rewind",
+  "git",
+  "catch",
+  "save",
+  "follow",
+  "undo",
+  "tracks",
+  "restore",
+  "summarize"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "text": "Claude Code just edited your files in the wrong direction. You don't have to undo it by hand.",
+   "scene": {
+    "type": "hero",
+    "headA": "IT EDITED THE",
+    "headB": "WRONG FILES",
+    "icon": "rewind",
+    "node": {
+     "t": "UNDO IT: /rewind",
+     "at": "undo",
+     "cls": "acc",
+     "sym": "«"
+    }
+   }
+  },
+  {
+   "id": "s2",
+   "text": "Claude Code tracks every edit it makes with its file tools. Type slash rewind, or press escape twice, to open the menu.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "term",
+      "text": "/rewind",
+      "at": "slash"
+     },
+     {
+      "k": "chips",
+      "label": "or press",
+      "chips": [
+       {
+        "t": "Esc",
+        "at": "escape"
+       },
+       {
+        "t": "Esc",
+        "at": "twice"
+       },
+       {
+        "t": "on an empty prompt",
+        "cls": "am",
+        "at": "menu"
+       }
+      ]
+     }
+    ],
+    "title": "OPEN THE MENU"
+   }
+  },
+  {
+   "id": "s3",
+   "text": "Pick a point in the session, then restore the code, the conversation, or both. Or summarize from there to free up context.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "rows",
+      "label": "/rewind menu",
+      "rows": [
+       {
+        "t": "Restore code",
+        "at": "code"
+       },
+       {
+        "t": "Restore conversation",
+        "at": "conversation"
+       },
+       {
+        "t": "Restore code and conversation",
+        "at": "both",
+        "cls": "hot"
+       },
+       {
+        "t": "Summarize from here",
+        "at": "summarize",
+        "cls": "dim"
+       }
+      ]
+     }
+    ],
+    "title": "PICK WHAT TO RESTORE"
+   }
+  },
+  {
+   "id": "s4",
+   "text": "But there's a catch. If a file was changed only by a shell command, rewind doesn't track it. Edits made by subagents usually aren't captured either.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "warn",
+      "label": "rewind does not undo",
+      "items": [
+       {
+        "t": "Bash-only file changes",
+        "at": "shell"
+       },
+       {
+        "t": "subagent edits (usually)",
+        "at": "subagents"
+       }
+      ]
+     }
+    ],
+    "title": "THE CATCH"
+   }
+  },
+  {
+   "id": "s5",
+   "text": "So rewind is not a replacement for git. For those changes, git is what brings them back.",
+   "stamp": {
+    "text": [
+     "REWIND",
+     "≠ GIT"
+    ],
+    "at": "git"
+   },
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "rows",
+      "label": "who undoes what",
+      "rows": [
+       {
+        "t": "/rewind",
+        "tag": "Claude's tracked edits",
+        "at": "rewind"
+       },
+       {
+        "t": "git",
+        "tag": "everything else",
+        "cls": "hot",
+        "at": "git"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "s6",
+   "text": "Save this for your next session. Follow for more Claude Code workflows.",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

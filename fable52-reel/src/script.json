@@ -1,0 +1,61 @@
+{
+ "handle": "@axiomallai",
+ "accentWords": [
+  "fable",
+  "saved",
+  "swap",
+  "quietly",
+  "effort",
+  "medium",
+  "credits",
+  "model",
+  "save",
+  "follow",
+  "assume",
+  "running"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "text": "You saved one Claude Code model as your default, and an update can quietly swap it for a different one.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s2",
+   "text": "If you picked Fable five point one and saved it, you might assume it stays put.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s3",
+   "text": "Here's the catch. On Pro and Max, a saved Fable five point one moves to the fable alias the first time you run the new version. That alias now means Fable five point two. And sessions start at its default effort, medium, unless you set a level yourself.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s4",
+   "text": "It can also change what you pay with. Depending on your plan, Fable can bill to usage credits instead of your plan's included limits.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s5",
+   "text": "So type slash model. Check which Fable you're on, and what effort it's on. The setting you saved isn't always the one you're running.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s6",
+   "text": "Save this for your next session. Follow for more Claude Code workflows.",
+   "chunks": [
+    99
+   ]
+  }
+ ]
+}

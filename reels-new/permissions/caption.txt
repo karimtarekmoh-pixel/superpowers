@@ -1,0 +1,12 @@
+Claude Code can read your own history, and write your permission list for you.
+
+/fewer-permission-prompts is a built-in skill. It scans your past transcripts for common read-only commands and tool calls, then builds a prioritized allowlist and adds it to your project's .claude/settings.json.
+
+That file lives in your project, so read the list before you keep it. The result is fewer prompts for read-only calls.
+
+Details are in the pinned comment.
+
+Save this for your next session.
+Follow @axiomallai for more Claude Code workflows.
+
+#claudecode #claudeai #aitools #aicoding #developertools #aiworkflow #codingtips

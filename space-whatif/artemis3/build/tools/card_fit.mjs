@@ -1,0 +1,6 @@
+// Flags any card whose content is taller than the card (children's bottom edge past the card's bottom edge). usage: node tools/card_fit.mjs
+import { launch } from "/home/user/superpowers/reel-engine/engine/browser.mjs"; import path from "node:path";
+const b = await launch(), ctx = await b.newContext({ viewport: { width: 1920, height: 1080 } }), p = await ctx.newPage();
+await p.goto("file://" + path.resolve("hf/index.html")); await p.waitForTimeout(800);
+const bad = await p.evaluate(() => [...document.querySelectorAll(".card")].map((c) => { const r = c.getBoundingClientRect(); let mb = 0, mr = 0; c.querySelectorAll("*").forEach((k) => { const q = k.getBoundingClientRect(); if (q.height > 0 && getComputedStyle(k).position !== "absolute") { mb = Math.max(mb, q.bottom - r.bottom); mr = Math.max(mr, q.right - r.right); } }); return { id: c.id, h: Math.round(r.height), overBottom: Math.round(mb), overRight: Math.round(mr), padBottom: Math.round(r.bottom - Math.max(...[...c.children].map((k) => k.getBoundingClientRect().bottom))) }; }).filter((x) => x.overBottom > 0 || x.overRight > 0 || x.padBottom < 20));
+console.log(bad.length ? JSON.stringify(bad) : "all cards fit"); await b.close();

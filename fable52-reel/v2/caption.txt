@@ -1,0 +1,14 @@
+Ask Claude Code's most capable model the wrong question, and your request can be handed to a different model.
+
+Fable models run with safety classifiers that mostly flag cybersecurity and biology content. When one flags a request, Claude Code re-runs it on a fallback model: biology goes to Opus 5, cybersecurity goes to Opus 4.8. After that, the session continues on the fallback.
+
+It can trigger on your very first message, because that request also carries your CLAUDE.md and git status. A repo with security material can trip it.
+
+Look for the notice in your transcript. Run /model to switch back.
+
+Details are in the pinned comment.
+
+Save this for your next session.
+Follow @axiomallai for more Claude Code workflows.
+
+#claudecode #claudeai #aitools #aicoding #developertools #aiworkflow #codingtips

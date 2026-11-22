@@ -1,0 +1,12 @@
+Claude Code just edited your files in the wrong direction. You do not have to undo it by hand.
+
+Claude Code tracks the edits it makes with its file tools. Type /rewind, or press Esc twice on an empty prompt, to open the menu. Pick a point, then restore the code, the conversation, or both, or summarize from there to free up context.
+
+The catch: if a file was changed only by a shell command, /rewind does not track it, and subagent edits usually are not captured. For those, use git.
+
+Details are in the pinned comment.
+
+Save this for your next session.
+Follow @axiomallai for more Claude Code workflows.
+
+#claudecode #claudeai #aitools #aicoding #developertools #aiworkflow #codingtips

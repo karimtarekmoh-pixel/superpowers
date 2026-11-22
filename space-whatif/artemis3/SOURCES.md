@@ -1,0 +1,20 @@
+# Sources (read by the assistant on 2026-11-11 via curl; all NASA text, quoted or paraphrased)
+1. NASA, "NASA Shares Plans to Accelerate Artemis, Return to Moon", Nov 4, 2026 (update from Oct 23): https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/
+   - Artemis III test flight in 2027, Artemis IV landing in 2028; 14-day Earth-orbit mission, four astronauts, Orion on SLS; sequence Blue Origin Blue Moon test article -> Orion docks -> SpaceX Starship V3 test article.
+   - "Hardware for Artemis III is on track, with processing timelines sharply reduced by about half"; fuel-line component redesigned, built, tested in-house in five months at roughly a tenth of an earlier outside-vendor estimate.
+   - Artemis IV: both SpaceX and Blue Origin "targeting" a crewed landing in 2028; Starship refuels in Earth orbit, rendezvous with Orion; Blue Moon Mark 2 via transfer stages, meets Orion in a closer lunar orbit; Sortie suit roughly half the weight.
+2. NASA, "NASA's Artemis III Mission to Test Future Moon Lander Operations", Oct 23, 2026: https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/
+   - Crew: Randy Bresnik, Frank Rubio, Andre Douglas, ESA's Luca Parmitano. Launching in 2027; planned 14 days; landings near the Moon's South Pole in 2028.
+   - Jeremy Parsons quote about three spacecraft on three rockets "something NASA has never attempted".
+   - Blue Moon Mark 2 test article: circular LEO about 273 miles (237 nmi), can remain up to 30 days; Orion launches "only days after"; Orion initial 18 x 1,122 miles, then circular about 345 miles (300 nmi).
+   - First two days checkout; docking; about two days evaluating the Blue Moon test article with hatch open; Starship V3 test article from Florida at 206 nmi with added forward docking system; docking test up to two hours; crew will not enter Starship; up to five additional days of tests; two docking geometries.
+3. NASA, "NASA, Partners Accelerate Lander Development for 2028 Moon Missions", Oct 23, 2026: https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/
+   - Contracts realigned; both providers in Artemis III (LEO); neither assigned to a specific landing mission; NASA will determine which company is first based on lander readiness; second crewed landing opportunity follows; uncrewed demonstration mission required of both; NASA certifies landers.
+   - Starship: tanker Starships transfer cryogenic propellant to a depot Starship; Starship HLS waits for Orion in Earth orbit; dock; trans-lunar injection burn to low lunar orbit; NASA working to modify Orion; two crew to the surface for several days.
+   - Blue Origin: three transfer stages + Mark 2 Alpha lander; elliptical polar orbit around the Moon; replaces near-rectilinear halo orbit; two crew descend to the South Pole.
+3b. NASA, "Our Artemis III Crew": https://www.nasa.gov/our-artemis-iii-crew/ (Commander Randy Bresnik, Pilot Luca Parmitano, Mission Specialists Andre Douglas and Frank Rubio; "Artemis III will not land on the Moon").
+4. (hub) NASA Artemis III mission hub: https://www.nasa.gov/mission/artemis-iii/ (headlines only used: Artemis III SLS core stage joins boosters at Kennedy, Oct 28, 2026).
+5. NASA media usage guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/
+   - NASA content generally not subject to copyright in the US; acknowledge NASA as the source; do not imply endorsement; Insignia, Logotype ("meatball", "worm") are not public domain and need clearance; company artwork on NASA pages is credited to Blue Origin / SpaceX and is NOT NASA content (do not reuse it).
+   - NASA does not permit its information to be attributed to NASA when it passes through an AI tool, and does not permit its Insignia to appear with synthetic (AI-generated) imagery. Disclose AI assistance; keep NASA logos off screen.
+What I could NOT verify: any statement about what a failure would do to the 2028 target (NASA's pages do not say; the script says so). Dates are NASA targets.

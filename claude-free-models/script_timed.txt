@@ -1,0 +1,19 @@
+[0.00-1.66] Claude Code for free.
+[2.46-2.96] Sort of.
+[3.76-4.66] And here's the catch.
+[5.46-6.98] Claude Code is just the tool.
+[7.78-9.34] Claude is the model inside it.
+[9.96-11.38] And you can swap that model.
+[12.18-13.16] Install Ollama.
+[13.96-14.32] Run.
+[15.12-16.20] Ollama launch Claude.
+[17.00-17.64] Pick a model.
+[18.40-19.30] Claude Code opens.
+[20.10-20.78] Running on it.
+[21.52-24.78] A model on your own computer costs nothing per message.
+[25.58-29.12] Ollama's cloud models run on their servers with usage limits.
+[29.92-31.60] But Anthropic doesn't support this.
+[32.40-36.16] And these models are usually weaker than Claude on big tasks.
+[36.96-39.70] So use it to learn Claude Code.
+[40.50-42.60] For real work use Claude.
+[43.10-45.16] Follow for more Claude Code workflows.

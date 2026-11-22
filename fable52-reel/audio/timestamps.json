@@ -1,0 +1,917 @@
+{
+ "source": "vo_full_raw.mp3",
+ "method": "PocketSphinx forced alignment per section clip",
+ "tempo": 1.07,
+ "gap": 0.3,
+ "duration": 44.073,
+ "sections": [
+  {
+   "id": "s1",
+   "start": 0.06,
+   "end": 4.949,
+   "first": 0.06,
+   "last": 4.94
+  },
+  {
+   "id": "s2",
+   "start": 5.249,
+   "end": 8.869,
+   "first": 5.249,
+   "last": 8.859
+  },
+  {
+   "id": "s3",
+   "start": 9.169,
+   "end": 24.738,
+   "first": 9.169,
+   "last": 24.729
+  },
+  {
+   "id": "s4",
+   "start": 25.038,
+   "end": 32.105,
+   "first": 25.038,
+   "last": 32.098
+  },
+  {
+   "id": "s5",
+   "start": 32.405,
+   "end": 39.506,
+   "first": 32.405,
+   "last": 39.495
+  },
+  {
+   "id": "s6",
+   "start": 39.806,
+   "end": 43.773,
+   "first": 39.806,
+   "last": 43.766
+  }
+ ],
+ "words": [
+  {
+   "text": "You",
+   "start": 0.06,
+   "end": 0.2,
+   "section": "s1"
+  },
+  {
+   "text": "saved",
+   "start": 0.2,
+   "end": 0.52,
+   "section": "s1"
+  },
+  {
+   "text": "one",
+   "start": 0.52,
+   "end": 0.87,
+   "section": "s1"
+  },
+  {
+   "text": "Claude",
+   "start": 0.87,
+   "end": 1.19,
+   "section": "s1"
+  },
+  {
+   "text": "Code",
+   "start": 1.19,
+   "end": 1.45,
+   "section": "s1"
+  },
+  {
+   "text": "model",
+   "start": 1.45,
+   "end": 1.73,
+   "section": "s1"
+  },
+  {
+   "text": "as",
+   "start": 1.73,
+   "end": 1.84,
+   "section": "s1"
+  },
+  {
+   "text": "your",
+   "start": 1.84,
+   "end": 1.93,
+   "section": "s1"
+  },
+  {
+   "text": "default,",
+   "start": 1.93,
+   "end": 2.39,
+   "section": "s1"
+  },
+  {
+   "text": "and",
+   "start": 2.62,
+   "end": 2.82,
+   "section": "s1"
+  },
+  {
+   "text": "an",
+   "start": 2.82,
+   "end": 2.91,
+   "section": "s1"
+  },
+  {
+   "text": "update",
+   "start": 2.91,
+   "end": 3.28,
+   "section": "s1"
+  },
+  {
+   "text": "can",
+   "start": 3.28,
+   "end": 3.41,
+   "section": "s1"
+  },
+  {
+   "text": "quietly",
+   "start": 3.41,
+   "end": 3.82,
+   "section": "s1"
+  },
+  {
+   "text": "swap",
+   "start": 3.82,
+   "end": 4.11,
+   "section": "s1"
+  },
+  {
+   "text": "it",
+   "start": 4.11,
+   "end": 4.19,
+   "section": "s1"
+  },
+  {
+   "text": "for",
+   "start": 4.19,
+   "end": 4.35,
+   "section": "s1"
+  },
+  {
+   "text": "a",
+   "start": 4.35,
+   "end": 4.38,
+   "section": "s1"
+  },
+  {
+   "text": "different",
+   "start": 4.38,
+   "end": 4.7,
+   "section": "s1"
+  },
+  {
+   "text": "one.",
+   "start": 4.7,
+   "end": 4.94,
+   "section": "s1"
+  },
+  {
+   "text": "If",
+   "start": 5.249,
+   "end": 5.369,
+   "section": "s2"
+  },
+  {
+   "text": "you",
+   "start": 5.369,
+   "end": 5.489,
+   "section": "s2"
+  },
+  {
+   "text": "picked",
+   "start": 5.489,
+   "end": 5.729,
+   "section": "s2"
+  },
+  {
+   "text": "Fable",
+   "start": 5.729,
+   "end": 6.049,
+   "section": "s2"
+  },
+  {
+   "text": "five",
+   "start": 6.049,
+   "end": 6.349,
+   "section": "s2"
+  },
+  {
+   "text": "point",
+   "start": 6.349,
+   "end": 6.629,
+   "section": "s2"
+  },
+  {
+   "text": "one",
+   "start": 6.629,
+   "end": 6.839,
+   "section": "s2"
+  },
+  {
+   "text": "and",
+   "start": 6.839,
+   "end": 6.939,
+   "section": "s2"
+  },
+  {
+   "text": "saved",
+   "start": 6.939,
+   "end": 7.239,
+   "section": "s2"
+  },
+  {
+   "text": "it,",
+   "start": 7.239,
+   "end": 7.409,
+   "section": "s2"
+  },
+  {
+   "text": "you",
+   "start": 7.669,
+   "end": 7.769,
+   "section": "s2"
+  },
+  {
+   "text": "might",
+   "start": 7.769,
+   "end": 7.949,
+   "section": "s2"
+  },
+  {
+   "text": "assume",
+   "start": 7.949,
+   "end": 8.219,
+   "section": "s2"
+  },
+  {
+   "text": "it",
+   "start": 8.219,
+   "end": 8.299,
+   "section": "s2"
+  },
+  {
+   "text": "stays",
+   "start": 8.299,
+   "end": 8.569,
+   "section": "s2"
+  },
+  {
+   "text": "put.",
+   "start": 8.569,
+   "end": 8.859,
+   "section": "s2"
+  },
+  {
+   "text": "Here's",
+   "start": 9.169,
+   "end": 9.409,
+   "section": "s3"
+  },
+  {
+   "text": "the",
+   "start": 9.409,
+   "end": 9.469,
+   "section": "s3"
+  },
+  {
+   "text": "catch.",
+   "start": 9.469,
+   "end": 9.829,
+   "section": "s3"
+  },
+  {
+   "text": "On",
+   "start": 10.559,
+   "end": 10.699,
+   "section": "s3"
+  },
+  {
+   "text": "Pro",
+   "start": 10.699,
+   "end": 10.959,
+   "section": "s3"
+  },
+  {
+   "text": "and",
+   "start": 10.959,
+   "end": 11.059,
+   "section": "s3"
+  },
+  {
+   "text": "Max,",
+   "start": 11.059,
+   "end": 11.479,
+   "section": "s3"
+  },
+  {
+   "text": "a",
+   "start": 11.599,
+   "end": 11.749,
+   "section": "s3"
+  },
+  {
+   "text": "saved",
+   "start": 11.749,
+   "end": 12.159,
+   "section": "s3"
+  },
+  {
+   "text": "Fable",
+   "start": 12.159,
+   "end": 12.409,
+   "section": "s3"
+  },
+  {
+   "text": "five",
+   "start": 12.409,
+   "end": 12.689,
+   "section": "s3"
+  },
+  {
+   "text": "point",
+   "start": 12.689,
+   "end": 12.929,
+   "section": "s3"
+  },
+  {
+   "text": "one",
+   "start": 12.929,
+   "end": 13.179,
+   "section": "s3"
+  },
+  {
+   "text": "moves",
+   "start": 13.599,
+   "end": 13.939,
+   "section": "s3"
+  },
+  {
+   "text": "to",
+   "start": 13.939,
+   "end": 14.019,
+   "section": "s3"
+  },
+  {
+   "text": "the",
+   "start": 14.019,
+   "end": 14.099,
+   "section": "s3"
+  },
+  {
+   "text": "fable",
+   "start": 14.099,
+   "end": 14.489,
+   "section": "s3"
+  },
+  {
+   "text": "alias",
+   "start": 14.489,
+   "end": 14.859,
+   "section": "s3"
+  },
+  {
+   "text": "the",
+   "start": 14.859,
+   "end": 14.929,
+   "section": "s3"
+  },
+  {
+   "text": "first",
+   "start": 14.929,
+   "end": 15.279,
+   "section": "s3"
+  },
+  {
+   "text": "time",
+   "start": 15.279,
+   "end": 15.499,
+   "section": "s3"
+  },
+  {
+   "text": "you",
+   "start": 15.499,
+   "end": 15.639,
+   "section": "s3"
+  },
+  {
+   "text": "run",
+   "start": 15.639,
+   "end": 15.809,
+   "section": "s3"
+  },
+  {
+   "text": "the",
+   "start": 15.809,
+   "end": 15.879,
+   "section": "s3"
+  },
+  {
+   "text": "new",
+   "start": 15.879,
+   "end": 16.059,
+   "section": "s3"
+  },
+  {
+   "text": "version.",
+   "start": 16.059,
+   "end": 16.399,
+   "section": "s3"
+  },
+  {
+   "text": "That",
+   "start": 17.179,
+   "end": 17.389,
+   "section": "s3"
+  },
+  {
+   "text": "alias",
+   "start": 17.389,
+   "end": 17.739,
+   "section": "s3"
+  },
+  {
+   "text": "now",
+   "start": 17.739,
+   "end": 17.899,
+   "section": "s3"
+  },
+  {
+   "text": "means",
+   "start": 17.899,
+   "end": 18.219,
+   "section": "s3"
+  },
+  {
+   "text": "Fable",
+   "start": 18.219,
+   "end": 18.539,
+   "section": "s3"
+  },
+  {
+   "text": "five",
+   "start": 18.539,
+   "end": 18.829,
+   "section": "s3"
+  },
+  {
+   "text": "point",
+   "start": 18.829,
+   "end": 19.109,
+   "section": "s3"
+  },
+  {
+   "text": "two.",
+   "start": 19.109,
+   "end": 19.419,
+   "section": "s3"
+  },
+  {
+   "text": "And",
+   "start": 20.029,
+   "end": 20.159,
+   "section": "s3"
+  },
+  {
+   "text": "sessions",
+   "start": 20.159,
+   "end": 20.529,
+   "section": "s3"
+  },
+  {
+   "text": "start",
+   "start": 20.529,
+   "end": 20.839,
+   "section": "s3"
+  },
+  {
+   "text": "at",
+   "start": 20.839,
+   "end": 20.959,
+   "section": "s3"
+  },
+  {
+   "text": "its",
+   "start": 20.959,
+   "end": 21.109,
+   "section": "s3"
+  },
+  {
+   "text": "default",
+   "start": 21.109,
+   "end": 21.629,
+   "section": "s3"
+  },
+  {
+   "text": "effort,",
+   "start": 21.629,
+   "end": 22.009,
+   "section": "s3"
+  },
+  {
+   "text": "medium,",
+   "start": 22.329,
+   "end": 22.699,
+   "section": "s3"
+  },
+  {
+   "text": "unless",
+   "start": 23.289,
+   "end": 23.579,
+   "section": "s3"
+  },
+  {
+   "text": "you",
+   "start": 23.579,
+   "end": 23.669,
+   "section": "s3"
+  },
+  {
+   "text": "set",
+   "start": 23.669,
+   "end": 23.839,
+   "section": "s3"
+  },
+  {
+   "text": "a",
+   "start": 23.839,
+   "end": 23.869,
+   "section": "s3"
+  },
+  {
+   "text": "level",
+   "start": 23.869,
+   "end": 24.179,
+   "section": "s3"
+  },
+  {
+   "text": "yourself.",
+   "start": 24.179,
+   "end": 24.729,
+   "section": "s3"
+  },
+  {
+   "text": "It",
+   "start": 25.038,
+   "end": 25.138,
+   "section": "s4"
+  },
+  {
+   "text": "can",
+   "start": 25.138,
+   "end": 25.268,
+   "section": "s4"
+  },
+  {
+   "text": "also",
+   "start": 25.268,
+   "end": 25.528,
+   "section": "s4"
+  },
+  {
+   "text": "change",
+   "start": 25.528,
+   "end": 25.828,
+   "section": "s4"
+  },
+  {
+   "text": "what",
+   "start": 25.828,
+   "end": 25.998,
+   "section": "s4"
+  },
+  {
+   "text": "you",
+   "start": 25.998,
+   "end": 26.098,
+   "section": "s4"
+  },
+  {
+   "text": "pay",
+   "start": 26.098,
+   "end": 26.288,
+   "section": "s4"
+  },
+  {
+   "text": "with.",
+   "start": 26.288,
+   "end": 26.628,
+   "section": "s4"
+  },
+  {
+   "text": "Depending",
+   "start": 27.388,
+   "end": 27.738,
+   "section": "s4"
+  },
+  {
+   "text": "on",
+   "start": 27.738,
+   "end": 27.848,
+   "section": "s4"
+  },
+  {
+   "text": "your",
+   "start": 27.848,
+   "end": 27.948,
+   "section": "s4"
+  },
+  {
+   "text": "plan,",
+   "start": 27.948,
+   "end": 28.448,
+   "section": "s4"
+  },
+  {
+   "text": "Fable",
+   "start": 28.858,
+   "end": 29.128,
+   "section": "s4"
+  },
+  {
+   "text": "can",
+   "start": 29.128,
+   "end": 29.318,
+   "section": "s4"
+  },
+  {
+   "text": "bill",
+   "start": 29.318,
+   "end": 29.558,
+   "section": "s4"
+  },
+  {
+   "text": "to",
+   "start": 29.558,
+   "end": 29.668,
+   "section": "s4"
+  },
+  {
+   "text": "usage",
+   "start": 29.668,
+   "end": 30.078,
+   "section": "s4"
+  },
+  {
+   "text": "credits",
+   "start": 30.078,
+   "end": 30.418,
+   "section": "s4"
+  },
+  {
+   "text": "instead",
+   "start": 30.418,
+   "end": 30.718,
+   "section": "s4"
+  },
+  {
+   "text": "of",
+   "start": 30.718,
+   "end": 30.788,
+   "section": "s4"
+  },
+  {
+   "text": "your",
+   "start": 30.788,
+   "end": 30.888,
+   "section": "s4"
+  },
+  {
+   "text": "plan's",
+   "start": 30.888,
+   "end": 31.268,
+   "section": "s4"
+  },
+  {
+   "text": "included",
+   "start": 31.268,
+   "end": 31.638,
+   "section": "s4"
+  },
+  {
+   "text": "limits.",
+   "start": 31.638,
+   "end": 32.098,
+   "section": "s4"
+  },
+  {
+   "text": "So",
+   "start": 32.405,
+   "end": 32.625,
+   "section": "s5"
+  },
+  {
+   "text": "type",
+   "start": 32.625,
+   "end": 32.855,
+   "section": "s5"
+  },
+  {
+   "text": "slash",
+   "start": 32.855,
+   "end": 33.175,
+   "section": "s5"
+  },
+  {
+   "text": "model.",
+   "start": 33.175,
+   "end": 33.555,
+   "section": "s5"
+  },
+  {
+   "text": "Check",
+   "start": 33.765,
+   "end": 33.955,
+   "section": "s5"
+  },
+  {
+   "text": "which",
+   "start": 33.955,
+   "end": 34.165,
+   "section": "s5"
+  },
+  {
+   "text": "Fable",
+   "start": 34.165,
+   "end": 34.475,
+   "section": "s5"
+  },
+  {
+   "text": "you're",
+   "start": 34.475,
+   "end": 34.665,
+   "section": "s5"
+  },
+  {
+   "text": "on,",
+   "start": 34.665,
+   "end": 34.955,
+   "section": "s5"
+  },
+  {
+   "text": "and",
+   "start": 35.275,
+   "end": 35.365,
+   "section": "s5"
+  },
+  {
+   "text": "what",
+   "start": 35.365,
+   "end": 35.565,
+   "section": "s5"
+  },
+  {
+   "text": "effort",
+   "start": 35.565,
+   "end": 35.875,
+   "section": "s5"
+  },
+  {
+   "text": "it's",
+   "start": 35.875,
+   "end": 36.035,
+   "section": "s5"
+  },
+  {
+   "text": "on.",
+   "start": 36.035,
+   "end": 36.295,
+   "section": "s5"
+  },
+  {
+   "text": "The",
+   "start": 37.105,
+   "end": 37.165,
+   "section": "s5"
+  },
+  {
+   "text": "setting",
+   "start": 37.165,
+   "end": 37.515,
+   "section": "s5"
+  },
+  {
+   "text": "you",
+   "start": 37.515,
+   "end": 37.645,
+   "section": "s5"
+  },
+  {
+   "text": "saved",
+   "start": 37.645,
+   "end": 38.035,
+   "section": "s5"
+  },
+  {
+   "text": "isn't",
+   "start": 38.125,
+   "end": 38.315,
+   "section": "s5"
+  },
+  {
+   "text": "always",
+   "start": 38.315,
+   "end": 38.705,
+   "section": "s5"
+  },
+  {
+   "text": "the",
+   "start": 38.705,
+   "end": 38.765,
+   "section": "s5"
+  },
+  {
+   "text": "one",
+   "start": 38.765,
+   "end": 38.975,
+   "section": "s5"
+  },
+  {
+   "text": "you're",
+   "start": 38.975,
+   "end": 39.085,
+   "section": "s5"
+  },
+  {
+   "text": "running.",
+   "start": 39.085,
+   "end": 39.495,
+   "section": "s5"
+  },
+  {
+   "text": "Save",
+   "start": 39.806,
+   "end": 40.066,
+   "section": "s6"
+  },
+  {
+   "text": "this",
+   "start": 40.066,
+   "end": 40.246,
+   "section": "s6"
+  },
+  {
+   "text": "for",
+   "start": 40.246,
+   "end": 40.356,
+   "section": "s6"
+  },
+  {
+   "text": "your",
+   "start": 40.356,
+   "end": 40.446,
+   "section": "s6"
+  },
+  {
+   "text": "next",
+   "start": 40.446,
+   "end": 40.646,
+   "section": "s6"
+  },
+  {
+   "text": "session.",
+   "start": 40.646,
+   "end": 41.046,
+   "section": "s6"
+  },
+  {
+   "text": "Follow",
+   "start": 41.726,
+   "end": 41.986,
+   "section": "s6"
+  },
+  {
+   "text": "for",
+   "start": 41.986,
+   "end": 42.126,
+   "section": "s6"
+  },
+  {
+   "text": "more",
+   "start": 42.126,
+   "end": 42.416,
+   "section": "s6"
+  },
+  {
+   "text": "Claude",
+   "start": 42.416,
+   "end": 42.786,
+   "section": "s6"
+  },
+  {
+   "text": "Code",
+   "start": 42.786,
+   "end": 43.046,
+   "section": "s6"
+  },
+  {
+   "text": "workflows.",
+   "start": 43.046,
+   "end": 43.766,
+   "section": "s6"
+  }
+ ]
+}

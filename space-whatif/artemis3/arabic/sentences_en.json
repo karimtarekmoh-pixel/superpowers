@@ -1,0 +1,902 @@
+[
+ {
+  "k": 0,
+  "sec": "c1",
+  "start": 0.06,
+  "end": 5.38,
+  "i0": 0,
+  "i1": 15,
+  "text": "In twenty twenty seven, four astronauts will open a hatch and float into a Moon lander."
+ },
+ {
+  "k": 1,
+  "sec": "c1",
+  "start": 6.22,
+  "end": 7.72,
+  "i0": 16,
+  "i1": 21,
+  "text": "It won't be on the Moon."
+ },
+ {
+  "k": 2,
+  "sec": "c1",
+  "start": 8.04,
+  "end": 13.44,
+  "i0": 22,
+  "i1": 39,
+  "text": "It will be about two hundred and seventy three miles above Earth, and it's only a test version."
+ },
+ {
+  "k": 3,
+  "sec": "c1",
+  "start": 13.96,
+  "end": 15.56,
+  "i0": 40,
+  "i1": 43,
+  "text": "This is Artemis Three."
+ },
+ {
+  "k": 4,
+  "sec": "c1",
+  "start": 16.02,
+  "end": 17.32,
+  "i0": 44,
+  "i1": 48,
+  "text": "It is not the landing."
+ },
+ {
+  "k": 5,
+  "sec": "c1",
+  "start": 17.81,
+  "end": 23.05,
+  "i0": 49,
+  "i1": 66,
+  "text": "And once you see what NASA is testing, you'll see why it put this mission before the landing."
+ },
+ {
+  "k": 6,
+  "sec": "c2",
+  "start": 23.564,
+  "end": 26.344,
+  "i0": 67,
+  "i1": 74,
+  "text": "Here's the plan, straight from NASA's own announcement."
+ },
+ {
+  "k": 7,
+  "sec": "c2",
+  "start": 26.934,
+  "end": 29.374,
+  "i0": 75,
+  "i1": 81,
+  "text": "Artemis Three launches in twenty twenty seven."
+ },
+ {
+  "k": 8,
+  "sec": "c2",
+  "start": 29.804,
+  "end": 41.644,
+  "i0": 82,
+  "i1": 107,
+  "text": "Four astronauts fly aboard the Orion spacecraft: commander Randy Bresnik, pilot Luca Parmitano of the European Space Agency, and mission specialists Andre Douglas and Frank Rubio."
+ },
+ {
+  "k": 9,
+  "sec": "c2",
+  "start": 42.864,
+  "end": 44.364,
+  "i0": 108,
+  "i1": 113,
+  "text": "They don't go to the Moon."
+ },
+ {
+  "k": 10,
+  "sec": "c2",
+  "start": 44.864,
+  "end": 48.844,
+  "i0": 114,
+  "i1": 125,
+  "text": "They go into low Earth orbit, for a planned fourteen day mission."
+ },
+ {
+  "k": 11,
+  "sec": "c2",
+  "start": 49.434,
+  "end": 54.114,
+  "i0": 126,
+  "i1": 139,
+  "text": "NASA's crew page says it plainly: Artemis Three will not land on the Moon."
+ },
+ {
+  "k": 12,
+  "sec": "c2",
+  "start": 54.674,
+  "end": 61.554,
+  "i0": 140,
+  "i1": 159,
+  "text": "The landing is the next mission, Artemis Four, and NASA is targeting twenty twenty eight, near the Moon's south pole."
+ },
+ {
+  "k": 13,
+  "sec": "c2",
+  "start": 62.154,
+  "end": 64.844,
+  "i0": 160,
+  "i1": 168,
+  "text": "So why spend a whole mission close to home?"
+ },
+ {
+  "k": 14,
+  "sec": "c2",
+  "start": 65.344,
+  "end": 73.924,
+  "i0": 169,
+  "i1": 190,
+  "text": "NASA says the mission is designed to reduce risk, validate hardware, and gain operational experience before it attempts a crewed lunar landing."
+ },
+ {
+  "k": 15,
+  "sec": "c3",
+  "start": 74.439,
+  "end": 78.209,
+  "i0": 191,
+  "i1": 200,
+  "text": "Earlier Artemis missions used only NASA's own rocket and capsule."
+ },
+ {
+  "k": 16,
+  "sec": "c3",
+  "start": 78.659,
+  "end": 80.429,
+  "i0": 201,
+  "i1": 204,
+  "text": "Artemis Three is different."
+ },
+ {
+  "k": 17,
+  "sec": "c3",
+  "start": 80.839,
+  "end": 92.939,
+  "i0": 205,
+  "i1": 234,
+  "text": "NASA's Artemis program manager, Jeremy Parsons, put it this way: quote, we're launching three spacecraft on three different rockets and testing how they operate together, something NASA has never attempted."
+ },
+ {
+  "k": 18,
+  "sec": "c3",
+  "start": 93.339,
+  "end": 93.829,
+  "i0": 235,
+  "i1": 236,
+  "text": "End quote."
+ },
+ {
+  "k": 19,
+  "sec": "c3",
+  "start": 94.349,
+  "end": 103.169,
+  "i0": 237,
+  "i1": 258,
+  "text": "Those three spacecraft are Orion, a test version of Blue Origin's Blue Moon lander, and a test version of SpaceX's Starship lander."
+ },
+ {
+  "k": 20,
+  "sec": "c3",
+  "start": 103.549,
+  "end": 106.199,
+  "i0": 259,
+  "i1": 263,
+  "text": "Test versions, not finished landers."
+ },
+ {
+  "k": 21,
+  "sec": "c3",
+  "start": 106.559,
+  "end": 110.219,
+  "i0": 264,
+  "i1": 276,
+  "text": "The point is to see how they behave together, with people on board."
+ },
+ {
+  "k": 22,
+  "sec": "c4",
+  "start": 110.731,
+  "end": 111.411,
+  "i0": 277,
+  "i1": 278,
+  "text": "Step one."
+ },
+ {
+  "k": 23,
+  "sec": "c4",
+  "start": 111.791,
+  "end": 118.891,
+  "i0": 279,
+  "i1": 300,
+  "text": "Blue Origin launches its Blue Moon Mark Two test article into a circular orbit about two hundred and seventy three miles up."
+ },
+ {
+  "k": 24,
+  "sec": "c4",
+  "start": 119.301,
+  "end": 122.001,
+  "i0": 301,
+  "i1": 311,
+  "text": "NASA says it can stay there for up to thirty days."
+ },
+ {
+  "k": 25,
+  "sec": "c4",
+  "start": 122.611,
+  "end": 123.271,
+  "i0": 312,
+  "i1": 313,
+  "text": "Step two."
+ },
+ {
+  "k": 26,
+  "sec": "c4",
+  "start": 123.741,
+  "end": 132.151,
+  "i0": 314,
+  "i1": 337,
+  "text": "Only days later, once that vehicle is confirmed healthy, NASA launches Orion on top of its SLS rocket from Kennedy Space Center in Florida."
+ },
+ {
+  "k": 27,
+  "sec": "c4",
+  "start": 132.551,
+  "end": 140.091,
+  "i0": 338,
+  "i1": 361,
+  "text": "Orion starts in a stretched orbit, then uses its service module to move into a circle about three hundred and forty five miles up."
+ },
+ {
+  "k": 28,
+  "sec": "c4",
+  "start": 140.481,
+  "end": 143.101,
+  "i0": 362,
+  "i1": 369,
+  "text": "From there it slowly sets up the rendezvous."
+ },
+ {
+  "k": 29,
+  "sec": "c4",
+  "start": 143.611,
+  "end": 145.311,
+  "i0": 370,
+  "i1": 375,
+  "text": "The first two days are checkouts."
+ },
+ {
+  "k": 30,
+  "sec": "c4",
+  "start": 145.641,
+  "end": 152.771,
+  "i0": 376,
+  "i1": 392,
+  "text": "The crew tests Orion's systems and prepares for what's called proximity operations: flying close to another spacecraft."
+ },
+ {
+  "k": 31,
+  "sec": "c4",
+  "start": 153.371,
+  "end": 154.041,
+  "i0": 393,
+  "i1": 394,
+  "text": "Step three."
+ },
+ {
+  "k": 32,
+  "sec": "c4",
+  "start": 154.511,
+  "end": 156.991,
+  "i0": 395,
+  "i1": 402,
+  "text": "Orion docks with the Blue Moon test article."
+ },
+ {
+  "k": 33,
+  "sec": "c4",
+  "start": 157.381,
+  "end": 160.261,
+  "i0": 403,
+  "i1": 411,
+  "text": "Then the crew spends about two days evaluating it."
+ },
+ {
+  "k": 34,
+  "sec": "c4",
+  "start": 160.401,
+  "end": 165.921,
+  "i0": 412,
+  "i1": 428,
+  "text": "They open the hatch, go inside, and check the cabin, the controls, and the life support systems."
+ },
+ {
+  "k": 35,
+  "sec": "c4",
+  "start": 166.511,
+  "end": 171.651,
+  "i0": 429,
+  "i1": 444,
+  "text": "NASA says it will also verify that the spacecraft can hold the right atmosphere and pressure."
+ },
+ {
+  "k": 36,
+  "sec": "c4",
+  "start": 172.181,
+  "end": 176.881,
+  "i0": 445,
+  "i1": 460,
+  "text": "This will be NASA's first evaluation of a commercial lunar lander with a crew on board."
+ },
+ {
+  "k": 37,
+  "sec": "c4",
+  "start": 177.421,
+  "end": 178.201,
+  "i0": 461,
+  "i1": 462,
+  "text": "Step four."
+ },
+ {
+  "k": 38,
+  "sec": "c4",
+  "start": 178.651,
+  "end": 180.961,
+  "i0": 463,
+  "i1": 466,
+  "text": "Orion undocks and repositions."
+ },
+ {
+  "k": 39,
+  "sec": "c4",
+  "start": 181.501,
+  "end": 182.341,
+  "i0": 467,
+  "i1": 468,
+  "text": "Step five."
+ },
+ {
+  "k": 40,
+  "sec": "c4",
+  "start": 182.911,
+  "end": 187.061,
+  "i0": 469,
+  "i1": 478,
+  "text": "SpaceX launches a Starship Version Three test article from Florida."
+ },
+ {
+  "k": 41,
+  "sec": "c4",
+  "start": 187.551,
+  "end": 192.031,
+  "i0": 479,
+  "i1": 494,
+  "text": "It goes into a lower orbit, and it carries an extra docking system on its nose."
+ },
+ {
+  "k": 42,
+  "sec": "c4",
+  "start": 192.531,
+  "end": 196.221,
+  "i0": 495,
+  "i1": 508,
+  "text": "Orion docks with it for a test that can last up to two hours."
+ },
+ {
+  "k": 43,
+  "sec": "c4",
+  "start": 196.691,
+  "end": 199.121,
+  "i0": 509,
+  "i1": 516,
+  "text": "This time, the crew does not go inside."
+ },
+ {
+  "k": 44,
+  "sec": "c4",
+  "start": 199.681,
+  "end": 202.421,
+  "i0": 517,
+  "i1": 525,
+  "text": "Then comes up to five more days of testing."
+ },
+ {
+  "k": 45,
+  "sec": "c4",
+  "start": 202.731,
+  "end": 212.791,
+  "i0": 526,
+  "i1": 552,
+  "text": "Suits, docking sensors, noise and temperature measurements, and some science, including a study on how astronauts could do health checks when they can't talk to mission control."
+ },
+ {
+  "k": 46,
+  "sec": "c5",
+  "start": 213.298,
+  "end": 215.128,
+  "i0": 553,
+  "i1": 559,
+  "text": "Here's a detail that's easy to miss."
+ },
+ {
+  "k": 47,
+  "sec": "c5",
+  "start": 215.628,
+  "end": 218.078,
+  "i0": 560,
+  "i1": 567,
+  "text": "The two landers don't connect the same way."
+ },
+ {
+  "k": 48,
+  "sec": "c5",
+  "start": 218.558,
+  "end": 221.828,
+  "i0": 568,
+  "i1": 577,
+  "text": "Orion links to a port beside Blue Moon's crew cabin."
+ },
+ {
+  "k": 49,
+  "sec": "c5",
+  "start": 222.338,
+  "end": 227.138,
+  "i0": 578,
+  "i1": 592,
+  "text": "Later, it lines up its own forward docking system with the one on Starship's nose."
+ },
+ {
+  "k": 50,
+  "sec": "c5",
+  "start": 227.628,
+  "end": 230.508,
+  "i0": 593,
+  "i1": 599,
+  "text": "Two different connections, in a single mission."
+ },
+ {
+  "k": 51,
+  "sec": "c5",
+  "start": 230.998,
+  "end": 237.538,
+  "i0": 600,
+  "i1": 620,
+  "text": "NASA says that gives it a chance to compare two different ways of operating, and to gather engineering data on both."
+ },
+ {
+  "k": 52,
+  "sec": "c5",
+  "start": 238.028,
+  "end": 250.178,
+  "i0": 621,
+  "i1": 653,
+  "text": "On the Starship dock, NASA and SpaceX plan to evaluate how the docked pair handles, how they communicate, how the software performs together, and what the forces look like during docking and undocking."
+ },
+ {
+  "k": 53,
+  "sec": "c6",
+  "start": 250.687,
+  "end": 253.217,
+  "i0": 654,
+  "i1": 661,
+  "text": "Now the part that makes this mission hard."
+ },
+ {
+  "k": 54,
+  "sec": "c6",
+  "start": 253.717,
+  "end": 258.577,
+  "i0": 662,
+  "i1": 677,
+  "text": "Starship is designed to stay in orbit for a much shorter time than Blue Origin's lander."
+ },
+ {
+  "k": 55,
+  "sec": "c6",
+  "start": 258.977,
+  "end": 261.327,
+  "i0": 678,
+  "i1": 685,
+  "text": "So its launch comes late in the mission."
+ },
+ {
+  "k": 56,
+  "sec": "c6",
+  "start": 261.807,
+  "end": 265.537,
+  "i0": 686,
+  "i1": 697,
+  "text": "Blue Moon's test article waits in orbit, for up to thirty days."
+ },
+ {
+  "k": 57,
+  "sec": "c6",
+  "start": 266.047,
+  "end": 269.777,
+  "i0": 698,
+  "i1": 706,
+  "text": "NASA calls the whole thing a tightly choreographed campaign."
+ },
+ {
+  "k": 58,
+  "sec": "c6",
+  "start": 270.567,
+  "end": 272.467,
+  "i0": 707,
+  "i1": 711,
+  "text": "So here's the what if."
+ },
+ {
+  "k": 59,
+  "sec": "c6",
+  "start": 272.987,
+  "end": 274.567,
+  "i0": 712,
+  "i1": 717,
+  "text": "What if one piece is late?"
+ },
+ {
+  "k": 60,
+  "sec": "c6",
+  "start": 275.747,
+  "end": 279.327,
+  "i0": 718,
+  "i1": 729,
+  "text": "I'll be honest: in the NASA pages I read, there's no answer."
+ },
+ {
+  "k": 61,
+  "sec": "c6",
+  "start": 279.807,
+  "end": 284.277,
+  "i0": 730,
+  "i1": 744,
+  "text": "The thirty day figure is the schedule flexibility NASA states for the Blue Moon side."
+ },
+ {
+  "k": 62,
+  "sec": "c6",
+  "start": 284.767,
+  "end": 289.787,
+  "i0": 745,
+  "i1": 762,
+  "text": "NASA's published plan doesn't say what a problem in orbit would do to the twenty twenty eight target."
+ },
+ {
+  "k": 63,
+  "sec": "c6",
+  "start": 290.277,
+  "end": 295.007,
+  "i0": 763,
+  "i1": 777,
+  "text": "That's why I'd treat every date in this story as a target, not a promise."
+ },
+ {
+  "k": 64,
+  "sec": "c7",
+  "start": 295.519,
+  "end": 297.649,
+  "i0": 778,
+  "i1": 783,
+  "text": "Here's a twist most coverage skips."
+ },
+ {
+  "k": 65,
+  "sec": "c7",
+  "start": 298.139,
+  "end": 305.169,
+  "i0": 784,
+  "i1": 800,
+  "text": "Originally, SpaceX's Starship was assigned to Artemis Three and Four, and Blue Origin's lander to Artemis Five."
+ },
+ {
+  "k": 66,
+  "sec": "c7",
+  "start": 305.689,
+  "end": 307.969,
+  "i0": 801,
+  "i1": 805,
+  "text": "NASA then realigned the contracts."
+ },
+ {
+  "k": 67,
+  "sec": "c7",
+  "start": 308.459,
+  "end": 315.599,
+  "i0": 806,
+  "i1": 825,
+  "text": "Now both companies take part in Artemis Three, in orbit, and neither one is assigned to a specific landing mission."
+ },
+ {
+  "k": 68,
+  "sec": "c7",
+  "start": 315.769,
+  "end": 324.239,
+  "i0": 826,
+  "i1": 850,
+  "text": "NASA says that, based on lander readiness, it will decide which company is first to deliver astronauts to the Moon's surface in twenty twenty eight."
+ },
+ {
+  "k": 69,
+  "sec": "c7",
+  "start": 324.819,
+  "end": 327.299,
+  "i0": 851,
+  "i1": 856,
+  "text": "A second crewed landing opportunity follows."
+ },
+ {
+  "k": 70,
+  "sec": "c7",
+  "start": 327.829,
+  "end": 334.889,
+  "i0": 857,
+  "i1": 877,
+  "text": "And before any crew flies to the Moon, both companies have to fly an uncrewed demonstration mission with their crewed lander."
+ },
+ {
+  "k": 71,
+  "sec": "c7",
+  "start": 335.409,
+  "end": 338.029,
+  "i0": 878,
+  "i1": 885,
+  "text": "NASA says it will certify the landers first."
+ },
+ {
+  "k": 72,
+  "sec": "c7",
+  "start": 338.579,
+  "end": 341.469,
+  "i0": 886,
+  "i1": 894,
+  "text": "So Artemis Three isn't only a test of hardware."
+ },
+ {
+  "k": 73,
+  "sec": "c7",
+  "start": 341.779,
+  "end": 345.879,
+  "i0": 895,
+  "i1": 906,
+  "text": "It's also information NASA will use as it decides what comes next."
+ },
+ {
+  "k": 74,
+  "sec": "c8",
+  "start": 346.385,
+  "end": 349.835,
+  "i0": 907,
+  "i1": 917,
+  "text": "On a landing mission, a commercial lander links up with Orion."
+ },
+ {
+  "k": 75,
+  "sec": "c8",
+  "start": 350.185,
+  "end": 354.715,
+  "i0": 918,
+  "i1": 931,
+  "text": "Then it takes two crew members to the surface while two stay aboard Orion."
+ },
+ {
+  "k": 76,
+  "sec": "c8",
+  "start": 355.275,
+  "end": 357.555,
+  "i0": 932,
+  "i1": 937,
+  "text": "SpaceX's plan starts with a fleet."
+ },
+ {
+  "k": 77,
+  "sec": "c8",
+  "start": 358.085,
+  "end": 366.525,
+  "i0": 938,
+  "i1": 960,
+  "text": "Several Starships launch to low Earth orbit as tankers and transfer super cold propellant to a depot Starship, which then fuels the lander."
+ },
+ {
+  "k": 78,
+  "sec": "c8",
+  "start": 367.055,
+  "end": 368.845,
+  "i0": 961,
+  "i1": 966,
+  "text": "The lander waits in Earth orbit."
+ },
+ {
+  "k": 79,
+  "sec": "c8",
+  "start": 369.365,
+  "end": 374.825,
+  "i0": 967,
+  "i1": 984,
+  "text": "Orion docks with it, and the Starship performs a burn that sends the pair to low lunar orbit."
+ },
+ {
+  "k": 80,
+  "sec": "c8",
+  "start": 375.385,
+  "end": 379.315,
+  "i0": 985,
+  "i1": 996,
+  "text": "NASA says it's working to modify Orion so Starship can push it."
+ },
+ {
+  "k": 81,
+  "sec": "c8",
+  "start": 379.855,
+  "end": 382.265,
+  "i0": 997,
+  "i1": 1004,
+  "text": "Two crew then go down for several days."
+ },
+ {
+  "k": 82,
+  "sec": "c8",
+  "start": 382.815,
+  "end": 385.905,
+  "i0": 1005,
+  "i1": 1011,
+  "text": "Blue Origin's plan uses three transfer stages."
+ },
+ {
+  "k": 83,
+  "sec": "c8",
+  "start": 386.415,
+  "end": 390.325,
+  "i0": 1012,
+  "i1": 1024,
+  "text": "They launch to Earth orbit, followed by the Blue Moon Mark Two lander."
+ },
+ {
+  "k": 84,
+  "sec": "c8",
+  "start": 390.885,
+  "end": 398.175,
+  "i0": 1025,
+  "i1": 1047,
+  "text": "Once docked, the stack heads for an elliptical polar orbit around the Moon, and each stage drops away as its fuel runs out."
+ },
+ {
+  "k": 85,
+  "sec": "c8",
+  "start": 398.705,
+  "end": 401.305,
+  "i0": 1048,
+  "i1": 1055,
+  "text": "Orion launches and docks with the lander there."
+ },
+ {
+  "k": 86,
+  "sec": "c8",
+  "start": 401.835,
+  "end": 404.315,
+  "i0": 1056,
+  "i1": 1063,
+  "text": "Two crew descend to the Moon's south pole."
+ },
+ {
+  "k": 87,
+  "sec": "c8",
+  "start": 404.885,
+  "end": 414.665,
+  "i0": 1064,
+  "i1": 1092,
+  "text": "NASA says both plans replace an earlier idea of meeting in a near rectilinear halo orbit, because the new orbits make the return from the surface to Orion faster."
+ },
+ {
+  "k": 88,
+  "sec": "c8",
+  "start": 415.205,
+  "end": 424.155,
+  "i0": 1093,
+  "i1": 1117,
+  "text": "NASA also announced a lighter second spacesuit, the Sortie suit, roughly half the weight of the larger one, to help with the very first moonwalks."
+ },
+ {
+  "k": 89,
+  "sec": "c9",
+  "start": 424.671,
+  "end": 425.551,
+  "i0": 1118,
+  "i1": 1119,
+  "text": "Three things."
+ },
+ {
+  "k": 90,
+  "sec": "c9",
+  "start": 426.041,
+  "end": 426.451,
+  "i0": 1120,
+  "i1": 1120,
+  "text": "One."
+ },
+ {
+  "k": 91,
+  "sec": "c9",
+  "start": 426.881,
+  "end": 432.201,
+  "i0": 1121,
+  "i1": 1135,
+  "text": "NASA says Artemis Three hardware is on track, with processing times cut by about half."
+ },
+ {
+  "k": 92,
+  "sec": "c9",
+  "start": 432.811,
+  "end": 433.151,
+  "i0": 1136,
+  "i1": 1136,
+  "text": "Two."
+ },
+ {
+  "k": 93,
+  "sec": "c9",
+  "start": 433.671,
+  "end": 443.091,
+  "i0": 1137,
+  "i1": 1162,
+  "text": "NASA says it redesigned, built, and tested a critical fuel line part in house in five months, at roughly a tenth of an earlier outside estimate."
+ },
+ {
+  "k": 94,
+  "sec": "c9",
+  "start": 443.591,
+  "end": 445.061,
+  "i0": 1163,
+  "i1": 1166,
+  "text": "That's NASA's own claim."
+ },
+ {
+  "k": 95,
+  "sec": "c9",
+  "start": 445.631,
+  "end": 446.091,
+  "i0": 1167,
+  "i1": 1167,
+  "text": "Three."
+ },
+ {
+  "k": 96,
+  "sec": "c9",
+  "start": 446.611,
+  "end": 448.611,
+  "i0": 1168,
+  "i1": 1172,
+  "text": "Watch the docking tests themselves."
+ },
+ {
+  "k": 97,
+  "sec": "c9",
+  "start": 449.081,
+  "end": 450.981,
+  "i0": 1173,
+  "i1": 1177,
+  "text": "Everything else depends on them."
+ },
+ {
+  "k": 98,
+  "sec": "c9",
+  "start": 451.471,
+  "end": 453.251,
+  "i0": 1178,
+  "i1": 1182,
+  "text": "If this was useful, subscribe."
+ },
+ {
+  "k": 99,
+  "sec": "c9",
+  "start": 453.741,
+  "end": 458.911,
+  "i0": 1183,
+  "i1": 1199,
+  "text": "Next, I'll look at how a Starship refuels in orbit, and why that matters for the landing."
+ }
+]

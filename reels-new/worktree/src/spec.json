@@ -1,0 +1,157 @@
+{
+ "label": "WORKTREES · CLAUDE CODE",
+ "accentWords": [
+  "worktree",
+  "branch",
+  "catch",
+  "default",
+  "unpushed",
+  "head",
+  "save",
+  "follow",
+  "fix",
+  "step"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "text": "Two Claude Code sessions in the same folder can step on each other's edits.",
+   "scene": {
+    "type": "hero",
+    "headA": "TWO SESSIONS",
+    "headB": "ONE FOLDER",
+    "icon": "branch",
+    "node": {
+     "t": "EDITS COLLIDE",
+     "at": "step",
+     "cls": "red"
+    }
+   }
+  },
+  {
+   "id": "s2",
+   "text": "The fix is a git worktree: a separate checkout, on its own branch. Start Claude with the worktree flag, and a name.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "chips",
+      "label": "a git worktree is",
+      "chips": [
+       {
+        "t": "separate checkout",
+        "at": "checkout"
+       },
+       {
+        "t": "own branch",
+        "at": "branch"
+       }
+      ]
+     },
+     {
+      "k": "term",
+      "text": "claude --worktree feature-auth",
+      "at": "Start"
+     }
+    ],
+    "title": "THE FIX"
+   }
+  },
+  {
+   "id": "s3",
+   "text": "Claude puts it in your worktrees folder, on a new branch named after it.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "chips",
+      "label": "created for you",
+      "chips": [
+       {
+        "t": ".claude/worktrees/feature-auth",
+        "at": "folder",
+        "cls": "am"
+       },
+       {
+        "t": "worktree-feature-auth",
+        "at": "branch",
+        "cls": "ac"
+       }
+      ]
+     }
+    ],
+    "title": "WHAT IT CREATES"
+   }
+  },
+  {
+   "id": "s4",
+   "text": "Here's the catch. By default, a new worktree branches from your default branch, not your current work. Your unpushed commits aren't in it.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "rows",
+      "label": "a new worktree starts from",
+      "rows": [
+       {
+        "t": "default branch (remote)",
+        "tag": "STARTS HERE",
+        "cls": "hot",
+        "at": "default#1"
+       },
+       {
+        "t": "your unpushed commits",
+        "tag": "NOT INCLUDED",
+        "tagCls": "red",
+        "cls": "dim",
+        "at": "unpushed"
+       }
+      ]
+     }
+    ],
+    "title": "THE CATCH"
+   }
+  },
+  {
+   "id": "s5",
+   "text": "To start from your current work instead, set the baseRef setting to head.",
+   "scene": {
+    "type": "stack",
+    "items": [
+     {
+      "k": "code",
+      "label": "settings.json · from the docs",
+      "at": "set",
+      "lines": [
+       {
+        "t": "{"
+       },
+       {
+        "t": "  \"worktree\": {"
+       },
+       {
+        "t": "    \"baseRef\": \"head\"",
+        "at": "head",
+        "hl": true
+       },
+       {
+        "t": "  }"
+       },
+       {
+        "t": "}"
+       }
+      ]
+     }
+    ],
+    "title": "THE SETTING"
+   }
+  },
+  {
+   "id": "s6",
+   "text": "Save this for your next session. Follow for more Claude Code workflows.",
+   "scene": {
+    "type": "cta"
+   }
+  }
+ ]
+}

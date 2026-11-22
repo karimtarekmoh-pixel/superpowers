@@ -1,0 +1,11 @@
+claude --worktree feature-auth
+
+Branch new worktrees from your current work (settings.json):
+{
+  "worktree": {
+    "baseRef": "head"
+  }
+}
+
+Tip from the docs: add .claude/worktrees/ to your .gitignore.
+Source: Claude Code docs, Worktrees (code.claude.com/docs/en/worktrees)

@@ -1,0 +1,58 @@
+{
+ "handle": "@axiomallai",
+ "accentWords": [
+  "history",
+  "permission",
+  "list",
+  "read-only",
+  "allowlist",
+  "check",
+  "save",
+  "follow",
+  "write"
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "text": "Claude Code can read your own history, and write your permission list for you.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s2",
+   "text": "It's a built-in skill, slash fewer permission prompts.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s3",
+   "text": "It scans your past transcripts for common read-only commands and tool calls, then builds a prioritized allowlist.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s4",
+   "text": "Then it adds the list to your project's settings file. That file lives in your project, so read the list before you keep it.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s5",
+   "text": "The result is fewer prompts for read-only calls. Just check the list first.",
+   "chunks": [
+    99
+   ]
+  },
+  {
+   "id": "s6",
+   "text": "Save this for your next session. Follow for more Claude Code workflows.",
+   "chunks": [
+    99
+   ]
+  }
+ ]
+}

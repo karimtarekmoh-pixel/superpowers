@@ -1,0 +1,14 @@
+You saved Fable 5.1 as your Claude Code model. An update can move it to Fable 5.2.
+
+On Pro and Max, a saved Fable 5.1 moves to the fable alias the first time you run Claude Code 2.1.321 or later. That alias now means Fable 5.2, and sessions start at its default effort (medium) unless you set a level. Team and Enterprise plans follow their organization's settings.
+
+Depending on your plan, Fable can bill to usage credits instead of your plan's included limits.
+
+Type /model to check which model and effort you are on.
+
+Details are in the pinned comment.
+
+Save this for your next session.
+Follow @axiomallai for more Claude Code workflows.
+
+#claudecode #claudeai #aitools #aicoding #developertools #aiworkflow #codingtips
